@@ -1,0 +1,1 @@
+No License granted without explicit, written, permission. (Free for indie devs, just ask)
