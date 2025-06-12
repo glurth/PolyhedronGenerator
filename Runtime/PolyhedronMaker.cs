@@ -1,21 +1,26 @@
 using System.Collections;
-using System.Collections.Generic;
+//using System.Collections.Generic;
 using UnityEngine;
 using System.Threading;
-using System.Threading.Tasks;
+//using System.Threading.Tasks;
 using System;
 using Cysharp.Threading.Tasks;
+using EyE.UnityAssetTypes;
 
 public class PolyhedronMaker : MonoBehaviour
 {
-    public Mesh startingMesh;
-    //public Polyhedron startingPoly = Polyhedron.ComputeIcosahedron();
+    public Mesh startingMesh;//optional: will be used during start to compute a starting polyhedron, IF startingPoly is null.
+    public PolyhedronSO startingPoly;//optional: will be used as the starting polyhedron, if provided.
+
+    public bool defaultToTetraNotIcosa;// if neither of the above two are selected- adefault platonic shape will be usedas the starting polyhedron
+    
     public Polyhedron poly;
     public MeshFilter mf;
     public FacesAndNeighbors facesAndNeighborsOnMesh;
     public int numberOfIteration = 3;
     [Range(0,0.5f)]
     public float fraction = 1f / 3f;
+
 
     bool isProcessing = false;
     async UniTask ProcessStart()
@@ -26,20 +31,40 @@ public class PolyhedronMaker : MonoBehaviour
     }
     async UniTask ProcessDone()
     {
-        processedMeshData = await poly.ToMeshDataAsync(facesAndNeighborsOnMesh, cancelRef);
+      //  processedMeshData = await poly.ToMeshDataAsync(facesAndNeighborsOnMesh, cancelRef);
         await UniTask.SwitchToMainThread();
         isProcessing = false;
     }
 
+
     // Start is called before the first frame update
     void Start()
     {
+
         facesAndNeighborsOnMesh = FacesAndNeighbors.CreateInstance<FacesAndNeighbors>();
-        if(startingMesh!=null)
-            poly = new Polyhedron(startingMesh);// startingPoly;
+        if (startingPoly != null)
+        {
+            poly = new Polyhedron(startingPoly.poly);
+            SetDrawnMesh(startingPoly.mesh);
+            facesAndNeighborsOnMesh = startingPoly.facesAndNeighbors;
+        }
         else
-            poly = Polyhedron.ComputeIcosahedron();
-        SetDrawnMesh(poly.ToMesh(facesAndNeighborsOnMesh));
+        {
+            if (startingMesh != null)
+            {
+                poly = new Polyhedron(startingMesh);// startingPoly;
+                SetDrawnMesh(startingMesh);
+            }
+            else
+            {
+                if (defaultToTetraNotIcosa)
+                    poly = Polyhedron.ComputeTetrahedron();
+                else
+                    poly = Polyhedron.ComputeIcosahedron();
+                SetDrawnMesh(poly.ToMesh(facesAndNeighborsOnMesh));
+            }
+        }
+       
         lastFraction = fraction;
     }
     /*
@@ -237,6 +262,7 @@ public class PolyhedronMaker : MonoBehaviour
             SaveSOs();
             yield return new WaitForSeconds(.1f);
         }
+        //processedMeshData = poly.ToMeshData(facesAndNeighborsOnMesh);
         isProcessing = false;
     }
     public IEnumerator DoRadialFaceTessSpherizeDual()
@@ -268,9 +294,12 @@ public class PolyhedronMaker : MonoBehaviour
     void Update()
     {
 
-        if(wasProcessingLastFrame && !isProcessing)
+        if (wasProcessingLastFrame && !isProcessing && processedMeshData!=null)
+        {
             SetDrawnMesh(processedMeshData.ToMesh());
+        }
         wasProcessingLastFrame = isProcessing;
+        
     }
 
     
@@ -381,11 +410,24 @@ public class PolyhedronMaker : MonoBehaviour
 
     public void SaveSOs()
     {
-        string name = mf.sharedMesh.name;
-       UnityEditor.AssetDatabase.CreateAsset(mf.sharedMesh, "assets/" + name + "Mesh.asset");
+        string namePrefix = poly.faces.Count.ToString();
+        if (mf.sharedMesh == null)
+        {
+            Debug.LogWarning("Unable to save mesh asset: unable to find one assigned to meshFilter.sharedMesh");
+        }
+        else
+        {
+            UnityEditor.AssetDatabase.CreateAsset(mf.sharedMesh, "assets/" + namePrefix + "Mesh.asset");
+        }
        FacesAndNeighbors savedInstance = FacesAndNeighbors.Instantiate<FacesAndNeighbors>(facesAndNeighborsOnMesh);
        savedInstance.meshRef = mf.sharedMesh;
-       UnityEditor.AssetDatabase.CreateAsset(savedInstance, "Assets/" + name + "FacesAndNeighbors.asset");
+       UnityEditor.AssetDatabase.CreateAsset(savedInstance, "Assets/" + namePrefix + "FacesAndNeighbors.asset");
+
+        PolyhedronSO polyhedronSO = PolyhedronSO.CreateInstance<PolyhedronSO>();
+        polyhedronSO.poly = poly;
+        polyhedronSO.facesAndNeighbors = savedInstance;
+        polyhedronSO.mesh = mf.sharedMesh;
+       UnityEditor.AssetDatabase.CreateAsset(polyhedronSO, "Assets/" + namePrefix + "Polyhedron.asset");
 
     }
 
@@ -449,6 +491,18 @@ public class PolyhedronMaker : MonoBehaviour
             SpherizeAsync();
             //LaunchAsync(Spherize);
         }
+        if (GUILayout.Button("Smooth"))
+        {
+            poly.Smooth();
+            //LaunchAsync(Spherize);
+        }
+        if (GUILayout.Button("IcoShpere"))
+        {
+            Mesh ico=poly.Icosphere(numberOfIteration);
+            SetDrawnMesh(ico);
+            //LaunchAsync(Spherize);
+        }
+
         if (GUILayout.Button("RecomputePolyMesh"))
         {
             RecomputePolyMesh();

@@ -5,7 +5,8 @@
   "description": "Procedural generation/modification of polyhedrons. Stores the results as both unity standard Mesh objects, and a custom type of ScriptableObject: FacesAndNeighbors.",
   "unity": "2019.1",
   "dependencies": {
-    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask"
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+    "com.glurth.commonassettypes": "https://github.com/glurth/CommonAssetTypes.git"
   },
   "author": {
     "name": "Glurth"

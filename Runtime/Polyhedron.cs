@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Cysharp.Threading.Tasks;
-
+using EyE.UnityAssetTypes;
 
 class GeometryException : System.Exception
 {
@@ -69,6 +68,7 @@ public static class Vector3Extensions
     /// <summary>
     /// Determines whether two floating-point numbers are approximately equal based on a fractional difference.
     /// This extension method is useful for comparing floating-point numbers where precision errors may occur.
+    /// note/warning: if BOTH params a and b are computed zero values, plus/minus precision errors, this function may return false- as it will assume you are trying to compare tiny numbers.
     /// </summary>
     /// <param name="a">The first floating-point number.</param>
     /// <param name="b">The second floating-point number.</param>
@@ -76,6 +76,7 @@ public static class Vector3Extensions
     /// <returns>True if the numbers are approximately equal; otherwise, false.</returns>
     public static bool CloseEqual(this float a, float b, float fractionalDiff = .001f)
     {
+        if (a == b) return true;
         float aMinusB = a - b;
         if (aMinusB < 0)
             aMinusB *= -1; // Convert the difference to absolute value
@@ -503,10 +504,10 @@ public class Edge
 {
     [HideInInspector]
     [System.NonSerialized]
-    Polyhedron edgeOf;
+    Polyhedron edgeOfPolyhedron;
     public void SetPoly(Polyhedron p)
     {
-        edgeOf = p;
+        edgeOfPolyhedron = p;
     }
     public Corner endpointA;
     public Corner endpointB;
@@ -514,7 +515,7 @@ public class Edge
 
     public Edge(Polyhedron edgeOf, Corner endpointA, Corner endpointB)
     {
-        this.edgeOf = edgeOf;
+        this.edgeOfPolyhedron = edgeOf;
         this.endpointA = endpointA;
         this.endpointB = endpointB;
     }
@@ -545,7 +546,7 @@ public class Edge
     {
         get {
             List<Face> touchingFaces = new List<Face>();
-            foreach (Face existingFace in edgeOf.faces) // find both faces that touch the edge being truncated
+            foreach (Face existingFace in edgeOfPolyhedron.faces) // find both faces that touch the edge being truncated
             {
                 if (existingFace.TouchesEdge(this))
                     touchingFaces.Add(existingFace);
@@ -579,7 +580,7 @@ public class Edge
         }
         if (fromCorner == endpointB)
         {
-            return (endpointA.vertex - endpointB.vertex) * fraction + endpointB.vertex;
+            return (endpointA.vertex - endpointB.vertex) * fraction + endpointB.vertex;// = ta -tb +b = ta +b(t-1) lerp
         }
         throw new GeometryException("Trying to find fraction from corner, on an edge; but corner passed to function is NOT on the edge.");
     }
@@ -626,8 +627,8 @@ public class Edge
     public override string ToString()
     {
         
-        int indexA = edgeOf.corners.FindIndex((c) => { return c == endpointA; });
-        int indexB = edgeOf.corners.FindIndex((c) => { return c == endpointB; });
+        int indexA = edgeOfPolyhedron.corners.FindIndex((c) => { return c == endpointA; });
+        int indexB = edgeOfPolyhedron.corners.FindIndex((c) => { return c == endpointB; });
         return "Edge- endpointA["+indexA+"]: " + endpointA + ", endpointB[" + indexB + "]: " + endpointB;
     }
 
@@ -658,6 +659,12 @@ public class Polyhedron : ISerializationCallbackReceiver
             c.SetPoly(this);
     }
 
+    /*
+    public Plyhedron(FacesAndNeighbors facesAndNeighbors)
+    {
+        List<Vector3> corners= facesAndNeighbors..faceDetails[0].
+    }*/
+
     public Polyhedron(List<Vector3> cornerPos, List<List<int>> facesByCornerIndex)
     {
         corners = new List<Corner>();
@@ -678,11 +685,12 @@ public class Polyhedron : ISerializationCallbackReceiver
         RecomputeEdges();
     }
 
+
     public Polyhedron(Mesh fromMesh)
     {
         corners = new List<Corner>(); //use  new public Corner(Polyhedron cornerOf, Vector3 vertex) for each
         faces = new List<Face>();  //use new Face(Polyhedron faceOf, List<Corner> corners)
-        edges = new List<Edge>(); //use new Edge(Polyhedron edgeOf, Corner endpointA, Corner endpointB)
+        edges = new List<Edge>(); //use new Edge(Polyhedron edgeOfPolyhedron, Corner endpointA, Corner endpointB)
 
         //loop through mesh triangles and vertex array to populate the coner face and edge lists- start with corners
         Dictionary<Vector3, Corner> cornerByPosition = new Dictionary<Vector3, Corner>();
@@ -886,6 +894,10 @@ public class Polyhedron : ISerializationCallbackReceiver
             this.cancelRef = cancelRef;
             timer.Start();
         }
+        /// <summary>
+        /// If the processing timer has reached or exceeded the allotted time-slice, will yield until the next unity update.
+        /// </summary>
+        /// <returns></returns>
         public async UniTask YieldOnTimeSlice()
         {
             if (cancelRef != null && cancelRef.doCancel)
@@ -1048,14 +1060,18 @@ public class Polyhedron : ISerializationCallbackReceiver
     {
         if (cornerByVectorCache.TryGetValue(vertex, out Corner corner))
             return corner;
+       // Debug.Log("Did not find vertex{"+vertex+"} in cache");
+       // string s = "";
         foreach (Corner c in corners)
         {
-            if (vertex.CloseEqual(c.vertex))
+            if(vertex==c.vertex)// (vertex.CloseEqual(c.vertex,0.01f))
             {
                 cornerByVectorCache.Add(c.vertex, c);
                 return c;
             }
+            //s += vertex.ToString("F6") + " not equal " + c.vertex.ToString("F6") + "\n";
         }
+        //Debug.Log(s);
         return null;
     }
 
@@ -1073,7 +1089,7 @@ public class Polyhedron : ISerializationCallbackReceiver
 
     float UniformEdgeLengthTruncFraction(Corner c)//, Edge edgeToTruncate)
     {
-
+       // return 0.382f;
         Vector3 firstEdge = c.touchingEdges[0].VectorFrom(c);
         Vector3 secondEdge = c.touchingEdges[1].VectorFrom(c);
         float edgeLen = firstEdge.magnitude;
@@ -1327,9 +1343,9 @@ public class Polyhedron : ISerializationCallbackReceiver
             Vector3 B = f.corners[1].vertex;
             Vector3 C = f.corners[2].vertex;
 
-            Vector3 AB = (A + B) * 0.5f;
-            Vector3 BC = (B + C) * 0.5f;
-            Vector3 CA = (C + A) * 0.5f;
+            Vector3 AB = Vector3.Slerp(A, B, 0.5f);//  (A + B) * 0.5f;
+            Vector3 BC = Vector3.Slerp(B, C, 0.5f);//(B + C) * 0.5f;
+            Vector3 CA = Vector3.Slerp(C, A, 0.5f);//(C + A) * 0.5f;
 
             //popout midpoints (no, we have a spherize function for that)
             /*float mag = A.magnitude;
@@ -1430,18 +1446,24 @@ public class Polyhedron : ISerializationCallbackReceiver
             Vector3 B = f.corners[1].vertex;
             Vector3 C = f.corners[2].vertex;
 
-            Vector3 AB = (A + B) * 0.5f;
-            Vector3 BC = (B + C) * 0.5f;
-            Vector3 CA = (C + A) * 0.5f;
+            Vector3 AB = Vector3.Slerp(A, B, 0.5f);//  (A + B) * 0.5f;
+            Vector3 BC = Vector3.Slerp(B, C, 0.5f);//(B + C) * 0.5f;
+            Vector3 CA = Vector3.Slerp(C, A, 0.5f);//(C + A) * 0.5f;
+                                                   //Vector3 AB = (A + B) * 0.5f;
+                                                   //Vector3 BC = (B + C) * 0.5f;
+                                                   //Vector3 CA = (C + A) * 0.5f;
 
+
+            //the corners may or may not exist in the new tessPoly object
             Corner cornerA = await FindOrCreateCornerAsync(tessPoly, A);
             Corner cornerB = await FindOrCreateCornerAsync(tessPoly, B);
             Corner cornerC = await FindOrCreateCornerAsync(tessPoly, C);
 
+            //these corners may have been created by neighboring faces that were already processed
             Corner cornerAB = await FindOrCreateCornerAsync(tessPoly, AB);
             Corner cornerBC = await FindOrCreateCornerAsync(tessPoly, BC);
             Corner cornerCA = await FindOrCreateCornerAsync(tessPoly, CA);
-
+            
             Face[] newFaces = new Face[4];
             newFaces[0] = new Face(tessPoly, new List<Corner>()
         {
@@ -1480,11 +1502,13 @@ public class Polyhedron : ISerializationCallbackReceiver
         return tessPoly;
         async UniTask<Corner> FindOrCreateCornerAsync(Polyhedron polyhedron, Vector3 vertex)
         {
-          //  await UniTask.SwitchToThreadPool(); // Run this on a thread pool
+            await UniTask.SwitchToThreadPool(); // Run this on a thread pool
             Corner corner = polyhedron.FindCornerByVertex(vertex);
             if (corner == null)
             {
                 corner = new Corner(polyhedron, vertex);
+                //Debug.Log("Creating new Corner[" + polyhedron.corners.Count + "] for vertex: " + vertex);
+              //  Debug.Log("Creating new Corner for vertex: " + vertex);
                 polyhedron.corners.Add(corner);
             }
             return corner;
@@ -1535,6 +1559,27 @@ public class Polyhedron : ISerializationCallbackReceiver
                 c.vertex = Vector3.Lerp(c.vertex, avgPos.normalized * R, 0.1f);
             }
         }*/
+    }
+
+    public void Smooth()
+    {
+        Dictionary<Corner, Vector3> newVertPerCornder = new Dictionary<Corner, Vector3>();
+        foreach (Corner c in corners)
+        {
+            Vector3 sum = Vector3.zero;
+            int count = 0;
+            foreach (Edge e in c.touchingEdges)
+            {
+                if (e.endpointA == c)
+                    sum += e.endpointB.vertex;
+                else
+                    sum += e.endpointA.vertex;
+                count++;
+            }
+            newVertPerCornder[c] = (sum / count).normalized;
+        }
+        foreach (Corner c in corners)
+            c.vertex = newVertPerCornder[c];
     }
 
     //dual converts corners into faces, and faces into corners
@@ -2085,6 +2130,7 @@ public class Polyhedron : ISerializationCallbackReceiver
         {
             Debug.Log("Poly has exactly 3 corners- valid for 2d objects only");
         }
+        int cornerCounter = 0;
         foreach (Corner c in corners)
         {
             if (c.touchingFaces.Count < 1)
@@ -2125,7 +2171,7 @@ public class Polyhedron : ISerializationCallbackReceiver
                     float angleDiff = Mathf.Abs(angle - this2EdgeAngle);
                     if (angleDiff > 0.001f)//angle != Vector3.Angle(c.touchingEdges[i].VectorFrom(c), c.touchingEdges[j].VectorFrom(c)))
                     {
-                        Debug.Log("    Found Corner with touching edges that are not evenly angled around the corner ("+angle+","+ this2EdgeAngle + ")");
+                        Debug.Log("    Found Corner["+ cornerCounter + "] with touching edge["+j+"] that are not evenly angled around the corner ("+angle+","+ this2EdgeAngle + ")");
                         int count = 0;
                         for (int x = 0; x < edgesTouchingCorner.Count; x++)
                         //    foreach (Edge eachEdge in edgesTouchingCorner)
@@ -2149,6 +2195,7 @@ public class Polyhedron : ISerializationCallbackReceiver
                 }
 
             }
+            cornerCounter++;
         }
 
         int faceIndex = 0;
@@ -2321,6 +2368,56 @@ public class Polyhedron : ISerializationCallbackReceiver
                 { Vector3.zero, Vector3.right, new Vector3(1,1,0), Vector3.up },
                 new List<List<int>>() { new List<int> { 0, 2, 1, 3 } }); //out of order test
     }
+    public static Polyhedron ComputeTetrahedron()
+    {
+        // Define vertices of a tetrahedron
+        Vector3[] vertices = new Vector3[4];
+        float a = -Mathf.Sqrt(2f / 9f);
+        float b = Mathf.Sqrt(2f / 3f);
+        float oneThird = 1f / 3f;
+        vertices[0] = new Vector3(Mathf.Sqrt(8f/9f),-oneThird, 0);
+        vertices[1] = new Vector3(a, -oneThird, b);
+        vertices[2] = new Vector3(a, -oneThird, -b);
+        vertices[3] = new Vector3(0, 1, 0);
+
+        // Define the faces (triangles) of the tetrahedron with the correct outward-facing orientation
+        int[] triangles = new int[12] {
+    0, 3, 1,  // Face 1
+    0, 1, 2,  // Face 2
+    0, 2, 3,  // Face 3
+    1, 3, 2   // Face 4
+};
+
+        // Calculate normals for each vertex (normalizing the vertex direction vectors)
+        Vector3[] normals = new Vector3[4];
+        for (int i = 0; i < vertices.Length; i++)
+        {
+            normals[i] = vertices[i];
+        }
+
+        // Calculate UV coordinates (mapping to a 2D surface)
+        Vector2[] uv = new Vector2[4];
+        for (int i = 0; i < vertices.Length; i++)
+        {
+            uv[i] = new Vector2(0.5f + Mathf.Atan2(vertices[i].x, vertices[i].z) / (2 * Mathf.PI),
+                                0.5f - Mathf.Asin(vertices[i].y) / Mathf.PI);
+        }
+
+        // Group triangles by index
+        List<List<int>> facesByIndex = new List<List<int>>();
+        for (int i = 0; i < 4; i++)
+        {
+            List<int> triList = new List<int>()
+        {
+            triangles[i*3+0],
+            triangles[i*3+1],
+            triangles[i*3+2]
+        };
+            facesByIndex.Add(triList);
+        }
+
+        return new Polyhedron(new List<Vector3>(vertices), facesByIndex);
+    }
     public void OnAfterDeserialize()
     {
         //circular references bad for serialization do it now
@@ -2332,4 +2429,156 @@ public class Polyhedron : ISerializationCallbackReceiver
             f.SetPoly(this);
     }
     public void OnBeforeSerialize() { }
+
+    struct Tri
+    {
+        public Tri(int[] triArray, int startIndex)
+        {
+            v1 = triArray[startIndex];
+            v2 = triArray[startIndex + 1];
+            v3 = triArray[startIndex + 2];
+        }
+
+        public Tri(int v1, int v2, int v3)
+        {
+            this.v1 = v1;
+            this.v2 = v2;
+            this.v3 = v3;
+        }
+
+        public int v1; public int v2; public int v3;
+    }    
+    public Mesh Icosphere( int levels)
+    {
+        // for each triangle
+        //      add to processList
+        // for each level
+        //      get/remove tri from processList
+        //          slerp between tri corners(A,B,C) t=0.5 to make 3 new corner vertices(AB,BC,CA)
+        //          check if any corner exist already in vertex array- and use that vertex index if so
+        //          otherwise add the vertex to the list- note vertex index
+        //          make 4 triangles, using old and new vertex indices
+        //          put new tris on process list
+
+        Mesh icosahedron = Polyhedron.ComputeIcosahedron().ToMesh();
+        List<Vector3> vertexList= new List<Vector3>(icosahedron.vertices);
+        
+        UniqueList<Vector3> corners = new UniqueList<Vector3>();
+        Dictionary<int,int> vertexToCornerIndex = new Dictionary<int, int>();
+
+        List<Tri> trisToProcess = new List<Tri>();
+        List<Tri> nextLevelTrisToProcess = new List<Tri>();
+        for (int triIndex = 0; triIndex < icosahedron.triangles.Length; triIndex += 3)
+        {
+            trisToProcess.Add(new Tri(icosahedron.triangles, triIndex));
+        }
+        for (int level = 0; level < levels; level++)
+        {
+            while (trisToProcess.Count > 0)
+            {
+                Tri processTri = trisToProcess[0];
+                trisToProcess.RemoveAt(0);
+
+                int Aindex = processTri.v1;
+                int Bindex = processTri.v2;
+                int Cindex = processTri.v3;
+
+                Vector3 A = vertexList[processTri.v1];
+                Vector3 B = vertexList[processTri.v2];
+                Vector3 C = vertexList[processTri.v3];
+                Vector3 AB = Vector3.Slerp(A, B, 0.5f);
+                Vector3 BC = Vector3.Slerp(B, C, 0.5f);
+                Vector3 CA = Vector3.Slerp(C, A, 0.5f);
+
+                int ABindex = vertexList.Count;
+                vertexList.Add(AB);
+                int BCindex = vertexList.Count;
+                vertexList.Add(BC);
+                int CAindex = vertexList.Count;
+                vertexList.Add(CA);
+                int ABindex2 = vertexList.Count;
+                vertexList.Add(AB);
+                int BCindex2 = vertexList.Count;
+                vertexList.Add(BC);
+                int CAindex2 = vertexList.Count;
+                vertexList.Add(CA);
+                int ABindex3 = vertexList.Count;
+                vertexList.Add(AB);
+                int BCindex3 = vertexList.Count;
+                vertexList.Add(BC);
+                int CAindex3 = vertexList.Count;
+                vertexList.Add(CA);
+
+                Tri A_AB_CA = new Tri(Aindex, ABindex, CAindex);
+                Tri B_BC_AB = new Tri(Bindex, BCindex, ABindex2);
+                Tri C_CA_BC = new Tri(Cindex, CAindex2, BCindex2);
+                Tri AB_BC_CA = new Tri(ABindex3, BCindex3, CAindex3);
+
+                nextLevelTrisToProcess.Add(A_AB_CA);
+                nextLevelTrisToProcess.Add(B_BC_AB);
+                nextLevelTrisToProcess.Add(C_CA_BC);
+                nextLevelTrisToProcess.Add(AB_BC_CA);
+
+                if(!vertexToCornerIndex.ContainsKey(Aindex))
+                    vertexToCornerIndex.Add(Aindex, corners.GetIndexOrAdd(A));
+                if (!vertexToCornerIndex.ContainsKey(Aindex))
+                    vertexToCornerIndex.Add(Bindex, corners.GetIndexOrAdd(B));
+                if (!vertexToCornerIndex.ContainsKey(Aindex))
+                    vertexToCornerIndex.Add(Cindex, corners.GetIndexOrAdd(C));
+                int ABcornerIndex = corners.GetIndexOrAdd(AB);
+                int BCcornerIndex = corners.GetIndexOrAdd(BC);
+                int CAcornerIndex = corners.GetIndexOrAdd(CA);
+                vertexToCornerIndex.Add(ABindex, ABcornerIndex);
+                vertexToCornerIndex.Add(BCindex, BCcornerIndex);
+                vertexToCornerIndex.Add(CAindex, CAcornerIndex);
+                vertexToCornerIndex.Add(ABindex2, ABcornerIndex);
+                vertexToCornerIndex.Add(BCindex2, BCcornerIndex);
+                vertexToCornerIndex.Add(CAindex2, CAcornerIndex);
+                vertexToCornerIndex.Add(ABindex3, ABcornerIndex);
+                vertexToCornerIndex.Add(BCindex3, BCcornerIndex);
+                vertexToCornerIndex.Add(CAindex3, CAcornerIndex);
+            }
+            trisToProcess=nextLevelTrisToProcess;
+            nextLevelTrisToProcess = new List<Tri>();
+        }
+        Mesh newMesh= new Mesh();
+        newMesh.name = "Icosphere" + levels;
+        if (vertexList.Count > 65535)
+        {
+            newMesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32; // Enable 32-bit indices if needed
+        }
+        newMesh.SetVertices(vertexList);
+        List<int> triArray = new List<int>();
+        foreach (Tri t in trisToProcess)
+        {
+            triArray.Add(t.v1);
+            triArray.Add(t.v2);
+            triArray.Add(t.v3);
+        }
+        newMesh.SetTriangles(triArray,0);
+        newMesh.RecalculateNormals();
+
+
+        Polyhedron newp = this;
+
+
+        newp.corners = new List<Corner>();
+        newp.faces = new List<Face>();
+        foreach (Vector3 v in corners)
+        {
+            newp.corners.Add(new Corner(newp, v));
+        }
+        foreach (Tri t in trisToProcess)
+        {
+            List<Corner> facecorners = new List<Corner>();
+            facecorners.Add(newp.corners[vertexToCornerIndex[t.v1]]);
+            facecorners.Add(newp.corners[vertexToCornerIndex[t.v2]]);
+            facecorners.Add(newp.corners[vertexToCornerIndex[t.v3]]);
+            newp.faces.Add(new Face(newp, facecorners));
+        }
+        newp.RecomputeEdges();
+        return newMesh;
+    }
+
+
 }

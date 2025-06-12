@@ -9,7 +9,14 @@ Operations include geometic trucation, dual, spherize, and for triangluar faces-
   Requires Unity
   Packages:
 	UniTask by Cysharp https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask
-    
+    	CommonAssetTypes https://github.com/glurth/CommonAssetTypes.git
+
+## Installation
+
+In the unity editor, package manager window, click to add a package from a git url. 
+First add the dependencies specified in this file, then add:https://github.com/glurth/UIPrefabGenerator.git
+
+
 
 ## License
 

@@ -1,0 +1,5136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4650a7e2b9c8b324ba62f6ebba736c26, type: 3}
+  m_Name: 1280FacePolyFacesAndNeighbors
+  m_EditorClassIdentifier: 
+  meshRef: {fileID: 4300000, guid: 7aeb81b51de652f488f9f867e4350bef, type: 2}
+  faceDetails:
+  - index: 0
+    triangles: 00000000
+    neighborIndices: 0c0000003200000003000000
+    normal: {x: -0.64910096, y: -0.37174398, z: -0.6636824}
+  - index: 1
+    triangles: 03000000
+    neighborIndices: 310000000904000003000000
+    normal: {x: -0.75999886, y: -0.31342205, z: -0.5693579}
+  - index: 2
+    triangles: 06000000
+    neighborIndices: 080400000d00000003000000
+    normal: {x: -0.7022587, y: -0.23921885, z: -0.67052746}
+  - index: 3
+    triangles: 09000000
+    neighborIndices: 000000000100000002000000
+    normal: {x: -0.7075766, y: -0.29621047, z: -0.64155644}
+  - index: 4
+    triangles: 0c000000
+    neighborIndices: 0d0000000604000007000000
+    normal: {x: -0.630461, y: -0.16144317, z: -0.7592463}
+  - index: 5
+    triangles: 0f000000
+    neighborIndices: 05040000c501000007000000
+    normal: {x: -0.5462498, y: -0.081178114, z: -0.83367926}
+  - index: 6
+    triangles: 12000000
+    neighborIndices: c40100000e00000007000000
+    normal: {x: -0.5001416, y: -0.21122062, z: -0.83978826}
+  - index: 7
+    triangles: 15000000
+    neighborIndices: 040000000500000006000000
+    normal: {x: -0.55728424, y: -0.13279183, z: -0.8196345}
+  - index: 8
+    triangles: 18000000
+    neighborIndices: 0e000000c20100000b000000
+    normal: {x: -0.445068, y: -0.33745694, z: -0.8294801}
+  - index: 9
+    triangles: 1b000000
+    neighborIndices: c1010000350000000b000000
+    normal: {x: -0.3824786, y: -0.45762205, z: -0.8026781}
+  - index: 10
+    triangles: 1e000000
+    neighborIndices: 340000000c0000000b000000
+    normal: {x: -0.5222192, y: -0.42020854, z: -0.7420997}
+  - index: 11
+    triangles: 21000000
+    neighborIndices: 08000000090000000a000000
+    normal: {x: -0.44848245, y: -0.3951756, z: -0.8016855}
+  - index: 12
+    triangles: 24000000
+    neighborIndices: 000000000a0000000f000000
+    normal: {x: -0.58556354, y: -0.349826, z: -0.7312572}
+  - index: 13
+    triangles: 27000000
+    neighborIndices: 02000000040000000f000000
+    normal: {x: -0.6387268, y: -0.21732764, z: -0.7381035}
+  - index: 14
+    triangles: 2a000000
+    neighborIndices: 06000000080000000f000000
+    normal: {x: -0.5084247, y: -0.26709878, z: -0.8186345}
+  - index: 15
+    triangles: 2d000000
+    neighborIndices: 0c0000000d0000000e000000
+    normal: {x: -0.5811538, y: -0.29310843, z: -0.7591756}
+  - index: 16
+    triangles: 30000000
+    neighborIndices: 1c0000003600000013000000
+    normal: {x: -0.3717441, y: -0.6636831, z: -0.64910024}
+  - index: 17
+    triangles: 33000000
+    neighborIndices: 35000000e901000013000000
+    normal: {x: -0.31342128, y: -0.5693577, z: -0.75999933}
+  - index: 18
+    triangles: 36000000
+    neighborIndices: e80100001d00000013000000
+    normal: {x: -0.23921876, y: -0.67052734, z: -0.70225877}
+  - index: 19
+    triangles: 39000000
+    neighborIndices: 100000001100000012000000
+    normal: {x: -0.29620957, y: -0.64155686, z: -0.70757663}
+  - index: 20
+    triangles: 3c000000
+    neighborIndices: 1d000000e601000017000000
+    normal: {x: -0.16144273, y: -0.7592464, z: -0.630461}
+  - index: 21
+    triangles: 3f000000
+    neighborIndices: e50100005500000017000000
+    normal: {x: -0.08117823, y: -0.83367914, z: -0.5462501}
+  - index: 22
+    triangles: 42000000
+    neighborIndices: 540000001e00000017000000
+    normal: {x: -0.21122056, y: -0.8397883, z: -0.5001415}
+  - index: 23
+    triangles: 45000000
+    neighborIndices: 140000001500000016000000
+    normal: {x: -0.13279137, y: -0.8196344, z: -0.55728436}
+  - index: 24
+    triangles: 48000000
+    neighborIndices: 1e000000520000001b000000
+    normal: {x: -0.33745682, y: -0.82948035, z: -0.44506767}
+  - index: 25
+    triangles: 4b000000
+    neighborIndices: 51000000390000001b000000
+    normal: {x: -0.45762205, y: -0.8026781, z: -0.3824786}
+  - index: 26
+    triangles: 4e000000
+    neighborIndices: 380000001c0000001b000000
+    normal: {x: -0.42020908, y: -0.7420991, z: -0.5222195}
+  - index: 27
+    triangles: 51000000
+    neighborIndices: 18000000190000001a000000
+    normal: {x: -0.3951759, y: -0.8016856, z: -0.4484822}
+  - index: 28
+    triangles: 54000000
+    neighborIndices: 100000001a0000001f000000
+    normal: {x: -0.34982654, y: -0.73125666, z: -0.5855639}
+  - index: 29
+    triangles: 57000000
+    neighborIndices: 12000000140000001f000000
+    normal: {x: -0.21732756, y: -0.7381035, z: -0.63872683}
+  - index: 30
+    triangles: 5a000000
+    neighborIndices: 16000000180000001f000000
+    normal: {x: -0.2670985, y: -0.81863475, z: -0.5084246}
+  - index: 31
+    triangles: 5d000000
+    neighborIndices: 1c0000001d0000001e000000
+    normal: {x: -0.2931082, y: -0.7591755, z: -0.58115417}
+  - index: 32
+    triangles: 60000000
+    neighborIndices: 2c0000003a00000023000000
+    normal: {x: -0.66368306, y: -0.64910024, z: -0.3717441}
+  - index: 33
+    triangles: 63000000
+    neighborIndices: 390000004900000023000000
+    normal: {x: -0.5693577, y: -0.75999933, z: -0.31342128}
+  - index: 34
+    triangles: 66000000
+    neighborIndices: 480000002d00000023000000
+    normal: {x: -0.6705274, y: -0.7022587, z: -0.23921885}
+  - index: 35
+    triangles: 69000000
+    neighborIndices: 200000002100000022000000
+    normal: {x: -0.641557, y: -0.7075766, z: -0.29620957}
+  - index: 36
+    triangles: 6c000000
+    neighborIndices: 2d0000004600000027000000
+    normal: {x: -0.75924635, y: -0.6304611, z: -0.16144262}
+  - index: 37
+    triangles: 6f000000
+    neighborIndices: 450000001504000027000000
+    normal: {x: -0.83367914, y: -0.54625016, z: -0.08117824}
+  - index: 38
+    triangles: 72000000
+    neighborIndices: 140400002e00000027000000
+    normal: {x: -0.83978826, y: -0.5001415, z: -0.21122047}
+  - index: 39
+    triangles: 75000000
+    neighborIndices: 240000002500000026000000
+    normal: {x: -0.8196345, y: -0.55728436, z: -0.1327913}
+  - index: 40
+    triangles: 78000000
+    neighborIndices: 2e000000120400002b000000
+    normal: {x: -0.8294802, y: -0.4450679, z: -0.3374569}
+  - index: 41
+    triangles: 7b000000
+    neighborIndices: 11040000310000002b000000
+    normal: {x: -0.80267817, y: -0.38247862, z: -0.457622}
+  - index: 42
+    triangles: 7e000000
+    neighborIndices: 300000002c0000002b000000
+    normal: {x: -0.7420993, y: -0.5222195, z: -0.42020875}
+  - index: 43
+    triangles: 81000000
+    neighborIndices: 28000000290000002a000000
+    normal: {x: -0.8016856, y: -0.4484824, z: -0.3951757}
+  - index: 44
+    triangles: 84000000
+    neighborIndices: 200000002a0000002f000000
+    normal: {x: -0.7312569, y: -0.58556366, z: -0.34982648}
+  - index: 45
+    triangles: 87000000
+    neighborIndices: 22000000240000002f000000
+    normal: {x: -0.7381034, y: -0.63872695, z: -0.2173277}
+  - index: 46
+    triangles: 8a000000
+    neighborIndices: 26000000280000002f000000
+    normal: {x: -0.8186346, y: -0.50842464, z: -0.26709878}
+  - index: 47
+    triangles: 8d000000
+    neighborIndices: 2c0000002d0000002e000000
+    normal: {x: -0.7591755, y: -0.581154, z: -0.2931085}
+  - index: 48
+    triangles: 90000000
+    neighborIndices: 2a0000003c00000033000000
+    normal: {x: -0.6990111, y: -0.52188677, z: -0.48889434}
+  - index: 49
+    triangles: 93000000
+    neighborIndices: 010000002900000033000000
+    normal: {x: -0.75951344, y: -0.38223433, z: -0.5263423}
+  - index: 50
+    triangles: 96000000
+    neighborIndices: 000000003d00000033000000
+    normal: {x: -0.6486874, y: -0.44046098, z: -0.62064373}
+  - index: 51
+    triangles: 99000000
+    neighborIndices: 300000003100000032000000
+    normal: {x: -0.7084426, y: -0.44651678, z: -0.5465636}
+  - index: 52
+    triangles: 9c000000
+    neighborIndices: 0a0000003d00000037000000
+    normal: {x: -0.5218865, y: -0.48889408, z: -0.6990115}
+  - index: 53
+    triangles: 9f000000
+    neighborIndices: 090000001100000037000000
+    normal: {x: -0.38223433, y: -0.5263415, z: -0.759514}
+  - index: 54
+    triangles: a2000000
+    neighborIndices: 100000003e00000037000000
+    normal: {x: -0.44046086, y: -0.6206446, z: -0.6486867}
+  - index: 55
+    triangles: a5000000
+    neighborIndices: 340000003500000036000000
+    normal: {x: -0.44651687, y: -0.546563, z: -0.70844305}
+  - index: 56
+    triangles: a8000000
+    neighborIndices: 1a0000003e0000003b000000
+    normal: {x: -0.48889443, y: -0.699011, z: -0.52188677}
+  - index: 57
+    triangles: ab000000
+    neighborIndices: 19000000210000003b000000
+    normal: {x: -0.5263415, y: -0.759514, z: -0.38223433}
+  - index: 58
+    triangles: ae000000
+    neighborIndices: 200000003c0000003b000000
+    normal: {x: -0.62064415, y: -0.6486867, z: -0.44046152}
+  - index: 59
+    triangles: b1000000
+    neighborIndices: 38000000390000003a000000
+    normal: {x: -0.5465632, y: -0.70844257, z: -0.44651747}
+  - index: 60
+    triangles: b4000000
+    neighborIndices: 300000003a0000003f000000
+    normal: {x: -0.6354717, y: -0.5851589, z: -0.50375086}
+  - index: 61
+    triangles: b7000000
+    neighborIndices: 32000000340000003f000000
+    normal: {x: -0.5851593, y: -0.50375074, z: -0.63547134}
+  - index: 62
+    triangles: ba000000
+    neighborIndices: 36000000380000003f000000
+    normal: {x: -0.5037508, y: -0.63547224, z: -0.5851583}
+  - index: 63
+    triangles: bd000000
+    neighborIndices: 3c0000003d0000003e000000
+    normal: {x: -0.57735074, y: -0.5773503, z: -0.5773497}
+  - index: 64
+    triangles: c0000000
+    neighborIndices: 4c00000043000000
+    normal: {x: -0.5516416, y: -0.8303868, z: 0.07841727}
+  - index: 65
+    triangles: c3000000
+    neighborIndices: 710000008904000043000000
+    normal: {x: -0.5387616, y: -0.8095046, z: 0.23331988}
+  - index: 66
+    triangles: c6000000
+    neighborIndices: 880400004d00000043000000
+    normal: {x: -0.63986826, y: -0.7518662, z: 0.15895222}
+  - index: 67
+    triangles: c9000000
+    neighborIndices: 400000004100000042000000
+    normal: {x: -0.5895779, y: -0.7916796, z: 0.1601286}
+  - index: 68
+    triangles: cc000000
+    neighborIndices: 8604000047000000
+    normal: {x: -0.7283449, y: -0.68046075, z: 0.080541514}
+  - index: 69
+    triangles: cf000000
+    neighborIndices: 250000008504000047000000
+    normal: {x: -0.8026718, y: -0.596421, z: -0}
+  - index: 70
+    triangles: d2000000
+    neighborIndices: 2400000047000000
+    normal: {x: -0.7283449, y: -0.68046063, z: -0.080541626}
+  - index: 71
+    triangles: d5000000
+    neighborIndices: 440000004500000046000000
+    normal: {x: -0.7689127, y: -0.6393538, z: 0}
+  - index: 72
+    triangles: d8000000
+    neighborIndices: 220000004e0000004b000000
+    normal: {x: -0.63986826, y: -0.7518663, z: -0.15895215}
+  - index: 73
+    triangles: db000000
+    neighborIndices: 21000000750000004b000000
+    normal: {x: -0.5387615, y: -0.8095048, z: -0.2333196}
+  - index: 74
+    triangles: de000000
+    neighborIndices: 4c0000004b000000
+    normal: {x: -0.55164164, y: -0.8303869, z: -0.07841741}
+  - index: 75
+    triangles: e1000000
+    neighborIndices: 48000000490000004a000000
+    normal: {x: -0.5895778, y: -0.7916798, z: -0.16012849}
+  - index: 76
+    triangles: e4000000
+    neighborIndices: 400000004a0000004f000000
+    normal: {x: -0.5976356, y: -0.8017678, z: -0.00000007497501}
+  - index: 77
+    triangles: e7000000
+    neighborIndices: 420000004f000000
+    normal: {x: -0.6858514, y: -0.7232722, z: 0.08053092}
+  - index: 78
+    triangles: ea000000
+    neighborIndices: 480000004f000000
+    normal: {x: -0.68585145, y: -0.7232722, z: -0.0805308}
+  - index: 79
+    triangles: ed000000
+    neighborIndices: 4c0000004d0000004e000000
+    normal: {x: -0.6472178, y: -0.7623051, z: -0.000000042270024}
+  - index: 80
+    triangles: f0000000
+    neighborIndices: 5c0000007600000053000000
+    normal: {x: -0.3081668, y: -0.92338574, z: -0.22889303}
+  - index: 81
+    triangles: f3000000
+    neighborIndices: 190000007500000053000000
+    normal: {x: -0.42702603, y: -0.8521836, z: -0.30237725}
+  - index: 82
+    triangles: f6000000
+    neighborIndices: 180000005d00000053000000
+    normal: {x: -0.3067978, y: -0.8790876, z: -0.36480138}
+  - index: 83
+    triangles: f9000000
+    neighborIndices: 500000005100000052000000
+    normal: {x: -0.3431964, y: -0.88578874, z: -0.3124013}
+  - index: 84
+    triangles: fc000000
+    neighborIndices: 160000005d00000057000000
+    normal: {x: -0.180319, y: -0.88978803, z: -0.41924024}
+  - index: 85
+    triangles: ff000000
+    neighborIndices: 150000008500000057000000
+    normal: {x: -0.05017107, y: -0.8838499, z: -0.46507227}
+  - index: 86
+    triangles: 02010000
+    neighborIndices: 840000005e00000057000000
+    normal: {x: -0.050000396, y: -0.93956566, z: -0.3386981}
+  - index: 87
+    triangles: 05010000
+    neighborIndices: 540000005500000056000000
+    normal: {x: -0.08207087, y: -0.9017045, z: -0.42449197}
+  - index: 88
+    triangles: 08010000
+    neighborIndices: 5e000000820000005b000000
+    normal: {x: -0.04960799, y: -0.9773256, z: -0.2058487}
+  - index: 89
+    triangles: 0b010000
+    neighborIndices: 790000005b000000
+    normal: {x: -0.04950523, y: -0.9963836, z: -0.069056794}
+  - index: 90
+    triangles: 0e010000
+    neighborIndices: 780000005c0000005b000000
+    normal: {x: -0.18128549, y: -0.9718501, z: -0.15047589}
+  - index: 91
+    triangles: 11010000
+    neighborIndices: 58000000590000005a000000
+    normal: {x: -0.08410295, y: -0.98475367, z: -0.15227264}
+  - index: 92
+    triangles: 14010000
+    neighborIndices: 500000005a0000005f000000
+    normal: {x: -0.21620393, y: -0.9474616, z: -0.235738}
+  - index: 93
+    triangles: 17010000
+    neighborIndices: 52000000540000005f000000
+    normal: {x: -0.21484694, y: -0.90317965, z: -0.37162784}
+  - index: 94
+    triangles: 1a010000
+    neighborIndices: 56000000580000005f000000
+    normal: {x: -0.084545605, y: -0.9529506, z: -0.2910965}
+  - index: 95
+    triangles: 1d010000
+    neighborIndices: 5c0000005d0000005e000000
+    normal: {x: -0.18115102, y: -0.94032675, z: -0.28804502}
+  - index: 96
+    triangles: 20010000
+    neighborIndices: 6c0000007a00000063000000
+    normal: {x: -0.18128625, y: -0.97184986, z: 0.15047628}
+  - index: 97
+    triangles: 23010000
+    neighborIndices: 7900000063000000
+    normal: {x: -0.049504668, y: -0.9963837, z: 0.06905686}
+  - index: 98
+    triangles: 26010000
+    neighborIndices: a80000006d00000063000000
+    normal: {x: -0.049607355, y: -0.9773257, z: 0.2058486}
+  - index: 99
+    triangles: 29010000
+    neighborIndices: 600000006100000062000000
+    normal: {x: -0.08410228, y: -0.98475367, z: 0.15227284}
+  - index: 100
+    triangles: 2c010000
+    neighborIndices: 6d000000a600000067000000
+    normal: {x: -0.04999927, y: -0.93956554, z: 0.3386985}
+  - index: 101
+    triangles: 2f010000
+    neighborIndices: a50000009504000067000000
+    normal: {x: -0.05017067, y: -0.8838505, z: 0.4650712}
+  - index: 102
+    triangles: 32010000
+    neighborIndices: 940400006e00000067000000
+    normal: {x: -0.18031918, y: -0.8897878, z: 0.4192407}
+  - index: 103
+    triangles: 35010000
+    neighborIndices: 640000006500000066000000
+    normal: {x: -0.08206943, y: -0.90170443, z: 0.42449242}
+  - index: 104
+    triangles: 38010000
+    neighborIndices: 6e000000920400006b000000
+    normal: {x: -0.3067978, y: -0.8790876, z: 0.36480138}
+  - index: 105
+    triangles: 3b010000
+    neighborIndices: 91040000710000006b000000
+    normal: {x: -0.42702594, y: -0.85218364, z: 0.30237696}
+  - index: 106
+    triangles: 3e010000
+    neighborIndices: 700000006c0000006b000000
+    normal: {x: -0.30816737, y: -0.92338574, z: 0.22889222}
+  - index: 107
+    triangles: 41010000
+    neighborIndices: 68000000690000006a000000
+    normal: {x: -0.34319684, y: -0.88578874, z: 0.31240085}
+  - index: 108
+    triangles: 44010000
+    neighborIndices: 600000006a0000006f000000
+    normal: {x: -0.21620417, y: -0.9474617, z: 0.2357372}
+  - index: 109
+    triangles: 47010000
+    neighborIndices: 62000000640000006f000000
+    normal: {x: -0.08454491, y: -0.95295066, z: 0.29109633}
+  - index: 110
+    triangles: 4a010000
+    neighborIndices: 66000000680000006f000000
+    normal: {x: -0.21484752, y: -0.9031795, z: 0.3716278}
+  - index: 111
+    triangles: 4d010000
+    neighborIndices: 6c0000006d0000006e000000
+    normal: {x: -0.18115121, y: -0.94032687, z: 0.28804466}
+  - index: 112
+    triangles: 50010000
+    neighborIndices: 6a0000007c00000073000000
+    normal: {x: -0.35058713, y: -0.92279744, z: 0.15979214}
+  - index: 113
+    triangles: 53010000
+    neighborIndices: 410000006900000073000000
+    normal: {x: -0.46940556, y: -0.85163945, z: 0.2331709}
+  - index: 114
+    triangles: 56010000
+    neighborIndices: 7d00000073000000
+    normal: {x: -0.48233652, y: -0.87247354, z: 0.07836724}
+  - index: 115
+    triangles: 59010000
+    neighborIndices: 700000007100000072000000
+    normal: {x: -0.43784195, y: -0.8843584, z: 0.16187845}
+  - index: 116
+    triangles: 5c010000
+    neighborIndices: 7d00000077000000
+    normal: {x: -0.48233694, y: -0.87247324, z: -0.07836748}
+  - index: 117
+    triangles: 5f010000
+    neighborIndices: 490000005100000077000000
+    normal: {x: -0.469406, y: -0.8516393, z: -0.2331706}
+  - index: 118
+    triangles: 62010000
+    neighborIndices: 500000007e00000077000000
+    normal: {x: -0.35058695, y: -0.9227975, z: -0.1597923}
+  - index: 119
+    triangles: 65010000
+    neighborIndices: 740000007500000076000000
+    normal: {x: -0.43784267, y: -0.884358, z: -0.16187863}
+  - index: 120
+    triangles: 68010000
+    neighborIndices: 5a0000007b000000
+    normal: {x: -0.22378641, y: -0.971231, z: -0.08142519}
+  - index: 121
+    triangles: 6b010000
+    neighborIndices: 59000000610000007b000000
+    normal: {x: -0.092125565, y: -0.99574745, z: -0.00000042759768}
+  - index: 122
+    triangles: 6e010000
+    neighborIndices: 600000007b000000
+    normal: {x: -0.22378722, y: -0.97123075, z: 0.08142552}
+  - index: 123
+    triangles: 71010000
+    neighborIndices: 78000000790000007a000000
+    normal: {x: -0.17591652, y: -0.9844051, z: -0.0000004842144}
+  - index: 124
+    triangles: 74010000
+    neighborIndices: 700000007f000000
+    normal: {x: -0.3113356, y: -0.94680667, z: 0.08140767}
+  - index: 125
+    triangles: 77010000
+    neighborIndices: 72000000740000007f000000
+    normal: {x: -0.44305605, y: -0.8964939, z: 0.00000032830204}
+  - index: 126
+    triangles: 7a010000
+    neighborIndices: 760000007f000000
+    normal: {x: -0.3113352, y: -0.9468069, z: -0.08140739}
+  - index: 127
+    triangles: 7d010000
+    neighborIndices: 7c0000007d0000007e000000
+    normal: {x: -0.3568221, y: -0.93417233, z: 0.0000004180181}
+  - index: 128
+    triangles: 80010000
+    neighborIndices: 8c000000b200000083000000
+    normal: {x: 0.18128656, y: -0.97184986, z: -0.15047577}
+  - index: 129
+    triangles: 83010000
+    neighborIndices: b100000083000000
+    normal: {x: 0.049504735, y: -0.9963837, z: -0.06905675}
+  - index: 130
+    triangles: 86010000
+    neighborIndices: 580000008d00000083000000
+    normal: {x: 0.049607057, y: -0.9773257, z: -0.20584871}
+  - index: 131
+    triangles: 89010000
+    neighborIndices: 800000008100000082000000
+    normal: {x: 0.084102325, y: -0.9847538, z: -0.15227233}
+  - index: 132
+    triangles: 8c010000
+    neighborIndices: 560000008d00000087000000
+    normal: {x: 0.050000526, y: -0.9395656, z: -0.33869806}
+  - index: 133
+    triangles: 8f010000
+    neighborIndices: 550000008501000087000000
+    normal: {x: 0.05017107, y: -0.8838499, z: -0.46507227}
+  - index: 134
+    triangles: 92010000
+    neighborIndices: 840100008e00000087000000
+    normal: {x: 0.18031904, y: -0.889788, z: -0.41924033}
+  - index: 135
+    triangles: 95010000
+    neighborIndices: 840000008500000086000000
+    normal: {x: 0.08207088, y: -0.9017045, z: -0.42449194}
+  - index: 136
+    triangles: 98010000
+    neighborIndices: 8e000000820100008b000000
+    normal: {x: 0.3067978, y: -0.8790876, z: -0.36480138}
+  - index: 137
+    triangles: 9b010000
+    neighborIndices: 81010000b50000008b000000
+    normal: {x: 0.42702594, y: -0.85218364, z: -0.30237696}
+  - index: 138
+    triangles: 9e010000
+    neighborIndices: b40000008c0000008b000000
+    normal: {x: 0.30816737, y: -0.92338574, z: -0.22889222}
+  - index: 139
+    triangles: a1010000
+    neighborIndices: 88000000890000008a000000
+    normal: {x: 0.34319684, y: -0.88578874, z: -0.31240085}
+  - index: 140
+    triangles: a4010000
+    neighborIndices: 800000008a0000008f000000
+    normal: {x: 0.21620473, y: -0.9474616, z: -0.23573719}
+  - index: 141
+    triangles: a7010000
+    neighborIndices: 82000000840000008f000000
+    normal: {x: 0.08454508, y: -0.9529504, z: -0.29109743}
+  - index: 142
+    triangles: aa010000
+    neighborIndices: 86000000880000008f000000
+    normal: {x: 0.21484709, y: -0.90317965, z: -0.37162787}
+  - index: 143
+    triangles: ad010000
+    neighborIndices: 8c0000008d0000008e000000
+    normal: {x: 0.18115106, y: -0.9403266, z: -0.2880457}
+  - index: 144
+    triangles: b0010000
+    neighborIndices: 9c00000093000000
+    normal: {x: 0.5516418, y: -0.83038676, z: -0.078416675}
+  - index: 145
+    triangles: b3010000
+    neighborIndices: b5000000a901000093000000
+    normal: {x: 0.5387619, y: -0.8095043, z: -0.23332061}
+  - index: 146
+    triangles: b6010000
+    neighborIndices: a80100009d00000093000000
+    normal: {x: 0.6398685, y: -0.751866, z: -0.15895271}
+  - index: 147
+    triangles: b9010000
+    neighborIndices: 900000009100000092000000
+    normal: {x: 0.58957857, y: -0.79167914, z: -0.16012906}
+  - index: 148
+    triangles: bc010000
+    neighborIndices: a601000097000000
+    normal: {x: 0.7283452, y: -0.6804602, z: -0.080542296}
+  - index: 149
+    triangles: bf010000
+    neighborIndices: a5010000d500000097000000
+    normal: {x: 0.8026721, y: -0.5964205, z: -0.0000008174414}
+  - index: 150
+    triangles: c2010000
+    neighborIndices: d400000097000000
+    normal: {x: 0.7283451, y: -0.68046045, z: 0.080541916}
+  - index: 151
+    triangles: c5010000
+    neighborIndices: 940000009500000096000000
+    normal: {x: 0.76891303, y: -0.6393533, z: -0.00000070806436}
+  - index: 152
+    triangles: c8010000
+    neighborIndices: 9e000000d20000009b000000
+    normal: {x: 0.63986826, y: -0.7518661, z: 0.15895262}
+  - index: 153
+    triangles: cb010000
+    neighborIndices: d1000000b90000009b000000
+    normal: {x: 0.5387618, y: -0.80950433, z: 0.23332047}
+  - index: 154
+    triangles: ce010000
+    neighborIndices: 9c0000009b000000
+    normal: {x: 0.5516414, y: -0.830387, z: 0.0784169}
+  - index: 155
+    triangles: d1010000
+    neighborIndices: 98000000990000009a000000
+    normal: {x: 0.5895782, y: -0.79167944, z: 0.16012906}
+  - index: 156
+    triangles: d4010000
+    neighborIndices: 900000009a0000009f000000
+    normal: {x: 0.59763527, y: -0.8017681, z: -0.00000029447875}
+  - index: 157
+    triangles: d7010000
+    neighborIndices: 920000009f000000
+    normal: {x: 0.6858517, y: -0.7232718, z: -0.08053121}
+  - index: 158
+    triangles: da010000
+    neighborIndices: 980000009f000000
+    normal: {x: 0.6858518, y: -0.7232718, z: 0.08053055}
+  - index: 159
+    triangles: dd010000
+    neighborIndices: 9c0000009d0000009e000000
+    normal: {x: 0.6472182, y: -0.7623048, z: -0.0000002799844}
+  - index: 160
+    triangles: e0010000
+    neighborIndices: ac000000ba000000a3000000
+    normal: {x: 0.30816704, y: -0.92338556, z: 0.22889322}
+  - index: 161
+    triangles: e3010000
+    neighborIndices: b9000000c9000000a3000000
+    normal: {x: 0.42702577, y: -0.8521836, z: 0.30237746}
+  - index: 162
+    triangles: e6010000
+    neighborIndices: c8000000ad000000a3000000
+    normal: {x: 0.30679822, y: -0.8790876, z: 0.3648011}
+  - index: 163
+    triangles: e9010000
+    neighborIndices: a0000000a1000000a2000000
+    normal: {x: 0.3431965, y: -0.8857886, z: 0.3124015}
+  - index: 164
+    triangles: ec010000
+    neighborIndices: ad000000c6000000a7000000
+    normal: {x: 0.18031898, y: -0.88978815, z: 0.41923997}
+  - index: 165
+    triangles: ef010000
+    neighborIndices: 65000000c5000000a7000000
+    normal: {x: 0.050171174, y: -0.88385046, z: 0.46507114}
+  - index: 166
+    triangles: f2010000
+    neighborIndices: 64000000ae000000a7000000
+    normal: {x: 0.050000258, y: -0.9395655, z: 0.33869848}
+  - index: 167
+    triangles: f5010000
+    neighborIndices: a4000000a5000000a6000000
+    normal: {x: 0.08207022, y: -0.9017046, z: 0.42449185}
+  - index: 168
+    triangles: f8010000
+    neighborIndices: 62000000ae000000ab000000
+    normal: {x: 0.04960784, y: -0.9773256, z: 0.2058486}
+  - index: 169
+    triangles: fb010000
+    neighborIndices: b1000000ab000000
+    normal: {x: 0.049505167, y: -0.9963836, z: 0.069056906}
+  - index: 170
+    triangles: fe010000
+    neighborIndices: b0000000ac000000ab000000
+    normal: {x: 0.18128543, y: -0.9718501, z: 0.15047596}
+  - index: 171
+    triangles: 01020000
+    neighborIndices: a8000000a9000000aa000000
+    normal: {x: 0.08410273, y: -0.98475367, z: 0.15227273}
+  - index: 172
+    triangles: 04020000
+    neighborIndices: a0000000aa000000af000000
+    normal: {x: 0.21620391, y: -0.9474615, z: 0.2357382}
+  - index: 173
+    triangles: 07020000
+    neighborIndices: a2000000a4000000af000000
+    normal: {x: 0.21484692, y: -0.9031798, z: 0.37162766}
+  - index: 174
+    triangles: 0a020000
+    neighborIndices: a6000000a8000000af000000
+    normal: {x: 0.08454556, y: -0.95295054, z: 0.29109678}
+  - index: 175
+    triangles: 0d020000
+    neighborIndices: ac000000ad000000ae000000
+    normal: {x: 0.18115105, y: -0.94032663, z: 0.28804523}
+  - index: 176
+    triangles: 10020000
+    neighborIndices: aa000000b3000000
+    normal: {x: 0.22378641, y: -0.9712309, z: 0.08142517}
+  - index: 177
+    triangles: 13020000
+    neighborIndices: 81000000a9000000b3000000
+    normal: {x: 0.09212554, y: -0.99574745, z: 0.00000041090587}
+  - index: 178
+    triangles: 16020000
+    neighborIndices: 80000000b3000000
+    normal: {x: 0.2237872, y: -0.97123075, z: -0.08142556}
+  - index: 179
+    triangles: 19020000
+    neighborIndices: b0000000b1000000b2000000
+    normal: {x: 0.17591651, y: -0.9844051, z: 0.0000004523409}
+  - index: 180
+    triangles: 1c020000
+    neighborIndices: 8a000000bd000000b7000000
+    normal: {x: 0.35058653, y: -0.92279756, z: -0.15979312}
+  - index: 181
+    triangles: 1f020000
+    neighborIndices: 8900000091000000b7000000
+    normal: {x: 0.46940517, y: -0.8516395, z: -0.23317155}
+  - index: 182
+    triangles: 22020000
+    neighborIndices: be000000b7000000
+    normal: {x: 0.4823367, y: -0.8724734, z: -0.078367345}
+  - index: 183
+    triangles: 25020000
+    neighborIndices: b4000000b5000000b6000000
+    normal: {x: 0.43784174, y: -0.8843583, z: -0.1618795}
+  - index: 184
+    triangles: 28020000
+    neighborIndices: be000000bb000000
+    normal: {x: 0.48233637, y: -0.87247354, z: 0.07836739}
+  - index: 185
+    triangles: 2b020000
+    neighborIndices: 99000000a1000000bb000000
+    normal: {x: 0.4694054, y: -0.8516394, z: 0.23317148}
+  - index: 186
+    triangles: 2e020000
+    neighborIndices: a0000000bc000000bb000000
+    normal: {x: 0.35058704, y: -0.9227974, z: 0.15979275}
+  - index: 187
+    triangles: 31020000
+    neighborIndices: b8000000b9000000ba000000
+    normal: {x: 0.43784177, y: -0.8843584, z: 0.16187896}
+  - index: 188
+    triangles: 34020000
+    neighborIndices: ba000000bf000000
+    normal: {x: 0.31133497, y: -0.9468069, z: 0.08140733}
+  - index: 189
+    triangles: 37020000
+    neighborIndices: b4000000bf000000
+    normal: {x: 0.3113346, y: -0.946807, z: -0.08140776}
+  - index: 190
+    triangles: 3a020000
+    neighborIndices: b6000000b8000000bf000000
+    normal: {x: 0.44305584, y: -0.89649403, z: 0.00000039722283}
+  - index: 191
+    triangles: 3d020000
+    neighborIndices: bc000000bd000000be000000
+    normal: {x: 0.35682154, y: -0.9341726, z: 0.00000024310145}
+  - index: 192
+    triangles: 40020000
+    neighborIndices: cc000000f2000000c3000000
+    normal: {x: 0.3717443, y: -0.663683, z: 0.64910024}
+  - index: 193
+    triangles: 43020000
+    neighborIndices: f1000000d9040000c3000000
+    normal: {x: 0.3134215, y: -0.56935775, z: 0.7599992}
+  - index: 194
+    triangles: 46020000
+    neighborIndices: d8040000cd000000c3000000
+    normal: {x: 0.23921876, y: -0.67052734, z: 0.70225877}
+  - index: 195
+    triangles: 49020000
+    neighborIndices: c0000000c1000000c2000000
+    normal: {x: 0.29620984, y: -0.64155674, z: 0.70757663}
+  - index: 196
+    triangles: 4c020000
+    neighborIndices: cd000000d6040000c7000000
+    normal: {x: 0.16144313, y: -0.7592465, z: 0.63046074}
+  - index: 197
+    triangles: 4f020000
+    neighborIndices: a5000000d5040000c7000000
+    normal: {x: 0.081178665, y: -0.83367926, z: 0.54624987}
+  - index: 198
+    triangles: 52020000
+    neighborIndices: a4000000ce000000c7000000
+    normal: {x: 0.21122076, y: -0.8397881, z: 0.5001418}
+  - index: 199
+    triangles: 55020000
+    neighborIndices: c4000000c5000000c6000000
+    normal: {x: 0.13279185, y: -0.81963444, z: 0.5572841}
+  - index: 200
+    triangles: 58020000
+    neighborIndices: a2000000ce000000cb000000
+    normal: {x: 0.33745712, y: -0.8294804, z: 0.44506726}
+  - index: 201
+    triangles: 5b020000
+    neighborIndices: a1000000f5000000cb000000
+    normal: {x: 0.45762178, y: -0.8026781, z: 0.3824789}
+  - index: 202
+    triangles: 5e020000
+    neighborIndices: f4000000cc000000cb000000
+    normal: {x: 0.4202094, y: -0.7420992, z: 0.5222192}
+  - index: 203
+    triangles: 61020000
+    neighborIndices: c8000000c9000000ca000000
+    normal: {x: 0.3951763, y: -0.80168563, z: 0.44848177}
+  - index: 204
+    triangles: 64020000
+    neighborIndices: c0000000ca000000cf000000
+    normal: {x: 0.3498267, y: -0.7312567, z: 0.58556384}
+  - index: 205
+    triangles: 67020000
+    neighborIndices: c2000000c4000000cf000000
+    normal: {x: 0.21732743, y: -0.73810375, z: 0.6387265}
+  - index: 206
+    triangles: 6a020000
+    neighborIndices: c6000000c8000000cf000000
+    normal: {x: 0.2670981, y: -0.81863475, z: 0.5084248}
+  - index: 207
+    triangles: 6d020000
+    neighborIndices: cc000000cd000000ce000000
+    normal: {x: 0.29310778, y: -0.7591758, z: 0.581154}
+  - index: 208
+    triangles: 70020000
+    neighborIndices: dc000000f6000000d3000000
+    normal: {x: 0.6636825, y: -0.64910096, z: 0.37174392}
+  - index: 209
+    triangles: 73020000
+    neighborIndices: 99000000f5000000d3000000
+    normal: {x: 0.5693578, y: -0.759999, z: 0.31342185}
+  - index: 210
+    triangles: 76020000
+    neighborIndices: 98000000dd000000d3000000
+    normal: {x: 0.6705273, y: -0.7022588, z: 0.23921894}
+  - index: 211
+    triangles: 79020000
+    neighborIndices: d0000000d1000000d2000000
+    normal: {x: 0.64155644, y: -0.7075767, z: 0.29621035}
+  - index: 212
+    triangles: 7c020000
+    neighborIndices: 96000000dd000000d7000000
+    normal: {x: 0.7592467, y: -0.6304605, z: 0.16144346}
+  - index: 213
+    triangles: 7f020000
+    neighborIndices: 9500000005010000d7000000
+    normal: {x: 0.8336797, y: -0.54624933, z: 0.081177935}
+  - index: 214
+    triangles: 82020000
+    neighborIndices: 04010000de000000d7000000
+    normal: {x: 0.8397881, y: -0.50014174, z: 0.21122056}
+  - index: 215
+    triangles: 85020000
+    neighborIndices: d4000000d5000000d6000000
+    normal: {x: 0.81963456, y: -0.557284, z: 0.13279238}
+  - index: 216
+    triangles: 88020000
+    neighborIndices: de00000002010000db000000
+    normal: {x: 0.8294803, y: -0.44506782, z: 0.33745688}
+  - index: 217
+    triangles: 8b020000
+    neighborIndices: 01010000f9000000db000000
+    normal: {x: 0.8026781, y: -0.3824786, z: 0.45762202}
+  - index: 218
+    triangles: 8e020000
+    neighborIndices: f8000000dc000000db000000
+    normal: {x: 0.74209976, y: -0.522219, z: 0.42020863}
+  - index: 219
+    triangles: 91020000
+    neighborIndices: d8000000d9000000da000000
+    normal: {x: 0.8016855, y: -0.44848233, z: 0.39517576}
+  - index: 220
+    triangles: 94020000
+    neighborIndices: d0000000da000000df000000
+    normal: {x: 0.73125726, y: -0.5855635, z: 0.34982598}
+  - index: 221
+    triangles: 97020000
+    neighborIndices: d2000000d4000000df000000
+    normal: {x: 0.73810405, y: -0.63872623, z: 0.2173275}
+  - index: 222
+    triangles: 9a020000
+    neighborIndices: d6000000d8000000df000000
+    normal: {x: 0.8186346, y: -0.5084248, z: 0.26709846}
+  - index: 223
+    triangles: 9d020000
+    neighborIndices: dc000000dd000000de000000
+    normal: {x: 0.7591759, y: -0.5811537, z: 0.293108}
+  - index: 224
+    triangles: a0020000
+    neighborIndices: ec000000fa000000e3000000
+    normal: {x: 0.64910096, y: -0.37174398, z: 0.6636824}
+  - index: 225
+    triangles: a3020000
+    neighborIndices: f900000029010000e3000000
+    normal: {x: 0.75999886, y: -0.31342205, z: 0.5693579}
+  - index: 226
+    triangles: a6020000
+    neighborIndices: 28010000ed000000e3000000
+    normal: {x: 0.7022587, y: -0.23921885, z: 0.67052746}
+  - index: 227
+    triangles: a9020000
+    neighborIndices: e0000000e1000000e2000000
+    normal: {x: 0.7075766, y: -0.29621047, z: 0.64155644}
+  - index: 228
+    triangles: ac020000
+    neighborIndices: ed00000026010000e7000000
+    normal: {x: 0.630461, y: -0.16144317, z: 0.7592463}
+  - index: 229
+    triangles: af020000
+    neighborIndices: 25010000e5040000e7000000
+    normal: {x: 0.5462498, y: -0.081178114, z: 0.83367926}
+  - index: 230
+    triangles: b2020000
+    neighborIndices: e4040000ee000000e7000000
+    normal: {x: 0.5001416, y: -0.21122062, z: 0.83978826}
+  - index: 231
+    triangles: b5020000
+    neighborIndices: e4000000e5000000e6000000
+    normal: {x: 0.55728424, y: -0.13279183, z: 0.8196345}
+  - index: 232
+    triangles: b8020000
+    neighborIndices: ee000000e2040000eb000000
+    normal: {x: 0.445068, y: -0.33745694, z: 0.8294801}
+  - index: 233
+    triangles: bb020000
+    neighborIndices: e1040000f1000000eb000000
+    normal: {x: 0.3824786, y: -0.45762205, z: 0.8026781}
+  - index: 234
+    triangles: be020000
+    neighborIndices: f0000000ec000000eb000000
+    normal: {x: 0.5222192, y: -0.42020854, z: 0.7420997}
+  - index: 235
+    triangles: c1020000
+    neighborIndices: e8000000e9000000ea000000
+    normal: {x: 0.44848245, y: -0.3951756, z: 0.8016855}
+  - index: 236
+    triangles: c4020000
+    neighborIndices: e0000000ea000000ef000000
+    normal: {x: 0.58556354, y: -0.349826, z: 0.7312572}
+  - index: 237
+    triangles: c7020000
+    neighborIndices: e2000000e4000000ef000000
+    normal: {x: 0.6387268, y: -0.21732764, z: 0.7381035}
+  - index: 238
+    triangles: ca020000
+    neighborIndices: e6000000e8000000ef000000
+    normal: {x: 0.5084247, y: -0.26709878, z: 0.8186345}
+  - index: 239
+    triangles: cd020000
+    neighborIndices: ec000000ed000000ee000000
+    normal: {x: 0.5811538, y: -0.29310843, z: 0.7591756}
+  - index: 240
+    triangles: d0020000
+    neighborIndices: ea000000fc000000f3000000
+    normal: {x: 0.52188647, y: -0.48889408, z: 0.6990115}
+  - index: 241
+    triangles: d3020000
+    neighborIndices: c1000000e9000000f3000000
+    normal: {x: 0.38223436, y: -0.52634174, z: 0.75951385}
+  - index: 242
+    triangles: d6020000
+    neighborIndices: c0000000fd000000f3000000
+    normal: {x: 0.44046074, y: -0.6206447, z: 0.64868677}
+  - index: 243
+    triangles: d9020000
+    neighborIndices: f0000000f1000000f2000000
+    normal: {x: 0.44651672, y: -0.54656315, z: 0.708443}
+  - index: 244
+    triangles: dc020000
+    neighborIndices: ca000000fd000000f7000000
+    normal: {x: 0.48889408, y: -0.6990115, z: 0.52188647}
+  - index: 245
+    triangles: df020000
+    neighborIndices: c9000000d1000000f7000000
+    normal: {x: 0.52634186, y: -0.7595136, z: 0.38223463}
+  - index: 246
+    triangles: e2020000
+    neighborIndices: d0000000fe000000f7000000
+    normal: {x: 0.6206439, y: -0.6486874, z: 0.44046092}
+  - index: 247
+    triangles: e5020000
+    neighborIndices: f4000000f5000000f6000000
+    normal: {x: 0.5465631, y: -0.70844305, z: 0.44651672}
+  - index: 248
+    triangles: e8020000
+    neighborIndices: da000000fe000000fb000000
+    normal: {x: 0.69901145, y: -0.5218863, z: 0.48889425}
+  - index: 249
+    triangles: eb020000
+    neighborIndices: d9000000e1000000fb000000
+    normal: {x: 0.7595135, y: -0.38223436, z: 0.5263423}
+  - index: 250
+    triangles: ee020000
+    neighborIndices: e0000000fc000000fb000000
+    normal: {x: 0.6486875, y: -0.44046053, z: 0.6206441}
+  - index: 251
+    triangles: f1020000
+    neighborIndices: f8000000f9000000fa000000
+    normal: {x: 0.7084429, y: -0.44651642, z: 0.54656345}
+  - index: 252
+    triangles: f4020000
+    neighborIndices: f0000000fa000000ff000000
+    normal: {x: 0.58515894, y: -0.5037506, z: 0.6354717}
+  - index: 253
+    triangles: f7020000
+    neighborIndices: f2000000f4000000ff000000
+    normal: {x: 0.50375056, y: -0.63547224, z: 0.58515847}
+  - index: 254
+    triangles: fa020000
+    neighborIndices: f6000000f8000000ff000000
+    normal: {x: 0.6354715, y: -0.58515894, z: 0.5037509}
+  - index: 255
+    triangles: fd020000
+    neighborIndices: fc000000fd000000fe000000
+    normal: {x: 0.5773504, y: -0.5773505, z: 0.5773499}
+  - index: 256
+    triangles: 00030000
+    neighborIndices: 0c0100003201000003010000
+    normal: {x: 0.92338574, y: -0.22889301, z: 0.30816686}
+  - index: 257
+    triangles: 03030000
+    neighborIndices: d90000003101000003010000
+    normal: {x: 0.8521835, y: -0.30237725, z: 0.42702603}
+  - index: 258
+    triangles: 06030000
+    neighborIndices: d80000000d01000003010000
+    normal: {x: 0.8790876, y: -0.36480144, z: 0.30679786}
+  - index: 259
+    triangles: 09030000
+    neighborIndices: 000100000101000002010000
+    normal: {x: 0.8857887, y: -0.3124013, z: 0.34319645}
+  - index: 260
+    triangles: 0c030000
+    neighborIndices: d60000000d01000007010000
+    normal: {x: 0.889788, y: -0.4192403, z: 0.18031895}
+  - index: 261
+    triangles: 0f030000
+    neighborIndices: d50000006501000007010000
+    normal: {x: 0.8838499, y: -0.4650722, z: 0.05017107}
+  - index: 262
+    triangles: 12030000
+    neighborIndices: 640100000e01000007010000
+    normal: {x: 0.93956566, y: -0.3386981, z: 0.050000325}
+  - index: 263
+    triangles: 15030000
+    neighborIndices: 040100000501000006010000
+    normal: {x: 0.90170443, y: -0.42449206, z: 0.08207081}
+  - index: 264
+    triangles: 18030000
+    neighborIndices: 0e010000620100000b010000
+    normal: {x: 0.9773256, y: -0.2058487, z: 0.04960799}
+  - index: 265
+    triangles: 1b030000
+    neighborIndices: 350100000b010000
+    normal: {x: 0.9963836, y: -0.069056794, z: 0.04950523}
+  - index: 266
+    triangles: 1e030000
+    neighborIndices: 340100000c0100000b010000
+    normal: {x: 0.9718501, y: -0.15047589, z: 0.18128549}
+  - index: 267
+    triangles: 21030000
+    neighborIndices: 08010000090100000a010000
+    normal: {x: 0.98475367, y: -0.15227264, z: 0.08410295}
+  - index: 268
+    triangles: 24030000
+    neighborIndices: 000100000a0100000f010000
+    normal: {x: 0.94746166, y: -0.23573795, z: 0.21620391}
+  - index: 269
+    triangles: 27030000
+    neighborIndices: 02010000040100000f010000
+    normal: {x: 0.9031797, y: -0.37162796, z: 0.21484694}
+  - index: 270
+    triangles: 2a030000
+    neighborIndices: 06010000080100000f010000
+    normal: {x: 0.9529506, y: -0.29109648, z: 0.08454559}
+  - index: 271
+    triangles: 2d030000
+    neighborIndices: 0c0100000d0100000e010000
+    normal: {x: 0.94032675, y: -0.288045, z: 0.18115097}
+  - index: 272
+    triangles: 30030000
+    neighborIndices: 1c0100003601000013010000
+    normal: {x: 0.97184986, y: 0.15047628, z: 0.18128625}
+  - index: 273
+    triangles: 33030000
+    neighborIndices: 3501000013010000
+    normal: {x: 0.9963837, y: 0.06905686, z: 0.049504668}
+  - index: 274
+    triangles: 36030000
+    neighborIndices: 580100001d01000013010000
+    normal: {x: 0.9773257, y: 0.2058486, z: 0.049607355}
+  - index: 275
+    triangles: 39030000
+    neighborIndices: 100100001101000012010000
+    normal: {x: 0.98475367, y: 0.15227284, z: 0.08410228}
+  - index: 276
+    triangles: 3c030000
+    neighborIndices: 1d0100005601000017010000
+    normal: {x: 0.93956554, y: 0.3386985, z: 0.04999962}
+  - index: 277
+    triangles: 3f030000
+    neighborIndices: 55010000c502000017010000
+    normal: {x: 0.88385046, y: 0.46507114, z: 0.050170675}
+  - index: 278
+    triangles: 42030000
+    neighborIndices: c40200001e01000017010000
+    normal: {x: 0.8897879, y: 0.41924044, z: 0.18031901}
+  - index: 279
+    triangles: 45030000
+    neighborIndices: 140100001501000016010000
+    normal: {x: 0.9017045, y: 0.42449215, z: 0.082069635}
+  - index: 280
+    triangles: 48030000
+    neighborIndices: 1e010000c20200001b010000
+    normal: {x: 0.8790876, y: 0.36480132, z: 0.30679777}
+  - index: 281
+    triangles: 4b030000
+    neighborIndices: c1020000390100001b010000
+    normal: {x: 0.8521837, y: 0.30237693, z: 0.4270259}
+  - index: 282
+    triangles: 4e030000
+    neighborIndices: 380100001c0100001b010000
+    normal: {x: 0.92338574, y: 0.22889227, z: 0.30816743}
+  - index: 283
+    triangles: 51030000
+    neighborIndices: 18010000190100001a010000
+    normal: {x: 0.88578874, y: 0.3124008, z: 0.34319684}
+  - index: 284
+    triangles: 54030000
+    neighborIndices: 100100001a0100001f010000
+    normal: {x: 0.9474617, y: 0.23573725, z: 0.2162042}
+  - index: 285
+    triangles: 57030000
+    neighborIndices: 12010000140100001f010000
+    normal: {x: 0.9529506, y: 0.29109666, z: 0.084545046}
+  - index: 286
+    triangles: 5a030000
+    neighborIndices: 16010000180100001f010000
+    normal: {x: 0.9031796, y: 0.37162778, z: 0.21484722}
+  - index: 287
+    triangles: 5d030000
+    neighborIndices: 1c0100001d0100001e010000
+    normal: {x: 0.94032675, y: 0.288045, z: 0.18115103}
+  - index: 288
+    triangles: 60030000
+    neighborIndices: 2c01000023010000
+    normal: {x: 0.830387, y: 0.078417264, z: 0.55164135}
+  - index: 289
+    triangles: 63030000
+    neighborIndices: 39010000e902000023010000
+    normal: {x: 0.8095046, y: 0.23331988, z: 0.5387616}
+  - index: 290
+    triangles: 66030000
+    neighborIndices: e80200002d01000023010000
+    normal: {x: 0.7518661, y: 0.15895241, z: 0.6398684}
+  - index: 291
+    triangles: 69030000
+    neighborIndices: 200100002101000022010000
+    normal: {x: 0.7916797, y: 0.16012877, z: 0.58957785}
+  - index: 292
+    triangles: 6c030000
+    neighborIndices: e602000027010000
+    normal: {x: 0.6804611, y: 0.0805413, z: 0.72834456}
+  - index: 293
+    triangles: 6f030000
+    neighborIndices: e5000000e502000027010000
+    normal: {x: 0.59642065, y: 0, z: 0.802672}
+  - index: 294
+    triangles: 72030000
+    neighborIndices: e400000027010000
+    normal: {x: 0.68046105, y: -0.0805413, z: 0.72834456}
+  - index: 295
+    triangles: 75030000
+    neighborIndices: 240100002501000026010000
+    normal: {x: 0.63935447, y: 0, z: 0.76891214}
+  - index: 296
+    triangles: 78030000
+    neighborIndices: e20000002e0100002b010000
+    normal: {x: 0.7518663, y: -0.15895215, z: 0.63986826}
+  - index: 297
+    triangles: 7b030000
+    neighborIndices: e1000000310100002b010000
+    normal: {x: 0.8095048, y: -0.23331958, z: 0.53876144}
+  - index: 298
+    triangles: 7e030000
+    neighborIndices: 2c0100002b010000
+    normal: {x: 0.83038676, y: -0.07841742, z: 0.5516416}
+  - index: 299
+    triangles: 81030000
+    neighborIndices: 28010000290100002a010000
+    normal: {x: 0.7916798, y: -0.16012849, z: 0.5895778}
+  - index: 300
+    triangles: 84030000
+    neighborIndices: 200100002a0100002f010000
+    normal: {x: 0.8017679, y: -0.0000002944786, z: 0.5976355}
+  - index: 301
+    triangles: 87030000
+    neighborIndices: 220100002f010000
+    normal: {x: 0.72327185, y: 0.080530606, z: 0.68585175}
+  - index: 302
+    triangles: 8a030000
+    neighborIndices: 280100002f010000
+    normal: {x: 0.7232721, y: -0.0805306, z: 0.6858515}
+  - index: 303
+    triangles: 8d030000
+    neighborIndices: 2c0100002d0100002e010000
+    normal: {x: 0.7623048, y: -0.00000027998436, z: 0.64721817}
+  - index: 304
+    triangles: 90030000
+    neighborIndices: 3c01000033010000
+    normal: {x: 0.8724733, y: -0.07836747, z: 0.48233688}
+  - index: 305
+    triangles: 93030000
+    neighborIndices: 010100002901000033010000
+    normal: {x: 0.8516393, y: -0.23317057, z: 0.46940604}
+  - index: 306
+    triangles: 96030000
+    neighborIndices: 000100003d01000033010000
+    normal: {x: 0.92279744, y: -0.15979226, z: 0.350587}
+  - index: 307
+    triangles: 99030000
+    neighborIndices: 300100003101000032010000
+    normal: {x: 0.88435805, y: -0.16187857, z: 0.43784267}
+  - index: 308
+    triangles: 9c030000
+    neighborIndices: 0a01000037010000
+    normal: {x: 0.971231, y: -0.08142519, z: 0.22378641}
+  - index: 309
+    triangles: 9f030000
+    neighborIndices: 090100001101000037010000
+    normal: {x: 0.99574745, y: -0.00000042759768, z: 0.092125565}
+  - index: 310
+    triangles: a2030000
+    neighborIndices: 1001000037010000
+    normal: {x: 0.97123075, y: 0.08142552, z: 0.22378722}
+  - index: 311
+    triangles: a5030000
+    neighborIndices: 340100003501000036010000
+    normal: {x: 0.9844051, y: -0.0000004842144, z: 0.17591652}
+  - index: 312
+    triangles: a8030000
+    neighborIndices: 1a0100003e0100003b010000
+    normal: {x: 0.92279744, y: 0.15979224, z: 0.35058716}
+  - index: 313
+    triangles: ab030000
+    neighborIndices: 19010000210100003b010000
+    normal: {x: 0.85163945, y: 0.2331709, z: 0.46940547}
+  - index: 314
+    triangles: ae030000
+    neighborIndices: 3c0100003b010000
+    normal: {x: 0.87247354, y: 0.07836725, z: 0.48233652}
+  - index: 315
+    triangles: b1030000
+    neighborIndices: 38010000390100003a010000
+    normal: {x: 0.8843584, y: 0.16187856, z: 0.43784192}
+  - index: 316
+    triangles: b4030000
+    neighborIndices: 300100003a0100003f010000
+    normal: {x: 0.8964939, y: 0.00000024810575, z: 0.443056}
+  - index: 317
+    triangles: b7030000
+    neighborIndices: 320100003f010000
+    normal: {x: 0.9468068, y: -0.08140739, z: 0.31133527}
+  - index: 318
+    triangles: ba030000
+    neighborIndices: 380100003f010000
+    normal: {x: 0.94680667, y: 0.08140767, z: 0.3113356}
+  - index: 319
+    triangles: bd030000
+    neighborIndices: 3c0100003d0100003e010000
+    normal: {x: 0.93417233, y: 0.0000003534307, z: 0.3568222}
+  - index: 320
+    triangles: c0030000
+    neighborIndices: 4c01000043010000
+    normal: {x: 0.8303868, y: -0.07841758, z: -0.55164146}
+  - index: 321
+    triangles: c3030000
+    neighborIndices: 710100009901000043010000
+    normal: {x: 0.8095045, y: -0.23332013, z: -0.5387617}
+  - index: 322
+    triangles: c6030000
+    neighborIndices: 980100004d01000043010000
+    normal: {x: 0.751866, y: -0.15895268, z: -0.6398685}
+  - index: 323
+    triangles: c9030000
+    neighborIndices: 400100004101000042010000
+    normal: {x: 0.79167956, y: -0.16012906, z: -0.5895779}
+  - index: 324
+    triangles: cc030000
+    neighborIndices: 9601000047010000
+    normal: {x: 0.6804611, y: -0.080541365, z: -0.7283446}
+  - index: 325
+    triangles: cf030000
+    neighborIndices: 950100004502000047010000
+    normal: {x: 0.5964203, y: -0.0000006658308, z: -0.8026723}
+  - index: 326
+    triangles: d2030000
+    neighborIndices: 4402000047010000
+    normal: {x: 0.6804614, y: 0.080540776, z: -0.7283443}
+  - index: 327
+    triangles: d5030000
+    neighborIndices: 440100004501000046010000
+    normal: {x: 0.63935477, y: -0.00000061282606, z: -0.76891196}
+  - index: 328
+    triangles: d8030000
+    neighborIndices: 4e010000420200004b010000
+    normal: {x: 0.7518664, y: 0.15895273, z: -0.63986796}
+  - index: 329
+    triangles: db030000
+    neighborIndices: 41020000750100004b010000
+    normal: {x: 0.8095042, y: 0.23332044, z: -0.538762}
+  - index: 330
+    triangles: de030000
+    neighborIndices: 4c0100004b010000
+    normal: {x: 0.83038664, y: 0.078417204, z: -0.5516419}
+  - index: 331
+    triangles: e1030000
+    neighborIndices: 48010000490100004a010000
+    normal: {x: 0.7916792, y: 0.16012904, z: -0.58957845}
+  - index: 332
+    triangles: e4030000
+    neighborIndices: 400100004a0100004f010000
+    normal: {x: 0.80176777, y: 0.00000007497499, z: -0.59763575}
+  - index: 333
+    triangles: e7030000
+    neighborIndices: 420100004f010000
+    normal: {x: 0.7232716, y: -0.08053059, z: -0.685852}
+  - index: 334
+    triangles: ea030000
+    neighborIndices: 480100004f010000
+    normal: {x: 0.72327185, y: 0.08053012, z: -0.6858518}
+  - index: 335
+    triangles: ed030000
+    neighborIndices: 4c0100004d0100004e010000
+    normal: {x: 0.7623044, y: 0.000000042269477, z: -0.64721864}
+  - index: 336
+    triangles: f0030000
+    neighborIndices: 5c0100007601000053010000
+    normal: {x: 0.92338556, y: 0.22889312, z: -0.30816707}
+  - index: 337
+    triangles: f3030000
+    neighborIndices: 750100006902000053010000
+    normal: {x: 0.8521836, y: 0.30237746, z: -0.42702577}
+  - index: 338
+    triangles: f6030000
+    neighborIndices: 680200005d01000053010000
+    normal: {x: 0.87908757, y: 0.3648012, z: -0.3067983}
+  - index: 339
+    triangles: f9030000
+    neighborIndices: 500100005101000052010000
+    normal: {x: 0.88578856, y: 0.31240147, z: -0.34319666}
+  - index: 340
+    triangles: fc030000
+    neighborIndices: 5d0100006602000057010000
+    normal: {x: 0.88978815, y: 0.41923988, z: -0.18031894}
+  - index: 341
+    triangles: ff030000
+    neighborIndices: 150100006502000057010000
+    normal: {x: 0.8838505, y: 0.46507114, z: -0.05017117}
+  - index: 342
+    triangles: 02040000
+    neighborIndices: 140100005e01000057010000
+    normal: {x: 0.9395655, y: 0.33869848, z: -0.050000336}
+  - index: 343
+    triangles: 05040000
+    neighborIndices: 540100005501000056010000
+    normal: {x: 0.9017046, y: 0.4244918, z: -0.08207028}
+  - index: 344
+    triangles: 08040000
+    neighborIndices: 120100005e0100005b010000
+    normal: {x: 0.9773256, y: 0.2058486, z: -0.049607396}
+  - index: 345
+    triangles: 0b040000
+    neighborIndices: 790100005b010000
+    normal: {x: 0.9963836, y: 0.069056906, z: -0.049505167}
+  - index: 346
+    triangles: 0e040000
+    neighborIndices: 780100005c0100005b010000
+    normal: {x: 0.9718501, y: 0.15047555, z: -0.1812857}
+  - index: 347
+    triangles: 11040000
+    neighborIndices: 58010000590100005a010000
+    normal: {x: 0.9847538, y: 0.15227231, z: -0.08410256}
+  - index: 348
+    triangles: 14040000
+    neighborIndices: 500100005a0100005f010000
+    normal: {x: 0.9474615, y: 0.23573808, z: -0.21620429}
+  - index: 349
+    triangles: 17040000
+    neighborIndices: 52010000540100005f010000
+    normal: {x: 0.9031798, y: 0.37162775, z: -0.21484675}
+  - index: 350
+    triangles: 1a040000
+    neighborIndices: 56010000580100005f010000
+    normal: {x: 0.9529505, y: 0.29109722, z: -0.084545314}
+  - index: 351
+    triangles: 1d040000
+    neighborIndices: 5c0100005d0100005e010000
+    normal: {x: 0.9403265, y: 0.28804567, z: -0.18115106}
+  - index: 352
+    triangles: 20040000
+    neighborIndices: 6c0100007a01000063010000
+    normal: {x: 0.97184986, y: -0.15047577, z: -0.18128656}
+  - index: 353
+    triangles: 23040000
+    neighborIndices: 7901000063010000
+    normal: {x: 0.9963837, y: -0.06905675, z: -0.049504735}
+  - index: 354
+    triangles: 26040000
+    neighborIndices: 080100006d01000063010000
+    normal: {x: 0.9773257, y: -0.20584871, z: -0.049607057}
+  - index: 355
+    triangles: 29040000
+    neighborIndices: 600100006101000062010000
+    normal: {x: 0.9847538, y: -0.15227233, z: -0.084102325}
+  - index: 356
+    triangles: 2c040000
+    neighborIndices: 060100006d01000067010000
+    normal: {x: 0.9395656, y: -0.33869806, z: -0.05000046}
+  - index: 357
+    triangles: 2f040000
+    neighborIndices: 05010000a501000067010000
+    normal: {x: 0.8838499, y: -0.4650722, z: -0.05017107}
+  - index: 358
+    triangles: 32040000
+    neighborIndices: a40100006e01000067010000
+    normal: {x: 0.889788, y: -0.41924036, z: -0.18031897}
+  - index: 359
+    triangles: 35040000
+    neighborIndices: 640100006501000066010000
+    normal: {x: 0.90170443, y: -0.42449206, z: -0.082070835}
+  - index: 360
+    triangles: 38040000
+    neighborIndices: 6e010000a20100006b010000
+    normal: {x: 0.8790876, y: -0.36480132, z: -0.30679777}
+  - index: 361
+    triangles: 3b040000
+    neighborIndices: a1010000710100006b010000
+    normal: {x: 0.8521837, y: -0.30237693, z: -0.4270259}
+  - index: 362
+    triangles: 3e040000
+    neighborIndices: 700100006c0100006b010000
+    normal: {x: 0.92338574, y: -0.22889227, z: -0.30816743}
+  - index: 363
+    triangles: 41040000
+    neighborIndices: 68010000690100006a010000
+    normal: {x: 0.88578874, y: -0.3124008, z: -0.34319684}
+  - index: 364
+    triangles: 44040000
+    neighborIndices: 600100006a0100006f010000
+    normal: {x: 0.9474616, y: -0.23573723, z: -0.21620476}
+  - index: 365
+    triangles: 47040000
+    neighborIndices: 62010000640100006f010000
+    normal: {x: 0.9529504, y: -0.2910974, z: -0.08454506}
+  - index: 366
+    triangles: 4a040000
+    neighborIndices: 66010000680100006f010000
+    normal: {x: 0.9031797, y: -0.3716278, z: -0.21484712}
+  - index: 367
+    triangles: 4d040000
+    neighborIndices: 6c0100006d0100006e010000
+    normal: {x: 0.9403265, y: -0.28804564, z: -0.18115112}
+  - index: 368
+    triangles: 50040000
+    neighborIndices: 6a0100007c01000073010000
+    normal: {x: 0.92279744, y: -0.159793, z: -0.3505867}
+  - index: 369
+    triangles: 53040000
+    neighborIndices: 410100006901000073010000
+    normal: {x: 0.8516395, y: -0.23317118, z: -0.46940532}
+  - index: 370
+    triangles: 56040000
+    neighborIndices: 7d01000073010000
+    normal: {x: 0.87247336, y: -0.07836766, z: -0.48233667}
+  - index: 371
+    triangles: 59040000
+    neighborIndices: 700100007101000072010000
+    normal: {x: 0.8843583, y: -0.16187932, z: -0.43784198}
+  - index: 372
+    triangles: 5c040000
+    neighborIndices: 7d01000077010000
+    normal: {x: 0.8724735, y: 0.07836721, z: -0.48233658}
+  - index: 373
+    triangles: 5f040000
+    neighborIndices: 490100005101000077010000
+    normal: {x: 0.8516394, y: 0.23317148, z: -0.4694054}
+  - index: 374
+    triangles: 62040000
+    neighborIndices: 500100007e01000077010000
+    normal: {x: 0.92279744, y: 0.15979284, z: -0.35058695}
+  - index: 375
+    triangles: 65040000
+    neighborIndices: 740100007501000076010000
+    normal: {x: 0.8843583, y: 0.16187908, z: -0.43784183}
+  - index: 376
+    triangles: 68040000
+    neighborIndices: 5a0100007b010000
+    normal: {x: 0.971231, y: 0.08142548, z: -0.22378622}
+  - index: 377
+    triangles: 6b040000
+    neighborIndices: 59010000610100007b010000
+    normal: {x: 0.99574745, y: 0.00000041090587, z: -0.09212554}
+  - index: 378
+    triangles: 6e040000
+    neighborIndices: 600100007b010000
+    normal: {x: 0.97123075, y: -0.081425965, z: -0.22378698}
+  - index: 379
+    triangles: 71040000
+    neighborIndices: 78010000790100007a010000
+    normal: {x: 0.9844052, y: 0.00000045234071, z: -0.17591608}
+  - index: 380
+    triangles: 74040000
+    neighborIndices: 700100007f010000
+    normal: {x: 0.94680685, y: -0.08140806, z: -0.31133497}
+  - index: 381
+    triangles: 77040000
+    neighborIndices: 72010000740100007f010000
+    normal: {x: 0.896494, y: -0.000000083954795, z: -0.4430559}
+  - index: 382
+    triangles: 7a040000
+    neighborIndices: 760100007f010000
+    normal: {x: 0.94680685, y: 0.081407726, z: -0.3113351}
+  - index: 383
+    triangles: 7d040000
+    neighborIndices: 7c0100007d0100007e010000
+    normal: {x: 0.9341724, y: -0.0000001444218, z: -0.356822}
+  - index: 384
+    triangles: 80040000
+    neighborIndices: 8c010000b201000083010000
+    normal: {x: 0.42020866, y: -0.7420996, z: -0.5222192}
+  - index: 385
+    triangles: 83040000
+    neighborIndices: 89000000b101000083010000
+    normal: {x: 0.4576221, y: -0.80267805, z: -0.38247877}
+  - index: 386
+    triangles: 86040000
+    neighborIndices: 880000008d01000083010000
+    normal: {x: 0.3374569, y: -0.8294801, z: -0.44506797}
+  - index: 387
+    triangles: 89040000
+    neighborIndices: 800100008101000082010000
+    normal: {x: 0.39517578, y: -0.80168545, z: -0.4484825}
+  - index: 388
+    triangles: 8c040000
+    neighborIndices: 860000008d01000087010000
+    normal: {x: 0.21122085, y: -0.8397878, z: -0.5001422}
+  - index: 389
+    triangles: 8f040000
+    neighborIndices: 85000000e501000087010000
+    normal: {x: 0.08117788, y: -0.83367974, z: -0.5462492}
+  - index: 390
+    triangles: 92040000
+    neighborIndices: e40100008e01000087010000
+    normal: {x: 0.16144422, y: -0.75924677, z: -0.6304603}
+  - index: 391
+    triangles: 95040000
+    neighborIndices: 840100008501000086010000
+    normal: {x: 0.13279319, y: -0.81963444, z: -0.557284}
+  - index: 392
+    triangles: 98040000
+    neighborIndices: 8e010000e20100008b010000
+    normal: {x: 0.23921987, y: -0.6705273, z: -0.7022585}
+  - index: 393
+    triangles: 9b040000
+    neighborIndices: e1010000b50100008b010000
+    normal: {x: 0.3134217, y: -0.56935793, z: -0.759999}
+  - index: 394
+    triangles: 9e040000
+    neighborIndices: b40100008c0100008b010000
+    normal: {x: 0.3717434, y: -0.66368306, z: -0.6491007}
+  - index: 395
+    triangles: a1040000
+    neighborIndices: 88010000890100008a010000
+    normal: {x: 0.29620996, y: -0.64155716, z: -0.7075763}
+  - index: 396
+    triangles: a4040000
+    neighborIndices: 800100008a0100008f010000
+    normal: {x: 0.34982574, y: -0.731257, z: -0.5855639}
+  - index: 397
+    triangles: a7040000
+    neighborIndices: 82010000840100008f010000
+    normal: {x: 0.26709816, y: -0.81863445, z: -0.5084252}
+  - index: 398
+    triangles: aa040000
+    neighborIndices: 86010000880100008f010000
+    normal: {x: 0.2173285, y: -0.73810387, z: -0.63872606}
+  - index: 399
+    triangles: ad040000
+    neighborIndices: 8c0100008d0100008e010000
+    normal: {x: 0.29310787, y: -0.7591756, z: -0.5811542}
+  - index: 400
+    triangles: b0040000
+    neighborIndices: 9c010000b601000093010000
+    normal: {x: 0.52221984, y: -0.42020804, z: -0.7420995}
+  - index: 401
+    triangles: b3040000
+    neighborIndices: b5010000d901000093010000
+    normal: {x: 0.38247806, y: -0.45762184, z: -0.80267847}
+  - index: 402
+    triangles: b6040000
+    neighborIndices: d80100009d01000093010000
+    normal: {x: 0.44506776, y: -0.33745688, z: -0.8294803}
+  - index: 403
+    triangles: b9040000
+    neighborIndices: 900100009101000092010000
+    normal: {x: 0.44848225, y: -0.395175, z: -0.8016859}
+  - index: 404
+    triangles: bc040000
+    neighborIndices: 9d010000d601000097010000
+    normal: {x: 0.5001421, y: -0.21122088, z: -0.8397879}
+  - index: 405
+    triangles: bf040000
+    neighborIndices: 45010000d501000097010000
+    normal: {x: 0.54624957, y: -0.08117855, z: -0.8336795}
+  - index: 406
+    triangles: c2040000
+    neighborIndices: 440100009e01000097010000
+    normal: {x: 0.6304607, y: -0.16144374, z: -0.7592465}
+  - index: 407
+    triangles: c5040000
+    neighborIndices: 940100009501000096010000
+    normal: {x: 0.55728406, y: -0.13279253, z: -0.81963444}
+  - index: 408
+    triangles: c8040000
+    neighborIndices: 420100009e0100009b010000
+    normal: {x: 0.70225865, y: -0.2392189, z: -0.67052746}
+  - index: 409
+    triangles: cb040000
+    neighborIndices: 41010000b90100009b010000
+    normal: {x: 0.759999, y: -0.31342185, z: -0.5693578}
+  - index: 410
+    triangles: ce040000
+    neighborIndices: b80100009c0100009b010000
+    normal: {x: 0.64910066, y: -0.37174428, z: -0.6636825}
+  - index: 411
+    triangles: d1040000
+    neighborIndices: 98010000990100009a010000
+    normal: {x: 0.7075765, y: -0.29621023, z: -0.6415566}
+  - index: 412
+    triangles: d4040000
+    neighborIndices: 900100009a0100009f010000
+    normal: {x: 0.58556336, y: -0.34982637, z: -0.73125714}
+  - index: 413
+    triangles: d7040000
+    neighborIndices: 92010000940100009f010000
+    normal: {x: 0.50842506, y: -0.2670981, z: -0.8186346}
+  - index: 414
+    triangles: da040000
+    neighborIndices: 96010000980100009f010000
+    normal: {x: 0.6387263, y: -0.21732758, z: -0.7381039}
+  - index: 415
+    triangles: dd040000
+    neighborIndices: 9c0100009d0100009e010000
+    normal: {x: 0.5811537, y: -0.29310778, z: -0.75917596}
+  - index: 416
+    triangles: e0040000
+    neighborIndices: ac010000ba010000a3010000
+    normal: {x: 0.7420995, y: -0.5222199, z: -0.42020798}
+  - index: 417
+    triangles: e3040000
+    neighborIndices: 69010000b9010000a3010000
+    normal: {x: 0.80267847, y: -0.38247812, z: -0.4576218}
+  - index: 418
+    triangles: e6040000
+    neighborIndices: 68010000ad010000a3010000
+    normal: {x: 0.82948023, y: -0.44506788, z: -0.33745688}
+  - index: 419
+    triangles: e9040000
+    neighborIndices: a0010000a1010000a2010000
+    normal: {x: 0.80168587, y: -0.44848233, z: -0.39517498}
+  - index: 420
+    triangles: ec040000
+    neighborIndices: 66010000ad010000a7010000
+    normal: {x: 0.8397877, y: -0.5001423, z: -0.21122077}
+  - index: 421
+    triangles: ef040000
+    neighborIndices: 9500000065010000a7010000
+    normal: {x: 0.83367914, y: -0.54625016, z: -0.08117824}
+  - index: 422
+    triangles: f2040000
+    neighborIndices: 94000000ae010000a7010000
+    normal: {x: 0.7592466, y: -0.6304606, z: -0.16144325}
+  - index: 423
+    triangles: f5040000
+    neighborIndices: a4010000a5010000a6010000
+    normal: {x: 0.81963414, y: -0.55728453, z: -0.13279228}
+  - index: 424
+    triangles: f8040000
+    neighborIndices: 92000000ae010000ab010000
+    normal: {x: 0.67052734, y: -0.7022589, z: -0.23921861}
+  - index: 425
+    triangles: fb040000
+    neighborIndices: 91000000b1010000ab010000
+    normal: {x: 0.5693578, y: -0.7599989, z: -0.3134218}
+  - index: 426
+    triangles: fe040000
+    neighborIndices: b0010000ac010000ab010000
+    normal: {x: 0.66368234, y: -0.64910066, z: -0.37174454}
+  - index: 427
+    triangles: 01050000
+    neighborIndices: a8010000a9010000aa010000
+    normal: {x: 0.6415564, y: -0.7075768, z: -0.2962103}
+  - index: 428
+    triangles: 04050000
+    neighborIndices: a0010000aa010000af010000
+    normal: {x: 0.73125714, y: -0.5855633, z: -0.34982663}
+  - index: 429
+    triangles: 07050000
+    neighborIndices: a2010000a4010000af010000
+    normal: {x: 0.8186345, y: -0.50842524, z: -0.26709798}
+  - index: 430
+    triangles: 0a050000
+    neighborIndices: a6010000a8010000af010000
+    normal: {x: 0.73810405, y: -0.6387264, z: -0.21732718}
+  - index: 431
+    triangles: 0d050000
+    neighborIndices: ac010000ad010000ae010000
+    normal: {x: 0.7591762, y: -0.5811536, z: -0.29310766}
+  - index: 432
+    triangles: 10050000
+    neighborIndices: aa010000bc010000b3010000
+    normal: {x: 0.6206436, y: -0.6486871, z: -0.44046164}
+  - index: 433
+    triangles: 13050000
+    neighborIndices: 81010000a9010000b3010000
+    normal: {x: 0.526342, y: -0.7595136, z: -0.38223454}
+  - index: 434
+    triangles: 16050000
+    neighborIndices: 80010000bd010000b3010000
+    normal: {x: 0.48889503, y: -0.6990109, z: -0.52188647}
+  - index: 435
+    triangles: 19050000
+    neighborIndices: b0010000b1010000b2010000
+    normal: {x: 0.54656345, y: -0.7084423, z: -0.4465175}
+  - index: 436
+    triangles: 1c050000
+    neighborIndices: 8a010000bd010000b7010000
+    normal: {x: 0.4404608, y: -0.6206442, z: -0.6486872}
+  - index: 437
+    triangles: 1f050000
+    neighborIndices: 8901000091010000b7010000
+    normal: {x: 0.3822338, y: -0.5263424, z: -0.7595137}
+  - index: 438
+    triangles: 22050000
+    neighborIndices: 90010000be010000b7010000
+    normal: {x: 0.5218871, y: -0.48889434, z: -0.69901085}
+  - index: 439
+    triangles: 25050000
+    neighborIndices: b4010000b5010000b6010000
+    normal: {x: 0.44651663, y: -0.5465639, z: -0.70844245}
+  - index: 440
+    triangles: 28050000
+    neighborIndices: 9a010000be010000bb010000
+    normal: {x: 0.6486871, y: -0.4404613, z: -0.62064385}
+  - index: 441
+    triangles: 2b050000
+    neighborIndices: 99010000a1010000bb010000
+    normal: {x: 0.7595136, y: -0.38223383, z: -0.52634233}
+  - index: 442
+    triangles: 2e050000
+    neighborIndices: a0010000bc010000bb010000
+    normal: {x: 0.6990105, y: -0.5218872, z: -0.48889476}
+  - index: 443
+    triangles: 31050000
+    neighborIndices: b8010000b9010000ba010000
+    normal: {x: 0.7084421, y: -0.44651717, z: -0.5465641}
+  - index: 444
+    triangles: 34050000
+    neighborIndices: b0010000ba010000bf010000
+    normal: {x: 0.6354711, y: -0.5851591, z: -0.5037511}
+  - index: 445
+    triangles: 37050000
+    neighborIndices: b2010000b4010000bf010000
+    normal: {x: 0.5037514, y: -0.63547194, z: -0.5851581}
+  - index: 446
+    triangles: 3a050000
+    neighborIndices: b6010000b8010000bf010000
+    normal: {x: 0.5851592, y: -0.5037508, z: -0.6354714}
+  - index: 447
+    triangles: 3d050000
+    neighborIndices: bc010000bd010000be010000
+    normal: {x: 0.57735056, y: -0.5773507, z: -0.5773496}
+  - index: 448
+    triangles: 40050000
+    neighborIndices: cc010000f2010000c3010000
+    normal: {x: -0.22889298, y: -0.30816692, z: -0.9233857}
+  - index: 449
+    triangles: 43050000
+    neighborIndices: 09000000f1010000c3010000
+    normal: {x: -0.30237725, y: -0.42702603, z: -0.85218346}
+  - index: 450
+    triangles: 46050000
+    neighborIndices: 08000000cd010000c3010000
+    normal: {x: -0.36480144, y: -0.30679786, z: -0.8790876}
+  - index: 451
+    triangles: 49050000
+    neighborIndices: c0010000c1010000c2010000
+    normal: {x: -0.31240126, y: -0.34319648, z: -0.88578874}
+  - index: 452
+    triangles: 4c050000
+    neighborIndices: 06000000cd010000c7010000
+    normal: {x: -0.41924024, y: -0.180319, z: -0.88978803}
+  - index: 453
+    triangles: 4f050000
+    neighborIndices: 0500000005020000c7010000
+    normal: {x: -0.46507227, y: -0.05017107, z: -0.8838499}
+  - index: 454
+    triangles: 52050000
+    neighborIndices: 04020000ce010000c7010000
+    normal: {x: -0.3386981, y: -0.050000396, z: -0.93956566}
+  - index: 455
+    triangles: 55050000
+    neighborIndices: c4010000c5010000c6010000
+    normal: {x: -0.42449197, y: -0.08207087, z: -0.9017045}
+  - index: 456
+    triangles: 58050000
+    neighborIndices: ce01000002020000cb010000
+    normal: {x: -0.2058487, y: -0.049607985, z: -0.9773256}
+  - index: 457
+    triangles: 5b050000
+    neighborIndices: f5010000cb010000
+    normal: {x: -0.069056794, y: -0.04950523, z: -0.9963836}
+  - index: 458
+    triangles: 5e050000
+    neighborIndices: f4010000cc010000cb010000
+    normal: {x: -0.15047587, y: -0.1812855, z: -0.9718501}
+  - index: 459
+    triangles: 61050000
+    neighborIndices: c8010000c9010000ca010000
+    normal: {x: -0.15227264, y: -0.08410295, z: -0.98475367}
+  - index: 460
+    triangles: 64050000
+    neighborIndices: c0010000ca010000cf010000
+    normal: {x: -0.23573793, y: -0.21620393, z: -0.9474616}
+  - index: 461
+    triangles: 67050000
+    neighborIndices: c2010000c4010000cf010000
+    normal: {x: -0.37162796, y: -0.21484691, z: -0.9031797}
+  - index: 462
+    triangles: 6a050000
+    neighborIndices: c6010000c8010000cf010000
+    normal: {x: -0.29109654, y: -0.084545605, z: -0.9529506}
+  - index: 463
+    triangles: 6d050000
+    neighborIndices: cc010000cd010000ce010000
+    normal: {x: -0.28804505, y: -0.18115097, z: -0.9403267}
+  - index: 464
+    triangles: 70050000
+    neighborIndices: dc010000f6010000d3010000
+    normal: {x: 0.15047611, y: -0.18128589, z: -0.9718499}
+  - index: 465
+    triangles: 73050000
+    neighborIndices: f5010000d3010000
+    normal: {x: 0.06905685, y: -0.0495047, z: -0.9963837}
+  - index: 466
+    triangles: 76050000
+    neighborIndices: 28020000dd010000d3010000
+    normal: {x: 0.20584859, y: -0.049607415, z: -0.97732574}
+  - index: 467
+    triangles: 79050000
+    neighborIndices: d0010000d1010000d2010000
+    normal: {x: 0.15227278, y: -0.08410234, z: -0.98475367}
+  - index: 468
+    triangles: 7c050000
+    neighborIndices: dd01000026020000d7010000
+    normal: {x: 0.3386985, y: -0.049999937, z: -0.93956554}
+  - index: 469
+    triangles: 7f050000
+    neighborIndices: 9501000025020000d7010000
+    normal: {x: 0.46507114, y: -0.050171174, z: -0.88385046}
+  - index: 470
+    triangles: 82050000
+    neighborIndices: 94010000de010000d7010000
+    normal: {x: 0.41924018, y: -0.18031906, z: -0.889788}
+  - index: 471
+    triangles: 85050000
+    neighborIndices: d4010000d5010000d6010000
+    normal: {x: 0.42449212, y: -0.08207003, z: -0.9017045}
+  - index: 472
+    triangles: 88050000
+    neighborIndices: 92010000de010000db010000
+    normal: {x: 0.36480123, y: -0.3067978, z: -0.8790877}
+  - index: 473
+    triangles: 8b050000
+    neighborIndices: 91010000f9010000db010000
+    normal: {x: 0.30237666, y: -0.42702577, z: -0.8521839}
+  - index: 474
+    triangles: 8e050000
+    neighborIndices: f8010000dc010000db010000
+    normal: {x: 0.22889274, y: -0.30816773, z: -0.9233855}
+  - index: 475
+    triangles: 91050000
+    neighborIndices: d8010000d9010000da010000
+    normal: {x: 0.31240055, y: -0.3431969, z: -0.8857888}
+  - index: 476
+    triangles: 94050000
+    neighborIndices: d0010000da010000df010000
+    normal: {x: 0.23573785, y: -0.21620418, z: -0.9474616}
+  - index: 477
+    triangles: 97050000
+    neighborIndices: d2010000d4010000df010000
+    normal: {x: 0.29109687, y: -0.0845452, z: -0.9529506}
+  - index: 478
+    triangles: 9a050000
+    neighborIndices: d6010000d8010000df010000
+    normal: {x: 0.3716277, y: -0.21484709, z: -0.90317965}
+  - index: 479
+    triangles: 9d050000
+    neighborIndices: dc010000dd010000de010000
+    normal: {x: 0.28804523, y: -0.18115115, z: -0.94032663}
+  - index: 480
+    triangles: a0050000
+    neighborIndices: ec010000fa010000e3010000
+    normal: {x: 0.07841726, y: -0.5516421, z: -0.8303865}
+  - index: 481
+    triangles: a3050000
+    neighborIndices: 89010000f9010000e3010000
+    normal: {x: 0.23332046, y: -0.538762, z: -0.8095043}
+  - index: 482
+    triangles: a6050000
+    neighborIndices: 88010000ed010000e3010000
+    normal: {x: 0.15895271, y: -0.63986796, z: -0.75186634}
+  - index: 483
+    triangles: a9050000
+    neighborIndices: e0010000e1010000e2010000
+    normal: {x: 0.16012904, y: -0.5895785, z: -0.79167914}
+  - index: 484
+    triangles: ac050000
+    neighborIndices: 86010000e7010000
+    normal: {x: 0.08054107, y: -0.72834444, z: -0.68046117}
+  - index: 485
+    triangles: af050000
+    neighborIndices: 1500000085010000e7010000
+    normal: {x: -0.0000009608431, y: -0.80267215, z: -0.5964204}
+  - index: 486
+    triangles: b2050000
+    neighborIndices: 14000000e7010000
+    normal: {x: -0.08054157, y: -0.728345, z: -0.6804607}
+  - index: 487
+    triangles: b5050000
+    neighborIndices: e4010000e5010000e6010000
+    normal: {x: -0.00000089543107, y: -0.76891226, z: -0.6393543}
+  - index: 488
+    triangles: b8050000
+    neighborIndices: 12000000ee010000eb010000
+    normal: {x: -0.15895268, y: -0.63986844, z: -0.7518659}
+  - index: 489
+    triangles: bb050000
+    neighborIndices: 11000000f1010000eb010000
+    normal: {x: -0.23332058, y: -0.5387619, z: -0.8095042}
+  - index: 490
+    triangles: be050000
+    neighborIndices: f0010000ec010000eb010000
+    normal: {x: -0.07841739, y: -0.5516418, z: -0.8303867}
+  - index: 491
+    triangles: c1050000
+    neighborIndices: e8010000e9010000ea010000
+    normal: {x: -0.16012909, y: -0.58957845, z: -0.7916792}
+  - index: 492
+    triangles: c4050000
+    neighborIndices: e0010000ea010000ef010000
+    normal: {x: 0.00000014994978, y: -0.59763587, z: -0.8017676}
+  - index: 493
+    triangles: c7050000
+    neighborIndices: e2010000ef010000
+    normal: {x: 0.08053035, y: -0.68585163, z: -0.72327197}
+  - index: 494
+    triangles: ca050000
+    neighborIndices: e8010000ef010000
+    normal: {x: -0.0805309, y: -0.6858519, z: -0.7232717}
+  - index: 495
+    triangles: cd050000
+    neighborIndices: ec010000ed010000ee010000
+    normal: {x: 0.000000084539366, y: -0.6472184, z: -0.76230466}
+  - index: 496
+    triangles: d0050000
+    neighborIndices: ea010000fc010000f3010000
+    normal: {x: -0.07836742, y: -0.48233616, z: -0.87247366}
+  - index: 497
+    triangles: d3050000
+    neighborIndices: c1010000e9010000f3010000
+    normal: {x: -0.23317157, y: -0.4694055, z: -0.85163933}
+  - index: 498
+    triangles: d6050000
+    neighborIndices: c0010000fd010000f3010000
+    normal: {x: -0.15979247, y: -0.35058698, z: -0.92279744}
+  - index: 499
+    triangles: d9050000
+    neighborIndices: f0010000f1010000f2010000
+    normal: {x: -0.16187872, y: -0.43784174, z: -0.88435847}
+  - index: 500
+    triangles: dc050000
+    neighborIndices: ca010000f7010000
+    normal: {x: -0.08142547, y: -0.22378625, z: -0.971231}
+  - index: 501
+    triangles: df050000
+    neighborIndices: c9010000d1010000f7010000
+    normal: {x: -0.00000040256, y: -0.09212557, z: -0.99574745}
+  - index: 502
+    triangles: e2050000
+    neighborIndices: d0010000f7010000
+    normal: {x: 0.08142556, y: -0.22378676, z: -0.9712308}
+  - index: 503
+    triangles: e5050000
+    neighborIndices: f4010000f5010000f6010000
+    normal: {x: -0.000000436404, y: -0.1759161, z: -0.9844052}
+  - index: 504
+    triangles: e8050000
+    neighborIndices: da010000fe010000fb010000
+    normal: {x: 0.15979332, y: -0.3505871, z: -0.92279726}
+  - index: 505
+    triangles: eb050000
+    neighborIndices: d9010000e1010000fb010000
+    normal: {x: 0.23317143, y: -0.46940497, z: -0.8516396}
+  - index: 506
+    triangles: ee050000
+    neighborIndices: e0010000fc010000fb010000
+    normal: {x: 0.07836732, y: -0.48233655, z: -0.87247354}
+  - index: 507
+    triangles: f1050000
+    neighborIndices: f8010000f9010000fa010000
+    normal: {x: 0.16187961, y: -0.43784156, z: -0.8843584}
+  - index: 508
+    triangles: f4050000
+    neighborIndices: f0010000fa010000ff010000
+    normal: {x: -0.00000040098135, y: -0.44305566, z: -0.89649415}
+  - index: 509
+    triangles: f7050000
+    neighborIndices: f2010000ff010000
+    normal: {x: -0.08140773, y: -0.31133533, z: -0.9468068}
+  - index: 510
+    triangles: fa050000
+    neighborIndices: f8010000ff010000
+    normal: {x: 0.08140765, y: -0.311335, z: -0.9468069}
+  - index: 511
+    triangles: fd050000
+    neighborIndices: fc010000fd010000fe010000
+    normal: {x: -0.00000032293673, y: -0.35682195, z: -0.93417245}
+  - index: 512
+    triangles: 00060000
+    neighborIndices: 0c0200003202000003020000
+    normal: {x: -0.15047573, y: 0.1812861, z: -0.97185}
+  - index: 513
+    triangles: 03060000
+    neighborIndices: 3102000003020000
+    normal: {x: -0.06905674, y: 0.049504753, z: -0.9963837}
+  - index: 514
+    triangles: 06060000
+    neighborIndices: c80100000d02000003020000
+    normal: {x: -0.20584871, y: 0.049607057, z: -0.9773257}
+  - index: 515
+    triangles: 09060000
+    neighborIndices: 000200000102000002020000
+    normal: {x: -0.15227228, y: 0.08410236, z: -0.9847538}
+  - index: 516
+    triangles: 0c060000
+    neighborIndices: c60100000d02000007020000
+    normal: {x: -0.33869806, y: 0.050000526, z: -0.9395656}
+  - index: 517
+    triangles: 0f060000
+    neighborIndices: c5010000c503000007020000
+    normal: {x: -0.46507227, y: 0.05017107, z: -0.8838499}
+  - index: 518
+    triangles: 12060000
+    neighborIndices: c40300000e02000007020000
+    normal: {x: -0.41924033, y: 0.18031904, z: -0.889788}
+  - index: 519
+    triangles: 15060000
+    neighborIndices: 040200000502000006020000
+    normal: {x: -0.42449194, y: 0.08207088, z: -0.9017045}
+  - index: 520
+    triangles: 18060000
+    neighborIndices: 0e020000c20300000b020000
+    normal: {x: -0.36480093, y: 0.30679762, z: -0.87908787}
+  - index: 521
+    triangles: 1b060000
+    neighborIndices: c1030000350200000b020000
+    normal: {x: -0.3023767, y: 0.42702585, z: -0.8521838}
+  - index: 522
+    triangles: 1e060000
+    neighborIndices: 340200000c0200000b020000
+    normal: {x: -0.22889306, y: 0.3081676, z: -0.92338544}
+  - index: 523
+    triangles: 21060000
+    neighborIndices: 08020000090200000a020000
+    normal: {x: -0.31240058, y: 0.34319657, z: -0.8857889}
+  - index: 524
+    triangles: 24060000
+    neighborIndices: 000200000a0200000f020000
+    normal: {x: -0.23573804, y: 0.21620466, z: -0.9474614}
+  - index: 525
+    triangles: 27060000
+    neighborIndices: 02020000040200000f020000
+    normal: {x: -0.29109743, y: 0.08454508, z: -0.9529504}
+  - index: 526
+    triangles: 2a060000
+    neighborIndices: 06020000080200000f020000
+    normal: {x: -0.37162736, y: 0.2148474, z: -0.90317976}
+  - index: 527
+    triangles: 2d060000
+    neighborIndices: 0c0200000d0200000e020000
+    normal: {x: -0.28804567, y: 0.1811516, z: -0.94032645}
+  - index: 528
+    triangles: 30060000
+    neighborIndices: 1c0200003602000013020000
+    normal: {x: -0.07841758, y: 0.55164146, z: -0.8303868}
+  - index: 529
+    triangles: 33060000
+    neighborIndices: 35020000e903000013020000
+    normal: {x: -0.23332022, y: 0.53876173, z: -0.80950445}
+  - index: 530
+    triangles: 36060000
+    neighborIndices: e80300001d02000013020000
+    normal: {x: -0.15895273, y: 0.63986844, z: -0.7518659}
+  - index: 531
+    triangles: 39060000
+    neighborIndices: 100200001102000012020000
+    normal: {x: -0.1601291, y: 0.589578, z: -0.79167956}
+  - index: 532
+    triangles: 3c060000
+    neighborIndices: e603000017020000
+    normal: {x: -0.08054161, y: 0.7283449, z: -0.68046063}
+  - index: 533
+    triangles: 3f060000
+    neighborIndices: e50300005502000017020000
+    normal: {x: -0.0000009608431, y: 0.80267215, z: -0.5964204}
+  - index: 534
+    triangles: 42060000
+    neighborIndices: 5402000017020000
+    normal: {x: 0.08054103, y: 0.72834444, z: -0.6804613}
+  - index: 535
+    triangles: 45060000
+    neighborIndices: 140200001502000016020000
+    normal: {x: -0.00000089543107, y: 0.76891226, z: -0.6393543}
+  - index: 536
+    triangles: 48060000
+    neighborIndices: 1e020000520200001b020000
+    normal: {x: 0.15895268, y: 0.6398679, z: -0.75186634}
+  - index: 537
+    triangles: 4b060000
+    neighborIndices: 51020000390200001b020000
+    normal: {x: 0.2333205, y: 0.538762, z: -0.80950415}
+  - index: 538
+    triangles: 4e060000
+    neighborIndices: 380200001c0200001b020000
+    normal: {x: 0.07841716, y: 0.5516419, z: -0.83038664}
+  - index: 539
+    triangles: 51060000
+    neighborIndices: 18020000190200001a020000
+    normal: {x: 0.16012901, y: 0.5895785, z: -0.79167914}
+  - index: 540
+    triangles: 54060000
+    neighborIndices: 100200001a0200001f020000
+    normal: {x: 0.00000007497499, y: 0.59763575, z: -0.80176777}
+  - index: 541
+    triangles: 57060000
+    neighborIndices: 120200001f020000
+    normal: {x: -0.08053086, y: 0.6858519, z: -0.72327167}
+  - index: 542
+    triangles: 5a060000
+    neighborIndices: 180200001f020000
+    normal: {x: 0.08053039, y: 0.68585163, z: -0.723272}
+  - index: 543
+    triangles: 5d060000
+    neighborIndices: 1c0200001d0200001e020000
+    normal: {x: 0.000000042269672, y: 0.64721835, z: -0.7623046}
+  - index: 544
+    triangles: 60060000
+    neighborIndices: 2c0200003a02000023020000
+    normal: {x: 0.2288929, y: 0.3081669, z: -0.92338574}
+  - index: 545
+    triangles: 63060000
+    neighborIndices: 390200004902000023020000
+    normal: {x: 0.30237746, y: 0.4270261, z: -0.8521834}
+  - index: 546
+    triangles: 66060000
+    neighborIndices: 480200002d02000023020000
+    normal: {x: 0.3648015, y: 0.30679792, z: -0.87908757}
+  - index: 547
+    triangles: 69060000
+    neighborIndices: 200200002102000022020000
+    normal: {x: 0.3124015, y: 0.34319654, z: -0.8857886}
+  - index: 548
+    triangles: 6c060000
+    neighborIndices: 2d0200004602000027020000
+    normal: {x: 0.41923997, y: 0.18031898, z: -0.88978815}
+  - index: 549
+    triangles: 6f060000
+    neighborIndices: d50100004502000027020000
+    normal: {x: 0.46507114, y: 0.050171174, z: -0.88385046}
+  - index: 550
+    triangles: 72060000
+    neighborIndices: d40100002e02000027020000
+    normal: {x: 0.33869848, y: 0.050000258, z: -0.9395655}
+  - index: 551
+    triangles: 75060000
+    neighborIndices: 240200002502000026020000
+    normal: {x: 0.42449185, y: 0.08207022, z: -0.9017046}
+  - index: 552
+    triangles: 78060000
+    neighborIndices: d20100002e0200002b020000
+    normal: {x: 0.20584859, y: 0.04960739, z: -0.9773256}
+  - index: 553
+    triangles: 7b060000
+    neighborIndices: 310200002b020000
+    normal: {x: 0.069056906, y: 0.049505167, z: -0.9963836}
+  - index: 554
+    triangles: 7e060000
+    neighborIndices: 300200002c0200002b020000
+    normal: {x: 0.15047552, y: 0.1812857, z: -0.9718501}
+  - index: 555
+    triangles: 81060000
+    neighborIndices: 28020000290200002a020000
+    normal: {x: 0.1522723, y: 0.084102556, z: -0.9847538}
+  - index: 556
+    triangles: 84060000
+    neighborIndices: 200200002a0200002f020000
+    normal: {x: 0.23573783, y: 0.21620421, z: -0.94746155}
+  - index: 557
+    triangles: 87060000
+    neighborIndices: 22020000240200002f020000
+    normal: {x: 0.371628, y: 0.21484666, z: -0.90317965}
+  - index: 558
+    triangles: 8a060000
+    neighborIndices: 26020000280200002f020000
+    normal: {x: 0.2910972, y: 0.08454529, z: -0.9529505}
+  - index: 559
+    triangles: 8d060000
+    neighborIndices: 2c0200002d0200002e020000
+    normal: {x: 0.28804564, y: 0.1811508, z: -0.94032663}
+  - index: 560
+    triangles: 90060000
+    neighborIndices: 2a02000033020000
+    normal: {x: 0.08142548, y: 0.22378622, z: -0.971231}
+  - index: 561
+    triangles: 93060000
+    neighborIndices: 010200002902000033020000
+    normal: {x: 0.00000039421408, y: 0.09212556, z: -0.99574745}
+  - index: 562
+    triangles: 96060000
+    neighborIndices: 0002000033020000
+    normal: {x: -0.08142561, y: 0.2237867, z: -0.97123086}
+  - index: 563
+    triangles: 99060000
+    neighborIndices: 300200003102000032020000
+    normal: {x: 0.00000042046727, y: 0.17591606, z: -0.9844052}
+  - index: 564
+    triangles: 9c060000
+    neighborIndices: 0a0200003d02000037020000
+    normal: {x: -0.15979323, y: 0.3505872, z: -0.9227972}
+  - index: 565
+    triangles: 9f060000
+    neighborIndices: 090200001102000037020000
+    normal: {x: -0.23317125, y: 0.46940508, z: -0.8516396}
+  - index: 566
+    triangles: a2060000
+    neighborIndices: 100200003e02000037020000
+    normal: {x: -0.07836759, y: 0.48233664, z: -0.87247336}
+  - index: 567
+    triangles: a5060000
+    neighborIndices: 340200003502000036020000
+    normal: {x: -0.16187948, y: 0.43784174, z: -0.8843583}
+  - index: 568
+    triangles: a8060000
+    neighborIndices: 1a0200003e0200003b020000
+    normal: {x: 0.078367226, y: 0.48233628, z: -0.87247366}
+  - index: 569
+    triangles: ab060000
+    neighborIndices: 19020000210200003b020000
+    normal: {x: 0.23317152, y: 0.4694057, z: -0.8516392}
+  - index: 570
+    triangles: ae060000
+    neighborIndices: 200200003c0200003b020000
+    normal: {x: 0.15979217, y: 0.35058695, z: -0.9227975}
+  - index: 571
+    triangles: b1060000
+    neighborIndices: 38020000390200003a020000
+    normal: {x: 0.16187845, y: 0.4378419, z: -0.88435847}
+  - index: 572
+    triangles: b4060000
+    neighborIndices: 3a0200003f020000
+    normal: {x: 0.081407726, y: 0.31133547, z: -0.9468068}
+  - index: 573
+    triangles: b7060000
+    neighborIndices: 340200003f020000
+    normal: {x: -0.08140772, y: 0.3113352, z: -0.94680685}
+  - index: 574
+    triangles: ba060000
+    neighborIndices: 36020000380200003f020000
+    normal: {x: 0.00000024058878, y: 0.4430557, z: -0.89649403}
+  - index: 575
+    triangles: bd060000
+    neighborIndices: 3c0200003d0200003e020000
+    normal: {x: 0.00000019376212, y: 0.35682216, z: -0.93417233}
+  - index: 576
+    triangles: c0060000
+    neighborIndices: 4c0200007202000043020000
+    normal: {x: 0.64910024, y: 0.3717438, z: -0.6636832}
+  - index: 577
+    triangles: c3060000
+    neighborIndices: 490100007102000043020000
+    normal: {x: 0.75999933, y: 0.31342122, z: -0.56935775}
+  - index: 578
+    triangles: c6060000
+    neighborIndices: 480100004d02000043020000
+    normal: {x: 0.7022588, y: 0.2392195, z: -0.67052716}
+  - index: 579
+    triangles: c9060000
+    neighborIndices: 400200004102000042020000
+    normal: {x: 0.7075765, y: 0.29620945, z: -0.6415571}
+  - index: 580
+    triangles: cc060000
+    neighborIndices: 460100004d02000047020000
+    normal: {x: 0.63046044, y: 0.16144396, z: -0.7592466}
+  - index: 581
+    triangles: cf060000
+    neighborIndices: 450100002502000047020000
+    normal: {x: 0.5462489, y: 0.08117831, z: -0.8336799}
+  - index: 582
+    triangles: d2060000
+    neighborIndices: 240200004e02000047020000
+    normal: {x: 0.50014186, y: 0.2112208, z: -0.839788}
+  - index: 583
+    triangles: d5060000
+    neighborIndices: 440200004502000046020000
+    normal: {x: 0.5572836, y: 0.13279276, z: -0.8196348}
+  - index: 584
+    triangles: d8060000
+    neighborIndices: 220200004e0200004b020000
+    normal: {x: 0.44506752, y: 0.33745682, z: -0.82948047}
+  - index: 585
+    triangles: db060000
+    neighborIndices: 21020000750200004b020000
+    normal: {x: 0.3824787, y: 0.45762205, z: -0.8026781}
+  - index: 586
+    triangles: de060000
+    neighborIndices: 740200004c0200004b020000
+    normal: {x: 0.5222192, y: 0.42020926, z: -0.7420992}
+  - index: 587
+    triangles: e1060000
+    neighborIndices: 48020000490200004a020000
+    normal: {x: 0.448482, y: 0.39517617, z: -0.8016855}
+  - index: 588
+    triangles: e4060000
+    neighborIndices: 400200004a0200004f020000
+    normal: {x: 0.58556396, y: 0.34982628, z: -0.7312567}
+  - index: 589
+    triangles: e7060000
+    neighborIndices: 42020000440200004f020000
+    normal: {x: 0.6387262, y: 0.21732807, z: -0.73810387}
+  - index: 590
+    triangles: ea060000
+    neighborIndices: 46020000480200004f020000
+    normal: {x: 0.5084249, y: 0.26709792, z: -0.81863475}
+  - index: 591
+    triangles: ed060000
+    neighborIndices: 4c0200004d0200004e020000
+    normal: {x: 0.5811542, y: 0.29310763, z: -0.7591757}
+  - index: 592
+    triangles: f0060000
+    neighborIndices: 5c0200007602000053020000
+    normal: {x: 0.37174383, y: 0.6636826, z: -0.6491008}
+  - index: 593
+    triangles: f3060000
+    neighborIndices: 190200007502000053020000
+    normal: {x: 0.31342146, y: 0.5693579, z: -0.75999916}
+  - index: 594
+    triangles: f6060000
+    neighborIndices: 180200005d02000053020000
+    normal: {x: 0.23921925, y: 0.67052704, z: -0.70225894}
+  - index: 595
+    triangles: f9060000
+    neighborIndices: 500200005102000052020000
+    normal: {x: 0.29620987, y: 0.6415566, z: -0.7075767}
+  - index: 596
+    triangles: fc060000
+    neighborIndices: 160200005d02000057020000
+    normal: {x: 0.16144376, y: 0.7592465, z: -0.6304606}
+  - index: 597
+    triangles: ff060000
+    neighborIndices: 150200008502000057020000
+    normal: {x: 0.08117788, y: 0.83367974, z: -0.5462492}
+  - index: 598
+    triangles: 02070000
+    neighborIndices: 840200005e02000057020000
+    normal: {x: 0.21122071, y: 0.839788, z: -0.50014186}
+  - index: 599
+    triangles: 05070000
+    neighborIndices: 540200005502000056020000
+    normal: {x: 0.13279264, y: 0.81963456, z: -0.5572839}
+  - index: 600
+    triangles: 08070000
+    neighborIndices: 5e020000820200005b020000
+    normal: {x: 0.3374569, y: 0.8294802, z: -0.445068}
+  - index: 601
+    triangles: 0b070000
+    neighborIndices: 81020000790200005b020000
+    normal: {x: 0.45762205, y: 0.8026781, z: -0.38247865}
+  - index: 602
+    triangles: 0e070000
+    neighborIndices: 780200005c0200005b020000
+    normal: {x: 0.42020854, y: 0.7420996, z: -0.52221924}
+  - index: 603
+    triangles: 11070000
+    neighborIndices: 58020000590200005a020000
+    normal: {x: 0.3951756, y: 0.8016856, z: -0.4484824}
+  - index: 604
+    triangles: 14070000
+    neighborIndices: 500200005a0200005f020000
+    normal: {x: 0.34982604, y: 0.7312572, z: -0.5855636}
+  - index: 605
+    triangles: 17070000
+    neighborIndices: 52020000540200005f020000
+    normal: {x: 0.21732785, y: 0.73810387, z: -0.6387263}
+  - index: 606
+    triangles: 1a070000
+    neighborIndices: 56020000580200005f020000
+    normal: {x: 0.26709843, y: 0.8186345, z: -0.50842494}
+  - index: 607
+    triangles: 1d070000
+    neighborIndices: 5c0200005d0200005e020000
+    normal: {x: 0.293108, y: 0.75917584, z: -0.58115387}
+  - index: 608
+    triangles: 20070000
+    neighborIndices: 6c0200007a02000063020000
+    normal: {x: 0.663683, y: 0.6491002, z: -0.37174425}
+  - index: 609
+    triangles: 23070000
+    neighborIndices: 79020000a902000063020000
+    normal: {x: 0.56935775, y: 0.7599992, z: -0.3134215}
+  - index: 610
+    triangles: 26070000
+    neighborIndices: a80200006d02000063020000
+    normal: {x: 0.67052746, y: 0.7022587, z: -0.23921889}
+  - index: 611
+    triangles: 29070000
+    neighborIndices: 600200006102000062020000
+    normal: {x: 0.6415569, y: 0.7075765, z: -0.2962098}
+  - index: 612
+    triangles: 2c070000
+    neighborIndices: 6d020000a602000067020000
+    normal: {x: 0.7592465, y: 0.63046086, z: -0.16144298}
+  - index: 613
+    triangles: 2f070000
+    neighborIndices: 55010000a502000067020000
+    normal: {x: 0.8336792, y: 0.54624987, z: -0.08117866}
+  - index: 614
+    triangles: 32070000
+    neighborIndices: 540100006e02000067020000
+    normal: {x: 0.83978826, y: 0.50014156, z: -0.21122067}
+  - index: 615
+    triangles: 35070000
+    neighborIndices: 640200006502000066020000
+    normal: {x: 0.81963456, y: 0.5572841, z: -0.13279162}
+  - index: 616
+    triangles: 38070000
+    neighborIndices: 520100006e0200006b020000
+    normal: {x: 0.82948035, y: 0.44506738, z: -0.33745724}
+  - index: 617
+    triangles: 3b070000
+    neighborIndices: 51010000710200006b020000
+    normal: {x: 0.8026781, y: 0.3824789, z: -0.45762178}
+  - index: 618
+    triangles: 3e070000
+    neighborIndices: 700200006c0200006b020000
+    normal: {x: 0.7420992, y: 0.52221924, z: -0.42020926}
+  - index: 619
+    triangles: 41070000
+    neighborIndices: 68020000690200006a020000
+    normal: {x: 0.80168563, y: 0.4484819, z: -0.3951762}
+  - index: 620
+    triangles: 44070000
+    neighborIndices: 600200006a0200006f020000
+    normal: {x: 0.73125684, y: 0.5855637, z: -0.3498266}
+  - index: 621
+    triangles: 47070000
+    neighborIndices: 62020000640200006f020000
+    normal: {x: 0.7381036, y: 0.63872665, z: -0.21732764}
+  - index: 622
+    triangles: 4a070000
+    neighborIndices: 66020000680200006f020000
+    normal: {x: 0.81863475, y: 0.50842464, z: -0.2670985}
+  - index: 623
+    triangles: 4d070000
+    neighborIndices: 6c0200006d0200006e020000
+    normal: {x: 0.75917566, y: 0.5811539, z: -0.2931082}
+  - index: 624
+    triangles: 50070000
+    neighborIndices: 6a0200007c02000073020000
+    normal: {x: 0.6990112, y: 0.5218865, z: -0.4888945}
+  - index: 625
+    triangles: 53070000
+    neighborIndices: 410200006902000073020000
+    normal: {x: 0.7595139, y: 0.3822347, z: -0.5263414}
+  - index: 626
+    triangles: 56070000
+    neighborIndices: 400200007d02000073020000
+    normal: {x: 0.6486868, y: 0.44046164, z: -0.62064403}
+  - index: 627
+    triangles: 59070000
+    neighborIndices: 700200007102000072020000
+    normal: {x: 0.7084427, y: 0.44651753, z: -0.5465629}
+  - index: 628
+    triangles: 5c070000
+    neighborIndices: 4a0200007d02000077020000
+    normal: {x: 0.52188647, y: 0.48889416, z: -0.6990114}
+  - index: 629
+    triangles: 5f070000
+    neighborIndices: 490200005102000077020000
+    normal: {x: 0.38223442, y: 0.52634174, z: -0.75951374}
+  - index: 630
+    triangles: 62070000
+    neighborIndices: 500200007e02000077020000
+    normal: {x: 0.4404608, y: 0.62064403, z: -0.6486873}
+  - index: 631
+    triangles: 65070000
+    neighborIndices: 740200007502000076020000
+    normal: {x: 0.44651678, y: 0.54656315, z: -0.70844305}
+  - index: 632
+    triangles: 68070000
+    neighborIndices: 5a0200007e0200007b020000
+    normal: {x: 0.48889425, y: 0.6990113, z: -0.5218865}
+  - index: 633
+    triangles: 6b070000
+    neighborIndices: 59020000610200007b020000
+    normal: {x: 0.5263417, y: 0.7595138, z: -0.3822344}
+  - index: 634
+    triangles: 6e070000
+    neighborIndices: 600200007c0200007b020000
+    normal: {x: 0.6206445, y: 0.64868677, z: -0.44046095}
+  - index: 635
+    triangles: 71070000
+    neighborIndices: 78020000790200007a020000
+    normal: {x: 0.54656315, y: 0.70844287, z: -0.44651696}
+  - index: 636
+    triangles: 74070000
+    neighborIndices: 700200007a0200007f020000
+    normal: {x: 0.6354721, y: 0.5851583, z: -0.5037509}
+  - index: 637
+    triangles: 77070000
+    neighborIndices: 72020000740200007f020000
+    normal: {x: 0.58515906, y: 0.5037508, z: -0.6354715}
+  - index: 638
+    triangles: 7a070000
+    neighborIndices: 76020000780200007f020000
+    normal: {x: 0.5037508, y: 0.6354717, z: -0.5851589}
+  - index: 639
+    triangles: 7d070000
+    neighborIndices: 7c0200007d0200007e020000
+    normal: {x: 0.5773507, y: 0.5773498, z: -0.5773504}
+  - index: 640
+    triangles: 80070000
+    neighborIndices: 8c020000b202000083020000
+    normal: {x: 0.3081668, y: 0.92338574, z: -0.22889303}
+  - index: 641
+    triangles: 83070000
+    neighborIndices: 59020000b102000083020000
+    normal: {x: 0.42702603, y: 0.8521836, z: -0.30237725}
+  - index: 642
+    triangles: 86070000
+    neighborIndices: 580200008d02000083020000
+    normal: {x: 0.3067978, y: 0.8790876, z: -0.36480138}
+  - index: 643
+    triangles: 89070000
+    neighborIndices: 800200008102000082020000
+    normal: {x: 0.3431964, y: 0.88578874, z: -0.3124013}
+  - index: 644
+    triangles: 8c070000
+    neighborIndices: 560200008d02000087020000
+    normal: {x: 0.180319, y: 0.88978803, z: -0.41924024}
+  - index: 645
+    triangles: 8f070000
+    neighborIndices: 550200008503000087020000
+    normal: {x: 0.05017107, y: 0.8838499, z: -0.46507227}
+  - index: 646
+    triangles: 92070000
+    neighborIndices: 840300008e02000087020000
+    normal: {x: 0.050000396, y: 0.93956566, z: -0.3386981}
+  - index: 647
+    triangles: 95070000
+    neighborIndices: 840200008502000086020000
+    normal: {x: 0.08207087, y: 0.9017045, z: -0.42449197}
+  - index: 648
+    triangles: 98070000
+    neighborIndices: 8e020000820300008b020000
+    normal: {x: 0.04960799, y: 0.9773256, z: -0.2058487}
+  - index: 649
+    triangles: 9b070000
+    neighborIndices: b50200008b020000
+    normal: {x: 0.04950523, y: 0.9963836, z: -0.069056794}
+  - index: 650
+    triangles: 9e070000
+    neighborIndices: b40200008c0200008b020000
+    normal: {x: 0.18128549, y: 0.9718501, z: -0.15047589}
+  - index: 651
+    triangles: a1070000
+    neighborIndices: 88020000890200008a020000
+    normal: {x: 0.08410295, y: 0.98475367, z: -0.15227264}
+  - index: 652
+    triangles: a4070000
+    neighborIndices: 800200008a0200008f020000
+    normal: {x: 0.21620393, y: 0.9474616, z: -0.235738}
+  - index: 653
+    triangles: a7070000
+    neighborIndices: 82020000840200008f020000
+    normal: {x: 0.21484694, y: 0.90317965, z: -0.37162784}
+  - index: 654
+    triangles: aa070000
+    neighborIndices: 86020000880200008f020000
+    normal: {x: 0.084545605, y: 0.9529506, z: -0.2910965}
+  - index: 655
+    triangles: ad070000
+    neighborIndices: 8c0200008d0200008e020000
+    normal: {x: 0.18115102, y: 0.94032675, z: -0.28804502}
+  - index: 656
+    triangles: b0070000
+    neighborIndices: 9c020000b602000093020000
+    normal: {x: 0.18128625, y: 0.97184986, z: 0.15047628}
+  - index: 657
+    triangles: b3070000
+    neighborIndices: b502000093020000
+    normal: {x: 0.049504668, y: 0.9963837, z: 0.06905686}
+  - index: 658
+    triangles: b6070000
+    neighborIndices: a80300009d02000093020000
+    normal: {x: 0.049607355, y: 0.9773257, z: 0.2058486}
+  - index: 659
+    triangles: b9070000
+    neighborIndices: 900200009102000092020000
+    normal: {x: 0.08410228, y: 0.98475367, z: 0.15227284}
+  - index: 660
+    triangles: bc070000
+    neighborIndices: 9d020000a603000097020000
+    normal: {x: 0.04999927, y: 0.93956554, z: 0.3386985}
+  - index: 661
+    triangles: bf070000
+    neighborIndices: a5030000d502000097020000
+    normal: {x: 0.05017067, y: 0.8838505, z: 0.4650712}
+  - index: 662
+    triangles: c2070000
+    neighborIndices: d40200009e02000097020000
+    normal: {x: 0.18031918, y: 0.8897878, z: 0.4192407}
+  - index: 663
+    triangles: c5070000
+    neighborIndices: 940200009502000096020000
+    normal: {x: 0.08206943, y: 0.90170443, z: 0.42449242}
+  - index: 664
+    triangles: c8070000
+    neighborIndices: 9e020000d20200009b020000
+    normal: {x: 0.3067978, y: 0.8790876, z: 0.36480138}
+  - index: 665
+    triangles: cb070000
+    neighborIndices: d1020000b90200009b020000
+    normal: {x: 0.42702594, y: 0.85218364, z: 0.30237696}
+  - index: 666
+    triangles: ce070000
+    neighborIndices: b80200009c0200009b020000
+    normal: {x: 0.30816737, y: 0.92338574, z: 0.22889222}
+  - index: 667
+    triangles: d1070000
+    neighborIndices: 98020000990200009a020000
+    normal: {x: 0.34319684, y: 0.88578874, z: 0.31240085}
+  - index: 668
+    triangles: d4070000
+    neighborIndices: 900200009a0200009f020000
+    normal: {x: 0.21620417, y: 0.9474617, z: 0.2357372}
+  - index: 669
+    triangles: d7070000
+    neighborIndices: 92020000940200009f020000
+    normal: {x: 0.08454491, y: 0.95295066, z: 0.29109633}
+  - index: 670
+    triangles: da070000
+    neighborIndices: 96020000980200009f020000
+    normal: {x: 0.21484752, y: 0.9031795, z: 0.3716278}
+  - index: 671
+    triangles: dd070000
+    neighborIndices: 9c0200009d0200009e020000
+    normal: {x: 0.18115121, y: 0.94032687, z: 0.28804466}
+  - index: 672
+    triangles: e0070000
+    neighborIndices: ac020000a3020000
+    normal: {x: 0.5516416, y: 0.8303868, z: 0.07841727}
+  - index: 673
+    triangles: e3070000
+    neighborIndices: b9020000c9020000a3020000
+    normal: {x: 0.5387616, y: 0.8095046, z: 0.23331988}
+  - index: 674
+    triangles: e6070000
+    neighborIndices: c8020000ad020000a3020000
+    normal: {x: 0.63986826, y: 0.7518662, z: 0.15895222}
+  - index: 675
+    triangles: e9070000
+    neighborIndices: a0020000a1020000a2020000
+    normal: {x: 0.5895779, y: 0.7916796, z: 0.1601286}
+  - index: 676
+    triangles: ec070000
+    neighborIndices: c6020000a7020000
+    normal: {x: 0.7283449, y: 0.68046075, z: 0.080541514}
+  - index: 677
+    triangles: ef070000
+    neighborIndices: 65020000c5020000a7020000
+    normal: {x: 0.8026718, y: 0.596421, z: 0}
+  - index: 678
+    triangles: f2070000
+    neighborIndices: 64020000a7020000
+    normal: {x: 0.7283449, y: 0.68046063, z: -0.080541626}
+  - index: 679
+    triangles: f5070000
+    neighborIndices: a4020000a5020000a6020000
+    normal: {x: 0.7689127, y: 0.6393538, z: 0}
+  - index: 680
+    triangles: f8070000
+    neighborIndices: 62020000ae020000ab020000
+    normal: {x: 0.63986826, y: 0.7518663, z: -0.15895215}
+  - index: 681
+    triangles: fb070000
+    neighborIndices: 61020000b1020000ab020000
+    normal: {x: 0.5387615, y: 0.8095048, z: -0.2333196}
+  - index: 682
+    triangles: fe070000
+    neighborIndices: ac020000ab020000
+    normal: {x: 0.55164164, y: 0.8303869, z: -0.07841741}
+  - index: 683
+    triangles: 01080000
+    neighborIndices: a8020000a9020000aa020000
+    normal: {x: 0.5895778, y: 0.7916798, z: -0.16012849}
+  - index: 684
+    triangles: 04080000
+    neighborIndices: a0020000aa020000af020000
+    normal: {x: 0.5976356, y: 0.8017678, z: -0.00000007497501}
+  - index: 685
+    triangles: 07080000
+    neighborIndices: a2020000af020000
+    normal: {x: 0.6858514, y: 0.7232722, z: 0.08053092}
+  - index: 686
+    triangles: 0a080000
+    neighborIndices: a8020000af020000
+    normal: {x: 0.68585145, y: 0.7232722, z: -0.0805308}
+  - index: 687
+    triangles: 0d080000
+    neighborIndices: ac020000ad020000ae020000
+    normal: {x: 0.6472178, y: 0.7623051, z: -0.000000042270024}
+  - index: 688
+    triangles: 10080000
+    neighborIndices: bc020000b3020000
+    normal: {x: 0.48233694, y: 0.87247324, z: -0.07836748}
+  - index: 689
+    triangles: 13080000
+    neighborIndices: 81020000a9020000b3020000
+    normal: {x: 0.469406, y: 0.8516393, z: -0.2331706}
+  - index: 690
+    triangles: 16080000
+    neighborIndices: 80020000bd020000b3020000
+    normal: {x: 0.35058695, y: 0.9227975, z: -0.1597923}
+  - index: 691
+    triangles: 19080000
+    neighborIndices: b0020000b1020000b2020000
+    normal: {x: 0.43784267, y: 0.884358, z: -0.16187863}
+  - index: 692
+    triangles: 1c080000
+    neighborIndices: 8a020000b7020000
+    normal: {x: 0.22378641, y: 0.971231, z: -0.08142519}
+  - index: 693
+    triangles: 1f080000
+    neighborIndices: 8902000091020000b7020000
+    normal: {x: 0.092125565, y: 0.99574745, z: -0.00000042759768}
+  - index: 694
+    triangles: 22080000
+    neighborIndices: 90020000b7020000
+    normal: {x: 0.22378722, y: 0.97123075, z: 0.08142552}
+  - index: 695
+    triangles: 25080000
+    neighborIndices: b4020000b5020000b6020000
+    normal: {x: 0.17591652, y: 0.9844051, z: -0.0000004842144}
+  - index: 696
+    triangles: 28080000
+    neighborIndices: 9a020000be020000bb020000
+    normal: {x: 0.35058713, y: 0.92279744, z: 0.15979214}
+  - index: 697
+    triangles: 2b080000
+    neighborIndices: 99020000a1020000bb020000
+    normal: {x: 0.46940556, y: 0.85163945, z: 0.2331709}
+  - index: 698
+    triangles: 2e080000
+    neighborIndices: bc020000bb020000
+    normal: {x: 0.48233652, y: 0.87247354, z: 0.07836724}
+  - index: 699
+    triangles: 31080000
+    neighborIndices: b8020000b9020000ba020000
+    normal: {x: 0.43784195, y: 0.8843584, z: 0.16187845}
+  - index: 700
+    triangles: 34080000
+    neighborIndices: b0020000ba020000bf020000
+    normal: {x: 0.44305605, y: 0.8964939, z: 0.00000032830204}
+  - index: 701
+    triangles: 37080000
+    neighborIndices: b2020000bf020000
+    normal: {x: 0.3113352, y: 0.9468069, z: -0.08140739}
+  - index: 702
+    triangles: 3a080000
+    neighborIndices: b8020000bf020000
+    normal: {x: 0.3113356, y: 0.94680667, z: 0.08140767}
+  - index: 703
+    triangles: 3d080000
+    neighborIndices: bc020000bd020000be020000
+    normal: {x: 0.3568221, y: 0.93417233, z: 0.0000004180181}
+  - index: 704
+    triangles: 40080000
+    neighborIndices: cc020000f2020000c3020000
+    normal: {x: 0.7420995, y: 0.5222199, z: 0.42020798}
+  - index: 705
+    triangles: 43080000
+    neighborIndices: 19010000f1020000c3020000
+    normal: {x: 0.80267847, y: 0.38247812, z: 0.4576218}
+  - index: 706
+    triangles: 46080000
+    neighborIndices: 18010000cd020000c3020000
+    normal: {x: 0.82948023, y: 0.44506788, z: 0.33745688}
+  - index: 707
+    triangles: 49080000
+    neighborIndices: c0020000c1020000c2020000
+    normal: {x: 0.80168587, y: 0.44848233, z: 0.39517498}
+  - index: 708
+    triangles: 4c080000
+    neighborIndices: 16010000cd020000c7020000
+    normal: {x: 0.8397877, y: 0.5001423, z: 0.21122077}
+  - index: 709
+    triangles: 4f080000
+    neighborIndices: 15010000a5020000c7020000
+    normal: {x: 0.83367914, y: 0.54625016, z: 0.08117824}
+  - index: 710
+    triangles: 52080000
+    neighborIndices: a4020000ce020000c7020000
+    normal: {x: 0.7592466, y: 0.6304606, z: 0.16144325}
+  - index: 711
+    triangles: 55080000
+    neighborIndices: c4020000c5020000c6020000
+    normal: {x: 0.81963414, y: 0.55728453, z: 0.13279228}
+  - index: 712
+    triangles: 58080000
+    neighborIndices: a2020000ce020000cb020000
+    normal: {x: 0.67052734, y: 0.7022589, z: 0.23921861}
+  - index: 713
+    triangles: 5b080000
+    neighborIndices: a1020000f5020000cb020000
+    normal: {x: 0.5693578, y: 0.7599989, z: 0.3134218}
+  - index: 714
+    triangles: 5e080000
+    neighborIndices: f4020000cc020000cb020000
+    normal: {x: 0.66368234, y: 0.64910066, z: 0.37174454}
+  - index: 715
+    triangles: 61080000
+    neighborIndices: c8020000c9020000ca020000
+    normal: {x: 0.6415564, y: 0.7075768, z: 0.2962103}
+  - index: 716
+    triangles: 64080000
+    neighborIndices: c0020000ca020000cf020000
+    normal: {x: 0.73125714, y: 0.5855633, z: 0.34982663}
+  - index: 717
+    triangles: 67080000
+    neighborIndices: c2020000c4020000cf020000
+    normal: {x: 0.8186345, y: 0.50842524, z: 0.26709798}
+  - index: 718
+    triangles: 6a080000
+    neighborIndices: c6020000c8020000cf020000
+    normal: {x: 0.73810405, y: 0.6387264, z: 0.21732718}
+  - index: 719
+    triangles: 6d080000
+    neighborIndices: cc020000cd020000ce020000
+    normal: {x: 0.7591762, y: 0.5811536, z: 0.29310766}
+  - index: 720
+    triangles: 70080000
+    neighborIndices: dc020000f6020000d3020000
+    normal: {x: 0.42020866, y: 0.7420996, z: 0.5222192}
+  - index: 721
+    triangles: 73080000
+    neighborIndices: 99020000f5020000d3020000
+    normal: {x: 0.4576221, y: 0.80267805, z: 0.38247877}
+  - index: 722
+    triangles: 76080000
+    neighborIndices: 98020000dd020000d3020000
+    normal: {x: 0.3374569, y: 0.8294801, z: 0.44506797}
+  - index: 723
+    triangles: 79080000
+    neighborIndices: d0020000d1020000d2020000
+    normal: {x: 0.39517578, y: 0.80168545, z: 0.4484825}
+  - index: 724
+    triangles: 7c080000
+    neighborIndices: 96020000dd020000d7020000
+    normal: {x: 0.21122085, y: 0.8397878, z: 0.5001422}
+  - index: 725
+    triangles: 7f080000
+    neighborIndices: 9502000005030000d7020000
+    normal: {x: 0.08117788, y: 0.83367974, z: 0.5462492}
+  - index: 726
+    triangles: 82080000
+    neighborIndices: 04030000de020000d7020000
+    normal: {x: 0.16144422, y: 0.75924677, z: 0.6304603}
+  - index: 727
+    triangles: 85080000
+    neighborIndices: d4020000d5020000d6020000
+    normal: {x: 0.13279319, y: 0.81963444, z: 0.557284}
+  - index: 728
+    triangles: 88080000
+    neighborIndices: de02000002030000db020000
+    normal: {x: 0.23921987, y: 0.6705273, z: 0.7022585}
+  - index: 729
+    triangles: 8b080000
+    neighborIndices: 01030000f9020000db020000
+    normal: {x: 0.3134217, y: 0.56935793, z: 0.759999}
+  - index: 730
+    triangles: 8e080000
+    neighborIndices: f8020000dc020000db020000
+    normal: {x: 0.3717434, y: 0.66368306, z: 0.6491007}
+  - index: 731
+    triangles: 91080000
+    neighborIndices: d8020000d9020000da020000
+    normal: {x: 0.29620996, y: 0.64155716, z: 0.7075763}
+  - index: 732
+    triangles: 94080000
+    neighborIndices: d0020000da020000df020000
+    normal: {x: 0.34982574, y: 0.731257, z: 0.5855639}
+  - index: 733
+    triangles: 97080000
+    neighborIndices: d2020000d4020000df020000
+    normal: {x: 0.26709816, y: 0.81863445, z: 0.5084252}
+  - index: 734
+    triangles: 9a080000
+    neighborIndices: d6020000d8020000df020000
+    normal: {x: 0.2173285, y: 0.73810387, z: 0.63872606}
+  - index: 735
+    triangles: 9d080000
+    neighborIndices: dc020000dd020000de020000
+    normal: {x: 0.29310787, y: 0.7591756, z: 0.5811542}
+  - index: 736
+    triangles: a0080000
+    neighborIndices: ec020000fa020000e3020000
+    normal: {x: 0.52221984, y: 0.42020804, z: 0.7420995}
+  - index: 737
+    triangles: a3080000
+    neighborIndices: f902000029030000e3020000
+    normal: {x: 0.38247806, y: 0.45762184, z: 0.80267847}
+  - index: 738
+    triangles: a6080000
+    neighborIndices: 28030000ed020000e3020000
+    normal: {x: 0.44506776, y: 0.33745688, z: 0.8294803}
+  - index: 739
+    triangles: a9080000
+    neighborIndices: e0020000e1020000e2020000
+    normal: {x: 0.44848225, y: 0.395175, z: 0.8016859}
+  - index: 740
+    triangles: ac080000
+    neighborIndices: ed02000026030000e7020000
+    normal: {x: 0.5001421, y: 0.21122088, z: 0.8397879}
+  - index: 741
+    triangles: af080000
+    neighborIndices: 2501000025030000e7020000
+    normal: {x: 0.54624957, y: 0.08117855, z: 0.8336795}
+  - index: 742
+    triangles: b2080000
+    neighborIndices: 24010000ee020000e7020000
+    normal: {x: 0.6304607, y: 0.16144374, z: 0.7592465}
+  - index: 743
+    triangles: b5080000
+    neighborIndices: e4020000e5020000e6020000
+    normal: {x: 0.55728406, y: 0.13279253, z: 0.81963444}
+  - index: 744
+    triangles: b8080000
+    neighborIndices: 22010000ee020000eb020000
+    normal: {x: 0.70225865, y: 0.2392189, z: 0.67052746}
+  - index: 745
+    triangles: bb080000
+    neighborIndices: 21010000f1020000eb020000
+    normal: {x: 0.759999, y: 0.31342185, z: 0.5693578}
+  - index: 746
+    triangles: be080000
+    neighborIndices: f0020000ec020000eb020000
+    normal: {x: 0.64910066, y: 0.37174428, z: 0.6636825}
+  - index: 747
+    triangles: c1080000
+    neighborIndices: e8020000e9020000ea020000
+    normal: {x: 0.7075765, y: 0.29621023, z: 0.6415566}
+  - index: 748
+    triangles: c4080000
+    neighborIndices: e0020000ea020000ef020000
+    normal: {x: 0.58556336, y: 0.34982637, z: 0.73125714}
+  - index: 749
+    triangles: c7080000
+    neighborIndices: e2020000e4020000ef020000
+    normal: {x: 0.50842506, y: 0.2670981, z: 0.8186346}
+  - index: 750
+    triangles: ca080000
+    neighborIndices: e6020000e8020000ef020000
+    normal: {x: 0.6387263, y: 0.21732758, z: 0.7381039}
+  - index: 751
+    triangles: cd080000
+    neighborIndices: ec020000ed020000ee020000
+    normal: {x: 0.5811537, y: 0.29310778, z: 0.75917596}
+  - index: 752
+    triangles: d0080000
+    neighborIndices: ea020000fc020000f3020000
+    normal: {x: 0.6486871, y: 0.4404613, z: 0.62064385}
+  - index: 753
+    triangles: d3080000
+    neighborIndices: c1020000e9020000f3020000
+    normal: {x: 0.7595136, y: 0.38223383, z: 0.52634233}
+  - index: 754
+    triangles: d6080000
+    neighborIndices: c0020000fd020000f3020000
+    normal: {x: 0.6990105, y: 0.5218872, z: 0.48889476}
+  - index: 755
+    triangles: d9080000
+    neighborIndices: f0020000f1020000f2020000
+    normal: {x: 0.7084421, y: 0.44651717, z: 0.5465641}
+  - index: 756
+    triangles: dc080000
+    neighborIndices: ca020000fd020000f7020000
+    normal: {x: 0.6206436, y: 0.6486871, z: 0.44046164}
+  - index: 757
+    triangles: df080000
+    neighborIndices: c9020000d1020000f7020000
+    normal: {x: 0.526342, y: 0.7595136, z: 0.38223454}
+  - index: 758
+    triangles: e2080000
+    neighborIndices: d0020000fe020000f7020000
+    normal: {x: 0.48889503, y: 0.6990109, z: 0.52188647}
+  - index: 759
+    triangles: e5080000
+    neighborIndices: f4020000f5020000f6020000
+    normal: {x: 0.54656345, y: 0.7084423, z: 0.4465175}
+  - index: 760
+    triangles: e8080000
+    neighborIndices: da020000fe020000fb020000
+    normal: {x: 0.4404608, y: 0.6206442, z: 0.6486872}
+  - index: 761
+    triangles: eb080000
+    neighborIndices: d9020000e1020000fb020000
+    normal: {x: 0.3822338, y: 0.5263424, z: 0.7595137}
+  - index: 762
+    triangles: ee080000
+    neighborIndices: e0020000fc020000fb020000
+    normal: {x: 0.5218871, y: 0.48889434, z: 0.69901085}
+  - index: 763
+    triangles: f1080000
+    neighborIndices: f8020000f9020000fa020000
+    normal: {x: 0.44651663, y: 0.5465639, z: 0.70844245}
+  - index: 764
+    triangles: f4080000
+    neighborIndices: f0020000fa020000ff020000
+    normal: {x: 0.5851592, y: 0.5037508, z: 0.6354714}
+  - index: 765
+    triangles: f7080000
+    neighborIndices: f2020000f4020000ff020000
+    normal: {x: 0.6354711, y: 0.5851591, z: 0.5037511}
+  - index: 766
+    triangles: fa080000
+    neighborIndices: f6020000f8020000ff020000
+    normal: {x: 0.5037514, y: 0.63547194, z: 0.5851581}
+  - index: 767
+    triangles: fd080000
+    neighborIndices: fc020000fd020000fe020000
+    normal: {x: 0.57735056, y: 0.5773507, z: 0.5773496}
+  - index: 768
+    triangles: 00090000
+    neighborIndices: 0c0300003203000003030000
+    normal: {x: 0.07841758, y: 0.5516415, z: 0.8303868}
+  - index: 769
+    triangles: 03090000
+    neighborIndices: d90200003103000003030000
+    normal: {x: 0.23332006, y: 0.5387618, z: 0.80950445}
+  - index: 770
+    triangles: 06090000
+    neighborIndices: d80200000d03000003030000
+    normal: {x: 0.15895271, y: 0.63986796, z: 0.75186634}
+  - index: 771
+    triangles: 09090000
+    neighborIndices: 000300000103000002030000
+    normal: {x: 0.16012904, y: 0.589578, z: 0.7916795}
+  - index: 772
+    triangles: 0c090000
+    neighborIndices: d602000007030000
+    normal: {x: 0.080541395, y: 0.7283446, z: 0.68046105}
+  - index: 773
+    triangles: 0f090000
+    neighborIndices: d50200006503000007030000
+    normal: {x: 0, y: 0.80267256, z: 0.5964199}
+  - index: 774
+    triangles: 12090000
+    neighborIndices: 6403000007030000
+    normal: {x: -0.0805413, y: 0.72834456, z: 0.68046105}
+  - index: 775
+    triangles: 15090000
+    neighborIndices: 040300000503000006030000
+    normal: {x: 0, y: 0.76891214, z: 0.6393545}
+  - index: 776
+    triangles: 18090000
+    neighborIndices: 0e030000620300000b030000
+    normal: {x: -0.15895246, y: 0.63986784, z: 0.7518665}
+  - index: 777
+    triangles: 1b090000
+    neighborIndices: 61030000350300000b030000
+    normal: {x: -0.23332028, y: 0.53876185, z: 0.8095043}
+  - index: 778
+    triangles: 1e090000
+    neighborIndices: 340300000c0300000b030000
+    normal: {x: -0.07841715, y: 0.5516421, z: 0.8303865}
+  - index: 779
+    triangles: 21090000
+    neighborIndices: 08030000090300000a030000
+    normal: {x: -0.16012876, y: 0.58957857, z: 0.7916792}
+  - index: 780
+    triangles: 24090000
+    neighborIndices: 000300000a0300000f030000
+    normal: {x: -0.0000002944787, y: 0.5976358, z: 0.80176765}
+  - index: 781
+    triangles: 27090000
+    neighborIndices: 020300000f030000
+    normal: {x: 0.080530606, y: 0.6858516, z: 0.7232721}
+  - index: 782
+    triangles: 2a090000
+    neighborIndices: 080300000f030000
+    normal: {x: -0.080530696, y: 0.6858512, z: 0.7232723}
+  - index: 783
+    triangles: 2d090000
+    neighborIndices: 0c0300000d0300000e030000
+    normal: {x: -0.0000002799846, y: 0.6472179, z: 0.762305}
+  - index: 784
+    triangles: 30090000
+    neighborIndices: 1c0300003603000013030000
+    normal: {x: -0.2288929, y: 0.3081669, z: 0.92338574}
+  - index: 785
+    triangles: 33090000
+    neighborIndices: 350300005903000013030000
+    normal: {x: -0.30237746, y: 0.4270261, z: 0.8521834}
+  - index: 786
+    triangles: 36090000
+    neighborIndices: 580300001d03000013030000
+    normal: {x: -0.3648015, y: 0.30679792, z: 0.87908757}
+  - index: 787
+    triangles: 39090000
+    neighborIndices: 100300001103000012030000
+    normal: {x: -0.3124015, y: 0.34319654, z: 0.8857886}
+  - index: 788
+    triangles: 3c090000
+    neighborIndices: 1d0300005603000017030000
+    normal: {x: -0.41924042, y: 0.18031916, z: 0.8897879}
+  - index: 789
+    triangles: 3f090000
+    neighborIndices: 55030000c504000017030000
+    normal: {x: -0.46507227, y: 0.050171576, z: 0.8838499}
+  - index: 790
+    triangles: 42090000
+    neighborIndices: c40400001e03000017030000
+    normal: {x: -0.3386981, y: 0.050000355, z: 0.9395656}
+  - index: 791
+    triangles: 45090000
+    neighborIndices: 140300001503000016030000
+    normal: {x: -0.42449236, y: 0.08207095, z: 0.9017043}
+  - index: 792
+    triangles: 48090000
+    neighborIndices: 1e030000c20400001b030000
+    normal: {x: -0.2058487, y: 0.04960757, z: 0.9773256}
+  - index: 793
+    triangles: 4b090000
+    neighborIndices: 390300001b030000
+    normal: {x: -0.069056794, y: 0.049505234, z: 0.9963836}
+  - index: 794
+    triangles: 4e090000
+    neighborIndices: 380300001c0300001b030000
+    normal: {x: -0.15047543, y: 0.18128575, z: 0.9718501}
+  - index: 795
+    triangles: 51090000
+    neighborIndices: 18030000190300001a030000
+    normal: {x: -0.15227222, y: 0.08410277, z: 0.98475367}
+  - index: 796
+    triangles: 54090000
+    neighborIndices: 100300001a0300001f030000
+    normal: {x: -0.2357378, y: 0.21620433, z: 0.94746155}
+  - index: 797
+    triangles: 57090000
+    neighborIndices: 12030000140300001f030000
+    normal: {x: -0.371628, y: 0.21484718, z: 0.9031796}
+  - index: 798
+    triangles: 5a090000
+    neighborIndices: 16030000180300001f030000
+    normal: {x: -0.29109684, y: 0.08454533, z: 0.95295054}
+  - index: 799
+    triangles: 5d090000
+    neighborIndices: 1c0300001d0300001e030000
+    normal: {x: -0.28804532, y: 0.18115117, z: 0.94032663}
+  - index: 800
+    triangles: 60090000
+    neighborIndices: 2c0300003a03000023030000
+    normal: {x: 0.15047611, y: 0.18128589, z: 0.9718499}
+  - index: 801
+    triangles: 63090000
+    neighborIndices: 3903000023030000
+    normal: {x: 0.06905685, y: 0.0495047, z: 0.9963837}
+  - index: 802
+    triangles: 66090000
+    neighborIndices: e80400002d03000023030000
+    normal: {x: 0.20584859, y: 0.049607415, z: 0.97732574}
+  - index: 803
+    triangles: 69090000
+    neighborIndices: 200300002103000022030000
+    normal: {x: 0.15227278, y: 0.08410234, z: 0.98475367}
+  - index: 804
+    triangles: 6c090000
+    neighborIndices: 2d030000e604000027030000
+    normal: {x: 0.3386985, y: 0.049999937, z: 0.93956554}
+  - index: 805
+    triangles: 6f090000
+    neighborIndices: e5020000e504000027030000
+    normal: {x: 0.46507114, y: 0.050171174, z: 0.88385046}
+  - index: 806
+    triangles: 72090000
+    neighborIndices: e40200002e03000027030000
+    normal: {x: 0.41924018, y: 0.18031906, z: 0.889788}
+  - index: 807
+    triangles: 75090000
+    neighborIndices: 240300002503000026030000
+    normal: {x: 0.42449212, y: 0.08207003, z: 0.9017045}
+  - index: 808
+    triangles: 78090000
+    neighborIndices: e20200002e0300002b030000
+    normal: {x: 0.36480123, y: 0.3067978, z: 0.8790877}
+  - index: 809
+    triangles: 7b090000
+    neighborIndices: e1020000310300002b030000
+    normal: {x: 0.30237666, y: 0.42702577, z: 0.8521839}
+  - index: 810
+    triangles: 7e090000
+    neighborIndices: 300300002c0300002b030000
+    normal: {x: 0.22889274, y: 0.30816773, z: 0.9233855}
+  - index: 811
+    triangles: 81090000
+    neighborIndices: 28030000290300002a030000
+    normal: {x: 0.31240055, y: 0.3431969, z: 0.8857888}
+  - index: 812
+    triangles: 84090000
+    neighborIndices: 200300002a0300002f030000
+    normal: {x: 0.23573785, y: 0.21620418, z: 0.9474616}
+  - index: 813
+    triangles: 87090000
+    neighborIndices: 22030000240300002f030000
+    normal: {x: 0.29109687, y: 0.0845452, z: 0.9529506}
+  - index: 814
+    triangles: 8a090000
+    neighborIndices: 26030000280300002f030000
+    normal: {x: 0.3716277, y: 0.21484709, z: 0.90317965}
+  - index: 815
+    triangles: 8d090000
+    neighborIndices: 2c0300002d0300002e030000
+    normal: {x: 0.28804523, y: 0.18115115, z: 0.94032663}
+  - index: 816
+    triangles: 90090000
+    neighborIndices: 2a0300003c03000033030000
+    normal: {x: 0.1597929, y: 0.35058737, z: 0.9227972}
+  - index: 817
+    triangles: 93090000
+    neighborIndices: 010300002903000033030000
+    normal: {x: 0.2331711, y: 0.4694051, z: 0.8516396}
+  - index: 818
+    triangles: 96090000
+    neighborIndices: 000300003d03000033030000
+    normal: {x: 0.07836759, y: 0.4823365, z: 0.87247354}
+  - index: 819
+    triangles: 99090000
+    neighborIndices: 300300003103000032030000
+    normal: {x: 0.16187917, y: 0.43784177, z: 0.88435835}
+  - index: 820
+    triangles: 9c090000
+    neighborIndices: 0a0300003d03000037030000
+    normal: {x: -0.07836717, y: 0.48233655, z: 0.8724735}
+  - index: 821
+    triangles: 9f090000
+    neighborIndices: 090300001103000037030000
+    normal: {x: -0.2331713, y: 0.46940583, z: 0.8516392}
+  - index: 822
+    triangles: a2090000
+    neighborIndices: 100300003e03000037030000
+    normal: {x: -0.15979232, y: 0.3505869, z: 0.9227975}
+  - index: 823
+    triangles: a5090000
+    neighborIndices: 340300003503000036030000
+    normal: {x: -0.16187865, y: 0.43784213, z: 0.8843583}
+  - index: 824
+    triangles: a8090000
+    neighborIndices: 1a0300003b030000
+    normal: {x: -0.08142545, y: 0.22378622, z: 0.971231}
+  - index: 825
+    triangles: ab090000
+    neighborIndices: 19030000210300003b030000
+    normal: {x: -0.00000038586825, y: 0.09212557, z: 0.99574745}
+  - index: 826
+    triangles: ae090000
+    neighborIndices: 200300003b030000
+    normal: {x: 0.08142561, y: 0.22378674, z: 0.9712308}
+  - index: 827
+    triangles: b1090000
+    neighborIndices: 38030000390300003a030000
+    normal: {x: -0.0000004045306, y: 0.17591609, z: 0.9844052}
+  - index: 828
+    triangles: b4090000
+    neighborIndices: 300300003f030000
+    normal: {x: 0.08140773, y: 0.31133553, z: 0.9468067}
+  - index: 829
+    triangles: b7090000
+    neighborIndices: 32030000340300003f030000
+    normal: {x: 0.00000024434746, y: 0.4430558, z: 0.896494}
+  - index: 830
+    triangles: ba090000
+    neighborIndices: 360300003f030000
+    normal: {x: -0.081407666, y: 0.31133527, z: 0.9468068}
+  - index: 831
+    triangles: bd090000
+    neighborIndices: 3c0300003d0300003e030000
+    normal: {x: 0.00000027359644, y: 0.35682222, z: 0.93417233}
+  - index: 832
+    triangles: c0090000
+    neighborIndices: 4c0300007203000043030000
+    normal: {x: -0.66368306, y: 0.64910024, z: 0.3717441}
+  - index: 833
+    triangles: c3090000
+    neighborIndices: 710300009903000043030000
+    normal: {x: -0.5693577, y: 0.75999933, z: 0.31342128}
+  - index: 834
+    triangles: c6090000
+    neighborIndices: 980300004d03000043030000
+    normal: {x: -0.6705274, y: 0.7022587, z: 0.23921885}
+  - index: 835
+    triangles: c9090000
+    neighborIndices: 400300004103000042030000
+    normal: {x: -0.641557, y: 0.7075766, z: 0.29620957}
+  - index: 836
+    triangles: cc090000
+    neighborIndices: 4d0300009603000047030000
+    normal: {x: -0.75924635, y: 0.6304611, z: 0.16144262}
+  - index: 837
+    triangles: cf090000
+    neighborIndices: 950300004504000047030000
+    normal: {x: -0.83367914, y: 0.54625016, z: 0.08117824}
+  - index: 838
+    triangles: d2090000
+    neighborIndices: 440400004e03000047030000
+    normal: {x: -0.83978826, y: 0.5001415, z: 0.21122047}
+  - index: 839
+    triangles: d5090000
+    neighborIndices: 440300004503000046030000
+    normal: {x: -0.8196345, y: 0.55728436, z: 0.1327913}
+  - index: 840
+    triangles: d8090000
+    neighborIndices: 4e030000420400004b030000
+    normal: {x: -0.8294802, y: 0.4450679, z: 0.3374569}
+  - index: 841
+    triangles: db090000
+    neighborIndices: 41040000750300004b030000
+    normal: {x: -0.80267817, y: 0.38247862, z: 0.457622}
+  - index: 842
+    triangles: de090000
+    neighborIndices: 740300004c0300004b030000
+    normal: {x: -0.7420993, y: 0.5222195, z: 0.42020875}
+  - index: 843
+    triangles: e1090000
+    neighborIndices: 48030000490300004a030000
+    normal: {x: -0.8016856, y: 0.4484824, z: 0.3951757}
+  - index: 844
+    triangles: e4090000
+    neighborIndices: 400300004a0300004f030000
+    normal: {x: -0.7312569, y: 0.58556366, z: 0.34982648}
+  - index: 845
+    triangles: e7090000
+    neighborIndices: 42030000440300004f030000
+    normal: {x: -0.7381034, y: 0.63872695, z: 0.2173277}
+  - index: 846
+    triangles: ea090000
+    neighborIndices: 46030000480300004f030000
+    normal: {x: -0.8186346, y: 0.50842464, z: 0.26709878}
+  - index: 847
+    triangles: ed090000
+    neighborIndices: 4c0300004d0300004e030000
+    normal: {x: -0.7591755, y: 0.581154, z: 0.2931085}
+  - index: 848
+    triangles: f0090000
+    neighborIndices: 5c0300007603000053030000
+    normal: {x: -0.64910024, y: 0.371744, z: 0.6636831}
+  - index: 849
+    triangles: f3090000
+    neighborIndices: 750300006904000053030000
+    normal: {x: -0.7599992, y: 0.31342152, z: 0.5693577}
+  - index: 850
+    triangles: f6090000
+    neighborIndices: 680400005d03000053030000
+    normal: {x: -0.7022586, y: 0.23921901, z: 0.6705275}
+  - index: 851
+    triangles: f9090000
+    neighborIndices: 500300005103000052030000
+    normal: {x: -0.7075764, y: 0.29620978, z: 0.64155704}
+  - index: 852
+    triangles: fc090000
+    neighborIndices: 5d0300006604000057030000
+    normal: {x: -0.6304607, y: 0.16144376, z: 0.75924647}
+  - index: 853
+    triangles: ff090000
+    neighborIndices: 150300006504000057030000
+    normal: {x: -0.54624957, y: 0.08117855, z: 0.8336795}
+  - index: 854
+    triangles: 020a0000
+    neighborIndices: 140300005e03000057030000
+    normal: {x: -0.5001421, y: 0.21122088, z: 0.8397879}
+  - index: 855
+    triangles: 050a0000
+    neighborIndices: 540300005503000056030000
+    normal: {x: -0.55728406, y: 0.13279256, z: 0.81963444}
+  - index: 856
+    triangles: 080a0000
+    neighborIndices: 120300005e0300005b030000
+    normal: {x: -0.44506776, y: 0.33745688, z: 0.8294803}
+  - index: 857
+    triangles: 0b0a0000
+    neighborIndices: 11030000790300005b030000
+    normal: {x: -0.38247856, y: 0.45762202, z: 0.80267817}
+  - index: 858
+    triangles: 0e0a0000
+    neighborIndices: 780300005c0300005b030000
+    normal: {x: -0.52221954, y: 0.42020884, z: 0.7420993}
+  - index: 859
+    triangles: 110a0000
+    neighborIndices: 58030000590300005a030000
+    normal: {x: -0.4484822, y: 0.39517578, z: 0.80168563}
+  - index: 860
+    triangles: 140a0000
+    neighborIndices: 500300005a0300005f030000
+    normal: {x: -0.5855638, y: 0.34982643, z: 0.7312568}
+  - index: 861
+    triangles: 170a0000
+    neighborIndices: 52030000540300005f030000
+    normal: {x: -0.6387263, y: 0.21732767, z: 0.7381039}
+  - index: 862
+    triangles: 1a0a0000
+    neighborIndices: 56030000580300005f030000
+    normal: {x: -0.50842506, y: 0.267098, z: 0.81863457}
+  - index: 863
+    triangles: 1d0a0000
+    neighborIndices: 5c0300005d0300005e030000
+    normal: {x: -0.581154, y: 0.2931077, z: 0.7591758}
+  - index: 864
+    triangles: 200a0000
+    neighborIndices: 6c0300007a03000063030000
+    normal: {x: -0.37174383, y: 0.6636826, z: 0.6491008}
+  - index: 865
+    triangles: 230a0000
+    neighborIndices: 090300007903000063030000
+    normal: {x: -0.31342146, y: 0.5693579, z: 0.75999916}
+  - index: 866
+    triangles: 260a0000
+    neighborIndices: 080300006d03000063030000
+    normal: {x: -0.23921925, y: 0.67052704, z: 0.70225894}
+  - index: 867
+    triangles: 290a0000
+    neighborIndices: 600300006103000062030000
+    normal: {x: -0.29620987, y: 0.6415566, z: 0.7075767}
+  - index: 868
+    triangles: 2c0a0000
+    neighborIndices: 060300006d03000067030000
+    normal: {x: -0.16144376, y: 0.7592465, z: 0.6304606}
+  - index: 869
+    triangles: 2f0a0000
+    neighborIndices: 05030000a503000067030000
+    normal: {x: -0.08117788, y: 0.83367974, z: 0.5462492}
+  - index: 870
+    triangles: 320a0000
+    neighborIndices: a40300006e03000067030000
+    normal: {x: -0.21122071, y: 0.839788, z: 0.50014186}
+  - index: 871
+    triangles: 350a0000
+    neighborIndices: 640300006503000066030000
+    normal: {x: -0.13279264, y: 0.81963456, z: 0.5572839}
+  - index: 872
+    triangles: 380a0000
+    neighborIndices: 6e030000a20300006b030000
+    normal: {x: -0.3374569, y: 0.8294802, z: 0.445068}
+  - index: 873
+    triangles: 3b0a0000
+    neighborIndices: a1030000710300006b030000
+    normal: {x: -0.45762205, y: 0.8026781, z: 0.38247865}
+  - index: 874
+    triangles: 3e0a0000
+    neighborIndices: 700300006c0300006b030000
+    normal: {x: -0.42020854, y: 0.7420996, z: 0.52221924}
+  - index: 875
+    triangles: 410a0000
+    neighborIndices: 68030000690300006a030000
+    normal: {x: -0.3951756, y: 0.8016856, z: 0.4484824}
+  - index: 876
+    triangles: 440a0000
+    neighborIndices: 600300006a0300006f030000
+    normal: {x: -0.34982604, y: 0.7312572, z: 0.5855636}
+  - index: 877
+    triangles: 470a0000
+    neighborIndices: 62030000640300006f030000
+    normal: {x: -0.21732785, y: 0.73810387, z: 0.6387263}
+  - index: 878
+    triangles: 4a0a0000
+    neighborIndices: 66030000680300006f030000
+    normal: {x: -0.26709843, y: 0.8186345, z: 0.50842494}
+  - index: 879
+    triangles: 4d0a0000
+    neighborIndices: 6c0300006d0300006e030000
+    normal: {x: -0.293108, y: 0.75917584, z: 0.58115387}
+  - index: 880
+    triangles: 500a0000
+    neighborIndices: 6a0300007c03000073030000
+    normal: {x: -0.48889416, y: 0.69901145, z: 0.5218866}
+  - index: 881
+    triangles: 530a0000
+    neighborIndices: 410300006903000073030000
+    normal: {x: -0.5263415, y: 0.7595139, z: 0.3822344}
+  - index: 882
+    triangles: 560a0000
+    neighborIndices: 400300007d03000073030000
+    normal: {x: -0.62064445, y: 0.64868677, z: 0.44046113}
+  - index: 883
+    triangles: 590a0000
+    neighborIndices: 700300007103000072030000
+    normal: {x: -0.546563, y: 0.7084429, z: 0.44651702}
+  - index: 884
+    triangles: 5c0a0000
+    neighborIndices: 4a0300007d03000077030000
+    normal: {x: -0.6990109, y: 0.5218868, z: 0.48889467}
+  - index: 885
+    triangles: 5f0a0000
+    neighborIndices: 490300005103000077030000
+    normal: {x: -0.75951385, y: 0.38223436, z: 0.52634174}
+  - index: 886
+    triangles: 620a0000
+    neighborIndices: 500300007e03000077030000
+    normal: {x: -0.6486867, y: 0.44046164, z: 0.62064415}
+  - index: 887
+    triangles: 650a0000
+    neighborIndices: 740300007503000076030000
+    normal: {x: -0.70844233, y: 0.44651756, z: 0.5465634}
+  - index: 888
+    triangles: 680a0000
+    neighborIndices: 5a0300007e0300007b030000
+    normal: {x: -0.52188677, y: 0.48889408, z: 0.69901127}
+  - index: 889
+    triangles: 6b0a0000
+    neighborIndices: 59030000610300007b030000
+    normal: {x: -0.3822343, y: 0.52634186, z: 0.75951374}
+  - index: 890
+    triangles: 6e0a0000
+    neighborIndices: 600300007c0300007b030000
+    normal: {x: -0.4404609, y: 0.62064403, z: 0.6486873}
+  - index: 891
+    triangles: 710a0000
+    neighborIndices: 78030000790300007a030000
+    normal: {x: -0.44651678, y: 0.5465633, z: 0.70844287}
+  - index: 892
+    triangles: 740a0000
+    neighborIndices: 700300007a0300007f030000
+    normal: {x: -0.5037507, y: 0.63547164, z: 0.585159}
+  - index: 893
+    triangles: 770a0000
+    neighborIndices: 72030000740300007f030000
+    normal: {x: -0.63547206, y: 0.58515835, z: 0.50375104}
+  - index: 894
+    triangles: 7a0a0000
+    neighborIndices: 76030000780300007f030000
+    normal: {x: -0.5851591, y: 0.5037506, z: 0.6354715}
+  - index: 895
+    triangles: 7d0a0000
+    neighborIndices: 7c0300007d0300007e030000
+    normal: {x: -0.5773507, y: 0.5773498, z: 0.5773504}
+  - index: 896
+    triangles: 800a0000
+    neighborIndices: 8c030000b203000083030000
+    normal: {x: -0.18128656, y: 0.97184986, z: -0.15047577}
+  - index: 897
+    triangles: 830a0000
+    neighborIndices: b103000083030000
+    normal: {x: -0.049504735, y: 0.9963837, z: -0.06905675}
+  - index: 898
+    triangles: 860a0000
+    neighborIndices: 880200008d03000083030000
+    normal: {x: -0.049607057, y: 0.9773257, z: -0.20584871}
+  - index: 899
+    triangles: 890a0000
+    neighborIndices: 800300008103000082030000
+    normal: {x: -0.084102325, y: 0.9847538, z: -0.15227233}
+  - index: 900
+    triangles: 8c0a0000
+    neighborIndices: 860200008d03000087030000
+    normal: {x: -0.050000526, y: 0.9395656, z: -0.33869806}
+  - index: 901
+    triangles: 8f0a0000
+    neighborIndices: 85020000e503000087030000
+    normal: {x: -0.05017107, y: 0.8838499, z: -0.46507227}
+  - index: 902
+    triangles: 920a0000
+    neighborIndices: e40300008e03000087030000
+    normal: {x: -0.18031904, y: 0.889788, z: -0.41924033}
+  - index: 903
+    triangles: 950a0000
+    neighborIndices: 840300008503000086030000
+    normal: {x: -0.08207088, y: 0.9017045, z: -0.42449194}
+  - index: 904
+    triangles: 980a0000
+    neighborIndices: 8e030000e20300008b030000
+    normal: {x: -0.3067978, y: 0.8790876, z: -0.36480138}
+  - index: 905
+    triangles: 9b0a0000
+    neighborIndices: e1030000b50300008b030000
+    normal: {x: -0.42702594, y: 0.85218364, z: -0.30237696}
+  - index: 906
+    triangles: 9e0a0000
+    neighborIndices: b40300008c0300008b030000
+    normal: {x: -0.30816737, y: 0.92338574, z: -0.22889222}
+  - index: 907
+    triangles: a10a0000
+    neighborIndices: 88030000890300008a030000
+    normal: {x: -0.34319684, y: 0.88578874, z: -0.31240085}
+  - index: 908
+    triangles: a40a0000
+    neighborIndices: 800300008a0300008f030000
+    normal: {x: -0.21620473, y: 0.9474616, z: -0.23573719}
+  - index: 909
+    triangles: a70a0000
+    neighborIndices: 82030000840300008f030000
+    normal: {x: -0.08454508, y: 0.9529504, z: -0.29109743}
+  - index: 910
+    triangles: aa0a0000
+    neighborIndices: 86030000880300008f030000
+    normal: {x: -0.21484709, y: 0.90317965, z: -0.37162787}
+  - index: 911
+    triangles: ad0a0000
+    neighborIndices: 8c0300008d0300008e030000
+    normal: {x: -0.18115106, y: 0.9403266, z: -0.2880457}
+  - index: 912
+    triangles: b00a0000
+    neighborIndices: 9c03000093030000
+    normal: {x: -0.5516416, y: 0.8303868, z: -0.07841727}
+  - index: 913
+    triangles: b30a0000
+    neighborIndices: b5030000d903000093030000
+    normal: {x: -0.5387616, y: 0.8095046, z: -0.23331988}
+  - index: 914
+    triangles: b60a0000
+    neighborIndices: d80300009d03000093030000
+    normal: {x: -0.63986826, y: 0.7518662, z: -0.15895222}
+  - index: 915
+    triangles: b90a0000
+    neighborIndices: 900300009103000092030000
+    normal: {x: -0.5895779, y: 0.7916796, z: -0.1601286}
+  - index: 916
+    triangles: bc0a0000
+    neighborIndices: d603000097030000
+    normal: {x: -0.7283449, y: 0.68046075, z: -0.080541514}
+  - index: 917
+    triangles: bf0a0000
+    neighborIndices: 45030000d503000097030000
+    normal: {x: -0.8026718, y: 0.596421, z: 0}
+  - index: 918
+    triangles: c20a0000
+    neighborIndices: 4403000097030000
+    normal: {x: -0.7283449, y: 0.68046063, z: 0.080541626}
+  - index: 919
+    triangles: c50a0000
+    neighborIndices: 940300009503000096030000
+    normal: {x: -0.7689127, y: 0.6393538, z: 0}
+  - index: 920
+    triangles: c80a0000
+    neighborIndices: 420300009e0300009b030000
+    normal: {x: -0.63986826, y: 0.7518663, z: 0.15895215}
+  - index: 921
+    triangles: cb0a0000
+    neighborIndices: 41030000b90300009b030000
+    normal: {x: -0.5387615, y: 0.8095048, z: 0.2333196}
+  - index: 922
+    triangles: ce0a0000
+    neighborIndices: 9c0300009b030000
+    normal: {x: -0.55164164, y: 0.8303869, z: 0.07841741}
+  - index: 923
+    triangles: d10a0000
+    neighborIndices: 98030000990300009a030000
+    normal: {x: -0.5895778, y: 0.7916798, z: 0.16012849}
+  - index: 924
+    triangles: d40a0000
+    neighborIndices: 900300009a0300009f030000
+    normal: {x: -0.5976356, y: 0.8017678, z: 0.00000007497501}
+  - index: 925
+    triangles: d70a0000
+    neighborIndices: 920300009f030000
+    normal: {x: -0.6858514, y: 0.7232722, z: -0.08053092}
+  - index: 926
+    triangles: da0a0000
+    neighborIndices: 980300009f030000
+    normal: {x: -0.68585145, y: 0.7232722, z: 0.0805308}
+  - index: 927
+    triangles: dd0a0000
+    neighborIndices: 9c0300009d0300009e030000
+    normal: {x: -0.6472178, y: 0.7623051, z: 0.000000042270024}
+  - index: 928
+    triangles: e00a0000
+    neighborIndices: ac030000ba030000a3030000
+    normal: {x: -0.3081668, y: 0.92338574, z: 0.22889303}
+  - index: 929
+    triangles: e30a0000
+    neighborIndices: 69030000b9030000a3030000
+    normal: {x: -0.42702603, y: 0.8521836, z: 0.30237725}
+  - index: 930
+    triangles: e60a0000
+    neighborIndices: 68030000ad030000a3030000
+    normal: {x: -0.3067978, y: 0.8790876, z: 0.36480138}
+  - index: 931
+    triangles: e90a0000
+    neighborIndices: a0030000a1030000a2030000
+    normal: {x: -0.3431964, y: 0.88578874, z: 0.3124013}
+  - index: 932
+    triangles: ec0a0000
+    neighborIndices: 66030000ad030000a7030000
+    normal: {x: -0.18031894, y: 0.88978803, z: 0.4192401}
+  - index: 933
+    triangles: ef0a0000
+    neighborIndices: 9502000065030000a7030000
+    normal: {x: -0.05017067, y: 0.8838505, z: 0.4650712}
+  - index: 934
+    triangles: f20a0000
+    neighborIndices: 94020000ae030000a7030000
+    normal: {x: -0.049999874, y: 0.93956554, z: 0.33869848}
+  - index: 935
+    triangles: f50a0000
+    neighborIndices: a4030000a5030000a6030000
+    normal: {x: -0.08206986, y: 0.9017046, z: 0.42449185}
+  - index: 936
+    triangles: f80a0000
+    neighborIndices: 92020000ae030000ab030000
+    normal: {x: -0.049607817, y: 0.9773256, z: 0.20584859}
+  - index: 937
+    triangles: fb0a0000
+    neighborIndices: b1030000ab030000
+    normal: {x: -0.049505163, y: 0.9963836, z: 0.069056906}
+  - index: 938
+    triangles: fe0a0000
+    neighborIndices: b0030000ac030000ab030000
+    normal: {x: -0.18128543, y: 0.9718501, z: 0.150476}
+  - index: 939
+    triangles: 010b0000
+    neighborIndices: a8030000a9030000aa030000
+    normal: {x: -0.084102735, y: 0.98475367, z: 0.15227273}
+  - index: 940
+    triangles: 040b0000
+    neighborIndices: a0030000aa030000af030000
+    normal: {x: -0.2162038, y: 0.94746166, z: 0.23573801}
+  - index: 941
+    triangles: 070b0000
+    neighborIndices: a2030000a4030000af030000
+    normal: {x: -0.21484683, y: 0.9031797, z: 0.37162787}
+  - index: 942
+    triangles: 0a0b0000
+    neighborIndices: a6030000a8030000af030000
+    normal: {x: -0.08454542, y: 0.9529506, z: 0.29109648}
+  - index: 943
+    triangles: 0d0b0000
+    neighborIndices: ac030000ad030000ae030000
+    normal: {x: -0.18115093, y: 0.9403268, z: 0.28804502}
+  - index: 944
+    triangles: 100b0000
+    neighborIndices: aa030000b3030000
+    normal: {x: -0.22378641, y: 0.971231, z: 0.08142519}
+  - index: 945
+    triangles: 130b0000
+    neighborIndices: 81030000a9030000b3030000
+    normal: {x: -0.092125565, y: 0.99574745, z: 0.00000042759768}
+  - index: 946
+    triangles: 160b0000
+    neighborIndices: 80030000b3030000
+    normal: {x: -0.22378722, y: 0.97123075, z: -0.08142552}
+  - index: 947
+    triangles: 190b0000
+    neighborIndices: b0030000b1030000b2030000
+    normal: {x: -0.17591652, y: 0.9844051, z: 0.0000004842144}
+  - index: 948
+    triangles: 1c0b0000
+    neighborIndices: 8a030000bd030000b7030000
+    normal: {x: -0.35058713, y: 0.92279744, z: -0.15979214}
+  - index: 949
+    triangles: 1f0b0000
+    neighborIndices: 8903000091030000b7030000
+    normal: {x: -0.46940556, y: 0.85163945, z: -0.2331709}
+  - index: 950
+    triangles: 220b0000
+    neighborIndices: be030000b7030000
+    normal: {x: -0.48233652, y: 0.87247354, z: -0.07836724}
+  - index: 951
+    triangles: 250b0000
+    neighborIndices: b4030000b5030000b6030000
+    normal: {x: -0.43784195, y: 0.8843584, z: -0.16187845}
+  - index: 952
+    triangles: 280b0000
+    neighborIndices: be030000bb030000
+    normal: {x: -0.48233694, y: 0.87247324, z: 0.07836748}
+  - index: 953
+    triangles: 2b0b0000
+    neighborIndices: 99030000a1030000bb030000
+    normal: {x: -0.469406, y: 0.8516393, z: 0.2331706}
+  - index: 954
+    triangles: 2e0b0000
+    neighborIndices: a0030000bc030000bb030000
+    normal: {x: -0.35058695, y: 0.9227975, z: 0.1597923}
+  - index: 955
+    triangles: 310b0000
+    neighborIndices: b8030000b9030000ba030000
+    normal: {x: -0.43784267, y: 0.884358, z: 0.16187863}
+  - index: 956
+    triangles: 340b0000
+    neighborIndices: ba030000bf030000
+    normal: {x: -0.3113352, y: 0.9468069, z: 0.08140739}
+  - index: 957
+    triangles: 370b0000
+    neighborIndices: b4030000bf030000
+    normal: {x: -0.3113356, y: 0.94680667, z: -0.08140767}
+  - index: 958
+    triangles: 3a0b0000
+    neighborIndices: b6030000b8030000bf030000
+    normal: {x: -0.44305605, y: 0.8964939, z: -0.00000032830204}
+  - index: 959
+    triangles: 3d0b0000
+    neighborIndices: bc030000bd030000be030000
+    normal: {x: -0.3568221, y: 0.93417233, z: -0.0000004180181}
+  - index: 960
+    triangles: 400b0000
+    neighborIndices: cc030000f2030000c3030000
+    normal: {x: -0.5222198, y: 0.42020792, z: -0.7420996}
+  - index: 961
+    triangles: 430b0000
+    neighborIndices: 09020000f1030000c3030000
+    normal: {x: -0.38247827, y: 0.4576219, z: -0.80267835}
+  - index: 962
+    triangles: 460b0000
+    neighborIndices: 08020000cd030000c3030000
+    normal: {x: -0.44506803, y: 0.33745694, z: -0.8294801}
+  - index: 963
+    triangles: 490b0000
+    neighborIndices: c0030000c1030000c2030000
+    normal: {x: -0.4484825, y: 0.39517504, z: -0.80168575}
+  - index: 964
+    triangles: 4c0b0000
+    neighborIndices: 06020000cd030000c7030000
+    normal: {x: -0.5001421, y: 0.21122079, z: -0.8397879}
+  - index: 965
+    triangles: 4f0b0000
+    neighborIndices: 0502000005040000c7030000
+    normal: {x: -0.5462492, y: 0.08117788, z: -0.83367974}
+  - index: 966
+    triangles: 520b0000
+    neighborIndices: 04040000ce030000c7030000
+    normal: {x: -0.6304605, y: 0.16144398, z: -0.75924665}
+  - index: 967
+    triangles: 550b0000
+    neighborIndices: c4030000c5030000c6030000
+    normal: {x: -0.55728394, y: 0.1327929, z: -0.8196345}
+  - index: 968
+    triangles: 580b0000
+    neighborIndices: ce03000002040000cb030000
+    normal: {x: -0.7022589, y: 0.23921934, z: -0.6705271}
+  - index: 969
+    triangles: 5b0b0000
+    neighborIndices: 01040000f5030000cb030000
+    normal: {x: -0.759999, y: 0.31342173, z: -0.56935793}
+  - index: 970
+    triangles: 5e0b0000
+    neighborIndices: f4030000cc030000cb030000
+    normal: {x: -0.6491008, y: 0.3717444, z: -0.66368246}
+  - index: 971
+    triangles: 610b0000
+    neighborIndices: c8030000c9030000ca030000
+    normal: {x: -0.7075767, y: 0.2962102, z: -0.6415565}
+  - index: 972
+    triangles: 640b0000
+    neighborIndices: c0030000ca030000cf030000
+    normal: {x: -0.58556324, y: 0.34982643, z: -0.73125726}
+  - index: 973
+    triangles: 670b0000
+    neighborIndices: c2030000c4030000cf030000
+    normal: {x: -0.5084251, y: 0.2670984, z: -0.81863445}
+  - index: 974
+    triangles: 6a0b0000
+    neighborIndices: c6030000c8030000cf030000
+    normal: {x: -0.6387262, y: 0.21732788, z: -0.73810405}
+  - index: 975
+    triangles: 6d0b0000
+    neighborIndices: cc030000cd030000ce030000
+    normal: {x: -0.5811536, y: 0.29310802, z: -0.759176}
+  - index: 976
+    triangles: 700b0000
+    neighborIndices: dc030000f6030000d3030000
+    normal: {x: -0.7420996, y: 0.5222198, z: -0.42020792}
+  - index: 977
+    triangles: 730b0000
+    neighborIndices: f503000029040000d3030000
+    normal: {x: -0.80267876, y: 0.382478, z: -0.45762148}
+  - index: 978
+    triangles: 760b0000
+    neighborIndices: 28040000dd030000d3030000
+    normal: {x: -0.82948035, y: 0.44506744, z: -0.33745727}
+  - index: 979
+    triangles: 790b0000
+    neighborIndices: d0030000d1030000d2030000
+    normal: {x: -0.80168617, y: 0.44848195, z: -0.3951748}
+  - index: 980
+    triangles: 7c0b0000
+    neighborIndices: dd03000026040000d7030000
+    normal: {x: -0.839788, y: 0.50014186, z: -0.21122079}
+  - index: 981
+    triangles: 7f0b0000
+    neighborIndices: 9503000025040000d7030000
+    normal: {x: -0.8336792, y: 0.54624987, z: -0.08117866}
+  - index: 982
+    triangles: 820b0000
+    neighborIndices: 94030000de030000d7030000
+    normal: {x: -0.75924647, y: 0.63046086, z: -0.16144298}
+  - index: 983
+    triangles: 850b0000
+    neighborIndices: d4030000d5030000d6030000
+    normal: {x: -0.81963444, y: 0.5572842, z: -0.13279185}
+  - index: 984
+    triangles: 880b0000
+    neighborIndices: 92030000de030000db030000
+    normal: {x: -0.6705273, y: 0.70225894, z: -0.23921852}
+  - index: 985
+    triangles: 8b0b0000
+    neighborIndices: 91030000f9030000db030000
+    normal: {x: -0.5693578, y: 0.7599989, z: -0.3134218}
+  - index: 986
+    triangles: 8e0b0000
+    neighborIndices: f8030000dc030000db030000
+    normal: {x: -0.6636823, y: 0.6491008, z: -0.37174466}
+  - index: 987
+    triangles: 910b0000
+    neighborIndices: d8030000d9030000da030000
+    normal: {x: -0.6415563, y: 0.7075769, z: -0.29621032}
+  - index: 988
+    triangles: 940b0000
+    neighborIndices: d0030000da030000df030000
+    normal: {x: -0.73125726, y: 0.58556306, z: -0.3498266}
+  - index: 989
+    triangles: 970b0000
+    neighborIndices: d2030000d4030000df030000
+    normal: {x: -0.8186346, y: 0.50842494, z: -0.2670983}
+  - index: 990
+    triangles: 9a0b0000
+    neighborIndices: d6030000d8030000df030000
+    normal: {x: -0.73810387, y: 0.6387266, z: -0.21732715}
+  - index: 991
+    triangles: 9d0b0000
+    neighborIndices: dc030000dd030000de030000
+    normal: {x: -0.75917614, y: 0.58115345, z: -0.29310808}
+  - index: 992
+    triangles: a00b0000
+    neighborIndices: ec030000fa030000e3030000
+    normal: {x: -0.42020866, y: 0.7420996, z: -0.5222192}
+  - index: 993
+    triangles: a30b0000
+    neighborIndices: 89030000f9030000e3030000
+    normal: {x: -0.4576221, y: 0.80267805, z: -0.38247877}
+  - index: 994
+    triangles: a60b0000
+    neighborIndices: 88030000ed030000e3030000
+    normal: {x: -0.3374569, y: 0.8294801, z: -0.44506797}
+  - index: 995
+    triangles: a90b0000
+    neighborIndices: e0030000e1030000e2030000
+    normal: {x: -0.39517578, y: 0.80168545, z: -0.4484825}
+  - index: 996
+    triangles: ac0b0000
+    neighborIndices: 86030000ed030000e7030000
+    normal: {x: -0.21122092, y: 0.83978766, z: -0.50014246}
+  - index: 997
+    triangles: af0b0000
+    neighborIndices: 1502000085030000e7030000
+    normal: {x: -0.08117823, y: 0.83367914, z: -0.5462501}
+  - index: 998
+    triangles: b20b0000
+    neighborIndices: 14020000ee030000e7030000
+    normal: {x: -0.16144334, y: 0.75924665, z: -0.6304606}
+  - index: 999
+    triangles: b50b0000
+    neighborIndices: e4030000e5030000e6030000
+    normal: {x: -0.13279244, y: 0.8196341, z: -0.55728453}
+  - index: 1000
+    triangles: b80b0000
+    neighborIndices: 12020000ee030000eb030000
+    normal: {x: -0.2392191, y: 0.6705275, z: -0.7022586}
+  - index: 1001
+    triangles: bb0b0000
+    neighborIndices: 11020000f1030000eb030000
+    normal: {x: -0.3134218, y: 0.5693578, z: -0.759999}
+  - index: 1002
+    triangles: be0b0000
+    neighborIndices: f0030000ec030000eb030000
+    normal: {x: -0.37174398, y: 0.66368276, z: -0.64910066}
+  - index: 1003
+    triangles: c10b0000
+    neighborIndices: e8030000e9030000ea030000
+    normal: {x: -0.2962101, y: 0.6415568, z: -0.7075764}
+  - index: 1004
+    triangles: c40b0000
+    neighborIndices: e0030000ea030000ef030000
+    normal: {x: -0.34982616, y: 0.73125714, z: -0.5855636}
+  - index: 1005
+    triangles: c70b0000
+    neighborIndices: e2030000e4030000ef030000
+    normal: {x: -0.26709804, y: 0.81863445, z: -0.50842535}
+  - index: 1006
+    triangles: ca0b0000
+    neighborIndices: e6030000e8030000ef030000
+    normal: {x: -0.21732779, y: 0.73810387, z: -0.6387264}
+  - index: 1007
+    triangles: cd0b0000
+    neighborIndices: ec030000ed030000ee030000
+    normal: {x: -0.29310778, y: 0.7591759, z: -0.5811539}
+  - index: 1008
+    triangles: d00b0000
+    neighborIndices: ea030000fc030000f3030000
+    normal: {x: -0.44046086, y: 0.6206443, z: -0.6486871}
+  - index: 1009
+    triangles: d30b0000
+    neighborIndices: c1030000e9030000f3030000
+    normal: {x: -0.38223404, y: 0.5263423, z: -0.7595137}
+  - index: 1010
+    triangles: d60b0000
+    neighborIndices: c0030000fd030000f3030000
+    normal: {x: -0.5218871, y: 0.48889425, z: -0.69901097}
+  - index: 1011
+    triangles: d90b0000
+    neighborIndices: f0030000f1030000f2030000
+    normal: {x: -0.44651672, y: 0.5465638, z: -0.70844257}
+  - index: 1012
+    triangles: dc0b0000
+    neighborIndices: ca030000fd030000f7030000
+    normal: {x: -0.6486872, y: 0.44046086, z: -0.6206441}
+  - index: 1013
+    triangles: df0b0000
+    neighborIndices: c9030000d1030000f7030000
+    normal: {x: -0.7595137, y: 0.38223377, z: -0.5263425}
+  - index: 1014
+    triangles: e20b0000
+    neighborIndices: d0030000fe030000f7030000
+    normal: {x: -0.69901067, y: 0.52188706, z: -0.48889458}
+  - index: 1015
+    triangles: e50b0000
+    neighborIndices: f4030000f5030000f6030000
+    normal: {x: -0.70844233, y: 0.44651672, z: -0.5465641}
+  - index: 1016
+    triangles: e80b0000
+    neighborIndices: da030000fe030000fb030000
+    normal: {x: -0.62064356, y: 0.6486872, z: -0.44046164}
+  - index: 1017
+    triangles: eb0b0000
+    neighborIndices: d9030000e1030000fb030000
+    normal: {x: -0.526342, y: 0.7595136, z: -0.38223454}
+  - index: 1018
+    triangles: ee0b0000
+    neighborIndices: e0030000fc030000fb030000
+    normal: {x: -0.48889503, y: 0.6990109, z: -0.52188647}
+  - index: 1019
+    triangles: f10b0000
+    neighborIndices: f8030000f9030000fa030000
+    normal: {x: -0.54656345, y: 0.7084423, z: -0.4465175}
+  - index: 1020
+    triangles: f40b0000
+    neighborIndices: f0030000fa030000ff030000
+    normal: {x: -0.5037514, y: 0.63547194, z: -0.5851581}
+  - index: 1021
+    triangles: f70b0000
+    neighborIndices: f2030000f4030000ff030000
+    normal: {x: -0.585159, y: 0.5037507, z: -0.63547164}
+  - index: 1022
+    triangles: fa0b0000
+    neighborIndices: f6030000f8030000ff030000
+    normal: {x: -0.63547105, y: 0.5851593, z: -0.50375104}
+  - index: 1023
+    triangles: fd0b0000
+    neighborIndices: fc030000fd030000fe030000
+    normal: {x: -0.5773503, y: 0.57735085, z: -0.5773496}
+  - index: 1024
+    triangles: 000c0000
+    neighborIndices: 0c04000003040000
+    normal: {x: -0.8303867, y: 0.07841736, z: -0.5516417}
+  - index: 1025
+    triangles: 030c0000
+    neighborIndices: c90300003104000003040000
+    normal: {x: -0.8095044, y: 0.23332024, z: -0.5387619}
+  - index: 1026
+    triangles: 060c0000
+    neighborIndices: c80300000d04000003040000
+    normal: {x: -0.7518664, y: 0.1589527, z: -0.63986796}
+  - index: 1027
+    triangles: 090c0000
+    neighborIndices: 000400000104000002040000
+    normal: {x: -0.7916794, y: 0.16012901, z: -0.5895782}
+  - index: 1028
+    triangles: 0c0c0000
+    neighborIndices: c603000007040000
+    normal: {x: -0.6804614, y: 0.08054082, z: -0.7283444}
+  - index: 1029
+    triangles: 0f0c0000
+    neighborIndices: 05000000c503000007040000
+    normal: {x: -0.5964203, y: -0.0000006658308, z: -0.8026723}
+  - index: 1030
+    triangles: 120c0000
+    neighborIndices: 0400000007040000
+    normal: {x: -0.6804611, y: -0.08054132, z: -0.72834456}
+  - index: 1031
+    triangles: 150c0000
+    neighborIndices: 040400000504000006040000
+    normal: {x: -0.63935477, y: -0.00000061282606, z: -0.76891196}
+  - index: 1032
+    triangles: 180c0000
+    neighborIndices: 020000000e0400000b040000
+    normal: {x: -0.75186604, y: -0.15895249, z: -0.6398684}
+  - index: 1033
+    triangles: 1b0c0000
+    neighborIndices: 01000000350400000b040000
+    normal: {x: -0.80950445, y: -0.23332024, z: -0.53876173}
+  - index: 1034
+    triangles: 1e0c0000
+    neighborIndices: 0c0400000b040000
+    normal: {x: -0.83038664, y: -0.07841767, z: -0.55164176}
+  - index: 1035
+    triangles: 210c0000
+    neighborIndices: 08040000090400000a040000
+    normal: {x: -0.7916795, y: -0.16012886, z: -0.5895781}
+  - index: 1036
+    triangles: 240c0000
+    neighborIndices: 000400000a0400000f040000
+    normal: {x: -0.80176765, y: -0.00000021950365, z: -0.59763587}
+  - index: 1037
+    triangles: 270c0000
+    neighborIndices: 020400000f040000
+    normal: {x: -0.72327185, y: 0.080530085, z: -0.68585175}
+  - index: 1038
+    triangles: 2a0c0000
+    neighborIndices: 080400000f040000
+    normal: {x: -0.72327185, y: -0.080530636, z: -0.6858518}
+  - index: 1039
+    triangles: 2d0c0000
+    neighborIndices: 0c0400000d0400000e040000
+    normal: {x: -0.76230454, y: -0.00000023771467, z: -0.6472185}
+  - index: 1040
+    triangles: 300c0000
+    neighborIndices: 1c0400003604000013040000
+    normal: {x: -0.92338574, y: -0.22889301, z: -0.30816686}
+  - index: 1041
+    triangles: 330c0000
+    neighborIndices: 290000003504000013040000
+    normal: {x: -0.8521835, y: -0.30237725, z: -0.42702603}
+  - index: 1042
+    triangles: 360c0000
+    neighborIndices: 280000001d04000013040000
+    normal: {x: -0.8790876, y: -0.36480144, z: -0.30679786}
+  - index: 1043
+    triangles: 390c0000
+    neighborIndices: 100400001104000012040000
+    normal: {x: -0.8857887, y: -0.3124013, z: -0.34319645}
+  - index: 1044
+    triangles: 3c0c0000
+    neighborIndices: 260000001d04000017040000
+    normal: {x: -0.889788, y: -0.4192403, z: -0.18031895}
+  - index: 1045
+    triangles: 3f0c0000
+    neighborIndices: 250000005504000017040000
+    normal: {x: -0.8838499, y: -0.4650722, z: -0.05017107}
+  - index: 1046
+    triangles: 420c0000
+    neighborIndices: 540400001e04000017040000
+    normal: {x: -0.93956566, y: -0.3386981, z: -0.050000325}
+  - index: 1047
+    triangles: 450c0000
+    neighborIndices: 140400001504000016040000
+    normal: {x: -0.90170443, y: -0.42449206, z: -0.08207081}
+  - index: 1048
+    triangles: 480c0000
+    neighborIndices: 1e040000520400001b040000
+    normal: {x: -0.9773256, y: -0.2058487, z: -0.04960799}
+  - index: 1049
+    triangles: 4b0c0000
+    neighborIndices: 390400001b040000
+    normal: {x: -0.9963836, y: -0.069056794, z: -0.04950523}
+  - index: 1050
+    triangles: 4e0c0000
+    neighborIndices: 380400001c0400001b040000
+    normal: {x: -0.9718501, y: -0.15047589, z: -0.18128549}
+  - index: 1051
+    triangles: 510c0000
+    neighborIndices: 18040000190400001a040000
+    normal: {x: -0.98475367, y: -0.15227264, z: -0.08410295}
+  - index: 1052
+    triangles: 540c0000
+    neighborIndices: 100400001a0400001f040000
+    normal: {x: -0.94746166, y: -0.23573795, z: -0.21620391}
+  - index: 1053
+    triangles: 570c0000
+    neighborIndices: 12040000140400001f040000
+    normal: {x: -0.9031797, y: -0.37162796, z: -0.21484694}
+  - index: 1054
+    triangles: 5a0c0000
+    neighborIndices: 16040000180400001f040000
+    normal: {x: -0.9529506, y: -0.29109648, z: -0.08454559}
+  - index: 1055
+    triangles: 5d0c0000
+    neighborIndices: 1c0400001d0400001e040000
+    normal: {x: -0.94032675, y: -0.288045, z: -0.18115097}
+  - index: 1056
+    triangles: 600c0000
+    neighborIndices: 2c0400003a04000023040000
+    normal: {x: -0.9718499, y: 0.15047611, z: -0.18128589}
+  - index: 1057
+    triangles: 630c0000
+    neighborIndices: 3904000023040000
+    normal: {x: -0.9963837, y: 0.06905685, z: -0.0495047}
+  - index: 1058
+    triangles: 660c0000
+    neighborIndices: 480400002d04000023040000
+    normal: {x: -0.97732574, y: 0.20584859, z: -0.049607415}
+  - index: 1059
+    triangles: 690c0000
+    neighborIndices: 200400002104000022040000
+    normal: {x: -0.98475367, y: 0.15227278, z: -0.08410234}
+  - index: 1060
+    triangles: 6c0c0000
+    neighborIndices: 2d0400004604000027040000
+    normal: {x: -0.93956554, y: 0.3386985, z: -0.049999926}
+  - index: 1061
+    triangles: 6f0c0000
+    neighborIndices: d50300004504000027040000
+    normal: {x: -0.8838505, y: 0.46507114, z: -0.05017117}
+  - index: 1062
+    triangles: 720c0000
+    neighborIndices: d40300002e04000027040000
+    normal: {x: -0.889788, y: 0.41924018, z: -0.18031904}
+  - index: 1063
+    triangles: 750c0000
+    neighborIndices: 240400002504000026040000
+    normal: {x: -0.90170443, y: 0.4244921, z: -0.08207001}
+  - index: 1064
+    triangles: 780c0000
+    neighborIndices: d20300002e0400002b040000
+    normal: {x: -0.8790875, y: 0.36480126, z: -0.3067983}
+  - index: 1065
+    triangles: 7b0c0000
+    neighborIndices: d1030000310400002b040000
+    normal: {x: -0.8521839, y: 0.30237696, z: -0.4270256}
+  - index: 1066
+    triangles: 7e0c0000
+    neighborIndices: 300400002c0400002b040000
+    normal: {x: -0.92338544, y: 0.2288925, z: -0.30816793}
+  - index: 1067
+    triangles: 810c0000
+    neighborIndices: 28040000290400002a040000
+    normal: {x: -0.8857886, y: 0.31240085, z: -0.34319723}
+  - index: 1068
+    triangles: 840c0000
+    neighborIndices: 200400002a0400002f040000
+    normal: {x: -0.94746166, y: 0.23573759, z: -0.21620406}
+  - index: 1069
+    triangles: 870c0000
+    neighborIndices: 22040000240400002f040000
+    normal: {x: -0.9529506, y: 0.29109684, z: -0.084545195}
+  - index: 1070
+    triangles: 8a0c0000
+    neighborIndices: 26040000280400002f040000
+    normal: {x: -0.9031797, y: 0.3716278, z: -0.21484703}
+  - index: 1071
+    triangles: 8d0c0000
+    neighborIndices: 2c0400002d0400002e040000
+    normal: {x: -0.94032675, y: 0.2880452, z: -0.18115096}
+  - index: 1072
+    triangles: 900c0000
+    neighborIndices: 2a0400003c04000033040000
+    normal: {x: -0.92279726, y: 0.15979327, z: -0.3505872}
+  - index: 1073
+    triangles: 930c0000
+    neighborIndices: 010400002904000033040000
+    normal: {x: -0.8516396, y: 0.23317124, z: -0.46940503}
+  - index: 1074
+    triangles: 960c0000
+    neighborIndices: 3d04000033040000
+    normal: {x: -0.8724735, y: 0.07836747, z: -0.48233658}
+  - index: 1075
+    triangles: 990c0000
+    neighborIndices: 300400003104000032040000
+    normal: {x: -0.88435835, y: 0.16187951, z: -0.43784168}
+  - index: 1076
+    triangles: 9c0c0000
+    neighborIndices: 3d04000037040000
+    normal: {x: -0.87247336, y: -0.07836768, z: -0.48233676}
+  - index: 1077
+    triangles: 9f0c0000
+    neighborIndices: 090400001104000037040000
+    normal: {x: -0.8516393, y: -0.23317122, z: -0.46940565}
+  - index: 1078
+    triangles: a20c0000
+    neighborIndices: 100400003e04000037040000
+    normal: {x: -0.9227975, y: -0.15979263, z: -0.35058677}
+  - index: 1079
+    triangles: a50c0000
+    neighborIndices: 340400003504000036040000
+    normal: {x: -0.88435817, y: -0.16187894, z: -0.43784222}
+  - index: 1080
+    triangles: a80c0000
+    neighborIndices: 1a0400003b040000
+    normal: {x: -0.9712309, y: -0.081425175, z: -0.22378644}
+  - index: 1081
+    triangles: ab0c0000
+    neighborIndices: 19040000210400003b040000
+    normal: {x: -0.99574745, y: -0.00000040256, z: -0.09212557}
+  - index: 1082
+    triangles: ae0c0000
+    neighborIndices: 200400003b040000
+    normal: {x: -0.97123086, y: 0.08142516, z: -0.22378701}
+  - index: 1083
+    triangles: b10c0000
+    neighborIndices: 38040000390400003a040000
+    normal: {x: -0.9844051, y: -0.00000043640418, z: -0.17591654}
+  - index: 1084
+    triangles: b40c0000
+    neighborIndices: 300400003f040000
+    normal: {x: -0.9468069, y: 0.08140736, z: -0.31133497}
+  - index: 1085
+    triangles: b70c0000
+    neighborIndices: 32040000340400003f040000
+    normal: {x: -0.896494, y: 0.0000000037585375, z: -0.44305587}
+  - index: 1086
+    triangles: ba0c0000
+    neighborIndices: 360400003f040000
+    normal: {x: -0.94680697, y: -0.08140734, z: -0.31133482}
+  - index: 1087
+    triangles: bd0c0000
+    neighborIndices: 3c0400003d0400003e040000
+    normal: {x: -0.9341726, y: 0.00000007983486, z: -0.3568215}
+  - index: 1088
+    triangles: c00c0000
+    neighborIndices: 4c0400007204000043040000
+    normal: {x: -0.92338574, y: 0.22889301, z: 0.30816686}
+  - index: 1089
+    triangles: c30c0000
+    neighborIndices: 490300007104000043040000
+    normal: {x: -0.8521835, y: 0.30237725, z: 0.42702603}
+  - index: 1090
+    triangles: c60c0000
+    neighborIndices: 480300004d04000043040000
+    normal: {x: -0.8790876, y: 0.36480144, z: 0.30679786}
+  - index: 1091
+    triangles: c90c0000
+    neighborIndices: 400400004104000042040000
+    normal: {x: -0.8857887, y: 0.3124013, z: 0.34319645}
+  - index: 1092
+    triangles: cc0c0000
+    neighborIndices: 460300004d04000047040000
+    normal: {x: -0.88978803, y: 0.41924018, z: 0.18031889}
+  - index: 1093
+    triangles: cf0c0000
+    neighborIndices: 450300002504000047040000
+    normal: {x: -0.88385046, y: 0.46507114, z: 0.050170675}
+  - index: 1094
+    triangles: d20c0000
+    neighborIndices: 240400004e04000047040000
+    normal: {x: -0.93956554, y: 0.33869848, z: 0.049999803}
+  - index: 1095
+    triangles: d50c0000
+    neighborIndices: 440400004504000046040000
+    normal: {x: -0.9017046, y: 0.42449194, z: 0.08206981}
+  - index: 1096
+    triangles: d80c0000
+    neighborIndices: 220400004e0400004b040000
+    normal: {x: -0.9773256, y: 0.20584857, z: 0.049607787}
+  - index: 1097
+    triangles: db0c0000
+    neighborIndices: 750400004b040000
+    normal: {x: -0.9963836, y: 0.069056906, z: 0.049505163}
+  - index: 1098
+    triangles: de0c0000
+    neighborIndices: 740400004c0400004b040000
+    normal: {x: -0.9718501, y: 0.15047596, z: 0.18128544}
+  - index: 1099
+    triangles: e10c0000
+    neighborIndices: 48040000490400004a040000
+    normal: {x: -0.98475367, y: 0.15227272, z: 0.08410273}
+  - index: 1100
+    triangles: e40c0000
+    neighborIndices: 400400004a0400004f040000
+    normal: {x: -0.94746166, y: 0.23573795, z: 0.21620382}
+  - index: 1101
+    triangles: e70c0000
+    neighborIndices: 42040000440400004f040000
+    normal: {x: -0.90317965, y: 0.37162793, z: 0.2148468}
+  - index: 1102
+    triangles: ea0c0000
+    neighborIndices: 46040000480400004f040000
+    normal: {x: -0.9529506, y: 0.29109645, z: 0.08454536}
+  - index: 1103
+    triangles: ed0c0000
+    neighborIndices: 4c0400004d0400004e040000
+    normal: {x: -0.9403268, y: 0.288045, z: 0.18115087}
+  - index: 1104
+    triangles: f00c0000
+    neighborIndices: 5c0400007604000053040000
+    normal: {x: -0.97184986, y: -0.15047577, z: 0.18128656}
+  - index: 1105
+    triangles: f30c0000
+    neighborIndices: 7504000053040000
+    normal: {x: -0.9963837, y: -0.06905675, z: 0.049504735}
+  - index: 1106
+    triangles: f60c0000
+    neighborIndices: 180400005d04000053040000
+    normal: {x: -0.9773257, y: -0.20584871, z: 0.049607057}
+  - index: 1107
+    triangles: f90c0000
+    neighborIndices: 500400005104000052040000
+    normal: {x: -0.9847538, y: -0.15227233, z: 0.084102325}
+  - index: 1108
+    triangles: fc0c0000
+    neighborIndices: 160400005d04000057040000
+    normal: {x: -0.9395656, y: -0.33869806, z: 0.05000046}
+  - index: 1109
+    triangles: ff0c0000
+    neighborIndices: 150400008504000057040000
+    normal: {x: -0.8838499, y: -0.4650722, z: 0.05017107}
+  - index: 1110
+    triangles: 020d0000
+    neighborIndices: 840400005e04000057040000
+    normal: {x: -0.889788, y: -0.41924036, z: 0.18031897}
+  - index: 1111
+    triangles: 050d0000
+    neighborIndices: 540400005504000056040000
+    normal: {x: -0.90170443, y: -0.42449206, z: 0.082070835}
+  - index: 1112
+    triangles: 080d0000
+    neighborIndices: 5e040000820400005b040000
+    normal: {x: -0.8790876, y: -0.36480132, z: 0.30679777}
+  - index: 1113
+    triangles: 0b0d0000
+    neighborIndices: 81040000790400005b040000
+    normal: {x: -0.8521837, y: -0.30237693, z: 0.4270259}
+  - index: 1114
+    triangles: 0e0d0000
+    neighborIndices: 780400005c0400005b040000
+    normal: {x: -0.92338574, y: -0.22889227, z: 0.30816743}
+  - index: 1115
+    triangles: 110d0000
+    neighborIndices: 58040000590400005a040000
+    normal: {x: -0.88578874, y: -0.3124008, z: 0.34319684}
+  - index: 1116
+    triangles: 140d0000
+    neighborIndices: 500400005a0400005f040000
+    normal: {x: -0.9474616, y: -0.23573723, z: 0.21620476}
+  - index: 1117
+    triangles: 170d0000
+    neighborIndices: 52040000540400005f040000
+    normal: {x: -0.9529504, y: -0.2910974, z: 0.08454506}
+  - index: 1118
+    triangles: 1a0d0000
+    neighborIndices: 56040000580400005f040000
+    normal: {x: -0.9031797, y: -0.3716278, z: 0.21484712}
+  - index: 1119
+    triangles: 1d0d0000
+    neighborIndices: 5c0400005d0400005e040000
+    normal: {x: -0.9403265, y: -0.28804564, z: 0.18115112}
+  - index: 1120
+    triangles: 200d0000
+    neighborIndices: 6c04000063040000
+    normal: {x: -0.830387, y: -0.078417264, z: 0.55164135}
+  - index: 1121
+    triangles: 230d0000
+    neighborIndices: 79040000a904000063040000
+    normal: {x: -0.8095046, y: -0.23331988, z: 0.5387616}
+  - index: 1122
+    triangles: 260d0000
+    neighborIndices: a80400006d04000063040000
+    normal: {x: -0.7518661, y: -0.15895241, z: 0.6398684}
+  - index: 1123
+    triangles: 290d0000
+    neighborIndices: 600400006104000062040000
+    normal: {x: -0.7916797, y: -0.16012877, z: 0.58957785}
+  - index: 1124
+    triangles: 2c0d0000
+    neighborIndices: a604000067040000
+    normal: {x: -0.6804611, y: -0.0805413, z: 0.72834456}
+  - index: 1125
+    triangles: 2f0d0000
+    neighborIndices: 55030000a504000067040000
+    normal: {x: -0.59642065, y: 0, z: 0.802672}
+  - index: 1126
+    triangles: 320d0000
+    neighborIndices: 5403000067040000
+    normal: {x: -0.68046105, y: 0.0805413, z: 0.72834456}
+  - index: 1127
+    triangles: 350d0000
+    neighborIndices: 640400006504000066040000
+    normal: {x: -0.63935447, y: 0, z: 0.76891214}
+  - index: 1128
+    triangles: 380d0000
+    neighborIndices: 520300006e0400006b040000
+    normal: {x: -0.7518663, y: 0.15895215, z: 0.63986826}
+  - index: 1129
+    triangles: 3b0d0000
+    neighborIndices: 51030000710400006b040000
+    normal: {x: -0.8095048, y: 0.23331958, z: 0.53876144}
+  - index: 1130
+    triangles: 3e0d0000
+    neighborIndices: 6c0400006b040000
+    normal: {x: -0.83038676, y: 0.07841742, z: 0.5516416}
+  - index: 1131
+    triangles: 410d0000
+    neighborIndices: 68040000690400006a040000
+    normal: {x: -0.7916798, y: 0.16012849, z: 0.5895778}
+  - index: 1132
+    triangles: 440d0000
+    neighborIndices: 600400006a0400006f040000
+    normal: {x: -0.8017679, y: 0.0000002944786, z: 0.5976355}
+  - index: 1133
+    triangles: 470d0000
+    neighborIndices: 620400006f040000
+    normal: {x: -0.72327185, y: -0.080530606, z: 0.68585175}
+  - index: 1134
+    triangles: 4a0d0000
+    neighborIndices: 680400006f040000
+    normal: {x: -0.7232721, y: 0.0805306, z: 0.6858515}
+  - index: 1135
+    triangles: 4d0d0000
+    neighborIndices: 6c0400006d0400006e040000
+    normal: {x: -0.7623048, y: 0.00000027998436, z: 0.64721817}
+  - index: 1136
+    triangles: 500d0000
+    neighborIndices: 7c04000073040000
+    normal: {x: -0.8724733, y: 0.07836747, z: 0.48233688}
+  - index: 1137
+    triangles: 530d0000
+    neighborIndices: 410400006904000073040000
+    normal: {x: -0.8516393, y: 0.23317057, z: 0.46940604}
+  - index: 1138
+    triangles: 560d0000
+    neighborIndices: 400400007d04000073040000
+    normal: {x: -0.92279744, y: 0.15979226, z: 0.350587}
+  - index: 1139
+    triangles: 590d0000
+    neighborIndices: 700400007104000072040000
+    normal: {x: -0.88435805, y: 0.16187857, z: 0.43784267}
+  - index: 1140
+    triangles: 5c0d0000
+    neighborIndices: 4a04000077040000
+    normal: {x: -0.971231, y: 0.08142519, z: 0.22378641}
+  - index: 1141
+    triangles: 5f0d0000
+    neighborIndices: 490400005104000077040000
+    normal: {x: -0.99574745, y: 0.00000042759768, z: 0.092125565}
+  - index: 1142
+    triangles: 620d0000
+    neighborIndices: 5004000077040000
+    normal: {x: -0.97123075, y: -0.08142552, z: 0.22378722}
+  - index: 1143
+    triangles: 650d0000
+    neighborIndices: 740400007504000076040000
+    normal: {x: -0.9844051, y: 0.0000004842144, z: 0.17591652}
+  - index: 1144
+    triangles: 680d0000
+    neighborIndices: 5a0400007e0400007b040000
+    normal: {x: -0.92279744, y: -0.15979224, z: 0.35058716}
+  - index: 1145
+    triangles: 6b0d0000
+    neighborIndices: 59040000610400007b040000
+    normal: {x: -0.85163945, y: -0.2331709, z: 0.46940547}
+  - index: 1146
+    triangles: 6e0d0000
+    neighborIndices: 7c0400007b040000
+    normal: {x: -0.87247354, y: -0.07836725, z: 0.48233652}
+  - index: 1147
+    triangles: 710d0000
+    neighborIndices: 78040000790400007a040000
+    normal: {x: -0.8843584, y: -0.16187856, z: 0.43784192}
+  - index: 1148
+    triangles: 740d0000
+    neighborIndices: 700400007a0400007f040000
+    normal: {x: -0.8964939, y: -0.00000024810575, z: 0.443056}
+  - index: 1149
+    triangles: 770d0000
+    neighborIndices: 720400007f040000
+    normal: {x: -0.9468068, y: 0.08140739, z: 0.31133527}
+  - index: 1150
+    triangles: 7a0d0000
+    neighborIndices: 780400007f040000
+    normal: {x: -0.94680667, y: -0.08140767, z: 0.3113356}
+  - index: 1151
+    triangles: 7d0d0000
+    neighborIndices: 7c0400007d0400007e040000
+    normal: {x: -0.93417233, y: -0.0000003534307, z: 0.3568222}
+  - index: 1152
+    triangles: 800d0000
+    neighborIndices: 8c040000b204000083040000
+    normal: {x: -0.7420995, y: -0.5222199, z: 0.42020798}
+  - index: 1153
+    triangles: 830d0000
+    neighborIndices: 59040000b104000083040000
+    normal: {x: -0.80267847, y: -0.38247812, z: 0.4576218}
+  - index: 1154
+    triangles: 860d0000
+    neighborIndices: 580400008d04000083040000
+    normal: {x: -0.82948023, y: -0.44506788, z: 0.33745688}
+  - index: 1155
+    triangles: 890d0000
+    neighborIndices: 800400008104000082040000
+    normal: {x: -0.80168587, y: -0.44848233, z: 0.39517498}
+  - index: 1156
+    triangles: 8c0d0000
+    neighborIndices: 560400008d04000087040000
+    normal: {x: -0.8397877, y: -0.5001423, z: 0.21122077}
+  - index: 1157
+    triangles: 8f0d0000
+    neighborIndices: 450000005504000087040000
+    normal: {x: -0.83367914, y: -0.54625016, z: 0.08117824}
+  - index: 1158
+    triangles: 920d0000
+    neighborIndices: 440000008e04000087040000
+    normal: {x: -0.7592466, y: -0.6304606, z: 0.16144325}
+  - index: 1159
+    triangles: 950d0000
+    neighborIndices: 840400008504000086040000
+    normal: {x: -0.81963414, y: -0.55728453, z: 0.13279228}
+  - index: 1160
+    triangles: 980d0000
+    neighborIndices: 420000008e0400008b040000
+    normal: {x: -0.67052734, y: -0.7022589, z: 0.23921861}
+  - index: 1161
+    triangles: 9b0d0000
+    neighborIndices: 41000000b50400008b040000
+    normal: {x: -0.5693578, y: -0.7599989, z: 0.3134218}
+  - index: 1162
+    triangles: 9e0d0000
+    neighborIndices: b40400008c0400008b040000
+    normal: {x: -0.66368234, y: -0.64910066, z: 0.37174454}
+  - index: 1163
+    triangles: a10d0000
+    neighborIndices: 88040000890400008a040000
+    normal: {x: -0.6415564, y: -0.7075768, z: 0.2962103}
+  - index: 1164
+    triangles: a40d0000
+    neighborIndices: 800400008a0400008f040000
+    normal: {x: -0.73125714, y: -0.5855633, z: 0.34982663}
+  - index: 1165
+    triangles: a70d0000
+    neighborIndices: 82040000840400008f040000
+    normal: {x: -0.8186345, y: -0.50842524, z: 0.26709798}
+  - index: 1166
+    triangles: aa0d0000
+    neighborIndices: 86040000880400008f040000
+    normal: {x: -0.73810405, y: -0.6387264, z: 0.21732718}
+  - index: 1167
+    triangles: ad0d0000
+    neighborIndices: 8c0400008d0400008e040000
+    normal: {x: -0.7591762, y: -0.5811536, z: 0.29310766}
+  - index: 1168
+    triangles: b00d0000
+    neighborIndices: 9c040000b604000093040000
+    normal: {x: -0.42020866, y: -0.7420996, z: 0.5222192}
+  - index: 1169
+    triangles: b30d0000
+    neighborIndices: 69000000b504000093040000
+    normal: {x: -0.4576221, y: -0.80267805, z: 0.38247877}
+  - index: 1170
+    triangles: b60d0000
+    neighborIndices: 680000009d04000093040000
+    normal: {x: -0.3374569, y: -0.8294801, z: 0.44506797}
+  - index: 1171
+    triangles: b90d0000
+    neighborIndices: 900400009104000092040000
+    normal: {x: -0.39517578, y: -0.80168545, z: 0.4484825}
+  - index: 1172
+    triangles: bc0d0000
+    neighborIndices: 660000009d04000097040000
+    normal: {x: -0.21122085, y: -0.8397878, z: 0.5001422}
+  - index: 1173
+    triangles: bf0d0000
+    neighborIndices: 65000000d504000097040000
+    normal: {x: -0.08117788, y: -0.83367974, z: 0.5462492}
+  - index: 1174
+    triangles: c20d0000
+    neighborIndices: d40400009e04000097040000
+    normal: {x: -0.16144422, y: -0.75924677, z: 0.6304603}
+  - index: 1175
+    triangles: c50d0000
+    neighborIndices: 940400009504000096040000
+    normal: {x: -0.13279319, y: -0.81963444, z: 0.557284}
+  - index: 1176
+    triangles: c80d0000
+    neighborIndices: 9e040000d20400009b040000
+    normal: {x: -0.23921987, y: -0.6705273, z: 0.7022585}
+  - index: 1177
+    triangles: cb0d0000
+    neighborIndices: d1040000b90400009b040000
+    normal: {x: -0.3134217, y: -0.56935793, z: 0.759999}
+  - index: 1178
+    triangles: ce0d0000
+    neighborIndices: b80400009c0400009b040000
+    normal: {x: -0.3717434, y: -0.66368306, z: 0.6491007}
+  - index: 1179
+    triangles: d10d0000
+    neighborIndices: 98040000990400009a040000
+    normal: {x: -0.29620996, y: -0.64155716, z: 0.7075763}
+  - index: 1180
+    triangles: d40d0000
+    neighborIndices: 900400009a0400009f040000
+    normal: {x: -0.34982574, y: -0.731257, z: 0.5855639}
+  - index: 1181
+    triangles: d70d0000
+    neighborIndices: 92040000940400009f040000
+    normal: {x: -0.26709816, y: -0.81863445, z: 0.5084252}
+  - index: 1182
+    triangles: da0d0000
+    neighborIndices: 96040000980400009f040000
+    normal: {x: -0.2173285, y: -0.73810387, z: 0.63872606}
+  - index: 1183
+    triangles: dd0d0000
+    neighborIndices: 9c0400009d0400009e040000
+    normal: {x: -0.29310787, y: -0.7591756, z: 0.5811542}
+  - index: 1184
+    triangles: e00d0000
+    neighborIndices: ac040000ba040000a3040000
+    normal: {x: -0.52221984, y: -0.42020804, z: 0.7420995}
+  - index: 1185
+    triangles: e30d0000
+    neighborIndices: b9040000c9040000a3040000
+    normal: {x: -0.38247806, y: -0.45762184, z: 0.80267847}
+  - index: 1186
+    triangles: e60d0000
+    neighborIndices: c8040000ad040000a3040000
+    normal: {x: -0.44506776, y: -0.33745688, z: 0.8294803}
+  - index: 1187
+    triangles: e90d0000
+    neighborIndices: a0040000a1040000a2040000
+    normal: {x: -0.44848225, y: -0.395175, z: 0.8016859}
+  - index: 1188
+    triangles: ec0d0000
+    neighborIndices: ad040000c6040000a7040000
+    normal: {x: -0.5001421, y: -0.21122088, z: 0.8397879}
+  - index: 1189
+    triangles: ef0d0000
+    neighborIndices: 65040000c5040000a7040000
+    normal: {x: -0.54624957, y: -0.08117855, z: 0.8336795}
+  - index: 1190
+    triangles: f20d0000
+    neighborIndices: 64040000ae040000a7040000
+    normal: {x: -0.6304607, y: -0.16144374, z: 0.7592465}
+  - index: 1191
+    triangles: f50d0000
+    neighborIndices: a4040000a5040000a6040000
+    normal: {x: -0.55728406, y: -0.13279253, z: 0.81963444}
+  - index: 1192
+    triangles: f80d0000
+    neighborIndices: 62040000ae040000ab040000
+    normal: {x: -0.70225865, y: -0.2392189, z: 0.67052746}
+  - index: 1193
+    triangles: fb0d0000
+    neighborIndices: 61040000b1040000ab040000
+    normal: {x: -0.759999, y: -0.31342185, z: 0.5693578}
+  - index: 1194
+    triangles: fe0d0000
+    neighborIndices: b0040000ac040000ab040000
+    normal: {x: -0.64910066, y: -0.37174428, z: 0.6636825}
+  - index: 1195
+    triangles: 010e0000
+    neighborIndices: a8040000a9040000aa040000
+    normal: {x: -0.7075765, y: -0.29621023, z: 0.6415566}
+  - index: 1196
+    triangles: 040e0000
+    neighborIndices: a0040000aa040000af040000
+    normal: {x: -0.58556336, y: -0.34982637, z: 0.73125714}
+  - index: 1197
+    triangles: 070e0000
+    neighborIndices: a2040000a4040000af040000
+    normal: {x: -0.50842506, y: -0.2670981, z: 0.8186346}
+  - index: 1198
+    triangles: 0a0e0000
+    neighborIndices: a6040000a8040000af040000
+    normal: {x: -0.6387263, y: -0.21732758, z: 0.7381039}
+  - index: 1199
+    triangles: 0d0e0000
+    neighborIndices: ac040000ad040000ae040000
+    normal: {x: -0.5811537, y: -0.29310778, z: 0.75917596}
+  - index: 1200
+    triangles: 100e0000
+    neighborIndices: aa040000bc040000b3040000
+    normal: {x: -0.6486871, y: -0.4404613, z: 0.62064385}
+  - index: 1201
+    triangles: 130e0000
+    neighborIndices: 81040000a9040000b3040000
+    normal: {x: -0.7595136, y: -0.38223383, z: 0.52634233}
+  - index: 1202
+    triangles: 160e0000
+    neighborIndices: 80040000bd040000b3040000
+    normal: {x: -0.6990105, y: -0.5218872, z: 0.48889476}
+  - index: 1203
+    triangles: 190e0000
+    neighborIndices: b0040000b1040000b2040000
+    normal: {x: -0.7084421, y: -0.44651717, z: 0.5465641}
+  - index: 1204
+    triangles: 1c0e0000
+    neighborIndices: 8a040000bd040000b7040000
+    normal: {x: -0.6206436, y: -0.6486871, z: 0.44046164}
+  - index: 1205
+    triangles: 1f0e0000
+    neighborIndices: 8904000091040000b7040000
+    normal: {x: -0.526342, y: -0.7595136, z: 0.38223454}
+  - index: 1206
+    triangles: 220e0000
+    neighborIndices: 90040000be040000b7040000
+    normal: {x: -0.48889503, y: -0.6990109, z: 0.52188647}
+  - index: 1207
+    triangles: 250e0000
+    neighborIndices: b4040000b5040000b6040000
+    normal: {x: -0.54656345, y: -0.7084423, z: 0.4465175}
+  - index: 1208
+    triangles: 280e0000
+    neighborIndices: 9a040000be040000bb040000
+    normal: {x: -0.4404608, y: -0.6206442, z: 0.6486872}
+  - index: 1209
+    triangles: 2b0e0000
+    neighborIndices: 99040000a1040000bb040000
+    normal: {x: -0.3822338, y: -0.5263424, z: 0.7595137}
+  - index: 1210
+    triangles: 2e0e0000
+    neighborIndices: a0040000bc040000bb040000
+    normal: {x: -0.5218871, y: -0.48889434, z: 0.69901085}
+  - index: 1211
+    triangles: 310e0000
+    neighborIndices: b8040000b9040000ba040000
+    normal: {x: -0.44651663, y: -0.5465639, z: 0.70844245}
+  - index: 1212
+    triangles: 340e0000
+    neighborIndices: b0040000ba040000bf040000
+    normal: {x: -0.5851592, y: -0.5037508, z: 0.6354714}
+  - index: 1213
+    triangles: 370e0000
+    neighborIndices: b2040000b4040000bf040000
+    normal: {x: -0.6354711, y: -0.5851591, z: 0.5037511}
+  - index: 1214
+    triangles: 3a0e0000
+    neighborIndices: b6040000b8040000bf040000
+    normal: {x: -0.5037514, y: -0.63547194, z: 0.5851581}
+  - index: 1215
+    triangles: 3d0e0000
+    neighborIndices: bc040000bd040000be040000
+    normal: {x: -0.57735056, y: -0.5773507, z: 0.5773496}
+  - index: 1216
+    triangles: 400e0000
+    neighborIndices: cc040000f2040000c3040000
+    normal: {x: -0.15047573, y: -0.18128617, z: 0.97185}
+  - index: 1217
+    triangles: 430e0000
+    neighborIndices: f1040000c3040000
+    normal: {x: -0.06905674, y: -0.049504768, z: 0.9963837}
+  - index: 1218
+    triangles: 460e0000
+    neighborIndices: 18030000cd040000c3040000
+    normal: {x: -0.20584871, y: -0.0496071, z: 0.9773257}
+  - index: 1219
+    triangles: 490e0000
+    neighborIndices: c0040000c1040000c2040000
+    normal: {x: -0.1522723, y: -0.08410239, z: 0.9847538}
+  - index: 1220
+    triangles: 4c0e0000
+    neighborIndices: 16030000cd040000c7040000
+    normal: {x: -0.3386981, y: -0.050000355, z: 0.9395656}
+  - index: 1221
+    triangles: 4f0e0000
+    neighborIndices: 15030000a5040000c7040000
+    normal: {x: -0.46507227, y: -0.050171576, z: 0.8838499}
+  - index: 1222
+    triangles: 520e0000
+    neighborIndices: a4040000ce040000c7040000
+    normal: {x: -0.41924042, y: -0.18031916, z: 0.8897879}
+  - index: 1223
+    triangles: 550e0000
+    neighborIndices: c4040000c5040000c6040000
+    normal: {x: -0.42449236, y: -0.08207095, z: 0.9017043}
+  - index: 1224
+    triangles: 580e0000
+    neighborIndices: a2040000ce040000cb040000
+    normal: {x: -0.36480123, y: -0.3067978, z: 0.8790877}
+  - index: 1225
+    triangles: 5b0e0000
+    neighborIndices: a1040000f5040000cb040000
+    normal: {x: -0.30237666, y: -0.42702577, z: 0.8521839}
+  - index: 1226
+    triangles: 5e0e0000
+    neighborIndices: f4040000cc040000cb040000
+    normal: {x: -0.22889274, y: -0.30816773, z: 0.9233855}
+  - index: 1227
+    triangles: 610e0000
+    neighborIndices: c8040000c9040000ca040000
+    normal: {x: -0.31240055, y: -0.3431969, z: 0.8857888}
+  - index: 1228
+    triangles: 640e0000
+    neighborIndices: c0040000ca040000cf040000
+    normal: {x: -0.23573779, y: -0.21620461, z: 0.9474615}
+  - index: 1229
+    triangles: 670e0000
+    neighborIndices: c2040000c4040000cf040000
+    normal: {x: -0.2910972, y: -0.084545046, z: 0.9529505}
+  - index: 1230
+    triangles: 6a0e0000
+    neighborIndices: c6040000c8040000cf040000
+    normal: {x: -0.3716277, y: -0.21484737, z: 0.90317965}
+  - index: 1231
+    triangles: 6d0e0000
+    neighborIndices: cc040000cd040000ce040000
+    normal: {x: -0.28804547, y: -0.18115148, z: 0.94032645}
+  - index: 1232
+    triangles: 700e0000
+    neighborIndices: dc040000f6040000d3040000
+    normal: {x: -0.07841726, y: -0.5516421, z: 0.8303865}
+  - index: 1233
+    triangles: 730e0000
+    neighborIndices: 99040000f5040000d3040000
+    normal: {x: -0.23332046, y: -0.538762, z: 0.8095043}
+  - index: 1234
+    triangles: 760e0000
+    neighborIndices: 98040000dd040000d3040000
+    normal: {x: -0.15895271, y: -0.63986796, z: 0.75186634}
+  - index: 1235
+    triangles: 790e0000
+    neighborIndices: d0040000d1040000d2040000
+    normal: {x: -0.16012904, y: -0.5895785, z: 0.79167914}
+  - index: 1236
+    triangles: 7c0e0000
+    neighborIndices: 96040000d7040000
+    normal: {x: -0.08054107, y: -0.72834444, z: 0.68046117}
+  - index: 1237
+    triangles: 7f0e0000
+    neighborIndices: c500000095040000d7040000
+    normal: {x: 0.0000009608431, y: -0.80267215, z: 0.5964204}
+  - index: 1238
+    triangles: 820e0000
+    neighborIndices: c4000000d7040000
+    normal: {x: 0.08054157, y: -0.728345, z: 0.6804607}
+  - index: 1239
+    triangles: 850e0000
+    neighborIndices: d4040000d5040000d6040000
+    normal: {x: 0.00000089543107, y: -0.76891226, z: 0.6393543}
+  - index: 1240
+    triangles: 880e0000
+    neighborIndices: c2000000de040000db040000
+    normal: {x: 0.15895268, y: -0.63986844, z: 0.7518659}
+  - index: 1241
+    triangles: 8b0e0000
+    neighborIndices: c1000000f9040000db040000
+    normal: {x: 0.23332058, y: -0.5387619, z: 0.8095042}
+  - index: 1242
+    triangles: 8e0e0000
+    neighborIndices: f8040000dc040000db040000
+    normal: {x: 0.07841739, y: -0.5516418, z: 0.8303867}
+  - index: 1243
+    triangles: 910e0000
+    neighborIndices: d8040000d9040000da040000
+    normal: {x: 0.16012909, y: -0.58957845, z: 0.7916792}
+  - index: 1244
+    triangles: 940e0000
+    neighborIndices: d0040000da040000df040000
+    normal: {x: -0.00000014994978, y: -0.59763587, z: 0.8017676}
+  - index: 1245
+    triangles: 970e0000
+    neighborIndices: d2040000df040000
+    normal: {x: -0.08053035, y: -0.68585163, z: 0.72327197}
+  - index: 1246
+    triangles: 9a0e0000
+    neighborIndices: d8040000df040000
+    normal: {x: 0.0805309, y: -0.6858519, z: 0.7232717}
+  - index: 1247
+    triangles: 9d0e0000
+    neighborIndices: dc040000dd040000de040000
+    normal: {x: -0.000000084539366, y: -0.6472184, z: 0.76230466}
+  - index: 1248
+    triangles: a00e0000
+    neighborIndices: ec040000fa040000e3040000
+    normal: {x: 0.22889298, y: -0.30816692, z: 0.9233857}
+  - index: 1249
+    triangles: a30e0000
+    neighborIndices: e9000000f9040000e3040000
+    normal: {x: 0.30237725, y: -0.42702603, z: 0.85218346}
+  - index: 1250
+    triangles: a60e0000
+    neighborIndices: e8000000ed040000e3040000
+    normal: {x: 0.36480144, y: -0.30679786, z: 0.8790876}
+  - index: 1251
+    triangles: a90e0000
+    neighborIndices: e0040000e1040000e2040000
+    normal: {x: 0.31240126, y: -0.34319648, z: 0.88578874}
+  - index: 1252
+    triangles: ac0e0000
+    neighborIndices: e6000000ed040000e7040000
+    normal: {x: 0.4192401, y: -0.18031894, z: 0.88978803}
+  - index: 1253
+    triangles: af0e0000
+    neighborIndices: e500000025030000e7040000
+    normal: {x: 0.4650712, y: -0.05017067, z: 0.8838505}
+  - index: 1254
+    triangles: b20e0000
+    neighborIndices: 24030000ee040000e7040000
+    normal: {x: 0.33869848, y: -0.049999874, z: 0.93956554}
+  - index: 1255
+    triangles: b50e0000
+    neighborIndices: e4040000e5040000e6040000
+    normal: {x: 0.42449185, y: -0.08206986, z: 0.9017046}
+  - index: 1256
+    triangles: b80e0000
+    neighborIndices: 22030000ee040000eb040000
+    normal: {x: 0.20584857, y: -0.049607348, z: 0.9773256}
+  - index: 1257
+    triangles: bb0e0000
+    neighborIndices: f1040000eb040000
+    normal: {x: 0.069056906, y: -0.049505163, z: 0.9963836}
+  - index: 1258
+    triangles: be0e0000
+    neighborIndices: f0040000ec040000eb040000
+    normal: {x: 0.15047555, y: -0.1812857, z: 0.9718501}
+  - index: 1259
+    triangles: c10e0000
+    neighborIndices: e8040000e9040000ea040000
+    normal: {x: 0.15227231, y: -0.084102556, z: 0.9847538}
+  - index: 1260
+    triangles: c40e0000
+    neighborIndices: e0040000ea040000ef040000
+    normal: {x: 0.23573792, y: -0.21620424, z: 0.94746155}
+  - index: 1261
+    triangles: c70e0000
+    neighborIndices: e2040000e4040000ef040000
+    normal: {x: 0.37162796, y: -0.21484679, z: 0.9031797}
+  - index: 1262
+    triangles: ca0e0000
+    neighborIndices: e6040000e8040000ef040000
+    normal: {x: 0.2910969, y: -0.08454511, z: 0.95295054}
+  - index: 1263
+    triangles: cd0e0000
+    neighborIndices: ec040000ed040000ee040000
+    normal: {x: 0.28804538, y: -0.181151, z: 0.94032663}
+  - index: 1264
+    triangles: d00e0000
+    neighborIndices: ea040000f3040000
+    normal: {x: 0.08142547, y: -0.22378625, z: 0.971231}
+  - index: 1265
+    triangles: d30e0000
+    neighborIndices: c1040000e9040000f3040000
+    normal: {x: 0.00000040256, y: -0.09212557, z: 0.99574745}
+  - index: 1266
+    triangles: d60e0000
+    neighborIndices: c0040000f3040000
+    normal: {x: -0.08142556, y: -0.22378676, z: 0.9712308}
+  - index: 1267
+    triangles: d90e0000
+    neighborIndices: f0040000f1040000f2040000
+    normal: {x: 0.000000436404, y: -0.1759161, z: 0.9844052}
+  - index: 1268
+    triangles: dc0e0000
+    neighborIndices: ca040000fd040000f7040000
+    normal: {x: -0.15979332, y: -0.3505871, z: 0.92279726}
+  - index: 1269
+    triangles: df0e0000
+    neighborIndices: c9040000d1040000f7040000
+    normal: {x: -0.23317143, y: -0.46940497, z: 0.8516396}
+  - index: 1270
+    triangles: e20e0000
+    neighborIndices: d0040000fe040000f7040000
+    normal: {x: -0.07836732, y: -0.48233655, z: 0.87247354}
+  - index: 1271
+    triangles: e50e0000
+    neighborIndices: f4040000f5040000f6040000
+    normal: {x: -0.16187961, y: -0.43784156, z: 0.8843584}
+  - index: 1272
+    triangles: e80e0000
+    neighborIndices: da040000fe040000fb040000
+    normal: {x: 0.07836742, y: -0.48233616, z: 0.87247366}
+  - index: 1273
+    triangles: eb0e0000
+    neighborIndices: d9040000e1040000fb040000
+    normal: {x: 0.23317157, y: -0.4694055, z: 0.85163933}
+  - index: 1274
+    triangles: ee0e0000
+    neighborIndices: e0040000fc040000fb040000
+    normal: {x: 0.15979247, y: -0.35058698, z: 0.92279744}
+  - index: 1275
+    triangles: f10e0000
+    neighborIndices: f8040000f9040000fa040000
+    normal: {x: 0.16187872, y: -0.43784174, z: 0.88435847}
+  - index: 1276
+    triangles: f40e0000
+    neighborIndices: fa040000ff040000
+    normal: {x: 0.08140773, y: -0.31133533, z: 0.9468068}
+  - index: 1277
+    triangles: f70e0000
+    neighborIndices: f4040000ff040000
+    normal: {x: -0.08140765, y: -0.311335, z: 0.9468069}
+  - index: 1278
+    triangles: fa0e0000
+    neighborIndices: f6040000f8040000ff040000
+    normal: {x: 0.00000040098135, y: -0.44305566, z: 0.89649415}
+  - index: 1279
+    triangles: fd0e0000
+    neighborIndices: fc040000fd040000fe040000
+    normal: {x: 0.00000032293673, y: -0.35682195, z: 0.93417245}
