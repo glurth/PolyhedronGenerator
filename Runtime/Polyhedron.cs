@@ -1721,18 +1721,21 @@ public class Polyhedron : ISerializationCallbackReceiver
                     faceIndex.neighborIndices.Add(faces.IndexOf(neighbor));
                 faceIndex.normal = currentFace.normal;
                 faceIndex.triangles = new List<int>(); // filled lower down
+                faceIndex.cornerVertexMeshIndices = new List<int>();
                 facesAndNeighbors.faceDetails.Add(faceIndex);
             }
 
             //  currentFace.ReOrderCornersClockWiseAroundCenterAndNormal();
             int triIndexStart = meshVerts.Count;
+            int vertIndexStart = meshVerts.Count;
+
             List<Vector3> faceVerts = Corner.GetVerticies(currentFace.corners);
             List<int> faceTris = new List<int>();
             Vector3 faceNormal = currentFace.normal;
             List<Vector3> faceNormals = new List<Vector3>();
             //List<Vector2> faceUV0s = new List<Vector2>();
             List<Vector2> faceUV1s = new List<Vector2>();
-
+            List<int> cornerVertIndices = new List<int>();
 
             if (currentFace.corners.Count != 3)
             {
@@ -1742,11 +1745,14 @@ public class Polyhedron : ISerializationCallbackReceiver
                 int numOriginalVerts = faceVerts.Count;
                 //  faceVerts.Add(centerPt);
                 List<Vector3> originalfaceVerts = faceVerts;
+               
                 faceVerts = new List<Vector3>();
                 for (int i = 0; i < numOriginalVerts; i++)
                 {
                     faceTris.Add(faceVerts.Count + triIndexStart);
+                    cornerVertIndices.Add(faceVerts.Count);
                     faceVerts.Add(originalfaceVerts[(i + 0).CircularIndex(numOriginalVerts)]);
+                    cornerVertIndices.Add(i*3);
 
                     faceTris.Add(faceVerts.Count + triIndexStart);
                     faceVerts.Add(originalfaceVerts[(i + 1).CircularIndex(numOriginalVerts)]);
@@ -1762,6 +1768,9 @@ public class Polyhedron : ISerializationCallbackReceiver
                 faceTris.Add(0 + triIndexStart);
                 faceTris.Add(1 + triIndexStart);
                 faceTris.Add(2 + triIndexStart);
+                cornerVertIndices.Add(0);
+                cornerVertIndices.Add(1);
+                cornerVertIndices.Add(2);
             }
 
             if (doFacesAndNeighbors)
@@ -1769,6 +1778,8 @@ public class Polyhedron : ISerializationCallbackReceiver
                 int triStartIndex = meshTris.Count;
                 for (int i = 0; i < faceTris.Count; i += 3)
                     faceIndex.triangles.Add(i + triStartIndex);
+                for (int i = 0; i < cornerVertIndices.Count; i++)
+                    faceIndex.cornerVertexMeshIndices.Add(cornerVertIndices[i] + vertIndexStart);
             }
 
             Vector2 middleUV = Vector2.one * 0.5f;
@@ -1819,10 +1830,12 @@ public class Polyhedron : ISerializationCallbackReceiver
         List<Vector3> meshNormals = new List<Vector3>();
    //     List<Vector2> meshUV0s = new List<Vector2>();
         List<Vector2> meshUV1s = new List<Vector2>();
+
         int faceCount = 0;
         //by face.... more than 3 corners we compute a "middle" point and connect multiple triangles to that
         foreach (Face currentFace in faces)
         {
+
             FaceDetails faceIndex=null;
             if (doFacesAndNeighbors)
             {
@@ -1833,6 +1846,7 @@ public class Polyhedron : ISerializationCallbackReceiver
                     faceIndex.neighborIndices.Add(faces.IndexOf(neighbor));
                 faceIndex.normal = currentFace.normal;
                 faceIndex.triangles = new List<int>(); // filled lower down
+                faceIndex.cornerVertexMeshIndices = new List<int>();
                 facesAndNeighbors.faceDetails.Add(faceIndex);
             }
 
@@ -1844,7 +1858,7 @@ public class Polyhedron : ISerializationCallbackReceiver
             List<Vector3> faceNormals = new List<Vector3>();
             //List<Vector2> faceUV0s = new List<Vector2>();
             List<Vector2> faceUV1s = new List<Vector2>();
-
+            List<int> cornerVertIndices = new List<int>();
 
             if (currentFace.corners.Count != 3)
             {
@@ -1858,6 +1872,7 @@ public class Polyhedron : ISerializationCallbackReceiver
                 for (int i = 0; i < numOriginalVerts; i++)
                 {
                     faceTris.Add(faceVerts.Count + triIndexStart);
+                    cornerVertIndices.Add(faceVerts.Count);
                     faceVerts.Add(originalfaceVerts[(i + 0).CircularIndex(numOriginalVerts)]);
                     
                     faceTris.Add(faceVerts.Count + triIndexStart);
@@ -1874,6 +1889,9 @@ public class Polyhedron : ISerializationCallbackReceiver
                 faceTris.Add(0 + triIndexStart);
                 faceTris.Add(1 + triIndexStart);
                 faceTris.Add(2 + triIndexStart);
+                cornerVertIndices.Add(0);
+                cornerVertIndices.Add(1);
+                cornerVertIndices.Add(2);
             }
 
             if (doFacesAndNeighbors)
@@ -1881,6 +1899,8 @@ public class Polyhedron : ISerializationCallbackReceiver
                 int triStartIndex = meshTris.Count;
                 for (int i = 0; i < faceTris.Count; i += 3)
                     faceIndex.triangles.Add(i + triStartIndex);
+                for (int i = 0; i < cornerVertIndices.Count; i++)
+                    faceIndex.cornerVertexMeshIndices.Add(cornerVertIndices[i] + meshVerts.Count);
             }
 
             Vector2 middleUV = Vector2.one * 0.5f;

@@ -261,8 +261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf3e2025ec0153c498a9c6f87c0c52f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingMesh: {fileID: 0}
-  startingPoly: {fileID: 11400000, guid: 0094b4c29b830c2449a6dfbdf56a3c4a, type: 2}
+  startingMesh: {fileID: 4300000, guid: c8c4761150e53e3408c96363fb206890, type: 2}
+  startingPoly: {fileID: 0}
   defaultToTetraNotIcosa: 0
   poly:
     faces: []

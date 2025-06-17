@@ -411,6 +411,8 @@ public class PolyhedronMaker : MonoBehaviour
     public void SaveSOs()
     {
         string namePrefix = poly.faces.Count.ToString();
+        if (poly.faces[0].corners.Count == 3)
+            namePrefix += "Tri";
         if (mf.sharedMesh == null)
         {
             Debug.LogWarning("Unable to save mesh asset: unable to find one assigned to meshFilter.sharedMesh");

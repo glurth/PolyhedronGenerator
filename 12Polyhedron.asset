@@ -1,0 +1,232 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98339c6df844984aaa8686f5fffb1d5, type: 3}
+  m_Name: 12Polyhedron
+  m_EditorClassIdentifier: 
+  poly:
+    faces:
+    - corners:
+      - vertex: {x: 0, y: -0.35682207, z: -0.9341723}
+      - vertex: {x: 0.5773502, y: -0.5773502, z: -0.5773502}
+      - vertex: {x: 0.35682207, y: -0.9341723, z: 0}
+      - vertex: {x: -0.35682207, y: -0.9341723, z: 0}
+      - vertex: {x: -0.5773502, y: -0.5773502, z: -0.5773502}
+    - corners:
+      - vertex: {x: -0.35682207, y: -0.9341723, z: 0}
+      - vertex: {x: -0.5773502, y: -0.5773502, z: 0.5773502}
+      - vertex: {x: -0.9341723, y: 0, z: 0.35682207}
+      - vertex: {x: -0.9341723, y: 0, z: -0.35682207}
+      - vertex: {x: -0.5773502, y: -0.5773502, z: -0.5773502}
+    - corners:
+      - vertex: {x: -0.9341723, y: 0, z: -0.35682207}
+      - vertex: {x: -0.5773502, y: 0.5773502, z: -0.5773502}
+      - vertex: {x: 0, y: 0.35682207, z: -0.9341723}
+      - vertex: {x: 0, y: -0.35682207, z: -0.9341723}
+      - vertex: {x: -0.5773502, y: -0.5773502, z: -0.5773502}
+    - corners:
+      - vertex: {x: 0.35682207, y: -0.9341723, z: 0}
+      - vertex: {x: 0.5773502, y: -0.5773502, z: 0.5773502}
+      - vertex: {x: 0, y: -0.35682207, z: 0.9341723}
+      - vertex: {x: -0.5773502, y: -0.5773502, z: 0.5773502}
+      - vertex: {x: -0.35682207, y: -0.9341723, z: 0}
+    - corners:
+      - vertex: {x: 0.5773502, y: -0.5773502, z: -0.5773502}
+      - vertex: {x: 0.9341723, y: 0, z: -0.35682207}
+      - vertex: {x: 0.9341723, y: 0, z: 0.35682207}
+      - vertex: {x: 0.5773502, y: -0.5773502, z: 0.5773502}
+      - vertex: {x: 0.35682207, y: -0.9341723, z: 0}
+    - corners:
+      - vertex: {x: 0.9341723, y: 0, z: 0.35682207}
+      - vertex: {x: 0.5773502, y: 0.5773502, z: 0.5773502}
+      - vertex: {x: 0, y: 0.35682207, z: 0.9341723}
+      - vertex: {x: 0, y: -0.35682207, z: 0.9341723}
+      - vertex: {x: 0.5773502, y: -0.5773502, z: 0.5773502}
+    - corners:
+      - vertex: {x: 0.9341723, y: 0, z: -0.35682207}
+      - vertex: {x: 0.5773502, y: 0.5773502, z: -0.5773502}
+      - vertex: {x: 0.35682207, y: 0.9341723, z: 0}
+      - vertex: {x: 0.5773502, y: 0.5773502, z: 0.5773502}
+      - vertex: {x: 0.9341723, y: 0, z: 0.35682207}
+    - corners:
+      - vertex: {x: 0.5773502, y: -0.5773502, z: -0.5773502}
+      - vertex: {x: 0, y: -0.35682207, z: -0.9341723}
+      - vertex: {x: 0, y: 0.35682207, z: -0.9341723}
+      - vertex: {x: 0.5773502, y: 0.5773502, z: -0.5773502}
+      - vertex: {x: 0.9341723, y: 0, z: -0.35682207}
+    - corners:
+      - vertex: {x: -0.5773502, y: 0.5773502, z: -0.5773502}
+      - vertex: {x: -0.35682207, y: 0.9341723, z: 0}
+      - vertex: {x: 0.35682207, y: 0.9341723, z: 0}
+      - vertex: {x: 0.5773502, y: 0.5773502, z: -0.5773502}
+      - vertex: {x: 0, y: 0.35682207, z: -0.9341723}
+    - corners:
+      - vertex: {x: -0.35682207, y: 0.9341723, z: 0}
+      - vertex: {x: -0.5773502, y: 0.5773502, z: 0.5773502}
+      - vertex: {x: 0, y: 0.35682207, z: 0.9341723}
+      - vertex: {x: 0.5773502, y: 0.5773502, z: 0.5773502}
+      - vertex: {x: 0.35682207, y: 0.9341723, z: 0}
+    - corners:
+      - vertex: {x: -0.5773502, y: 0.5773502, z: 0.5773502}
+      - vertex: {x: -0.9341723, y: 0, z: 0.35682207}
+      - vertex: {x: -0.5773502, y: -0.5773502, z: 0.5773502}
+      - vertex: {x: 0, y: -0.35682207, z: 0.9341723}
+      - vertex: {x: 0, y: 0.35682207, z: 0.9341723}
+    - corners:
+      - vertex: {x: -0.35682207, y: 0.9341723, z: 0}
+      - vertex: {x: -0.5773502, y: 0.5773502, z: -0.5773502}
+      - vertex: {x: -0.9341723, y: 0, z: -0.35682207}
+      - vertex: {x: -0.9341723, y: 0, z: 0.35682207}
+      - vertex: {x: -0.5773502, y: 0.5773502, z: 0.5773502}
+    edges:
+    - endpointA:
+        vertex: {x: 0, y: -0.35682207, z: -0.9341723}
+      endpointB:
+        vertex: {x: 0.5773502, y: -0.5773502, z: -0.5773502}
+    - endpointA:
+        vertex: {x: 0.5773502, y: -0.5773502, z: -0.5773502}
+      endpointB:
+        vertex: {x: 0.35682207, y: -0.9341723, z: 0}
+    - endpointA:
+        vertex: {x: 0.35682207, y: -0.9341723, z: 0}
+      endpointB:
+        vertex: {x: -0.35682207, y: -0.9341723, z: 0}
+    - endpointA:
+        vertex: {x: -0.35682207, y: -0.9341723, z: 0}
+      endpointB:
+        vertex: {x: -0.5773502, y: -0.5773502, z: -0.5773502}
+    - endpointA:
+        vertex: {x: -0.5773502, y: -0.5773502, z: -0.5773502}
+      endpointB:
+        vertex: {x: 0, y: -0.35682207, z: -0.9341723}
+    - endpointA:
+        vertex: {x: -0.35682207, y: -0.9341723, z: 0}
+      endpointB:
+        vertex: {x: -0.5773502, y: -0.5773502, z: 0.5773502}
+    - endpointA:
+        vertex: {x: -0.5773502, y: -0.5773502, z: 0.5773502}
+      endpointB:
+        vertex: {x: -0.9341723, y: 0, z: 0.35682207}
+    - endpointA:
+        vertex: {x: -0.9341723, y: 0, z: 0.35682207}
+      endpointB:
+        vertex: {x: -0.9341723, y: 0, z: -0.35682207}
+    - endpointA:
+        vertex: {x: -0.9341723, y: 0, z: -0.35682207}
+      endpointB:
+        vertex: {x: -0.5773502, y: -0.5773502, z: -0.5773502}
+    - endpointA:
+        vertex: {x: -0.9341723, y: 0, z: -0.35682207}
+      endpointB:
+        vertex: {x: -0.5773502, y: 0.5773502, z: -0.5773502}
+    - endpointA:
+        vertex: {x: -0.5773502, y: 0.5773502, z: -0.5773502}
+      endpointB:
+        vertex: {x: 0, y: 0.35682207, z: -0.9341723}
+    - endpointA:
+        vertex: {x: 0, y: 0.35682207, z: -0.9341723}
+      endpointB:
+        vertex: {x: 0, y: -0.35682207, z: -0.9341723}
+    - endpointA:
+        vertex: {x: 0.35682207, y: -0.9341723, z: 0}
+      endpointB:
+        vertex: {x: 0.5773502, y: -0.5773502, z: 0.5773502}
+    - endpointA:
+        vertex: {x: 0.5773502, y: -0.5773502, z: 0.5773502}
+      endpointB:
+        vertex: {x: 0, y: -0.35682207, z: 0.9341723}
+    - endpointA:
+        vertex: {x: 0, y: -0.35682207, z: 0.9341723}
+      endpointB:
+        vertex: {x: -0.5773502, y: -0.5773502, z: 0.5773502}
+    - endpointA:
+        vertex: {x: 0.5773502, y: -0.5773502, z: -0.5773502}
+      endpointB:
+        vertex: {x: 0.9341723, y: 0, z: -0.35682207}
+    - endpointA:
+        vertex: {x: 0.9341723, y: 0, z: -0.35682207}
+      endpointB:
+        vertex: {x: 0.9341723, y: 0, z: 0.35682207}
+    - endpointA:
+        vertex: {x: 0.9341723, y: 0, z: 0.35682207}
+      endpointB:
+        vertex: {x: 0.5773502, y: -0.5773502, z: 0.5773502}
+    - endpointA:
+        vertex: {x: 0.9341723, y: 0, z: 0.35682207}
+      endpointB:
+        vertex: {x: 0.5773502, y: 0.5773502, z: 0.5773502}
+    - endpointA:
+        vertex: {x: 0.5773502, y: 0.5773502, z: 0.5773502}
+      endpointB:
+        vertex: {x: 0, y: 0.35682207, z: 0.9341723}
+    - endpointA:
+        vertex: {x: 0, y: 0.35682207, z: 0.9341723}
+      endpointB:
+        vertex: {x: 0, y: -0.35682207, z: 0.9341723}
+    - endpointA:
+        vertex: {x: 0.9341723, y: 0, z: -0.35682207}
+      endpointB:
+        vertex: {x: 0.5773502, y: 0.5773502, z: -0.5773502}
+    - endpointA:
+        vertex: {x: 0.5773502, y: 0.5773502, z: -0.5773502}
+      endpointB:
+        vertex: {x: 0.35682207, y: 0.9341723, z: 0}
+    - endpointA:
+        vertex: {x: 0.35682207, y: 0.9341723, z: 0}
+      endpointB:
+        vertex: {x: 0.5773502, y: 0.5773502, z: 0.5773502}
+    - endpointA:
+        vertex: {x: 0, y: 0.35682207, z: -0.9341723}
+      endpointB:
+        vertex: {x: 0.5773502, y: 0.5773502, z: -0.5773502}
+    - endpointA:
+        vertex: {x: -0.5773502, y: 0.5773502, z: -0.5773502}
+      endpointB:
+        vertex: {x: -0.35682207, y: 0.9341723, z: 0}
+    - endpointA:
+        vertex: {x: -0.35682207, y: 0.9341723, z: 0}
+      endpointB:
+        vertex: {x: 0.35682207, y: 0.9341723, z: 0}
+    - endpointA:
+        vertex: {x: -0.35682207, y: 0.9341723, z: 0}
+      endpointB:
+        vertex: {x: -0.5773502, y: 0.5773502, z: 0.5773502}
+    - endpointA:
+        vertex: {x: -0.5773502, y: 0.5773502, z: 0.5773502}
+      endpointB:
+        vertex: {x: 0, y: 0.35682207, z: 0.9341723}
+    - endpointA:
+        vertex: {x: -0.5773502, y: 0.5773502, z: 0.5773502}
+      endpointB:
+        vertex: {x: -0.9341723, y: 0, z: 0.35682207}
+    corners:
+    - vertex: {x: -0.5773502, y: -0.5773502, z: -0.5773502}
+    - vertex: {x: -0.35682207, y: -0.9341723, z: 0}
+    - vertex: {x: 0.35682207, y: -0.9341723, z: 0}
+    - vertex: {x: 0.5773502, y: -0.5773502, z: 0.5773502}
+    - vertex: {x: 0.9341723, y: 0, z: 0.35682207}
+    - vertex: {x: 0.9341723, y: 0, z: -0.35682207}
+    - vertex: {x: 0.5773502, y: -0.5773502, z: -0.5773502}
+    - vertex: {x: 0, y: -0.35682207, z: -0.9341723}
+    - vertex: {x: 0, y: 0.35682207, z: -0.9341723}
+    - vertex: {x: 0.5773502, y: 0.5773502, z: -0.5773502}
+    - vertex: {x: 0.35682207, y: 0.9341723, z: 0}
+    - vertex: {x: 0.5773502, y: 0.5773502, z: 0.5773502}
+    - vertex: {x: 0, y: 0.35682207, z: 0.9341723}
+    - vertex: {x: -0.5773502, y: 0.5773502, z: 0.5773502}
+    - vertex: {x: -0.35682207, y: 0.9341723, z: 0}
+    - vertex: {x: -0.5773502, y: 0.5773502, z: -0.5773502}
+    - vertex: {x: -0.9341723, y: 0, z: -0.35682207}
+    - vertex: {x: -0.9341723, y: 0, z: 0.35682207}
+    - vertex: {x: -0.5773502, y: -0.5773502, z: 0.5773502}
+    - vertex: {x: 0, y: -0.35682207, z: 0.9341723}
+  facesAndNeighbors: {fileID: 11400000, guid: 134fba19c1e5cca4e96d6dec959ace7e, type: 2}
+  mesh: {fileID: 4300000, guid: dc3e10334e0e51449ab1465b0ddbcf3d, type: 2}
