@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 /// <summary>
-/// Represents a unique list of elements. 
-/// The list maintains uniqueness and provides O(1) lookup for Contains and IndexOf using an internal dictionary.
-/// The cost is additional memory usage, and slower insert and remove operations.
-/// Add and indexing operations remain O(1).
+/// Represents a consistently ordered list of unique elements.
+/// Provides O(1) lookup for Contains and IndexOf using an internal dictionary.
+/// Add and index-based access are O(1).
+/// Insert and remove operations are O(n) due to list shifting and dictionary updates.
+/// Trades memory for fast uniqueness enforcement and indexing.
 /// </summary>
 public class UniqueList<K> : IList<K>
 {
@@ -23,7 +24,7 @@ public class UniqueList<K> : IList<K>
     /// Rebuilds the internal dictionary from clear, by iterating through the list and assigning an index for each item.
     /// This method is used to ensure that the dictionary is up-to-date.
     /// </summary>
-    void RebuildInternalDic()
+    protected void RebuildInternalDic()
     {
         internalDictionary.Clear();
         for (int i = 0; i < internalList.Count; i++)
