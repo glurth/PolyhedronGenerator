@@ -33,7 +33,7 @@ namespace EyE.Geometry
                     {"truncate", () => StartProcessingNow(() => poly.TruncAsync(truncateEdgeLengthFraction, cancelRef))},
                     {"dual", () => StartProcessingNow(() =>poly.DualAsync(cancelRef))},
                     {"tesselate", () => StartProcessingNow(() =>poly.TesselateTriangleByEdgeMiddlesAsync(cancelRef))},
-                    {"radial", () => StartProcessingNow(() =>poly.TesselateFacesRadialAsync(cancelRef))},
+                    {"pyramidFace", () => StartProcessingNow(() =>poly.PyramidFacesAsync(cancelRef))},
                     {"spherize", () => StartProcessingNow(() =>poly.SpherizeAsync(1f, cancelRef))},
                     {"smooth", () => StartProcessingNow(() =>poly.SmoothAsync(cancelRef))}
                 };
@@ -92,6 +92,11 @@ namespace EyE.Geometry
         {
             await UniTask.SwitchToMainThread();
             isProcessing = false;
+            //recompute suggested edge length fraction
+            int numEdges = poly.corners[0].touchingEdges.Count;
+            float cosEdgesAngles = Mathf.Cos(Mathf.PI / numEdges);
+            float frac = cosEdgesAngles / (1+ cosEdgesAngles);
+            truncateEdgeLengthFraction = poly.UniformEdgeLengthTruncFraction(poly.corners[0]); //frac;
         }
 
         async UniTask<Polyhedron> ResetPolyhedron()
@@ -124,6 +129,10 @@ namespace EyE.Geometry
                     SetDrawnMesh(poly.ToMesh(facesAndNeighborsOnMesh));
                 }
             }
+            int numEdges = poly.corners[0].touchingEdges.Count;
+            float cosEdgesAngles = Mathf.Cos(Mathf.PI / numEdges);
+            float frac = cosEdgesAngles / (1 + cosEdgesAngles);
+            truncateEdgeLengthFraction = frac;
             return poly;
         }
 
@@ -224,6 +233,11 @@ namespace EyE.Geometry
             foreach (var kvp in commandLineOperations)
             {
                 string cmd = kvp.Key;
+                if (cmd == "tesselate" && poly.faces[0].corners.Count != 3)
+                    GUI.enabled = false;
+                if (cmd == "pyramidFace" && poly.faces[0].corners.Count < 3)
+                    GUI.enabled = false;
+
                 if (GUILayout.Button(cmd))
                 {
                     if (recordMode)
@@ -231,8 +245,13 @@ namespace EyE.Geometry
                     else
                         kvp.Value.Invoke();
                 }
+                GUI.enabled = true;
             }
-
+            GUILayout.BeginHorizontal();
+            GUILayout.Label("Truncate edge fraction:");
+            truncateEdgeLengthFraction=GUILayout.HorizontalSlider(truncateEdgeLengthFraction, 0, 1);
+            GUILayout.Label(truncateEdgeLengthFraction.ToString());
+            GUILayout.EndHorizontal();
             GUI.enabled = isProcessing;
             if (GUILayout.Button("Cancel"))
             {

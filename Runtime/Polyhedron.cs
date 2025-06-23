@@ -734,6 +734,31 @@ namespace EyE.Geometry
 
         public Polyhedron(Polyhedron toCopy)
         {
+
+            this.corners = new List<Corner>(toCopy.corners.Count);
+            this.edges = new List<Edge>(toCopy.edges.Count);
+            this.faces = new List<Face>(toCopy.faces.Count);
+
+            Dictionary<Corner, Corner> oldToNewCorners = new Dictionary<Corner, Corner>();
+            foreach (Corner c in toCopy.corners)
+            {
+                Corner newC = new Corner(this, c.vertex);
+                this.corners.Add(newC);
+                oldToNewCorners.Add(c, newC);
+            }
+            foreach (Edge e in toCopy.edges)
+                this.edges.Add(new Edge(this, oldToNewCorners[e.endpointA], oldToNewCorners[e.endpointB]));
+            foreach (Face f in toCopy.faces)
+            {
+                List<Corner> newCornerList = new List<Corner>();
+                foreach (Corner c in f.corners)
+                {
+                    newCornerList.Add(oldToNewCorners[c]);
+                }
+                this.faces.Add(new Face(this,newCornerList));
+            }
+            /*
+
             this.corners = new List<Corner>(toCopy.corners);
             this.edges = new List<Edge>(toCopy.edges);
             this.faces = new List<Face>(toCopy.faces);
@@ -744,7 +769,7 @@ namespace EyE.Geometry
             foreach (Edge c in edges)
                 c.SetPoly(this);
             foreach (Face c in faces)
-                c.SetPoly(this);
+                c.SetPoly(this);*/
         }
 
         public Polyhedron(List<Vector3> cornerPos, List<List<int>> facesByCornerIndex)
@@ -1211,54 +1236,6 @@ namespace EyE.Geometry
         void RecomputeEdges()
         {
             RecomputeEdgesAsync(null, true).AsTask().GetAwaiter().GetResult();
-            /*
-            edges.Clear();
-            foreach (Face eachFace in faces)
-            {
-
-                Vector3 faceNormal = eachFace.normal;
-                Vector3 faceCenter = eachFace.center;
-                Vector3 vectorToFirstCorner = eachFace.corners[0].vertex - faceCenter;
-                eachFace.corners.Sort((a, b) =>
-                    {
-                        if (Vector3.SignedAngle(vectorToFirstCorner, a.vertex - faceCenter, faceNormal)
-                            >= Vector3.SignedAngle(vectorToFirstCorner, b.vertex - faceCenter, faceNormal))
-                            return 1;
-                        return -1;
-                    });
-                *//*
-                //debug stuff
-                Debug.Log("JustSorted "+eachFace.corners.Count+"face Corners  face center "+ faceCenter);
-                foreach (Corner c in eachFace.corners)
-                {
-                    float angle = Vector3.SignedAngle(vectorToFirstCorner, c.vertex - faceCenter, faceNormal);
-                    Debug.Log("    Sorted corner on face at pos from center "+ (c.vertex - faceCenter) + ", angle from first corner: " + angle);
-                }
-
-                // end debug stuff
-                *//*
-                for (int i = 1; i <= eachFace.corners.Count; i++)
-                {
-                    Corner endpointA = eachFace.corners[i - 1];//start point:  i-1 = zero on first pass
-                    Corner endpointB;
-                    if (i == eachFace.corners.Count)//be circular
-                        endpointB = eachFace.corners[0];//endpoint: will be zero on last pass
-                    else
-                        endpointB = eachFace.corners[i];//  will be 1 through eachFace.corners.Count-1 (on every pass but last)
-
-
-                    bool doAdd = true;
-                    foreach (Edge testEdge in edges)
-                        if (testEdge.TouchesCorner(endpointA) && testEdge.TouchesCorner(endpointB))// it touches BOTH corners- same edge
-                        {
-                            doAdd = false;
-                            break;// no need to keep looping existing edges
-                        }
-                    if (doAdd)
-                        edges.Add(new Edge(this, endpointA, endpointB));
-                }
-            }
-            */
         }
 
         Corner CreateOrFindCornerByVertex(Vector3 vertex)
@@ -1329,20 +1306,25 @@ namespace EyE.Geometry
             return edgeCount > 0 ? totalLength / edgeCount : 0f;
         }
 
-        float UniformEdgeLengthTruncFraction(Corner c)//, Edge edgeToTruncate)
+        public float UniformEdgeLengthTruncFraction(Corner c)//, Edge edgeToTruncate)
         {
+            
             // return 0.382f;
             Vector3 firstEdge = c.touchingEdges[0].VectorFrom(c);
             Vector3 secondEdge = c.touchingEdges[1].VectorFrom(c);
             float edgeLen = firstEdge.magnitude;
             float angleBetween = Mathf.Deg2Rad * Vector3.Angle(firstEdge, secondEdge);
-
+           
 
             float halfOppLen = Mathf.Sin(.5f * angleBetween);
             return halfOppLen / (halfOppLen + 1);
-
+            
+            float halfFacePlaneAngleBetween = Mathf.PI / c.touchingEdges.Count;
+            float cosEdgesAngles = Mathf.Cos(halfFacePlaneAngleBetween);
+            float frac = cosEdgesAngles / (1 + cosEdgesAngles);
+            return frac;
         }
-
+        /*
         float UniformFaceCenterToConerLengthTruncFraction(Corner c)
         {
             Vector3 firstEdge = c.touchingEdges[0].VectorFrom(c);
@@ -1387,7 +1369,7 @@ namespace EyE.Geometry
             return B;
 
         }
-
+        */
 
         //cuts the polyhedron such that each corner becomes a face (removing the old corner, and replacing it with new corners)
         //the number of corners this new face will have is equal to the number of edges touching the original corner.
@@ -1410,7 +1392,7 @@ namespace EyE.Geometry
 
             foreach (Corner oldCorner in this.corners)
             {
-                depthAsFractionOfEdgeLength = UniformEdgeLengthTruncFraction(oldCorner);
+               // depthAsFractionOfEdgeLength = UniformEdgeLengthTruncFraction(oldCorner);
 
                 //corner being chopped of- this will be the corners of the face that remains
                 List<Corner> newFaceCorners = new List<Corner>();
@@ -1457,11 +1439,16 @@ namespace EyE.Geometry
             }
 
             await truncPoly.RecomputeEdgesAsync(cancelRef);
+
+            float scaleBy = 1f/(truncPoly.corners[0].vertex.magnitude);
+            truncPoly = await truncPoly.ScaleVerts(scaleBy, cancelRef);
             // truncPoly.CheckIntegrity();
             return truncPoly;
         }
         public Polyhedron Trunc(float depthAsFractionOfEdgeLength = 0.5f)
         {
+            return TruncAsync(depthAsFractionOfEdgeLength).AsTask().GetAwaiter().GetResult();
+            
             Polyhedron truncPoly = new Polyhedron();
             List<Corner> newCorners = truncPoly.corners;//  this list- after first loop- we be the same size as- and in the same order as ``this.faces``
             List<Face> newFaces = truncPoly.faces;
@@ -1523,7 +1510,7 @@ namespace EyE.Geometry
             return truncPoly;
         }
 
-        public async UniTask<Polyhedron> TesselateFacesRadialAsync(CancelBoolRef cancelRef)
+        public async UniTask<Polyhedron> PyramidFacesAsync(CancelBoolRef cancelRef)
         {
             YieldTimer yieldTimer = new YieldTimer(cancelRef);
             Polyhedron tessPoly = new Polyhedron(this);
@@ -1531,6 +1518,7 @@ namespace EyE.Geometry
             foreach (Face f in tessPoly.faces)
             {
                 Corner newCenterCorner = new Corner(tessPoly, f.center);
+                newCenterCorner.vertex = newCenterCorner.vertex.normalized;
                 tessPoly.corners.Add(newCenterCorner);
                 foreach (Edge e in f.edges) // each edge will become a new (triangular) face that touches centerpt
                 {
@@ -1544,7 +1532,7 @@ namespace EyE.Geometry
             await tessPoly.RecomputeEdgesAsync(cancelRef);
             return tessPoly;
         }
-        public Polyhedron TesselateFacesRadial()
+        public Polyhedron PyramidFaces()
         {
             Polyhedron tessPoly = new Polyhedron(this);
             List<Face> replacementFaces = new List<Face>();
@@ -1779,7 +1767,19 @@ namespace EyE.Geometry
             foreach (Corner c in corners)
                 c.vertex = c.vertex.normalized * R;
         }
+        public async UniTask<Polyhedron> ScaleVerts(float R, CancelBoolRef cancelRef)
+        {
+            Polyhedron newPoly = new Polyhedron(this);
 
+            YieldTimer yieldTimer = new YieldTimer(cancelRef);
+            foreach (Corner c in newPoly.corners)
+            {
+                c.vertex = c.vertex * R;
+                await yieldTimer.YieldOnTimeSlice();
+            }
+            
+            return newPoly;
+        }
 
         /// <summary>
         /// Makes all corners, equidistant from all other corners it shares an edge with
