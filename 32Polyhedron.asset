@@ -1,0 +1,292 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98339c6df844984aaa8686f5fffb1d5, type: 3}
+  m_Name: 32Polyhedron
+  m_EditorClassIdentifier: 
+  poly:
+    faces:
+    - cornerIndexes: 0100000002000000030000000400000000000000
+    - cornerIndexes: 0600000007000000080000000900000005000000
+    - cornerIndexes: 0b0000000c0000000d0000000e0000000a000000
+    - cornerIndexes: 100000001100000012000000130000000f000000
+    - cornerIndexes: 1500000016000000170000001800000014000000
+    - cornerIndexes: 1a0000001b0000001c0000001d00000019000000
+    - cornerIndexes: 1f0000002000000021000000220000001e000000
+    - cornerIndexes: 2400000025000000260000002700000023000000
+    - cornerIndexes: 290000002a0000002b0000002c00000028000000
+    - cornerIndexes: 2e0000002f00000030000000310000002d000000
+    - cornerIndexes: 3300000034000000350000003600000032000000
+    - cornerIndexes: 38000000390000003a0000003b00000037000000
+    - cornerIndexes: 29000000160000001500000003000000020000002a000000
+    - cornerIndexes: 280000002f0000002e000000170000001600000029000000
+    - cornerIndexes: 2f000000280000002c000000200000001f00000030000000
+    - cornerIndexes: 300000001f0000001e000000110000001000000031000000
+    - cornerIndexes: 22000000250000002400000012000000110000001e000000
+    - cornerIndexes: 250000002200000021000000080000000700000026000000
+    - cornerIndexes: 200000002c0000002b000000090000000800000021000000
+    - cornerIndexes: 090000002b0000002a000000020000000100000005000000
+    - cornerIndexes: 330000000600000005000000010000000000000034000000
+    - cornerIndexes: 320000002700000026000000070000000600000033000000
+    - cornerIndexes: 270000003200000036000000390000003800000023000000
+    - cornerIndexes: 230000003800000037000000130000001200000024000000
+    - cornerIndexes: 13000000370000003b0000000c0000000b0000000f000000
+    - cornerIndexes: 3a0000001c0000001b0000000d0000000c0000003b000000
+    - cornerIndexes: 3900000036000000350000001d0000001c0000003a000000
+    - cornerIndexes: 04000000190000001d000000350000003400000000000000
+    - cornerIndexes: 140000001a00000019000000040000000300000015000000
+    - cornerIndexes: 1a00000014000000180000000e0000000d0000001b000000
+    - cornerIndexes: 0e00000018000000170000002e0000002d0000000a000000
+    - cornerIndexes: 31000000100000000f0000000b0000000a0000002d000000
+    edges:
+    - endpointACornerIndex: 1
+      endpointBCornerIndex: 2
+    - endpointACornerIndex: 2
+      endpointBCornerIndex: 3
+    - endpointACornerIndex: 3
+      endpointBCornerIndex: 4
+    - endpointACornerIndex: 4
+      endpointBCornerIndex: 0
+    - endpointACornerIndex: 0
+      endpointBCornerIndex: 1
+    - endpointACornerIndex: 6
+      endpointBCornerIndex: 7
+    - endpointACornerIndex: 7
+      endpointBCornerIndex: 8
+    - endpointACornerIndex: 8
+      endpointBCornerIndex: 9
+    - endpointACornerIndex: 9
+      endpointBCornerIndex: 5
+    - endpointACornerIndex: 5
+      endpointBCornerIndex: 6
+    - endpointACornerIndex: 11
+      endpointBCornerIndex: 12
+    - endpointACornerIndex: 12
+      endpointBCornerIndex: 13
+    - endpointACornerIndex: 13
+      endpointBCornerIndex: 14
+    - endpointACornerIndex: 14
+      endpointBCornerIndex: 10
+    - endpointACornerIndex: 10
+      endpointBCornerIndex: 11
+    - endpointACornerIndex: 16
+      endpointBCornerIndex: 17
+    - endpointACornerIndex: 17
+      endpointBCornerIndex: 18
+    - endpointACornerIndex: 18
+      endpointBCornerIndex: 19
+    - endpointACornerIndex: 19
+      endpointBCornerIndex: 15
+    - endpointACornerIndex: 15
+      endpointBCornerIndex: 16
+    - endpointACornerIndex: 21
+      endpointBCornerIndex: 22
+    - endpointACornerIndex: 22
+      endpointBCornerIndex: 23
+    - endpointACornerIndex: 23
+      endpointBCornerIndex: 24
+    - endpointACornerIndex: 24
+      endpointBCornerIndex: 20
+    - endpointACornerIndex: 20
+      endpointBCornerIndex: 21
+    - endpointACornerIndex: 26
+      endpointBCornerIndex: 27
+    - endpointACornerIndex: 27
+      endpointBCornerIndex: 28
+    - endpointACornerIndex: 28
+      endpointBCornerIndex: 29
+    - endpointACornerIndex: 29
+      endpointBCornerIndex: 25
+    - endpointACornerIndex: 25
+      endpointBCornerIndex: 26
+    - endpointACornerIndex: 31
+      endpointBCornerIndex: 32
+    - endpointACornerIndex: 32
+      endpointBCornerIndex: 33
+    - endpointACornerIndex: 33
+      endpointBCornerIndex: 34
+    - endpointACornerIndex: 34
+      endpointBCornerIndex: 30
+    - endpointACornerIndex: 30
+      endpointBCornerIndex: 31
+    - endpointACornerIndex: 36
+      endpointBCornerIndex: 37
+    - endpointACornerIndex: 37
+      endpointBCornerIndex: 38
+    - endpointACornerIndex: 38
+      endpointBCornerIndex: 39
+    - endpointACornerIndex: 39
+      endpointBCornerIndex: 35
+    - endpointACornerIndex: 35
+      endpointBCornerIndex: 36
+    - endpointACornerIndex: 41
+      endpointBCornerIndex: 42
+    - endpointACornerIndex: 42
+      endpointBCornerIndex: 43
+    - endpointACornerIndex: 43
+      endpointBCornerIndex: 44
+    - endpointACornerIndex: 44
+      endpointBCornerIndex: 40
+    - endpointACornerIndex: 40
+      endpointBCornerIndex: 41
+    - endpointACornerIndex: 46
+      endpointBCornerIndex: 47
+    - endpointACornerIndex: 47
+      endpointBCornerIndex: 48
+    - endpointACornerIndex: 48
+      endpointBCornerIndex: 49
+    - endpointACornerIndex: 49
+      endpointBCornerIndex: 45
+    - endpointACornerIndex: 45
+      endpointBCornerIndex: 46
+    - endpointACornerIndex: 51
+      endpointBCornerIndex: 52
+    - endpointACornerIndex: 52
+      endpointBCornerIndex: 53
+    - endpointACornerIndex: 53
+      endpointBCornerIndex: 54
+    - endpointACornerIndex: 54
+      endpointBCornerIndex: 50
+    - endpointACornerIndex: 50
+      endpointBCornerIndex: 51
+    - endpointACornerIndex: 56
+      endpointBCornerIndex: 57
+    - endpointACornerIndex: 57
+      endpointBCornerIndex: 58
+    - endpointACornerIndex: 58
+      endpointBCornerIndex: 59
+    - endpointACornerIndex: 59
+      endpointBCornerIndex: 55
+    - endpointACornerIndex: 55
+      endpointBCornerIndex: 56
+    - endpointACornerIndex: 41
+      endpointBCornerIndex: 22
+    - endpointACornerIndex: 21
+      endpointBCornerIndex: 3
+    - endpointACornerIndex: 2
+      endpointBCornerIndex: 42
+    - endpointACornerIndex: 40
+      endpointBCornerIndex: 47
+    - endpointACornerIndex: 46
+      endpointBCornerIndex: 23
+    - endpointACornerIndex: 44
+      endpointBCornerIndex: 32
+    - endpointACornerIndex: 31
+      endpointBCornerIndex: 48
+    - endpointACornerIndex: 30
+      endpointBCornerIndex: 17
+    - endpointACornerIndex: 16
+      endpointBCornerIndex: 49
+    - endpointACornerIndex: 34
+      endpointBCornerIndex: 37
+    - endpointACornerIndex: 36
+      endpointBCornerIndex: 18
+    - endpointACornerIndex: 33
+      endpointBCornerIndex: 8
+    - endpointACornerIndex: 7
+      endpointBCornerIndex: 38
+    - endpointACornerIndex: 43
+      endpointBCornerIndex: 9
+    - endpointACornerIndex: 1
+      endpointBCornerIndex: 5
+    - endpointACornerIndex: 51
+      endpointBCornerIndex: 6
+    - endpointACornerIndex: 0
+      endpointBCornerIndex: 52
+    - endpointACornerIndex: 50
+      endpointBCornerIndex: 39
+    - endpointACornerIndex: 54
+      endpointBCornerIndex: 57
+    - endpointACornerIndex: 56
+      endpointBCornerIndex: 35
+    - endpointACornerIndex: 55
+      endpointBCornerIndex: 19
+    - endpointACornerIndex: 59
+      endpointBCornerIndex: 12
+    - endpointACornerIndex: 11
+      endpointBCornerIndex: 15
+    - endpointACornerIndex: 58
+      endpointBCornerIndex: 28
+    - endpointACornerIndex: 27
+      endpointBCornerIndex: 13
+    - endpointACornerIndex: 53
+      endpointBCornerIndex: 29
+    - endpointACornerIndex: 4
+      endpointBCornerIndex: 25
+    - endpointACornerIndex: 20
+      endpointBCornerIndex: 26
+    - endpointACornerIndex: 24
+      endpointBCornerIndex: 14
+    - endpointACornerIndex: 45
+      endpointBCornerIndex: 10
+    corners:
+    - vertex: {x: -0.40354818, y: 0.32647738, z: -0.8547288}
+    - vertex: {x: -0.20177408, y: 0, z: -0.9794321}
+    - vertex: {x: -0.40354818, y: -0.32647738, z: -0.8547288}
+    - vertex: {x: -0.7300256, y: -0.20177412, z: -0.65295476}
+    - vertex: {x: -0.7300256, y: 0.20177412, z: -0.65295476}
+    - vertex: {x: 0.20177408, y: 0, z: -0.9794321}
+    - vertex: {x: 0.40354818, y: 0.32647738, z: -0.8547288}
+    - vertex: {x: 0.7300256, y: 0.20177412, z: -0.65295476}
+    - vertex: {x: 0.7300256, y: -0.20177412, z: -0.65295476}
+    - vertex: {x: 0.40354818, y: -0.32647738, z: -0.8547288}
+    - vertex: {x: -0.40354818, y: -0.32647738, z: 0.8547288}
+    - vertex: {x: -0.20177408, y: 0, z: 0.9794321}
+    - vertex: {x: -0.40354818, y: 0.32647738, z: 0.8547288}
+    - vertex: {x: -0.7300256, y: 0.20177412, z: 0.65295476}
+    - vertex: {x: -0.7300256, y: -0.20177412, z: 0.65295476}
+    - vertex: {x: 0.20177408, y: 0, z: 0.9794321}
+    - vertex: {x: 0.40354818, y: -0.32647738, z: 0.8547288}
+    - vertex: {x: 0.7300256, y: -0.20177412, z: 0.65295476}
+    - vertex: {x: 0.7300256, y: 0.20177412, z: 0.65295476}
+    - vertex: {x: 0.40354818, y: 0.32647738, z: 0.8547288}
+    - vertex: {x: -0.9794321, y: -0.20177408, z: 0}
+    - vertex: {x: -0.8547288, y: -0.40354818, z: -0.32647738}
+    - vertex: {x: -0.65295476, y: -0.7300256, z: -0.20177412}
+    - vertex: {x: -0.65295476, y: -0.7300256, z: 0.20177412}
+    - vertex: {x: -0.8547288, y: -0.40354818, z: 0.32647738}
+    - vertex: {x: -0.8547288, y: 0.40354818, z: -0.32647738}
+    - vertex: {x: -0.9794321, y: 0.20177408, z: 0}
+    - vertex: {x: -0.8547288, y: 0.40354818, z: 0.32647738}
+    - vertex: {x: -0.65295476, y: 0.7300256, z: 0.20177412}
+    - vertex: {x: -0.65295476, y: 0.7300256, z: -0.20177412}
+    - vertex: {x: 0.8547288, y: -0.40354818, z: 0.32647738}
+    - vertex: {x: 0.65295476, y: -0.7300256, z: 0.20177412}
+    - vertex: {x: 0.65295476, y: -0.7300256, z: -0.20177412}
+    - vertex: {x: 0.8547288, y: -0.40354818, z: -0.32647738}
+    - vertex: {x: 0.9794321, y: -0.20177408, z: 0}
+    - vertex: {x: 0.65295476, y: 0.7300256, z: 0.20177412}
+    - vertex: {x: 0.8547288, y: 0.40354818, z: 0.32647738}
+    - vertex: {x: 0.9794321, y: 0.20177408, z: 0}
+    - vertex: {x: 0.8547288, y: 0.40354818, z: -0.32647738}
+    - vertex: {x: 0.65295476, y: 0.7300256, z: -0.20177412}
+    - vertex: {x: 0, y: -0.9794321, z: -0.20177408}
+    - vertex: {x: -0.32647738, y: -0.8547288, z: -0.40354818}
+    - vertex: {x: -0.20177412, y: -0.65295476, z: -0.7300256}
+    - vertex: {x: 0.20177412, y: -0.65295476, z: -0.7300256}
+    - vertex: {x: 0.32647738, y: -0.8547288, z: -0.40354818}
+    - vertex: {x: -0.20177412, y: -0.65295476, z: 0.7300256}
+    - vertex: {x: -0.32647738, y: -0.8547288, z: 0.40354818}
+    - vertex: {x: 0, y: -0.9794321, z: 0.20177408}
+    - vertex: {x: 0.32647738, y: -0.8547288, z: 0.40354818}
+    - vertex: {x: 0.20177412, y: -0.65295476, z: 0.7300256}
+    - vertex: {x: 0.32647738, y: 0.8547288, z: -0.40354818}
+    - vertex: {x: 0.20177412, y: 0.65295476, z: -0.7300256}
+    - vertex: {x: -0.20177412, y: 0.65295476, z: -0.7300256}
+    - vertex: {x: -0.32647738, y: 0.8547288, z: -0.40354818}
+    - vertex: {x: 0, y: 0.9794321, z: -0.20177408}
+    - vertex: {x: 0.20177412, y: 0.65295476, z: 0.7300256}
+    - vertex: {x: 0.32647738, y: 0.8547288, z: 0.40354818}
+    - vertex: {x: 0, y: 0.9794321, z: 0.20177408}
+    - vertex: {x: -0.32647738, y: 0.8547288, z: 0.40354818}
+    - vertex: {x: -0.20177412, y: 0.65295476, z: 0.7300256}
+  facesAndNeighbors: {fileID: 11400000, guid: 1d1d247fc4615d94e926cb74a409038a, type: 2}
+  mesh: {fileID: 4300000, guid: 15a51c834dc7a0d4d80dc5fea95265e8, type: 2}

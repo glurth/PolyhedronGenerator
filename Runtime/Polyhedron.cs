@@ -734,7 +734,10 @@ namespace EyE.Geometry
 
         public Polyhedron(Polyhedron toCopy)
         {
-
+            ApplyCopyFrom(toCopy);
+        }
+        public void ApplyCopyFrom(Polyhedron toCopy)
+        {
             this.corners = new List<Corner>(toCopy.corners.Count);
             this.edges = new List<Edge>(toCopy.edges.Count);
             this.faces = new List<Face>(toCopy.faces.Count);
@@ -757,19 +760,14 @@ namespace EyE.Geometry
                 }
                 this.faces.Add(new Face(this,newCornerList));
             }
-            /*
-
-            this.corners = new List<Corner>(toCopy.corners);
-            this.edges = new List<Edge>(toCopy.edges);
-            this.faces = new List<Face>(toCopy.faces);
-
-
-            foreach (Corner c in corners)
-                c.SetPoly(this);
-            foreach (Edge c in edges)
-                c.SetPoly(this);
-            foreach (Face c in faces)
-                c.SetPoly(this);*/
+        }
+        //populates THIS instance with the lists and instances of corners, edges and faces from the provided Polyhedron.  
+        // use only when toCopy will be discarded.
+        void Become(Polyhedron toCopy)
+        {
+            this.corners = toCopy.corners;
+            this.edges = toCopy.edges;
+            this.faces = toCopy.faces;
         }
 
         public Polyhedron(List<Vector3> cornerPos, List<List<int>> facesByCornerIndex)
@@ -974,7 +972,7 @@ namespace EyE.Geometry
             RecomputeEdges();
             //edges = newEdges;
             */
-        }// end contructor from mesh
+        }// end constructor from mesh
 
         static public async UniTask<Polyhedron> CreateFromMesh(MeshData fromMesh, CancelBoolRef cancelRef, bool runSyncronosly = false)
         {
@@ -1009,27 +1007,8 @@ namespace EyE.Geometry
             }
 
             //we will start with one face per triangle, then combine flush faces that are on the same plane- eliminating the edges between them.
-            // Helper function to find or create an edge between two corners
-            Edge GetOrCreateEdge(Corner endpointA, Corner endpointB)
-            {
-                // Check if an edge already exists between these corners
-                foreach (var edge in edges)
-                {
-                    if ((edge.endpointA == endpointA && edge.endpointB == endpointB) ||
-                        (edge.endpointA == endpointB && edge.endpointB == endpointA))
-                    {
-                        return edge;
-                    }
-                }
 
-                // If not, create a new edge and add it to the edges list
-                Debug.Log("new edge created [" + edges.Count + "] A:" + endpointA + "  B:" + endpointB);
-                var newEdge = new Edge(this, endpointA, endpointB);
-                edges.Add(newEdge);
-                return newEdge;
-            }
-
-            // Step 2: Loop through each triangle in the mesh to create faces
+            //  Loop through each triangle in the mesh to create faces
             for (int triIndex = 0; triIndex < fromMesh.triangles.Length; triIndex += 3)
             {
                 // Get the three vertex indices of the triangle
@@ -1306,74 +1285,37 @@ namespace EyE.Geometry
             return edgeCount > 0 ? totalLength / edgeCount : 0f;
         }
 
+        /// <summary>
+        /// Computes the ideal amount to truncate edges such that, for regular polyhedrons at least, the Truncate operation will yield equal edge lengths- maintaining 'regularity".
+        /// </summary>
+        /// <param name="c"></param>
+        /// <returns></returns>
         public float UniformEdgeLengthTruncFraction(Corner c)//, Edge edgeToTruncate)
         {
-            
-            // return 0.382f;
             Vector3 firstEdge = c.touchingEdges[0].VectorFrom(c);
             Vector3 secondEdge = c.touchingEdges[1].VectorFrom(c);
-            float edgeLen = firstEdge.magnitude;
-            float angleBetween = Mathf.Deg2Rad * Vector3.Angle(firstEdge, secondEdge);
-           
-
-            float halfOppLen = Mathf.Sin(.5f * angleBetween);
-            return halfOppLen / (halfOppLen + 1);
-            
-            float halfFacePlaneAngleBetween = Mathf.PI / c.touchingEdges.Count;
-            float cosEdgesAngles = Mathf.Cos(halfFacePlaneAngleBetween);
-            float frac = cosEdgesAngles / (1 + cosEdgesAngles);
-            return frac;
-        }
-        /*
-        float UniformFaceCenterToConerLengthTruncFraction(Corner c)
-        {
-            Vector3 firstEdge = c.touchingEdges[0].VectorFrom(c);
-            Vector3 secondEdge = c.touchingEdges[1].VectorFrom(c);
-            float edgeLen = firstEdge.magnitude;
-            float angleBetween = Mathf.Deg2Rad * Vector3.Angle(firstEdge, secondEdge);
-            Vector3 oldFaceCenter = c.touchingEdges[0].touchingFaces[0].center;
-
-            Vector3 oldCornerToFaceCenter = c.vertex - oldFaceCenter;
-
-            float M = oldCornerToFaceCenter.magnitude;
-            float m = angleBetween * .5f;
-
-            float C = Mathf.Sin(m) * M;
-
-            float angleD = Vector3.Angle(-c.vertex, firstEdge) * Mathf.Deg2Rad;
-            float d = angleD;
-            float sd = Mathf.Sin(d);
-            float K = edgeLen * 0.5f;
-
-            float secd = 1f / Mathf.Cos(d);
-            float B = -(secd * secd) * (Mathf.Sqrt((C * C + K * K) * sd * sd - C * C) - K);
-
-            return B / edgeLen;
-
+            float angleBetween = Mathf.Deg2Rad * Vector3.Angle(firstEdge, secondEdge);//angle between edges in 3d
+            float halfOppLen = Mathf.Sin(.5f * angleBetween); // fractional length of the side opposite the (half)angle "SOH"
+            // the new edge will be fullOppLen(2*halfOppLen).
+            // our goal is to ensure this value will be the same as the amount of the original edge that will remain.
+            // the original edge length for this, uses the unit length 1.0f
+            return halfOppLen / (halfOppLen + 1f);// compute halfOppLen as a fraction of the total length (halfOppLen + originalEdgeLength)
         }
 
-        float UniformFaceCenterToEdgeMidpoint(Corner c)
-        {
-            Edge firstEdgeRef = c.touchingEdges[0];
-            Vector3 firstEdge = firstEdgeRef.VectorFrom(c);
-            Vector3 secondEdge = c.touchingEdges[1].VectorFrom(c);
 
-            Vector3 oldFaceCenter = firstEdgeRef.touchingFaces[0].center;
-            Vector3 oldFaceCenterToEdgeMid = firstEdgeRef.midPoint - oldFaceCenter;
-            Vector3 oldFaceCenterToCorner = c.vertex - oldFaceCenter;
-
-            float angleC = Vector3.Angle(-c.vertex, oldFaceCenterToCorner) * Mathf.Deg2Rad;
-            float angleR = Vector3.Angle(firstEdge, secondEdge) * Mathf.Deg2Rad * 0.5f;
-            //B = C/(sin(c)*cos(r))
-            float B = oldFaceCenterToEdgeMid.magnitude / (firstEdge.magnitude * Mathf.Sin(angleC) * Mathf.Cos(angleR));
-            return B;
-
-        }
-        */
-
-        //cuts the polyhedron such that each corner becomes a face (removing the old corner, and replacing it with new corners)
-        //the number of corners this new face will have is equal to the number of edges touching the original corner.
-        //existing faces that touched the original corner will end up with TWO new corners, and a new edge, and will NOT have the original corner anymore.
+        /// <summary>
+        /// Cuts the polyhedron such that each corner becomes a new face (removing the old corner, and replacing it with new face corners)
+        /// The number of corners and edges this new face will have is equal to the number of edges touching the original corner.
+        /// Existing faces that touch the original corner will be modified:  they will gain a new edge with the newly cut faces, and loose the original corner.
+        /// The resultant polyhedron will have a number of faces equal to the number of faces plus the number of corners, in the original polyhedron.
+        /// </summary>
+        /// <param name="depthAsFractionOfEdgeLength">Specifies how far along each edge (from the original corner) to place new corners.  
+        /// This number is defined as a fraction, relative to the original edge length.  
+        /// Use the <c>UniformEdgeLengthTruncFraction(Corner c)</c> function to find a value that will result in equal edge lengths (only works for geometrically regular polyhedrons).
+        /// To clarify/avoid confusion: While this value may be proportional to the "depth" at which the new face is cut, that is NOT what this value specifies.
+        /// </param>
+        /// <param name="cancelRef">monitored to cancel operation, which may take a while to run for large polys</param>
+        /// <returns>A truncated copy of *this* polyhedron</returns>
         public async UniTask<Polyhedron> TruncAsync(float depthAsFractionOfEdgeLength = 0.5f, CancelBoolRef cancelRef = null)
         {
             YieldTimer timer = new YieldTimer(cancelRef);
@@ -1441,74 +1383,25 @@ namespace EyE.Geometry
             await truncPoly.RecomputeEdgesAsync(cancelRef);
 
             float scaleBy = 1f/(truncPoly.corners[0].vertex.magnitude);
-            truncPoly = await truncPoly.ScaleVerts(scaleBy, cancelRef);
+            truncPoly = await truncPoly.ScaleVertsAsync(scaleBy, cancelRef);
             // truncPoly.CheckIntegrity();
             return truncPoly;
         }
         public Polyhedron Trunc(float depthAsFractionOfEdgeLength = 0.5f)
         {
             return TruncAsync(depthAsFractionOfEdgeLength).AsTask().GetAwaiter().GetResult();
-            
-            Polyhedron truncPoly = new Polyhedron();
-            List<Corner> newCorners = truncPoly.corners;//  this list- after first loop- we be the same size as- and in the same order as ``this.faces``
-            List<Face> newFaces = truncPoly.faces;
-
-            // The index of these corners lists will match those of faces in original poly
-            // we will populate each of this as we loop through old corner's edges
-            // after the loop we will use them to create the new versions of the old faces.
-            List<List<Corner>> newReplacedFaceCorners = new List<List<Corner>>();
-            foreach (Face oldFace in this.faces)
-            {
-                newReplacedFaceCorners.Add(new List<Corner>());
-            }
-
-            foreach (Corner oldCorner in this.corners)
-            {
-                depthAsFractionOfEdgeLength = UniformEdgeLengthTruncFraction(oldCorner);
-
-                //corner being chopped of- this will be the corners of the face that remains
-                List<Corner> newFaceCorners = new List<Corner>();
-
-                //    Debug.Log("looping old corner- touching "+ oldCorner.touchingEdges.Count + " edges");
-                // all edges that touch this corner
-                foreach (Edge oldEdgeTouchingOldCorner in oldCorner.touchingEdges)
-                {
-                    //  Debug.Log("DepthFraction: " + depthAsFractionOfEdgeLength);
-                    Vector3 newCornerPos = oldEdgeTouchingOldCorner.FractionFrom(depthAsFractionOfEdgeLength, oldCorner);
-                    Corner newCorner = truncPoly.FindCornerByVertex(newCornerPos);
-                    if (newCorner == null)
-                    {
-                        newCorner = new Corner(truncPoly, newCornerPos);
-                        truncPoly.corners.Add(newCorner);
-                    }
-                    newFaceCorners.Add(newCorner);
-
-                    // old faces that touch this edge need to use the new corner instead of the old one now
-                    // so we add it to the list at newReplacedFaceCorners[oldFaceIndex]
-                    foreach (Face oldFaceTouchingCorner in oldEdgeTouchingOldCorner.touchingFaces)
-                    {
-                        int oldFaceIndex = this.faces.IndexOf(oldFaceTouchingCorner);
-                        newReplacedFaceCorners[oldFaceIndex].Add(newCorner);
-                        //      Debug.Log("added corner to list at old face index: " + oldFaceIndex + "  List now contains " +
-                        //          newReplacedFaceCorners[oldFaceIndex].Count + " corners");
-                    }
-                }
-                // Debug.Log("adding NEW face with " + newFaceCorners.Count+ " corners");
-                truncPoly.faces.Add(new Face(truncPoly, newFaceCorners)); // new face to replace oldCorner
-            }
-            //add in original faces- "now with new corners!"
-            foreach (List<Corner> newReplacementFaceCornerList in newReplacedFaceCorners)
-            {
-                truncPoly.faces.Add(new Face(truncPoly, newReplacementFaceCornerList));
-            }
-
-            foreach (Face f in newFaces)
-                f.ReOrderCornersClockWiseAroundCenterAndNormal();
-
-            truncPoly.RecomputeEdges();
-            // truncPoly.CheckIntegrity();
-            return truncPoly;
         }
+        public async UniTask ApplyTruncAsync(float depthAsFractionOfEdgeLength = 0.5f, CancelBoolRef cancelRef = null)
+        {
+            Polyhedron result = await TruncAsync(depthAsFractionOfEdgeLength, cancelRef);
+            Become(result);
+        }
+        public void ApplyTrunc(float depthAsFractionOfEdgeLength = 0.5f)
+        {
+            Polyhedron result = Trunc(depthAsFractionOfEdgeLength);
+            Become(result);
+        }
+
 
         public async UniTask<Polyhedron> PyramidFacesAsync(CancelBoolRef cancelRef)
         {
@@ -1534,129 +1427,7 @@ namespace EyE.Geometry
         }
         public Polyhedron PyramidFaces()
         {
-            Polyhedron tessPoly = new Polyhedron(this);
-            List<Face> replacementFaces = new List<Face>();
-            foreach (Face f in tessPoly.faces)
-            {
-                Corner newCenterCorner = new Corner(tessPoly, f.center);
-                tessPoly.corners.Add(newCenterCorner);
-                foreach (Edge e in f.edges) // each edge will become a new (triangular) face that touches centerpt
-                {
-                    Face newFace = new Face(tessPoly, new List<Corner>() { e.endpointA, e.endpointB, newCenterCorner });
-                    newFace.ReOrderCornersClockWiseAroundCenterAndNormal();
-                    replacementFaces.Add(newFace);
-                }
-            }
-            tessPoly.faces = replacementFaces;
-            tessPoly.RecomputeEdges();
-            return tessPoly;
-        }
-
-        public Polyhedron TesselateTriangleByEdgeMiddles()
-        {
-            Polyhedron tessPoly = new Polyhedron();
-            InitCornerByVectorCache();
-
-            foreach (Face f in faces)
-            {
-                if (f.corners.Count > 3)
-                    throw new GeometryException("The TesselateTriangleByEdgeMiddles, requires that all faces are triangles, but a face with " + f.corners.Count + " corners was found.");
-
-                // corner ABC
-                // mids   AB, BC, CA
-                // new tris
-                //  A,AB,AC
-                //  B,BC,AB
-                //  C,CA,BC
-                //  AB,BC,CA
-                Vector3 A = f.corners[0].vertex;
-                Vector3 B = f.corners[1].vertex;
-                Vector3 C = f.corners[2].vertex;
-
-                Vector3 AB = Vector3.Slerp(A, B, 0.5f);//  (A + B) * 0.5f;
-                Vector3 BC = Vector3.Slerp(B, C, 0.5f);//(B + C) * 0.5f;
-                Vector3 CA = Vector3.Slerp(C, A, 0.5f);//(C + A) * 0.5f;
-
-                //popout midpoints (no, we have a spherize function for that)
-                /*float mag = A.magnitude;
-                AB = AB.normalized * mag;
-                BC = BC.normalized * mag;
-                CA = CA.normalized * mag;
-                */
-
-                //get/create corners
-                Corner cornerA = tessPoly.FindCornerByVertex(A);
-                if (cornerA == null)
-                {
-                    cornerA = new Corner(tessPoly, A);
-                    tessPoly.corners.Add(cornerA);
-                }
-                Corner cornerB = tessPoly.FindCornerByVertex(B);
-                if (cornerB == null)
-                {
-                    cornerB = new Corner(tessPoly, B);
-                    tessPoly.corners.Add(cornerB);
-                }
-                Corner cornerC = tessPoly.FindCornerByVertex(C);
-                if (cornerC == null)
-                {
-                    cornerC = new Corner(tessPoly, C);
-                    tessPoly.corners.Add(cornerC);
-                }
-
-                Corner cornerAB = tessPoly.FindCornerByVertex(AB);
-                if (cornerAB == null)
-                {
-                    cornerAB = new Corner(tessPoly, AB);
-                    tessPoly.corners.Add(cornerAB);
-                }
-
-                Corner cornerBC = tessPoly.FindCornerByVertex(BC);
-                if (cornerBC == null)
-                {
-                    cornerBC = new Corner(tessPoly, BC);
-                    tessPoly.corners.Add(cornerBC);
-                }
-
-                Corner cornerCA = tessPoly.FindCornerByVertex(CA);
-                if (cornerCA == null)
-                {
-                    cornerCA = new Corner(tessPoly, CA);
-                    tessPoly.corners.Add(cornerCA);
-                }
-
-                Face[] newFaces = new Face[4];
-                newFaces[0] = new Face(tessPoly, new List<Corner>()
-                {
-                    cornerA,
-                    cornerAB,
-                    cornerCA
-                });
-                newFaces[1] = new Face(tessPoly, new List<Corner>()
-                {
-                    cornerB,
-                    cornerBC,
-                    cornerAB
-                });
-                newFaces[2] = new Face(tessPoly, new List<Corner>()
-                {
-                    cornerC,
-                    cornerCA,
-                    cornerBC
-                });
-                newFaces[3] = new Face(tessPoly, new List<Corner>()
-                {
-                    cornerAB,
-                    cornerBC,
-                    cornerCA
-                });
-
-                tessPoly.faces.AddRange(newFaces);
-
-            }// end loop all faces
-
-            tessPoly.RecomputeEdges();
-            return tessPoly;
+            return PyramidFacesAsync(null).AsTask().GetAwaiter().GetResult();
         }
 
         public async UniTask<Polyhedron> TesselateTriangleByEdgeMiddlesAsync(CancelBoolRef cancelRef)
@@ -1697,29 +1468,29 @@ namespace EyE.Geometry
 
                 Face[] newFaces = new Face[4];
                 newFaces[0] = new Face(tessPoly, new List<Corner>()
-        {
-            cornerA,
-            cornerAB,
-            cornerCA
-        });
+                    {
+                        cornerA,
+                        cornerAB,
+                        cornerCA
+                    });
                 newFaces[1] = new Face(tessPoly, new List<Corner>()
-        {
-            cornerB,
-            cornerBC,
-            cornerAB
-        });
+                    {
+                        cornerB,
+                        cornerBC,
+                        cornerAB
+                    });
                 newFaces[2] = new Face(tessPoly, new List<Corner>()
-        {
-            cornerC,
-            cornerCA,
-            cornerBC
-        });
+                    {
+                        cornerC,
+                        cornerCA,
+                        cornerBC
+                    });
                 newFaces[3] = new Face(tessPoly, new List<Corner>()
-        {
-            cornerAB,
-            cornerBC,
-            cornerCA
-        });
+                    {
+                        cornerAB,
+                        cornerBC,
+                        cornerCA
+                    });
 
                 tessPoly.faces.AddRange(newFaces);
 
@@ -1745,29 +1516,40 @@ namespace EyE.Geometry
                 return corner;
             }
         }
+        public Polyhedron TesselateTriangleByEdgeMiddles()
+        {
+            return PyramidFacesAsync(null).AsTask().GetAwaiter().GetResult();
+        }
 
         /// <summary>
         /// Create a duplicate poly, and Sets all corner coordinates to have a length of 1 (from origin), without changing the direction from the origin.
         /// </summary>
-        /// <param name="R"></param>
+        /// <param name="R">Radius, 1.0 suggested</param>
         public async UniTask<Polyhedron> SpherizeAsync(float R, CancelBoolRef cancelRef)
         {
             Polyhedron newPoly = new Polyhedron(this);
-
+            await newPoly.ApplySpherizeAsync(R, cancelRef);
+            return newPoly;
+        }
+        public Polyhedron Spherize(float R)
+        {
+            return SpherizeAsync(R,null).AsTask().GetAwaiter().GetResult();
+        }
+        public async UniTask ApplySpherizeAsync(float R, CancelBoolRef cancelRef)
+        {
             YieldTimer yieldTimer = new YieldTimer(cancelRef);
-            foreach (Corner c in newPoly.corners)
+            foreach (Corner c in this.corners)
             {
                 c.vertex = c.vertex.normalized * R;
                 await yieldTimer.YieldOnTimeSlice();
             }
-            return newPoly;
         }
-        public void Spherize(float R)
+        public void ApplySpherize(float R)
         {
-            foreach (Corner c in corners)
-                c.vertex = c.vertex.normalized * R;
+            ApplySpherizeAsync(R, null).AsTask().GetAwaiter().GetResult();
         }
-        public async UniTask<Polyhedron> ScaleVerts(float R, CancelBoolRef cancelRef)
+
+        public async UniTask<Polyhedron> ScaleVertsAsync(float R, CancelBoolRef cancelRef)
         {
             Polyhedron newPoly = new Polyhedron(this);
 
@@ -1779,6 +1561,10 @@ namespace EyE.Geometry
             }
             
             return newPoly;
+        }
+        public Polyhedron ScaleVerts(float R)
+        {
+            return ScaleVertsAsync(R, null).AsTask().GetAwaiter().GetResult();
         }
 
         /// <summary>
@@ -1812,25 +1598,10 @@ namespace EyE.Geometry
         /// <summary>
         /// Makes all corners, equidistant from all other corners it shares an edge with
         /// </summary>
-        public void Smooth()
+        public Polyhedron Smooth()
         {
-            Dictionary<Corner, Vector3> newVertPerCornder = new Dictionary<Corner, Vector3>();
-            foreach (Corner c in corners)
-            {
-                Vector3 sum = Vector3.zero;
-                int count = 0;
-                foreach (Edge e in c.touchingEdges)
-                {
-                    if (e.endpointA == c)
-                        sum += e.endpointB.vertex;
-                    else
-                        sum += e.endpointA.vertex;
-                    count++;
-                }
-                newVertPerCornder[c] = (sum / count).normalized;
-            }
-            foreach (Corner c in corners)
-                c.vertex = newVertPerCornder[c];
+            return SmoothAsync(null).AsTask().GetAwaiter().GetResult();
+
         }
 
         //dual converts corners into faces, and faces into corners
@@ -1882,37 +1653,9 @@ namespace EyE.Geometry
         }
         public Polyhedron Dual()
         {
-            Polyhedron dualPoly = new Polyhedron();
-            List<Corner> newCorners = dualPoly.corners;//  this list- after first loop- we be the same size as- and in the same order as ``this.faces``
-            List<Face> newFaces = dualPoly.faces;
-            foreach (Face oldFace in this.faces)
-            {
-
-                List<Vector3> oldFaceCornerVerts = Corner.GetVerticies(oldFace.corners);
-                Vector3 center = oldFaceCornerVerts.AvgPos().normalized;
-                center *= oldFace.corners[0].vertex.magnitude;
-                newCorners.Add(new Corner(dualPoly, center));
-            }
-
-            foreach (Corner oldCorner in this.corners)
-            {
-                List<Corner> newFaceCorners = new List<Corner>();
-                List<Face> oldCornersOldFaces = oldCorner.touchingFaces;
-                //  Debug.Log("old corner at index: " + corners.IndexOf(oldCorner) + " touching " + oldCornersOldFaces.Count + "faces");
-
-                foreach (Face oldFaceTouchingOldCorner in oldCornersOldFaces)
-                {
-                    newFaceCorners.Add(newCorners[this.faces.IndexOf(oldFaceTouchingOldCorner)]);
-                }
-                newFaces.Add(new Face(dualPoly, newFaceCorners));
-            }
-            foreach (Face f in newFaces)
-                f.ReOrderCornersClockWiseAroundCenterAndNormal();
-
-            dualPoly.RecomputeEdges();
-            //  dualPoly.CheckIntegrity();
-            return dualPoly;
+            return DualAsync(null).AsTask().GetAwaiter().GetResult();
         }
+
         public async UniTask<FacesAndNeighbors> GetFacesAndNeighborsAsync(CancelBoolRef cancelRef)
         {
             FacesAndNeighbors result = FacesAndNeighbors.CreateInstance<FacesAndNeighbors>();
@@ -1921,9 +1664,7 @@ namespace EyE.Geometry
         }
         public FacesAndNeighbors GetFacesAndNeighbors()
         {
-            FacesAndNeighbors result = FacesAndNeighbors.CreateInstance<FacesAndNeighbors>();
-            ToMesh(result);//ignore mesh output
-            return result;
+            return GetFacesAndNeighborsAsync(null).AsTask().GetAwaiter().GetResult();
         }
 
         /// <summary>
@@ -1939,9 +1680,9 @@ namespace EyE.Geometry
         }
         public Mesh ToMesh(FacesAndNeighbors facesAndNeighbors = null)
         {
-            MeshData meshDataToUse = ToMeshData(facesAndNeighbors);
-            return meshDataToUse.ToMesh();
+            return ToMeshAsync(facesAndNeighbors,null).AsTask().GetAwaiter().GetResult();
         }
+
         /// <summary>
         /// Generate a unity mesh from this polyhedron.
         /// </summary>
@@ -2004,7 +1745,7 @@ namespace EyE.Geometry
                         faceTris.Add(faceVerts.Count + triIndexStart);
                         cornerVertIndices.Add(faceVerts.Count);
                         faceVerts.Add(originalfaceVerts[(i + 0).CircularIndex(numOriginalVerts)]);
-                        cornerVertIndices.Add(i * 3);
+                      //  cornerVertIndices.Add(i * 3);
 
                         faceTris.Add(faceVerts.Count + triIndexStart);
                         faceVerts.Add(originalfaceVerts[(i + 1).CircularIndex(numOriginalVerts)]);
@@ -2073,233 +1814,10 @@ namespace EyE.Geometry
         }
         public MeshData ToMeshData(FacesAndNeighbors facesAndNeighbors = null)
         {
-            MeshData meshToUseRef = new MeshData();
-            bool doFacesAndNeighbors = (facesAndNeighbors != null);
-            if (doFacesAndNeighbors)
-                facesAndNeighbors.faceDetails = new List<FaceDetails>();
-            List<Vector3> meshVerts = new List<Vector3>();
-            List<int> meshTris = new List<int>();
-            List<Vector3> meshNormals = new List<Vector3>();
-            //     List<Vector2> meshUV0s = new List<Vector2>();
-            List<Vector2> meshUV1s = new List<Vector2>();
-
-            int faceCount = 0;
-            //by face.... more than 3 corners we compute a "middle" point and connect multiple triangles to that
-            foreach (Face currentFace in faces)
-            {
-
-                FaceDetails faceIndex = null;
-                if (doFacesAndNeighbors)
-                {
-                    faceIndex = new FaceDetails();
-                    faceIndex.index = faceCount++; //faces.IndexOf(currentFace);
-                    faceIndex.neighborIndices = new List<int>();
-                    foreach (Face neighbor in currentFace.neighbors)
-                        faceIndex.neighborIndices.Add(faces.IndexOf(neighbor));
-                    faceIndex.normal = currentFace.normal;
-                    faceIndex.triangles = new List<int>(); // filled lower down
-                    faceIndex.cornerVertexMeshIndices = new List<int>();
-                    facesAndNeighbors.faceDetails.Add(faceIndex);
-                }
-
-                //  currentFace.ReOrderCornersClockWiseAroundCenterAndNormal();
-                int triIndexStart = meshVerts.Count;
-                List<Vector3> faceVerts = Corner.GetVerticies(currentFace.corners);
-                List<int> faceTris = new List<int>();
-                Vector3 faceNormal = currentFace.normal;
-                List<Vector3> faceNormals = new List<Vector3>();
-                //List<Vector2> faceUV0s = new List<Vector2>();
-                List<Vector2> faceUV1s = new List<Vector2>();
-                List<int> cornerVertIndices = new List<int>();
-
-                if (currentFace.corners.Count != 3)
-                {
-                    //compute center point of face (avg all points)
-                    Vector3 centerPt = faceVerts.AvgPos();
-                    // int centerPtIndex = faceVerts.Count;
-                    int numOriginalVerts = faceVerts.Count;
-                    //  faceVerts.Add(centerPt);
-                    List<Vector3> originalfaceVerts = faceVerts;
-                    faceVerts = new List<Vector3>();
-                    for (int i = 0; i < numOriginalVerts; i++)
-                    {
-                        faceTris.Add(faceVerts.Count + triIndexStart);
-                        cornerVertIndices.Add(faceVerts.Count);
-                        faceVerts.Add(originalfaceVerts[(i + 0).CircularIndex(numOriginalVerts)]);
-
-                        faceTris.Add(faceVerts.Count + triIndexStart);
-                        faceVerts.Add(originalfaceVerts[(i + 1).CircularIndex(numOriginalVerts)]);
-                        //faceTris.Add((i + 0).CircularIndex(numOriginalVerts) + triIndexStart);
-                        //faceTris.Add((i + 1).CircularIndex(numOriginalVerts) + triIndexStart);
-
-                        faceTris.Add(faceVerts.Count + triIndexStart);
-                        faceVerts.Add(centerPt);
-                    }
-                }
-                else//3 pts- we can just add tri directly- no center needed
-                {
-                    faceTris.Add(0 + triIndexStart);
-                    faceTris.Add(1 + triIndexStart);
-                    faceTris.Add(2 + triIndexStart);
-                    cornerVertIndices.Add(0);
-                    cornerVertIndices.Add(1);
-                    cornerVertIndices.Add(2);
-                }
-
-                if (doFacesAndNeighbors)
-                {
-                    int triStartIndex = meshTris.Count;
-                    for (int i = 0; i < faceTris.Count; i += 3)
-                        faceIndex.triangles.Add(i + triStartIndex);
-                    for (int i = 0; i < cornerVertIndices.Count; i++)
-                        faceIndex.cornerVertexMeshIndices.Add(cornerVertIndices[i] + meshVerts.Count);
-                }
-
-                Vector2 middleUV = Vector2.one * 0.5f;
-                Vector3 faceCenter = currentFace.center;
-
-                for (int i = 0; i < faceVerts.Count; i++)
-                {
-                    faceNormals.Add(faceNormal);
-                    // faceUV0s.Add(Vector2.zero);// set later- by tri // faceVerts[i].SphericalUV());
-                    faceUV1s.Add((faceVerts[i].ProjectPointOntoPlane(faceNormal, faceCenter).normalized * 0.5f) + middleUV);
-                }
-
-                meshVerts.AddRange(faceVerts);
-                meshTris.AddRange(faceTris);
-                meshNormals.AddRange(faceNormals);
-                //   meshUV0s.AddRange(faceUV0s);
-                meshUV1s.AddRange(faceUV1s);
-            }// end for each face
-
-
-            meshToUseRef.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
-            meshToUseRef.vertices = meshVerts.ToArray();
-            meshToUseRef.triangles = meshTris.ToArray();
-            meshToUseRef.meshNormals = meshNormals.ToArray();
-            // newMesh.SetUVs(0, meshUV0s.ToArray());
-            meshToUseRef.meshUV1s = meshUV1s.ToArray();
-            meshToUseRef.meshUV2s = meshUV1s.ToArray();
-            SphereizeMeshUV0s(meshToUseRef);
-            meshToUseRef.name = faces.Count.ToString() + "FacePoly";
-            if (doFacesAndNeighbors)
-                meshToUseRef.facesAndNeighborsRef = facesAndNeighbors;
-
-
-
-            //  TestCheckUv0Xs(newMesh);
-            return meshToUseRef;
+            return ToMeshDataAsync(facesAndNeighbors, null).AsTask().GetAwaiter().GetResult();
         }
 
-
-        static public void SphereizeMeshUV0sWithTests(Mesh inputMesh)
-        {
-            int[] triangleArray = inputMesh.triangles;
-            Vector3[] vertexArray = inputMesh.vertices;
-            Vector2[] uvArray = new Vector2[vertexArray.Length];
-
-            for (int i = 0; i < triangleArray.Length; i += 3)
-            {
-                int index0 = triangleArray[i];
-                int index1 = triangleArray[i + 1];
-                int index2 = triangleArray[i + 2];
-
-                //spherical uv's wrap X from 0 to 1 around the planet horizontally (around the equator)
-                // spherical uv'sn have Y =1 at north pole, y=0 at south pole, and y=0.5 at equator             
-                Vector2 uv0 = vertexArray[index0].CylindricalUV();
-                Vector2 uv1 = vertexArray[index1].CylindricalUV();
-                Vector2 uv2 = vertexArray[index2].CylindricalUV();
-
-                //account for triangles that cross the 0,1 meridian : assumes texture sample mode is "repeat"
-                float UV0xNew = uv0.x;
-                float UV1xNew = uv1.x;
-                float UV2xNew = uv2.x;
-
-                if (uv1.x - uv0.x > 0.5f)
-                    UV1xNew -= 1f;
-                if (uv1.x - uv0.x < -0.5f)
-                    UV1xNew += 1f;
-
-                if (uv2.x - uv0.x > 0.5f)
-                    UV2xNew -= 1f;
-                if (uv2.x - uv0.x < -0.5f)
-                    UV2xNew += 1f;
-                /*
-                if (uv2.x - uv1.x > 0.5f)
-                    UV2xNew -= 1f;
-                if (uv2.x - uv1.x < -0.5f)
-                    UV2xNew += 1f;
-                */
-
-                #region troubleShooting
-                bool check = false;
-                if (Mathf.Abs(uv1.x - uv0.x) > 0.5f)
-                    check = true;
-                if (Mathf.Abs(uv2.x - uv0.x) > 0.5f)
-                    check = true;
-                if (Mathf.Abs(uv2.x - uv1.x) > 0.5f)
-                    check = true;
-
-
-                bool stillOff = false;
-                if (Mathf.Abs(UV1xNew - UV0xNew) > 0.5f)
-                {
-                    stillOff = true;
-                    check = true;
-                }
-                if (Mathf.Abs(UV1xNew - UV2xNew) > 0.5f)
-                {
-                    stillOff = true;
-                    check = true;
-                }
-                if (Mathf.Abs(UV2xNew - UV0xNew) > 0.5f)
-                {
-                    stillOff = true;
-                    check = true;
-                }
-
-                if (check)
-                {
-                    string s = "Modified uvs for tri index: " + (i / 3);
-                    s += "\nBEFORE Tri UVx's: " + uv0.x.ToString("0.00")
-                        + "," + uv1.x.ToString("0.00") + "," + uv2.x.ToString("0.00");
-                    s += "\nAfter Tri UVx's: " + UV0xNew.ToString("0.00")
-                        + "," + UV1xNew.ToString("0.00") + "," + UV2xNew.ToString("0.00");
-                    s += "\nStill spans 1/2 rotation: " + stillOff;
-                    s += "\nVertIndexes: " + index0 + "," + index1 + "," + index2;
-
-                    Debug.Log(s);
-                }
-
-                #endregion
-                uv0.x = UV0xNew;
-                uv1.x = UV1xNew;
-                uv2.x = UV2xNew;
-                uv0 = new Vector2(UV0xNew, uv0.y);
-                uv1 = new Vector2(UV1xNew, uv1.y);
-                uv2 = new Vector2(UV2xNew, uv2.y);
-
-                if (uv0.y.CloseEqual(1) || uv0.y.CloseEqual(0))
-                    uv0.x = (uv1.x + uv2.x) * 0.5f; //avg
-                if (uv1.y.CloseEqual(1) || uv1.y.CloseEqual(0))
-                    uv1.x = (uv0.x + uv2.x) * 0.5f; //avg
-                if (uv2.y.CloseEqual(1) || uv2.y.CloseEqual(0))
-                    uv2.x = (uv1.x + uv0.x) * 0.5f; //avg
-
-
-                uvArray[index0] = uv0;
-                uvArray[index1] = uv1;
-                uvArray[index2] = uv2;
-            }
-            inputMesh.SetUVs(0, uvArray, 0, uvArray.Length);
-
-            List<Vector2> uvCheckArray = new List<Vector2>();
-            inputMesh.GetUVs(0, uvCheckArray);//.uv;
-            for (int i = 0; i < uvCheckArray.Count; i++)
-                if (uvCheckArray[i] != uvArray[i])
-                    Debug.Log("SanityFailure");
-        }
-        static public void SphereizeMeshUV0s(MeshData inputMesh)
+        static void SphereizeMeshUV0s(MeshData inputMesh)
         {
             int[] triangleArray = inputMesh.triangles;
             Vector3[] vertexArray = inputMesh.vertices;
@@ -2387,8 +1905,6 @@ namespace EyE.Geometry
 
 
         }
-
-        const float radToRots = 1.0f / (Mathf.PI * 2.0f);
 
         public bool CheckIntegrity(Transform debugDragAt, Gradient orderGradient)
         {
@@ -2690,6 +2206,7 @@ namespace EyE.Geometry
 
             return new Polyhedron(new List<Vector3>(vertices), facesByIndex);
         }
+
         public void OnAfterDeserialize()
         {
             //circular references bad for serialization do it now

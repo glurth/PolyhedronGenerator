@@ -1,0 +1,2452 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98339c6df844984aaa8686f5fffb1d5, type: 3}
+  m_Name: 272Polyhedron
+  m_EditorClassIdentifier: 
+  poly:
+    faces:
+    - cornerIndexes: 010000000200000003000000040000000500000000000000
+    - cornerIndexes: 0700000008000000090000000a0000000b00000006000000
+    - cornerIndexes: 0d0000000e0000000f00000010000000110000000c000000
+    - cornerIndexes: 130000001400000015000000160000001700000012000000
+    - cornerIndexes: 190000001a0000001b0000001c0000001d00000018000000
+    - cornerIndexes: 1f000000200000002100000022000000230000001e000000
+    - cornerIndexes: 250000002600000027000000280000002900000024000000
+    - cornerIndexes: 2b0000002c0000002d0000002e0000002f0000002a000000
+    - cornerIndexes: 310000003200000033000000340000003500000030000000
+    - cornerIndexes: 3700000038000000390000003a0000003b00000036000000
+    - cornerIndexes: 3d0000003e0000003f00000040000000410000003c000000
+    - cornerIndexes: 430000004400000045000000460000004700000042000000
+    - cornerIndexes: 490000004a0000004b0000004c0000004d00000048000000
+    - cornerIndexes: 4f000000500000005100000052000000530000004e000000
+    - cornerIndexes: 550000005600000057000000580000005900000054000000
+    - cornerIndexes: 5b0000005c0000005d0000005e0000005f0000005a000000
+    - cornerIndexes: 610000006200000063000000640000006500000060000000
+    - cornerIndexes: 6700000068000000690000006a0000006b00000066000000
+    - cornerIndexes: 6d0000006e0000006f00000070000000710000006c000000
+    - cornerIndexes: 730000007400000075000000760000007700000072000000
+    - cornerIndexes: 78000000790000007a0000007b0000007c0000007d000000
+    - cornerIndexes: 7f000000800000008100000082000000830000007e000000
+    - cornerIndexes: 850000008600000087000000880000008900000084000000
+    - cornerIndexes: 8b0000008c0000008d0000008e0000008f0000008a000000
+    - cornerIndexes: 910000009200000093000000940000009500000090000000
+    - cornerIndexes: 9700000098000000990000009a0000009b00000096000000
+    - cornerIndexes: 9c0000009d0000009e0000009f000000a0000000a1000000
+    - cornerIndexes: a3000000a4000000a5000000a6000000a7000000a2000000
+    - cornerIndexes: a9000000aa000000ab000000ac000000ad000000a8000000
+    - cornerIndexes: af000000b0000000b1000000b2000000b3000000ae000000
+    - cornerIndexes: b5000000b6000000b7000000b8000000b9000000b4000000
+    - cornerIndexes: bb000000bc000000bd000000be000000bf000000ba000000
+    - cornerIndexes: c1000000c2000000c3000000c4000000c5000000c0000000
+    - cornerIndexes: c7000000c8000000c9000000ca000000cb000000c6000000
+    - cornerIndexes: cd000000ce000000cf000000d0000000d1000000cc000000
+    - cornerIndexes: d3000000d4000000d5000000d6000000d7000000d2000000
+    - cornerIndexes: d8000000d9000000da000000db000000dc000000dd000000
+    - cornerIndexes: df000000e0000000e1000000e2000000e3000000de000000
+    - cornerIndexes: e5000000e6000000e7000000e8000000e9000000e4000000
+    - cornerIndexes: eb000000ec000000ed000000ee000000ef000000ea000000
+    - cornerIndexes: f0000000f1000000f2000000f3000000f4000000f5000000
+    - cornerIndexes: f7000000f8000000f9000000fa000000fb000000f6000000
+    - cornerIndexes: fd000000fe000000ff0000000001000001010000fc000000
+    - cornerIndexes: 030100000401000005010000060100000701000002010000
+    - cornerIndexes: 090100000a0100000b0100000c0100000d01000008010000
+    - cornerIndexes: 0f010000100100001101000012010000130100000e010000
+    - cornerIndexes: 140100001501000016010000170100001801000019010000
+    - cornerIndexes: 1b0100001c0100001d0100001e0100001f0100001a010000
+    - cornerIndexes: 210100002201000023010000240100002501000020010000
+    - cornerIndexes: 2701000028010000290100002a0100002b01000026010000
+    - cornerIndexes: 2d0100002e0100002f01000030010000310100002c010000
+    - cornerIndexes: 330100003401000035010000360100003701000032010000
+    - cornerIndexes: 390100003a0100003b0100003c0100003d01000038010000
+    - cornerIndexes: 3f010000400100004101000042010000430100003e010000
+    - cornerIndexes: 450100004601000047010000480100004901000044010000
+    - cornerIndexes: 4b0100004c0100004d0100004e0100004f0100004a010000
+    - cornerIndexes: 500100005101000052010000530100005401000055010000
+    - cornerIndexes: 5701000058010000590100005a0100005b01000056010000
+    - cornerIndexes: 5d0100005e0100005f01000060010000610100005c010000
+    - cornerIndexes: 630100006401000065010000660100006701000062010000
+    - cornerIndexes: 690100006a0100006b0100006c01000068010000
+    - cornerIndexes: 6e0100006f01000070010000710100006d010000
+    - cornerIndexes: 7301000074010000750100007601000072010000
+    - cornerIndexes: 78010000790100007a0100007b01000077010000
+    - cornerIndexes: 7d0100007e0100007f010000800100007c010000
+    - cornerIndexes: 8201000083010000840100008501000081010000
+    - cornerIndexes: 8701000088010000890100008a01000086010000
+    - cornerIndexes: 8c0100008d0100008e0100008f0100008b010000
+    - cornerIndexes: 9101000092010000930100009401000090010000
+    - cornerIndexes: 9601000097010000980100009901000095010000
+    - cornerIndexes: 9b0100009c0100009d0100009e0100009a010000
+    - cornerIndexes: a0010000a1010000a2010000a30100009f010000
+    - cornerIndexes: a6010000a7010000a8010000a9010000a4010000a5010000
+    - cornerIndexes: ac010000ad010000ae010000af010000aa010000ab010000
+    - cornerIndexes: b2010000b3010000b4010000b5010000b0010000b1010000
+    - cornerIndexes: b8010000b9010000ba010000bb010000b6010000b7010000
+    - cornerIndexes: be010000bf010000c0010000c1010000bc010000bd010000
+    - cornerIndexes: c4010000c5010000c6010000c7010000c2010000c3010000
+    - cornerIndexes: ca010000cb010000cc010000cd010000c8010000c9010000
+    - cornerIndexes: d0010000d1010000d2010000d3010000ce010000cf010000
+    - cornerIndexes: d4010000d5010000d6010000d7010000d8010000d9010000
+    - cornerIndexes: dc010000dd010000de010000df010000da010000db010000
+    - cornerIndexes: e1010000e2010000e3010000e4010000e5010000e0010000
+    - cornerIndexes: e8010000e9010000ea010000eb010000e6010000e7010000
+    - cornerIndexes: ee010000ef010000f0010000f1010000ec010000ed010000
+    - cornerIndexes: f4010000f5010000f6010000f7010000f2010000f3010000
+    - cornerIndexes: fa010000fb010000fc010000fd010000f8010000f9010000
+    - cornerIndexes: 00020000010200000202000003020000fe010000ff010000
+    - cornerIndexes: 060200000702000008020000090200000402000005020000
+    - cornerIndexes: 0c0200000d0200000e0200000f0200000a0200000b020000
+    - cornerIndexes: 120200001302000014020000150200001002000011020000
+    - cornerIndexes: 160200001702000018020000190200001a0200001b020000
+    - cornerIndexes: 0f0000006a01000069010000090000000800000010000000
+    - cornerIndexes: 150000006b0100006a0100000f0000000e00000016000000
+    - cornerIndexes: 1a0000006c0100006b01000015000000140000001b000000
+    - cornerIndexes: 6c0100001a00000019000000030000000200000068010000
+    - cornerIndexes: 09000000690100006801000002000000010000000a000000
+    - cornerIndexes: 2d0000006f0100006e01000027000000260000002e000000
+    - cornerIndexes: 32000000700100006f0100002d0000002c00000033000000
+    - cornerIndexes: 380000007101000070010000320000003100000039000000
+    - cornerIndexes: 71010000380000003700000022000000210000006d010000
+    - cornerIndexes: 270000006e0100006d010000210000002000000028000000
+    - cornerIndexes: 4b000000740100007301000045000000440000004c000000
+    - cornerIndexes: 5100000075010000740100004b0000004a00000052000000
+    - cornerIndexes: 560000007601000075010000510000005000000057000000
+    - cornerIndexes: 7601000056000000550000003f0000003e00000072010000
+    - cornerIndexes: 4500000073010000720100003e0000003d00000046000000
+    - cornerIndexes: 69000000790100007801000063000000620000006a000000
+    - cornerIndexes: 6e0000007a0100007901000069000000680000006f000000
+    - cornerIndexes: 740000007b0100007a0100006e0000006d00000075000000
+    - cornerIndexes: 7b01000074000000730000005e0000005d00000077010000
+    - cornerIndexes: 6300000078010000770100005d0000005c00000064000000
+    - cornerIndexes: 870000007e0100007d010000810000008000000088000000
+    - cornerIndexes: 8c0000007f0100007e01000087000000860000008d000000
+    - cornerIndexes: 92000000800100007f0100008c0000008b00000093000000
+    - cornerIndexes: 8001000092000000910000007c0000007b0000007c010000
+    - cornerIndexes: 810000007d0100007c0100007b0000007a00000082000000
+    - cornerIndexes: a500000083010000820100009f0000009e000000a6000000
+    - cornerIndexes: ab0000008401000083010000a5000000a4000000ac000000
+    - cornerIndexes: b00000008501000084010000ab000000aa000000b1000000
+    - cornerIndexes: 85010000b0000000af000000990000009800000081010000
+    - cornerIndexes: 9f00000082010000810100009800000097000000a0000000
+    - cornerIndexes: c20000008801000087010000bd000000bc000000c3000000
+    - cornerIndexes: c80000008901000088010000c2000000c1000000c9000000
+    - cornerIndexes: ce0000008a01000089010000c8000000c7000000cf000000
+    - cornerIndexes: 8a010000ce000000cd000000b8000000b700000086010000
+    - cornerIndexes: bd0000008701000086010000b7000000b6000000be000000
+    - cornerIndexes: e00000008d0100008c010000db000000da000000e1000000
+    - cornerIndexes: e60000008e0100008d010000e0000000df000000e7000000
+    - cornerIndexes: ed0000008f0100008e010000e6000000e5000000ee000000
+    - cornerIndexes: 8f010000ed000000ec000000d5000000d40000008b010000
+    - cornerIndexes: db0000008c0100008b010000d4000000d3000000dc000000
+    - cornerIndexes: ff0000009201000091010000f9000000f800000000010000
+    - cornerIndexes: 040100009301000092010000ff000000fe00000005010000
+    - cornerIndexes: 0a010000940100009301000004010000030100000b010000
+    - cornerIndexes: 940100000a01000009010000f4000000f300000090010000
+    - cornerIndexes: f90000009101000090010000f3000000f2000000fa000000
+    - cornerIndexes: 1c010000970100009601000017010000160100001d010000
+    - cornerIndexes: 2201000098010000970100001c0100001b01000023010000
+    - cornerIndexes: 29010000990100009801000022010000210100002a010000
+    - cornerIndexes: 990100002901000028010000110100001001000095010000
+    - cornerIndexes: 170100009601000095010000100100000f01000018010000
+    - cornerIndexes: 3a0100009c0100009b01000035010000340100003b010000
+    - cornerIndexes: 400100009d0100009c0100003a0100003901000041010000
+    - cornerIndexes: 460100009e0100009d010000400100003f01000047010000
+    - cornerIndexes: 9e0100004601000045010000300100002f0100009a010000
+    - cornerIndexes: 350100009b0100009a0100002f0100002e01000036010000
+    - cornerIndexes: 58010000a1010000a0010000530100005201000059010000
+    - cornerIndexes: 5e010000a2010000a101000058010000570100005f010000
+    - cornerIndexes: 65010000a3010000a20100005e0100005d01000066010000
+    - cornerIndexes: a301000065010000640100004d0100004c0100009f010000
+    - cornerIndexes: 53010000a00100009f0100004c0100004b01000054010000
+    - cornerIndexes: a701000017000000160000000e0000000d000000a8010000
+    - cornerIndexes: a50100008900000088000000800000007f000000a6010000
+    - cornerIndexes: a90100000101000000010000f8000000f7000000a4010000
+    - cornerIndexes: 89000000a5010000a4010000f7000000f600000084000000
+    - cornerIndexes: 17000000a7010000a60100007f0000007e00000012000000
+    - cornerIndexes: 01010000a9010000a80100000d0000000c000000fc000000
+    - cornerIndexes: ad0100008e0000008d0000008600000085000000ae010000
+    - cornerIndexes: af010000fb000000fa000000f2000000f1000000aa010000
+    - cornerIndexes: ab0100001e0100001d0100001601000015010000ac010000
+    - cornerIndexes: fb000000af010000ae0100008500000084000000f6000000
+    - cornerIndexes: 1e010000ab010000aa010000f1000000f00000001f010000
+    - cornerIndexes: ac01000015010000140100008f0000008e000000ad010000
+    - cornerIndexes: b3010000c4000000c3000000bc000000bb000000b4010000
+    - cornerIndexes: 08010000b2010000b1010000f5000000f400000009010000
+    - cornerIndexes: b501000024010000230100001b0100001a010000b0010000
+    - cornerIndexes: f5000000b1010000b00100001a0100001f010000f0000000
+    - cornerIndexes: b2010000080100000d010000c5000000c4000000b3010000
+    - cornerIndexes: 24010000b5010000b4010000bb000000ba00000025010000
+    - cornerIndexes: b90100006b0000006a0000006200000061000000ba010000
+    - cornerIndexes: b7010000bf000000be000000b6000000b5000000b8010000
+    - cornerIndexes: bb0100002b0100002a0100002101000020010000b6010000
+    - cornerIndexes: bf000000b7010000b60100002001000025010000ba000000
+    - cornerIndexes: 6b000000b9010000b8010000b5000000b400000066000000
+    - cornerIndexes: 2b010000bb010000ba010000610000006000000026010000
+    - cornerIndexes: bf010000700000006f0000006800000067000000c0010000
+    - cornerIndexes: cc000000bc010000c1010000b9000000b8000000cd000000
+    - cornerIndexes: bd010000e2000000e1000000da000000d9000000be010000
+    - cornerIndexes: b9000000c1010000c00100006700000066000000b4000000
+    - cornerIndexes: d1000000e3000000e2000000bd010000bc010000cc000000
+    - cornerIndexes: be010000d9000000d80000007100000070000000bf010000
+    - cornerIndexes: c501000034000000330000002c0000002b000000c6010000
+    - cornerIndexes: c3010000d0000000cf000000c7000000c6000000c4010000
+    - cornerIndexes: c7010000e8000000e7000000df000000de000000c2010000
+    - cornerIndexes: c2010000de000000e3000000d1000000d0000000c3010000
+    - cornerIndexes: c4010000c6000000cb0000003500000034000000c5010000
+    - cornerIndexes: e8000000c7010000c60100002b0000002a000000e9000000
+    - cornerIndexes: cb0100003a000000390000003100000030000000cc010000
+    - cornerIndexes: cd010000ca000000c9000000c1000000c0000000c8010000
+    - cornerIndexes: c90100000c0100000b0100000301000002010000ca010000
+    - cornerIndexes: c50000000d0100000c010000c9010000c8010000c0000000
+    - cornerIndexes: 35000000cb000000ca000000cd010000cc01000030000000
+    - cornerIndexes: ca01000002010000070100003b0000003a000000cb010000
+    - cornerIndexes: d101000011000000100000000800000007000000d2010000
+    - cornerIndexes: 36000000ce010000d3010000230000002200000037000000
+    - cornerIndexes: cf0100000601000005010000fe000000fd000000d0010000
+    - cornerIndexes: 11000000d1010000d0010000fd000000fc0000000c000000
+    - cornerIndexes: 3b0000000701000006010000cf010000ce01000036000000
+    - cornerIndexes: 23000000d3010000d201000007000000060000001e000000
+    - cornerIndexes: d70100000b0000000a0000000100000000000000d8010000
+    - cornerIndexes: d50100002900000028000000200000001f000000d6010000
+    - cornerIndexes: d90100003c0100003b0100003401000033010000d4010000
+    - cornerIndexes: 0b000000d7010000d60100001f0000001e00000006000000
+    - cornerIndexes: 29000000d5010000d4010000330100003201000024000000
+    - cornerIndexes: 050000003d0100003c010000d9010000d801000000000000
+    - cornerIndexes: dd0100002f0000002e0000002600000025000000de010000
+    - cornerIndexes: db010000ef000000ee000000e5000000e4000000dc010000
+    - cornerIndexes: df01000037010000360100002e0100002d010000da010000
+    - cornerIndexes: 2f000000dd010000dc010000e4000000e90000002a000000
+    - cornerIndexes: 37010000df010000de010000250000002400000032010000
+    - cornerIndexes: ef000000db010000da0100002d0100002c010000ea000000
+    - cornerIndexes: eb000000e4010000e3010000d6000000d5000000ec000000
+    - cornerIndexes: 44010000e0010000e5010000310100003001000045010000
+    - cornerIndexes: e10100005a010000590100005201000051010000e2010000
+    - cornerIndexes: 31010000e5010000e4010000eb000000ea0000002c010000
+    - cornerIndexes: 490100005b0100005a010000e1010000e001000044010000
+    - cornerIndexes: e20100005101000050010000d7000000d6000000e3010000
+    - cornerIndexes: e901000076000000750000006d0000006c000000ea010000
+    - cornerIndexes: eb010000dd000000dc000000d3000000d2000000e6010000
+    - cornerIndexes: e701000055010000540100004b0100004a010000e8010000
+    - cornerIndexes: 71000000d8000000dd000000eb010000ea0100006c000000
+    - cornerIndexes: d70000005001000055010000e7010000e6010000d2000000
+    - cornerIndexes: e80100004a0100004f0100007700000076000000e9010000
+    - cornerIndexes: ef0100004d0000004c0000004400000043000000f0010000
+    - cornerIndexes: 72000000ec010000f10100005f0000005e00000073000000
+    - cornerIndexes: 63010000ee010000ed0100004e0100004d01000064010000
+    - cornerIndexes: 770000004f0100004e010000ed010000ec01000072000000
+    - cornerIndexes: 4d000000ef010000ee010000630100006201000048000000
+    - cornerIndexes: 5f000000f1010000f001000043000000420000005a000000
+    - cornerIndexes: f501000053000000520000004a00000049000000f6010000
+    - cornerIndexes: f3010000ad000000ac000000a4000000a3000000f4010000
+    - cornerIndexes: f701000067010000660100005d0100005c010000f2010000
+    - cornerIndexes: 67010000f7010000f6010000490000004800000062010000
+    - cornerIndexes: ad000000f3010000f20100005c01000061010000a8000000
+    - cornerIndexes: 53000000f5010000f4010000a3000000a20000004e000000
+    - cornerIndexes: fb010000b2000000b1000000aa000000a9000000fc010000
+    - cornerIndexes: f901000048010000470100003f0100003e010000fa010000
+    - cornerIndexes: fd010000600100005f0100005701000056010000f8010000
+    - cornerIndexes: f8010000560100005b0100004901000048010000f9010000
+    - cornerIndexes: 60010000fd010000fc010000a9000000a800000061010000
+    - cornerIndexes: fa0100003e01000043010000b3000000b2000000fb010000
+    - cornerIndexes: 180000000202000001020000040000000300000019000000
+    - cornerIndexes: ae000000fe010000030200009a00000099000000af000000
+    - cornerIndexes: ff0100004201000041010000390100003801000000020000
+    - cornerIndexes: 00020000380100003d010000050000000400000001020000
+    - cornerIndexes: b30000004301000042010000ff010000fe010000ae000000
+    - cornerIndexes: 1d0000009b0000009a000000030200000202000018000000
+    - cornerIndexes: 070200001c0000001b000000140000001300000008020000
+    - cornerIndexes: 0902000083000000820000007a0000007900000004020000
+    - cornerIndexes: 05020000a1000000a0000000970000009600000006020000
+    - cornerIndexes: 83000000090200000802000013000000120000007e000000
+    - cornerIndexes: 06020000960000009b0000001d0000001c00000007020000
+    - cornerIndexes: a1000000050200000402000079000000780000009c000000
+    - cornerIndexes: 0d0200005800000057000000500000004f0000000e020000
+    - cornerIndexes: 900000000c0200000b0200007d0000007c00000091000000
+    - cornerIndexes: 0f020000a7000000a60000009e0000009d0000000a020000
+    - cornerIndexes: a70000000f0200000e0200004f0000004e000000a2000000
+    - cornerIndexes: 7d0000000b0200000a0200009d0000009c00000078000000
+    - cornerIndexes: 0c020000900000009500000059000000580000000d020000
+    - cornerIndexes: 540000001402000013020000400000003f00000055000000
+    - cornerIndexes: 1502000094000000930000008b0000008a00000010020000
+    - cornerIndexes: 1102000019010000180100000f0100000e01000012020000
+    - cornerIndexes: 8f000000140100001901000011020000100200008a000000
+    - cornerIndexes: 590000009500000094000000150200001402000054000000
+    - cornerIndexes: 120200000e01000013010000410000004000000013020000
+    - cornerIndexes: 1902000047000000460000003d0000003c0000001a020000
+    - cornerIndexes: 1702000065000000640000005c0000005b00000018020000
+    - cornerIndexes: 27010000160200001b020000120100001101000028010000
+    - cornerIndexes: 650000001702000016020000270100002601000060000000
+    - cornerIndexes: 4700000019020000180200005b0000005a00000042000000
+    - cornerIndexes: 4100000013010000120100001b0200001a0200003c000000
+    edges:
+    - endpointACornerIndex: 1
+      endpointBCornerIndex: 2
+    - endpointACornerIndex: 2
+      endpointBCornerIndex: 3
+    - endpointACornerIndex: 3
+      endpointBCornerIndex: 4
+    - endpointACornerIndex: 4
+      endpointBCornerIndex: 5
+    - endpointACornerIndex: 5
+      endpointBCornerIndex: 0
+    - endpointACornerIndex: 0
+      endpointBCornerIndex: 1
+    - endpointACornerIndex: 7
+      endpointBCornerIndex: 8
+    - endpointACornerIndex: 8
+      endpointBCornerIndex: 9
+    - endpointACornerIndex: 9
+      endpointBCornerIndex: 10
+    - endpointACornerIndex: 10
+      endpointBCornerIndex: 11
+    - endpointACornerIndex: 11
+      endpointBCornerIndex: 6
+    - endpointACornerIndex: 6
+      endpointBCornerIndex: 7
+    - endpointACornerIndex: 13
+      endpointBCornerIndex: 14
+    - endpointACornerIndex: 14
+      endpointBCornerIndex: 15
+    - endpointACornerIndex: 15
+      endpointBCornerIndex: 16
+    - endpointACornerIndex: 16
+      endpointBCornerIndex: 17
+    - endpointACornerIndex: 17
+      endpointBCornerIndex: 12
+    - endpointACornerIndex: 12
+      endpointBCornerIndex: 13
+    - endpointACornerIndex: 19
+      endpointBCornerIndex: 20
+    - endpointACornerIndex: 20
+      endpointBCornerIndex: 21
+    - endpointACornerIndex: 21
+      endpointBCornerIndex: 22
+    - endpointACornerIndex: 22
+      endpointBCornerIndex: 23
+    - endpointACornerIndex: 23
+      endpointBCornerIndex: 18
+    - endpointACornerIndex: 18
+      endpointBCornerIndex: 19
+    - endpointACornerIndex: 25
+      endpointBCornerIndex: 26
+    - endpointACornerIndex: 26
+      endpointBCornerIndex: 27
+    - endpointACornerIndex: 27
+      endpointBCornerIndex: 28
+    - endpointACornerIndex: 28
+      endpointBCornerIndex: 29
+    - endpointACornerIndex: 29
+      endpointBCornerIndex: 24
+    - endpointACornerIndex: 24
+      endpointBCornerIndex: 25
+    - endpointACornerIndex: 31
+      endpointBCornerIndex: 32
+    - endpointACornerIndex: 32
+      endpointBCornerIndex: 33
+    - endpointACornerIndex: 33
+      endpointBCornerIndex: 34
+    - endpointACornerIndex: 34
+      endpointBCornerIndex: 35
+    - endpointACornerIndex: 35
+      endpointBCornerIndex: 30
+    - endpointACornerIndex: 30
+      endpointBCornerIndex: 31
+    - endpointACornerIndex: 37
+      endpointBCornerIndex: 38
+    - endpointACornerIndex: 38
+      endpointBCornerIndex: 39
+    - endpointACornerIndex: 39
+      endpointBCornerIndex: 40
+    - endpointACornerIndex: 40
+      endpointBCornerIndex: 41
+    - endpointACornerIndex: 41
+      endpointBCornerIndex: 36
+    - endpointACornerIndex: 36
+      endpointBCornerIndex: 37
+    - endpointACornerIndex: 43
+      endpointBCornerIndex: 44
+    - endpointACornerIndex: 44
+      endpointBCornerIndex: 45
+    - endpointACornerIndex: 45
+      endpointBCornerIndex: 46
+    - endpointACornerIndex: 46
+      endpointBCornerIndex: 47
+    - endpointACornerIndex: 47
+      endpointBCornerIndex: 42
+    - endpointACornerIndex: 42
+      endpointBCornerIndex: 43
+    - endpointACornerIndex: 49
+      endpointBCornerIndex: 50
+    - endpointACornerIndex: 50
+      endpointBCornerIndex: 51
+    - endpointACornerIndex: 51
+      endpointBCornerIndex: 52
+    - endpointACornerIndex: 52
+      endpointBCornerIndex: 53
+    - endpointACornerIndex: 53
+      endpointBCornerIndex: 48
+    - endpointACornerIndex: 48
+      endpointBCornerIndex: 49
+    - endpointACornerIndex: 55
+      endpointBCornerIndex: 56
+    - endpointACornerIndex: 56
+      endpointBCornerIndex: 57
+    - endpointACornerIndex: 57
+      endpointBCornerIndex: 58
+    - endpointACornerIndex: 58
+      endpointBCornerIndex: 59
+    - endpointACornerIndex: 59
+      endpointBCornerIndex: 54
+    - endpointACornerIndex: 54
+      endpointBCornerIndex: 55
+    - endpointACornerIndex: 61
+      endpointBCornerIndex: 62
+    - endpointACornerIndex: 62
+      endpointBCornerIndex: 63
+    - endpointACornerIndex: 63
+      endpointBCornerIndex: 64
+    - endpointACornerIndex: 64
+      endpointBCornerIndex: 65
+    - endpointACornerIndex: 65
+      endpointBCornerIndex: 60
+    - endpointACornerIndex: 60
+      endpointBCornerIndex: 61
+    - endpointACornerIndex: 67
+      endpointBCornerIndex: 68
+    - endpointACornerIndex: 68
+      endpointBCornerIndex: 69
+    - endpointACornerIndex: 69
+      endpointBCornerIndex: 70
+    - endpointACornerIndex: 70
+      endpointBCornerIndex: 71
+    - endpointACornerIndex: 71
+      endpointBCornerIndex: 66
+    - endpointACornerIndex: 66
+      endpointBCornerIndex: 67
+    - endpointACornerIndex: 73
+      endpointBCornerIndex: 74
+    - endpointACornerIndex: 74
+      endpointBCornerIndex: 75
+    - endpointACornerIndex: 75
+      endpointBCornerIndex: 76
+    - endpointACornerIndex: 76
+      endpointBCornerIndex: 77
+    - endpointACornerIndex: 77
+      endpointBCornerIndex: 72
+    - endpointACornerIndex: 72
+      endpointBCornerIndex: 73
+    - endpointACornerIndex: 79
+      endpointBCornerIndex: 80
+    - endpointACornerIndex: 80
+      endpointBCornerIndex: 81
+    - endpointACornerIndex: 81
+      endpointBCornerIndex: 82
+    - endpointACornerIndex: 82
+      endpointBCornerIndex: 83
+    - endpointACornerIndex: 83
+      endpointBCornerIndex: 78
+    - endpointACornerIndex: 78
+      endpointBCornerIndex: 79
+    - endpointACornerIndex: 85
+      endpointBCornerIndex: 86
+    - endpointACornerIndex: 86
+      endpointBCornerIndex: 87
+    - endpointACornerIndex: 87
+      endpointBCornerIndex: 88
+    - endpointACornerIndex: 88
+      endpointBCornerIndex: 89
+    - endpointACornerIndex: 89
+      endpointBCornerIndex: 84
+    - endpointACornerIndex: 84
+      endpointBCornerIndex: 85
+    - endpointACornerIndex: 91
+      endpointBCornerIndex: 92
+    - endpointACornerIndex: 92
+      endpointBCornerIndex: 93
+    - endpointACornerIndex: 93
+      endpointBCornerIndex: 94
+    - endpointACornerIndex: 94
+      endpointBCornerIndex: 95
+    - endpointACornerIndex: 95
+      endpointBCornerIndex: 90
+    - endpointACornerIndex: 90
+      endpointBCornerIndex: 91
+    - endpointACornerIndex: 97
+      endpointBCornerIndex: 98
+    - endpointACornerIndex: 98
+      endpointBCornerIndex: 99
+    - endpointACornerIndex: 99
+      endpointBCornerIndex: 100
+    - endpointACornerIndex: 100
+      endpointBCornerIndex: 101
+    - endpointACornerIndex: 101
+      endpointBCornerIndex: 96
+    - endpointACornerIndex: 96
+      endpointBCornerIndex: 97
+    - endpointACornerIndex: 103
+      endpointBCornerIndex: 104
+    - endpointACornerIndex: 104
+      endpointBCornerIndex: 105
+    - endpointACornerIndex: 105
+      endpointBCornerIndex: 106
+    - endpointACornerIndex: 106
+      endpointBCornerIndex: 107
+    - endpointACornerIndex: 107
+      endpointBCornerIndex: 102
+    - endpointACornerIndex: 102
+      endpointBCornerIndex: 103
+    - endpointACornerIndex: 109
+      endpointBCornerIndex: 110
+    - endpointACornerIndex: 110
+      endpointBCornerIndex: 111
+    - endpointACornerIndex: 111
+      endpointBCornerIndex: 112
+    - endpointACornerIndex: 112
+      endpointBCornerIndex: 113
+    - endpointACornerIndex: 113
+      endpointBCornerIndex: 108
+    - endpointACornerIndex: 108
+      endpointBCornerIndex: 109
+    - endpointACornerIndex: 115
+      endpointBCornerIndex: 116
+    - endpointACornerIndex: 116
+      endpointBCornerIndex: 117
+    - endpointACornerIndex: 117
+      endpointBCornerIndex: 118
+    - endpointACornerIndex: 118
+      endpointBCornerIndex: 119
+    - endpointACornerIndex: 119
+      endpointBCornerIndex: 114
+    - endpointACornerIndex: 114
+      endpointBCornerIndex: 115
+    - endpointACornerIndex: 120
+      endpointBCornerIndex: 121
+    - endpointACornerIndex: 121
+      endpointBCornerIndex: 122
+    - endpointACornerIndex: 122
+      endpointBCornerIndex: 123
+    - endpointACornerIndex: 123
+      endpointBCornerIndex: 124
+    - endpointACornerIndex: 124
+      endpointBCornerIndex: 125
+    - endpointACornerIndex: 125
+      endpointBCornerIndex: 120
+    - endpointACornerIndex: 127
+      endpointBCornerIndex: 128
+    - endpointACornerIndex: 128
+      endpointBCornerIndex: 129
+    - endpointACornerIndex: 129
+      endpointBCornerIndex: 130
+    - endpointACornerIndex: 130
+      endpointBCornerIndex: 131
+    - endpointACornerIndex: 131
+      endpointBCornerIndex: 126
+    - endpointACornerIndex: 126
+      endpointBCornerIndex: 127
+    - endpointACornerIndex: 133
+      endpointBCornerIndex: 134
+    - endpointACornerIndex: 134
+      endpointBCornerIndex: 135
+    - endpointACornerIndex: 135
+      endpointBCornerIndex: 136
+    - endpointACornerIndex: 136
+      endpointBCornerIndex: 137
+    - endpointACornerIndex: 137
+      endpointBCornerIndex: 132
+    - endpointACornerIndex: 132
+      endpointBCornerIndex: 133
+    - endpointACornerIndex: 139
+      endpointBCornerIndex: 140
+    - endpointACornerIndex: 140
+      endpointBCornerIndex: 141
+    - endpointACornerIndex: 141
+      endpointBCornerIndex: 142
+    - endpointACornerIndex: 142
+      endpointBCornerIndex: 143
+    - endpointACornerIndex: 143
+      endpointBCornerIndex: 138
+    - endpointACornerIndex: 138
+      endpointBCornerIndex: 139
+    - endpointACornerIndex: 145
+      endpointBCornerIndex: 146
+    - endpointACornerIndex: 146
+      endpointBCornerIndex: 147
+    - endpointACornerIndex: 147
+      endpointBCornerIndex: 148
+    - endpointACornerIndex: 148
+      endpointBCornerIndex: 149
+    - endpointACornerIndex: 149
+      endpointBCornerIndex: 144
+    - endpointACornerIndex: 144
+      endpointBCornerIndex: 145
+    - endpointACornerIndex: 151
+      endpointBCornerIndex: 152
+    - endpointACornerIndex: 152
+      endpointBCornerIndex: 153
+    - endpointACornerIndex: 153
+      endpointBCornerIndex: 154
+    - endpointACornerIndex: 154
+      endpointBCornerIndex: 155
+    - endpointACornerIndex: 155
+      endpointBCornerIndex: 150
+    - endpointACornerIndex: 150
+      endpointBCornerIndex: 151
+    - endpointACornerIndex: 156
+      endpointBCornerIndex: 157
+    - endpointACornerIndex: 157
+      endpointBCornerIndex: 158
+    - endpointACornerIndex: 158
+      endpointBCornerIndex: 159
+    - endpointACornerIndex: 159
+      endpointBCornerIndex: 160
+    - endpointACornerIndex: 160
+      endpointBCornerIndex: 161
+    - endpointACornerIndex: 161
+      endpointBCornerIndex: 156
+    - endpointACornerIndex: 163
+      endpointBCornerIndex: 164
+    - endpointACornerIndex: 164
+      endpointBCornerIndex: 165
+    - endpointACornerIndex: 165
+      endpointBCornerIndex: 166
+    - endpointACornerIndex: 166
+      endpointBCornerIndex: 167
+    - endpointACornerIndex: 167
+      endpointBCornerIndex: 162
+    - endpointACornerIndex: 162
+      endpointBCornerIndex: 163
+    - endpointACornerIndex: 169
+      endpointBCornerIndex: 170
+    - endpointACornerIndex: 170
+      endpointBCornerIndex: 171
+    - endpointACornerIndex: 171
+      endpointBCornerIndex: 172
+    - endpointACornerIndex: 172
+      endpointBCornerIndex: 173
+    - endpointACornerIndex: 173
+      endpointBCornerIndex: 168
+    - endpointACornerIndex: 168
+      endpointBCornerIndex: 169
+    - endpointACornerIndex: 175
+      endpointBCornerIndex: 176
+    - endpointACornerIndex: 176
+      endpointBCornerIndex: 177
+    - endpointACornerIndex: 177
+      endpointBCornerIndex: 178
+    - endpointACornerIndex: 178
+      endpointBCornerIndex: 179
+    - endpointACornerIndex: 179
+      endpointBCornerIndex: 174
+    - endpointACornerIndex: 174
+      endpointBCornerIndex: 175
+    - endpointACornerIndex: 181
+      endpointBCornerIndex: 182
+    - endpointACornerIndex: 182
+      endpointBCornerIndex: 183
+    - endpointACornerIndex: 183
+      endpointBCornerIndex: 184
+    - endpointACornerIndex: 184
+      endpointBCornerIndex: 185
+    - endpointACornerIndex: 185
+      endpointBCornerIndex: 180
+    - endpointACornerIndex: 180
+      endpointBCornerIndex: 181
+    - endpointACornerIndex: 187
+      endpointBCornerIndex: 188
+    - endpointACornerIndex: 188
+      endpointBCornerIndex: 189
+    - endpointACornerIndex: 189
+      endpointBCornerIndex: 190
+    - endpointACornerIndex: 190
+      endpointBCornerIndex: 191
+    - endpointACornerIndex: 191
+      endpointBCornerIndex: 186
+    - endpointACornerIndex: 186
+      endpointBCornerIndex: 187
+    - endpointACornerIndex: 193
+      endpointBCornerIndex: 194
+    - endpointACornerIndex: 194
+      endpointBCornerIndex: 195
+    - endpointACornerIndex: 195
+      endpointBCornerIndex: 196
+    - endpointACornerIndex: 196
+      endpointBCornerIndex: 197
+    - endpointACornerIndex: 197
+      endpointBCornerIndex: 192
+    - endpointACornerIndex: 192
+      endpointBCornerIndex: 193
+    - endpointACornerIndex: 199
+      endpointBCornerIndex: 200
+    - endpointACornerIndex: 200
+      endpointBCornerIndex: 201
+    - endpointACornerIndex: 201
+      endpointBCornerIndex: 202
+    - endpointACornerIndex: 202
+      endpointBCornerIndex: 203
+    - endpointACornerIndex: 203
+      endpointBCornerIndex: 198
+    - endpointACornerIndex: 198
+      endpointBCornerIndex: 199
+    - endpointACornerIndex: 205
+      endpointBCornerIndex: 206
+    - endpointACornerIndex: 206
+      endpointBCornerIndex: 207
+    - endpointACornerIndex: 207
+      endpointBCornerIndex: 208
+    - endpointACornerIndex: 208
+      endpointBCornerIndex: 209
+    - endpointACornerIndex: 209
+      endpointBCornerIndex: 204
+    - endpointACornerIndex: 204
+      endpointBCornerIndex: 205
+    - endpointACornerIndex: 211
+      endpointBCornerIndex: 212
+    - endpointACornerIndex: 212
+      endpointBCornerIndex: 213
+    - endpointACornerIndex: 213
+      endpointBCornerIndex: 214
+    - endpointACornerIndex: 214
+      endpointBCornerIndex: 215
+    - endpointACornerIndex: 215
+      endpointBCornerIndex: 210
+    - endpointACornerIndex: 210
+      endpointBCornerIndex: 211
+    - endpointACornerIndex: 216
+      endpointBCornerIndex: 217
+    - endpointACornerIndex: 217
+      endpointBCornerIndex: 218
+    - endpointACornerIndex: 218
+      endpointBCornerIndex: 219
+    - endpointACornerIndex: 219
+      endpointBCornerIndex: 220
+    - endpointACornerIndex: 220
+      endpointBCornerIndex: 221
+    - endpointACornerIndex: 221
+      endpointBCornerIndex: 216
+    - endpointACornerIndex: 223
+      endpointBCornerIndex: 224
+    - endpointACornerIndex: 224
+      endpointBCornerIndex: 225
+    - endpointACornerIndex: 225
+      endpointBCornerIndex: 226
+    - endpointACornerIndex: 226
+      endpointBCornerIndex: 227
+    - endpointACornerIndex: 227
+      endpointBCornerIndex: 222
+    - endpointACornerIndex: 222
+      endpointBCornerIndex: 223
+    - endpointACornerIndex: 229
+      endpointBCornerIndex: 230
+    - endpointACornerIndex: 230
+      endpointBCornerIndex: 231
+    - endpointACornerIndex: 231
+      endpointBCornerIndex: 232
+    - endpointACornerIndex: 232
+      endpointBCornerIndex: 233
+    - endpointACornerIndex: 233
+      endpointBCornerIndex: 228
+    - endpointACornerIndex: 228
+      endpointBCornerIndex: 229
+    - endpointACornerIndex: 235
+      endpointBCornerIndex: 236
+    - endpointACornerIndex: 236
+      endpointBCornerIndex: 237
+    - endpointACornerIndex: 237
+      endpointBCornerIndex: 238
+    - endpointACornerIndex: 238
+      endpointBCornerIndex: 239
+    - endpointACornerIndex: 239
+      endpointBCornerIndex: 234
+    - endpointACornerIndex: 234
+      endpointBCornerIndex: 235
+    - endpointACornerIndex: 240
+      endpointBCornerIndex: 241
+    - endpointACornerIndex: 241
+      endpointBCornerIndex: 242
+    - endpointACornerIndex: 242
+      endpointBCornerIndex: 243
+    - endpointACornerIndex: 243
+      endpointBCornerIndex: 244
+    - endpointACornerIndex: 244
+      endpointBCornerIndex: 245
+    - endpointACornerIndex: 245
+      endpointBCornerIndex: 240
+    - endpointACornerIndex: 247
+      endpointBCornerIndex: 248
+    - endpointACornerIndex: 248
+      endpointBCornerIndex: 249
+    - endpointACornerIndex: 249
+      endpointBCornerIndex: 250
+    - endpointACornerIndex: 250
+      endpointBCornerIndex: 251
+    - endpointACornerIndex: 251
+      endpointBCornerIndex: 246
+    - endpointACornerIndex: 246
+      endpointBCornerIndex: 247
+    - endpointACornerIndex: 253
+      endpointBCornerIndex: 254
+    - endpointACornerIndex: 254
+      endpointBCornerIndex: 255
+    - endpointACornerIndex: 255
+      endpointBCornerIndex: 256
+    - endpointACornerIndex: 256
+      endpointBCornerIndex: 257
+    - endpointACornerIndex: 257
+      endpointBCornerIndex: 252
+    - endpointACornerIndex: 252
+      endpointBCornerIndex: 253
+    - endpointACornerIndex: 259
+      endpointBCornerIndex: 260
+    - endpointACornerIndex: 260
+      endpointBCornerIndex: 261
+    - endpointACornerIndex: 261
+      endpointBCornerIndex: 262
+    - endpointACornerIndex: 262
+      endpointBCornerIndex: 263
+    - endpointACornerIndex: 263
+      endpointBCornerIndex: 258
+    - endpointACornerIndex: 258
+      endpointBCornerIndex: 259
+    - endpointACornerIndex: 265
+      endpointBCornerIndex: 266
+    - endpointACornerIndex: 266
+      endpointBCornerIndex: 267
+    - endpointACornerIndex: 267
+      endpointBCornerIndex: 268
+    - endpointACornerIndex: 268
+      endpointBCornerIndex: 269
+    - endpointACornerIndex: 269
+      endpointBCornerIndex: 264
+    - endpointACornerIndex: 264
+      endpointBCornerIndex: 265
+    - endpointACornerIndex: 271
+      endpointBCornerIndex: 272
+    - endpointACornerIndex: 272
+      endpointBCornerIndex: 273
+    - endpointACornerIndex: 273
+      endpointBCornerIndex: 274
+    - endpointACornerIndex: 274
+      endpointBCornerIndex: 275
+    - endpointACornerIndex: 275
+      endpointBCornerIndex: 270
+    - endpointACornerIndex: 270
+      endpointBCornerIndex: 271
+    - endpointACornerIndex: 276
+      endpointBCornerIndex: 277
+    - endpointACornerIndex: 277
+      endpointBCornerIndex: 278
+    - endpointACornerIndex: 278
+      endpointBCornerIndex: 279
+    - endpointACornerIndex: 279
+      endpointBCornerIndex: 280
+    - endpointACornerIndex: 280
+      endpointBCornerIndex: 281
+    - endpointACornerIndex: 281
+      endpointBCornerIndex: 276
+    - endpointACornerIndex: 283
+      endpointBCornerIndex: 284
+    - endpointACornerIndex: 284
+      endpointBCornerIndex: 285
+    - endpointACornerIndex: 285
+      endpointBCornerIndex: 286
+    - endpointACornerIndex: 286
+      endpointBCornerIndex: 287
+    - endpointACornerIndex: 287
+      endpointBCornerIndex: 282
+    - endpointACornerIndex: 282
+      endpointBCornerIndex: 283
+    - endpointACornerIndex: 289
+      endpointBCornerIndex: 290
+    - endpointACornerIndex: 290
+      endpointBCornerIndex: 291
+    - endpointACornerIndex: 291
+      endpointBCornerIndex: 292
+    - endpointACornerIndex: 292
+      endpointBCornerIndex: 293
+    - endpointACornerIndex: 293
+      endpointBCornerIndex: 288
+    - endpointACornerIndex: 288
+      endpointBCornerIndex: 289
+    - endpointACornerIndex: 295
+      endpointBCornerIndex: 296
+    - endpointACornerIndex: 296
+      endpointBCornerIndex: 297
+    - endpointACornerIndex: 297
+      endpointBCornerIndex: 298
+    - endpointACornerIndex: 298
+      endpointBCornerIndex: 299
+    - endpointACornerIndex: 299
+      endpointBCornerIndex: 294
+    - endpointACornerIndex: 294
+      endpointBCornerIndex: 295
+    - endpointACornerIndex: 301
+      endpointBCornerIndex: 302
+    - endpointACornerIndex: 302
+      endpointBCornerIndex: 303
+    - endpointACornerIndex: 303
+      endpointBCornerIndex: 304
+    - endpointACornerIndex: 304
+      endpointBCornerIndex: 305
+    - endpointACornerIndex: 305
+      endpointBCornerIndex: 300
+    - endpointACornerIndex: 300
+      endpointBCornerIndex: 301
+    - endpointACornerIndex: 307
+      endpointBCornerIndex: 308
+    - endpointACornerIndex: 308
+      endpointBCornerIndex: 309
+    - endpointACornerIndex: 309
+      endpointBCornerIndex: 310
+    - endpointACornerIndex: 310
+      endpointBCornerIndex: 311
+    - endpointACornerIndex: 311
+      endpointBCornerIndex: 306
+    - endpointACornerIndex: 306
+      endpointBCornerIndex: 307
+    - endpointACornerIndex: 313
+      endpointBCornerIndex: 314
+    - endpointACornerIndex: 314
+      endpointBCornerIndex: 315
+    - endpointACornerIndex: 315
+      endpointBCornerIndex: 316
+    - endpointACornerIndex: 316
+      endpointBCornerIndex: 317
+    - endpointACornerIndex: 317
+      endpointBCornerIndex: 312
+    - endpointACornerIndex: 312
+      endpointBCornerIndex: 313
+    - endpointACornerIndex: 319
+      endpointBCornerIndex: 320
+    - endpointACornerIndex: 320
+      endpointBCornerIndex: 321
+    - endpointACornerIndex: 321
+      endpointBCornerIndex: 322
+    - endpointACornerIndex: 322
+      endpointBCornerIndex: 323
+    - endpointACornerIndex: 323
+      endpointBCornerIndex: 318
+    - endpointACornerIndex: 318
+      endpointBCornerIndex: 319
+    - endpointACornerIndex: 325
+      endpointBCornerIndex: 326
+    - endpointACornerIndex: 326
+      endpointBCornerIndex: 327
+    - endpointACornerIndex: 327
+      endpointBCornerIndex: 328
+    - endpointACornerIndex: 328
+      endpointBCornerIndex: 329
+    - endpointACornerIndex: 329
+      endpointBCornerIndex: 324
+    - endpointACornerIndex: 324
+      endpointBCornerIndex: 325
+    - endpointACornerIndex: 331
+      endpointBCornerIndex: 332
+    - endpointACornerIndex: 332
+      endpointBCornerIndex: 333
+    - endpointACornerIndex: 333
+      endpointBCornerIndex: 334
+    - endpointACornerIndex: 334
+      endpointBCornerIndex: 335
+    - endpointACornerIndex: 335
+      endpointBCornerIndex: 330
+    - endpointACornerIndex: 330
+      endpointBCornerIndex: 331
+    - endpointACornerIndex: 336
+      endpointBCornerIndex: 337
+    - endpointACornerIndex: 337
+      endpointBCornerIndex: 338
+    - endpointACornerIndex: 338
+      endpointBCornerIndex: 339
+    - endpointACornerIndex: 339
+      endpointBCornerIndex: 340
+    - endpointACornerIndex: 340
+      endpointBCornerIndex: 341
+    - endpointACornerIndex: 341
+      endpointBCornerIndex: 336
+    - endpointACornerIndex: 343
+      endpointBCornerIndex: 344
+    - endpointACornerIndex: 344
+      endpointBCornerIndex: 345
+    - endpointACornerIndex: 345
+      endpointBCornerIndex: 346
+    - endpointACornerIndex: 346
+      endpointBCornerIndex: 347
+    - endpointACornerIndex: 347
+      endpointBCornerIndex: 342
+    - endpointACornerIndex: 342
+      endpointBCornerIndex: 343
+    - endpointACornerIndex: 349
+      endpointBCornerIndex: 350
+    - endpointACornerIndex: 350
+      endpointBCornerIndex: 351
+    - endpointACornerIndex: 351
+      endpointBCornerIndex: 352
+    - endpointACornerIndex: 352
+      endpointBCornerIndex: 353
+    - endpointACornerIndex: 353
+      endpointBCornerIndex: 348
+    - endpointACornerIndex: 348
+      endpointBCornerIndex: 349
+    - endpointACornerIndex: 355
+      endpointBCornerIndex: 356
+    - endpointACornerIndex: 356
+      endpointBCornerIndex: 357
+    - endpointACornerIndex: 357
+      endpointBCornerIndex: 358
+    - endpointACornerIndex: 358
+      endpointBCornerIndex: 359
+    - endpointACornerIndex: 359
+      endpointBCornerIndex: 354
+    - endpointACornerIndex: 354
+      endpointBCornerIndex: 355
+    - endpointACornerIndex: 361
+      endpointBCornerIndex: 362
+    - endpointACornerIndex: 362
+      endpointBCornerIndex: 363
+    - endpointACornerIndex: 363
+      endpointBCornerIndex: 364
+    - endpointACornerIndex: 364
+      endpointBCornerIndex: 360
+    - endpointACornerIndex: 360
+      endpointBCornerIndex: 361
+    - endpointACornerIndex: 366
+      endpointBCornerIndex: 367
+    - endpointACornerIndex: 367
+      endpointBCornerIndex: 368
+    - endpointACornerIndex: 368
+      endpointBCornerIndex: 369
+    - endpointACornerIndex: 369
+      endpointBCornerIndex: 365
+    - endpointACornerIndex: 365
+      endpointBCornerIndex: 366
+    - endpointACornerIndex: 371
+      endpointBCornerIndex: 372
+    - endpointACornerIndex: 372
+      endpointBCornerIndex: 373
+    - endpointACornerIndex: 373
+      endpointBCornerIndex: 374
+    - endpointACornerIndex: 374
+      endpointBCornerIndex: 370
+    - endpointACornerIndex: 370
+      endpointBCornerIndex: 371
+    - endpointACornerIndex: 376
+      endpointBCornerIndex: 377
+    - endpointACornerIndex: 377
+      endpointBCornerIndex: 378
+    - endpointACornerIndex: 378
+      endpointBCornerIndex: 379
+    - endpointACornerIndex: 379
+      endpointBCornerIndex: 375
+    - endpointACornerIndex: 375
+      endpointBCornerIndex: 376
+    - endpointACornerIndex: 381
+      endpointBCornerIndex: 382
+    - endpointACornerIndex: 382
+      endpointBCornerIndex: 383
+    - endpointACornerIndex: 383
+      endpointBCornerIndex: 384
+    - endpointACornerIndex: 384
+      endpointBCornerIndex: 380
+    - endpointACornerIndex: 380
+      endpointBCornerIndex: 381
+    - endpointACornerIndex: 386
+      endpointBCornerIndex: 387
+    - endpointACornerIndex: 387
+      endpointBCornerIndex: 388
+    - endpointACornerIndex: 388
+      endpointBCornerIndex: 389
+    - endpointACornerIndex: 389
+      endpointBCornerIndex: 385
+    - endpointACornerIndex: 385
+      endpointBCornerIndex: 386
+    - endpointACornerIndex: 391
+      endpointBCornerIndex: 392
+    - endpointACornerIndex: 392
+      endpointBCornerIndex: 393
+    - endpointACornerIndex: 393
+      endpointBCornerIndex: 394
+    - endpointACornerIndex: 394
+      endpointBCornerIndex: 390
+    - endpointACornerIndex: 390
+      endpointBCornerIndex: 391
+    - endpointACornerIndex: 396
+      endpointBCornerIndex: 397
+    - endpointACornerIndex: 397
+      endpointBCornerIndex: 398
+    - endpointACornerIndex: 398
+      endpointBCornerIndex: 399
+    - endpointACornerIndex: 399
+      endpointBCornerIndex: 395
+    - endpointACornerIndex: 395
+      endpointBCornerIndex: 396
+    - endpointACornerIndex: 401
+      endpointBCornerIndex: 402
+    - endpointACornerIndex: 402
+      endpointBCornerIndex: 403
+    - endpointACornerIndex: 403
+      endpointBCornerIndex: 404
+    - endpointACornerIndex: 404
+      endpointBCornerIndex: 400
+    - endpointACornerIndex: 400
+      endpointBCornerIndex: 401
+    - endpointACornerIndex: 406
+      endpointBCornerIndex: 407
+    - endpointACornerIndex: 407
+      endpointBCornerIndex: 408
+    - endpointACornerIndex: 408
+      endpointBCornerIndex: 409
+    - endpointACornerIndex: 409
+      endpointBCornerIndex: 405
+    - endpointACornerIndex: 405
+      endpointBCornerIndex: 406
+    - endpointACornerIndex: 411
+      endpointBCornerIndex: 412
+    - endpointACornerIndex: 412
+      endpointBCornerIndex: 413
+    - endpointACornerIndex: 413
+      endpointBCornerIndex: 414
+    - endpointACornerIndex: 414
+      endpointBCornerIndex: 410
+    - endpointACornerIndex: 410
+      endpointBCornerIndex: 411
+    - endpointACornerIndex: 416
+      endpointBCornerIndex: 417
+    - endpointACornerIndex: 417
+      endpointBCornerIndex: 418
+    - endpointACornerIndex: 418
+      endpointBCornerIndex: 419
+    - endpointACornerIndex: 419
+      endpointBCornerIndex: 415
+    - endpointACornerIndex: 415
+      endpointBCornerIndex: 416
+    - endpointACornerIndex: 422
+      endpointBCornerIndex: 423
+    - endpointACornerIndex: 423
+      endpointBCornerIndex: 424
+    - endpointACornerIndex: 424
+      endpointBCornerIndex: 425
+    - endpointACornerIndex: 425
+      endpointBCornerIndex: 420
+    - endpointACornerIndex: 420
+      endpointBCornerIndex: 421
+    - endpointACornerIndex: 421
+      endpointBCornerIndex: 422
+    - endpointACornerIndex: 428
+      endpointBCornerIndex: 429
+    - endpointACornerIndex: 429
+      endpointBCornerIndex: 430
+    - endpointACornerIndex: 430
+      endpointBCornerIndex: 431
+    - endpointACornerIndex: 431
+      endpointBCornerIndex: 426
+    - endpointACornerIndex: 426
+      endpointBCornerIndex: 427
+    - endpointACornerIndex: 427
+      endpointBCornerIndex: 428
+    - endpointACornerIndex: 434
+      endpointBCornerIndex: 435
+    - endpointACornerIndex: 435
+      endpointBCornerIndex: 436
+    - endpointACornerIndex: 436
+      endpointBCornerIndex: 437
+    - endpointACornerIndex: 437
+      endpointBCornerIndex: 432
+    - endpointACornerIndex: 432
+      endpointBCornerIndex: 433
+    - endpointACornerIndex: 433
+      endpointBCornerIndex: 434
+    - endpointACornerIndex: 440
+      endpointBCornerIndex: 441
+    - endpointACornerIndex: 441
+      endpointBCornerIndex: 442
+    - endpointACornerIndex: 442
+      endpointBCornerIndex: 443
+    - endpointACornerIndex: 443
+      endpointBCornerIndex: 438
+    - endpointACornerIndex: 438
+      endpointBCornerIndex: 439
+    - endpointACornerIndex: 439
+      endpointBCornerIndex: 440
+    - endpointACornerIndex: 446
+      endpointBCornerIndex: 447
+    - endpointACornerIndex: 447
+      endpointBCornerIndex: 448
+    - endpointACornerIndex: 448
+      endpointBCornerIndex: 449
+    - endpointACornerIndex: 449
+      endpointBCornerIndex: 444
+    - endpointACornerIndex: 444
+      endpointBCornerIndex: 445
+    - endpointACornerIndex: 445
+      endpointBCornerIndex: 446
+    - endpointACornerIndex: 452
+      endpointBCornerIndex: 453
+    - endpointACornerIndex: 453
+      endpointBCornerIndex: 454
+    - endpointACornerIndex: 454
+      endpointBCornerIndex: 455
+    - endpointACornerIndex: 455
+      endpointBCornerIndex: 450
+    - endpointACornerIndex: 450
+      endpointBCornerIndex: 451
+    - endpointACornerIndex: 451
+      endpointBCornerIndex: 452
+    - endpointACornerIndex: 458
+      endpointBCornerIndex: 459
+    - endpointACornerIndex: 459
+      endpointBCornerIndex: 460
+    - endpointACornerIndex: 460
+      endpointBCornerIndex: 461
+    - endpointACornerIndex: 461
+      endpointBCornerIndex: 456
+    - endpointACornerIndex: 456
+      endpointBCornerIndex: 457
+    - endpointACornerIndex: 457
+      endpointBCornerIndex: 458
+    - endpointACornerIndex: 464
+      endpointBCornerIndex: 465
+    - endpointACornerIndex: 465
+      endpointBCornerIndex: 466
+    - endpointACornerIndex: 466
+      endpointBCornerIndex: 467
+    - endpointACornerIndex: 467
+      endpointBCornerIndex: 462
+    - endpointACornerIndex: 462
+      endpointBCornerIndex: 463
+    - endpointACornerIndex: 463
+      endpointBCornerIndex: 464
+    - endpointACornerIndex: 468
+      endpointBCornerIndex: 469
+    - endpointACornerIndex: 469
+      endpointBCornerIndex: 470
+    - endpointACornerIndex: 470
+      endpointBCornerIndex: 471
+    - endpointACornerIndex: 471
+      endpointBCornerIndex: 472
+    - endpointACornerIndex: 472
+      endpointBCornerIndex: 473
+    - endpointACornerIndex: 473
+      endpointBCornerIndex: 468
+    - endpointACornerIndex: 476
+      endpointBCornerIndex: 477
+    - endpointACornerIndex: 477
+      endpointBCornerIndex: 478
+    - endpointACornerIndex: 478
+      endpointBCornerIndex: 479
+    - endpointACornerIndex: 479
+      endpointBCornerIndex: 474
+    - endpointACornerIndex: 474
+      endpointBCornerIndex: 475
+    - endpointACornerIndex: 475
+      endpointBCornerIndex: 476
+    - endpointACornerIndex: 481
+      endpointBCornerIndex: 482
+    - endpointACornerIndex: 482
+      endpointBCornerIndex: 483
+    - endpointACornerIndex: 483
+      endpointBCornerIndex: 484
+    - endpointACornerIndex: 484
+      endpointBCornerIndex: 485
+    - endpointACornerIndex: 485
+      endpointBCornerIndex: 480
+    - endpointACornerIndex: 480
+      endpointBCornerIndex: 481
+    - endpointACornerIndex: 488
+      endpointBCornerIndex: 489
+    - endpointACornerIndex: 489
+      endpointBCornerIndex: 490
+    - endpointACornerIndex: 490
+      endpointBCornerIndex: 491
+    - endpointACornerIndex: 491
+      endpointBCornerIndex: 486
+    - endpointACornerIndex: 486
+      endpointBCornerIndex: 487
+    - endpointACornerIndex: 487
+      endpointBCornerIndex: 488
+    - endpointACornerIndex: 494
+      endpointBCornerIndex: 495
+    - endpointACornerIndex: 495
+      endpointBCornerIndex: 496
+    - endpointACornerIndex: 496
+      endpointBCornerIndex: 497
+    - endpointACornerIndex: 497
+      endpointBCornerIndex: 492
+    - endpointACornerIndex: 492
+      endpointBCornerIndex: 493
+    - endpointACornerIndex: 493
+      endpointBCornerIndex: 494
+    - endpointACornerIndex: 500
+      endpointBCornerIndex: 501
+    - endpointACornerIndex: 501
+      endpointBCornerIndex: 502
+    - endpointACornerIndex: 502
+      endpointBCornerIndex: 503
+    - endpointACornerIndex: 503
+      endpointBCornerIndex: 498
+    - endpointACornerIndex: 498
+      endpointBCornerIndex: 499
+    - endpointACornerIndex: 499
+      endpointBCornerIndex: 500
+    - endpointACornerIndex: 506
+      endpointBCornerIndex: 507
+    - endpointACornerIndex: 507
+      endpointBCornerIndex: 508
+    - endpointACornerIndex: 508
+      endpointBCornerIndex: 509
+    - endpointACornerIndex: 509
+      endpointBCornerIndex: 504
+    - endpointACornerIndex: 504
+      endpointBCornerIndex: 505
+    - endpointACornerIndex: 505
+      endpointBCornerIndex: 506
+    - endpointACornerIndex: 512
+      endpointBCornerIndex: 513
+    - endpointACornerIndex: 513
+      endpointBCornerIndex: 514
+    - endpointACornerIndex: 514
+      endpointBCornerIndex: 515
+    - endpointACornerIndex: 515
+      endpointBCornerIndex: 510
+    - endpointACornerIndex: 510
+      endpointBCornerIndex: 511
+    - endpointACornerIndex: 511
+      endpointBCornerIndex: 512
+    - endpointACornerIndex: 518
+      endpointBCornerIndex: 519
+    - endpointACornerIndex: 519
+      endpointBCornerIndex: 520
+    - endpointACornerIndex: 520
+      endpointBCornerIndex: 521
+    - endpointACornerIndex: 521
+      endpointBCornerIndex: 516
+    - endpointACornerIndex: 516
+      endpointBCornerIndex: 517
+    - endpointACornerIndex: 517
+      endpointBCornerIndex: 518
+    - endpointACornerIndex: 524
+      endpointBCornerIndex: 525
+    - endpointACornerIndex: 525
+      endpointBCornerIndex: 526
+    - endpointACornerIndex: 526
+      endpointBCornerIndex: 527
+    - endpointACornerIndex: 527
+      endpointBCornerIndex: 522
+    - endpointACornerIndex: 522
+      endpointBCornerIndex: 523
+    - endpointACornerIndex: 523
+      endpointBCornerIndex: 524
+    - endpointACornerIndex: 530
+      endpointBCornerIndex: 531
+    - endpointACornerIndex: 531
+      endpointBCornerIndex: 532
+    - endpointACornerIndex: 532
+      endpointBCornerIndex: 533
+    - endpointACornerIndex: 533
+      endpointBCornerIndex: 528
+    - endpointACornerIndex: 528
+      endpointBCornerIndex: 529
+    - endpointACornerIndex: 529
+      endpointBCornerIndex: 530
+    - endpointACornerIndex: 534
+      endpointBCornerIndex: 535
+    - endpointACornerIndex: 535
+      endpointBCornerIndex: 536
+    - endpointACornerIndex: 536
+      endpointBCornerIndex: 537
+    - endpointACornerIndex: 537
+      endpointBCornerIndex: 538
+    - endpointACornerIndex: 538
+      endpointBCornerIndex: 539
+    - endpointACornerIndex: 539
+      endpointBCornerIndex: 534
+    - endpointACornerIndex: 15
+      endpointBCornerIndex: 362
+    - endpointACornerIndex: 361
+      endpointBCornerIndex: 9
+    - endpointACornerIndex: 8
+      endpointBCornerIndex: 16
+    - endpointACornerIndex: 21
+      endpointBCornerIndex: 363
+    - endpointACornerIndex: 14
+      endpointBCornerIndex: 22
+    - endpointACornerIndex: 26
+      endpointBCornerIndex: 364
+    - endpointACornerIndex: 20
+      endpointBCornerIndex: 27
+    - endpointACornerIndex: 25
+      endpointBCornerIndex: 3
+    - endpointACornerIndex: 2
+      endpointBCornerIndex: 360
+    - endpointACornerIndex: 1
+      endpointBCornerIndex: 10
+    - endpointACornerIndex: 45
+      endpointBCornerIndex: 367
+    - endpointACornerIndex: 366
+      endpointBCornerIndex: 39
+    - endpointACornerIndex: 38
+      endpointBCornerIndex: 46
+    - endpointACornerIndex: 50
+      endpointBCornerIndex: 368
+    - endpointACornerIndex: 44
+      endpointBCornerIndex: 51
+    - endpointACornerIndex: 56
+      endpointBCornerIndex: 369
+    - endpointACornerIndex: 49
+      endpointBCornerIndex: 57
+    - endpointACornerIndex: 55
+      endpointBCornerIndex: 34
+    - endpointACornerIndex: 33
+      endpointBCornerIndex: 365
+    - endpointACornerIndex: 32
+      endpointBCornerIndex: 40
+    - endpointACornerIndex: 75
+      endpointBCornerIndex: 372
+    - endpointACornerIndex: 371
+      endpointBCornerIndex: 69
+    - endpointACornerIndex: 68
+      endpointBCornerIndex: 76
+    - endpointACornerIndex: 81
+      endpointBCornerIndex: 373
+    - endpointACornerIndex: 74
+      endpointBCornerIndex: 82
+    - endpointACornerIndex: 86
+      endpointBCornerIndex: 374
+    - endpointACornerIndex: 80
+      endpointBCornerIndex: 87
+    - endpointACornerIndex: 85
+      endpointBCornerIndex: 63
+    - endpointACornerIndex: 62
+      endpointBCornerIndex: 370
+    - endpointACornerIndex: 61
+      endpointBCornerIndex: 70
+    - endpointACornerIndex: 105
+      endpointBCornerIndex: 377
+    - endpointACornerIndex: 376
+      endpointBCornerIndex: 99
+    - endpointACornerIndex: 98
+      endpointBCornerIndex: 106
+    - endpointACornerIndex: 110
+      endpointBCornerIndex: 378
+    - endpointACornerIndex: 104
+      endpointBCornerIndex: 111
+    - endpointACornerIndex: 116
+      endpointBCornerIndex: 379
+    - endpointACornerIndex: 109
+      endpointBCornerIndex: 117
+    - endpointACornerIndex: 115
+      endpointBCornerIndex: 94
+    - endpointACornerIndex: 93
+      endpointBCornerIndex: 375
+    - endpointACornerIndex: 92
+      endpointBCornerIndex: 100
+    - endpointACornerIndex: 135
+      endpointBCornerIndex: 382
+    - endpointACornerIndex: 381
+      endpointBCornerIndex: 129
+    - endpointACornerIndex: 128
+      endpointBCornerIndex: 136
+    - endpointACornerIndex: 140
+      endpointBCornerIndex: 383
+    - endpointACornerIndex: 134
+      endpointBCornerIndex: 141
+    - endpointACornerIndex: 146
+      endpointBCornerIndex: 384
+    - endpointACornerIndex: 139
+      endpointBCornerIndex: 147
+    - endpointACornerIndex: 145
+      endpointBCornerIndex: 124
+    - endpointACornerIndex: 123
+      endpointBCornerIndex: 380
+    - endpointACornerIndex: 122
+      endpointBCornerIndex: 130
+    - endpointACornerIndex: 165
+      endpointBCornerIndex: 387
+    - endpointACornerIndex: 386
+      endpointBCornerIndex: 159
+    - endpointACornerIndex: 158
+      endpointBCornerIndex: 166
+    - endpointACornerIndex: 171
+      endpointBCornerIndex: 388
+    - endpointACornerIndex: 164
+      endpointBCornerIndex: 172
+    - endpointACornerIndex: 176
+      endpointBCornerIndex: 389
+    - endpointACornerIndex: 170
+      endpointBCornerIndex: 177
+    - endpointACornerIndex: 175
+      endpointBCornerIndex: 153
+    - endpointACornerIndex: 152
+      endpointBCornerIndex: 385
+    - endpointACornerIndex: 151
+      endpointBCornerIndex: 160
+    - endpointACornerIndex: 194
+      endpointBCornerIndex: 392
+    - endpointACornerIndex: 391
+      endpointBCornerIndex: 189
+    - endpointACornerIndex: 188
+      endpointBCornerIndex: 195
+    - endpointACornerIndex: 200
+      endpointBCornerIndex: 393
+    - endpointACornerIndex: 193
+      endpointBCornerIndex: 201
+    - endpointACornerIndex: 206
+      endpointBCornerIndex: 394
+    - endpointACornerIndex: 199
+      endpointBCornerIndex: 207
+    - endpointACornerIndex: 205
+      endpointBCornerIndex: 184
+    - endpointACornerIndex: 183
+      endpointBCornerIndex: 390
+    - endpointACornerIndex: 182
+      endpointBCornerIndex: 190
+    - endpointACornerIndex: 224
+      endpointBCornerIndex: 397
+    - endpointACornerIndex: 396
+      endpointBCornerIndex: 219
+    - endpointACornerIndex: 218
+      endpointBCornerIndex: 225
+    - endpointACornerIndex: 230
+      endpointBCornerIndex: 398
+    - endpointACornerIndex: 223
+      endpointBCornerIndex: 231
+    - endpointACornerIndex: 237
+      endpointBCornerIndex: 399
+    - endpointACornerIndex: 229
+      endpointBCornerIndex: 238
+    - endpointACornerIndex: 236
+      endpointBCornerIndex: 213
+    - endpointACornerIndex: 212
+      endpointBCornerIndex: 395
+    - endpointACornerIndex: 211
+      endpointBCornerIndex: 220
+    - endpointACornerIndex: 255
+      endpointBCornerIndex: 402
+    - endpointACornerIndex: 401
+      endpointBCornerIndex: 249
+    - endpointACornerIndex: 248
+      endpointBCornerIndex: 256
+    - endpointACornerIndex: 260
+      endpointBCornerIndex: 403
+    - endpointACornerIndex: 254
+      endpointBCornerIndex: 261
+    - endpointACornerIndex: 266
+      endpointBCornerIndex: 404
+    - endpointACornerIndex: 259
+      endpointBCornerIndex: 267
+    - endpointACornerIndex: 265
+      endpointBCornerIndex: 244
+    - endpointACornerIndex: 243
+      endpointBCornerIndex: 400
+    - endpointACornerIndex: 242
+      endpointBCornerIndex: 250
+    - endpointACornerIndex: 284
+      endpointBCornerIndex: 407
+    - endpointACornerIndex: 406
+      endpointBCornerIndex: 279
+    - endpointACornerIndex: 278
+      endpointBCornerIndex: 285
+    - endpointACornerIndex: 290
+      endpointBCornerIndex: 408
+    - endpointACornerIndex: 283
+      endpointBCornerIndex: 291
+    - endpointACornerIndex: 297
+      endpointBCornerIndex: 409
+    - endpointACornerIndex: 289
+      endpointBCornerIndex: 298
+    - endpointACornerIndex: 296
+      endpointBCornerIndex: 273
+    - endpointACornerIndex: 272
+      endpointBCornerIndex: 405
+    - endpointACornerIndex: 271
+      endpointBCornerIndex: 280
+    - endpointACornerIndex: 314
+      endpointBCornerIndex: 412
+    - endpointACornerIndex: 411
+      endpointBCornerIndex: 309
+    - endpointACornerIndex: 308
+      endpointBCornerIndex: 315
+    - endpointACornerIndex: 320
+      endpointBCornerIndex: 413
+    - endpointACornerIndex: 313
+      endpointBCornerIndex: 321
+    - endpointACornerIndex: 326
+      endpointBCornerIndex: 414
+    - endpointACornerIndex: 319
+      endpointBCornerIndex: 327
+    - endpointACornerIndex: 325
+      endpointBCornerIndex: 304
+    - endpointACornerIndex: 303
+      endpointBCornerIndex: 410
+    - endpointACornerIndex: 302
+      endpointBCornerIndex: 310
+    - endpointACornerIndex: 344
+      endpointBCornerIndex: 417
+    - endpointACornerIndex: 416
+      endpointBCornerIndex: 339
+    - endpointACornerIndex: 338
+      endpointBCornerIndex: 345
+    - endpointACornerIndex: 350
+      endpointBCornerIndex: 418
+    - endpointACornerIndex: 343
+      endpointBCornerIndex: 351
+    - endpointACornerIndex: 357
+      endpointBCornerIndex: 419
+    - endpointACornerIndex: 349
+      endpointBCornerIndex: 358
+    - endpointACornerIndex: 356
+      endpointBCornerIndex: 333
+    - endpointACornerIndex: 332
+      endpointBCornerIndex: 415
+    - endpointACornerIndex: 331
+      endpointBCornerIndex: 340
+    - endpointACornerIndex: 423
+      endpointBCornerIndex: 23
+    - endpointACornerIndex: 13
+      endpointBCornerIndex: 424
+    - endpointACornerIndex: 421
+      endpointBCornerIndex: 137
+    - endpointACornerIndex: 127
+      endpointBCornerIndex: 422
+    - endpointACornerIndex: 425
+      endpointBCornerIndex: 257
+    - endpointACornerIndex: 247
+      endpointBCornerIndex: 420
+    - endpointACornerIndex: 246
+      endpointBCornerIndex: 132
+    - endpointACornerIndex: 126
+      endpointBCornerIndex: 18
+    - endpointACornerIndex: 12
+      endpointBCornerIndex: 252
+    - endpointACornerIndex: 429
+      endpointBCornerIndex: 142
+    - endpointACornerIndex: 133
+      endpointBCornerIndex: 430
+    - endpointACornerIndex: 431
+      endpointBCornerIndex: 251
+    - endpointACornerIndex: 241
+      endpointBCornerIndex: 426
+    - endpointACornerIndex: 427
+      endpointBCornerIndex: 286
+    - endpointACornerIndex: 277
+      endpointBCornerIndex: 428
+    - endpointACornerIndex: 240
+      endpointBCornerIndex: 287
+    - endpointACornerIndex: 276
+      endpointBCornerIndex: 143
+    - endpointACornerIndex: 435
+      endpointBCornerIndex: 196
+    - endpointACornerIndex: 187
+      endpointBCornerIndex: 436
+    - endpointACornerIndex: 264
+      endpointBCornerIndex: 434
+    - endpointACornerIndex: 433
+      endpointBCornerIndex: 245
+    - endpointACornerIndex: 437
+      endpointBCornerIndex: 292
+    - endpointACornerIndex: 282
+      endpointBCornerIndex: 432
+    - endpointACornerIndex: 269
+      endpointBCornerIndex: 197
+    - endpointACornerIndex: 186
+      endpointBCornerIndex: 293
+    - endpointACornerIndex: 441
+      endpointBCornerIndex: 107
+    - endpointACornerIndex: 97
+      endpointBCornerIndex: 442
+    - endpointACornerIndex: 439
+      endpointBCornerIndex: 191
+    - endpointACornerIndex: 181
+      endpointBCornerIndex: 440
+    - endpointACornerIndex: 443
+      endpointBCornerIndex: 299
+    - endpointACornerIndex: 288
+      endpointBCornerIndex: 438
+    - endpointACornerIndex: 180
+      endpointBCornerIndex: 102
+    - endpointACornerIndex: 96
+      endpointBCornerIndex: 294
+    - endpointACornerIndex: 447
+      endpointBCornerIndex: 112
+    - endpointACornerIndex: 103
+      endpointBCornerIndex: 448
+    - endpointACornerIndex: 204
+      endpointBCornerIndex: 444
+    - endpointACornerIndex: 449
+      endpointBCornerIndex: 185
+    - endpointACornerIndex: 445
+      endpointBCornerIndex: 226
+    - endpointACornerIndex: 217
+      endpointBCornerIndex: 446
+    - endpointACornerIndex: 209
+      endpointBCornerIndex: 227
+    - endpointACornerIndex: 216
+      endpointBCornerIndex: 113
+    - endpointACornerIndex: 453
+      endpointBCornerIndex: 52
+    - endpointACornerIndex: 43
+      endpointBCornerIndex: 454
+    - endpointACornerIndex: 451
+      endpointBCornerIndex: 208
+    - endpointACornerIndex: 198
+      endpointBCornerIndex: 452
+    - endpointACornerIndex: 455
+      endpointBCornerIndex: 232
+    - endpointACornerIndex: 222
+      endpointBCornerIndex: 450
+    - endpointACornerIndex: 203
+      endpointBCornerIndex: 53
+    - endpointACornerIndex: 42
+      endpointBCornerIndex: 233
+    - endpointACornerIndex: 459
+      endpointBCornerIndex: 58
+    - endpointACornerIndex: 48
+      endpointBCornerIndex: 460
+    - endpointACornerIndex: 461
+      endpointBCornerIndex: 202
+    - endpointACornerIndex: 192
+      endpointBCornerIndex: 456
+    - endpointACornerIndex: 457
+      endpointBCornerIndex: 268
+    - endpointACornerIndex: 258
+      endpointBCornerIndex: 458
+    - endpointACornerIndex: 263
+      endpointBCornerIndex: 59
+    - endpointACornerIndex: 465
+      endpointBCornerIndex: 17
+    - endpointACornerIndex: 7
+      endpointBCornerIndex: 466
+    - endpointACornerIndex: 54
+      endpointBCornerIndex: 462
+    - endpointACornerIndex: 467
+      endpointBCornerIndex: 35
+    - endpointACornerIndex: 463
+      endpointBCornerIndex: 262
+    - endpointACornerIndex: 253
+      endpointBCornerIndex: 464
+    - endpointACornerIndex: 6
+      endpointBCornerIndex: 30
+    - endpointACornerIndex: 471
+      endpointBCornerIndex: 11
+    - endpointACornerIndex: 0
+      endpointBCornerIndex: 472
+    - endpointACornerIndex: 469
+      endpointBCornerIndex: 41
+    - endpointACornerIndex: 31
+      endpointBCornerIndex: 470
+    - endpointACornerIndex: 473
+      endpointBCornerIndex: 316
+    - endpointACornerIndex: 307
+      endpointBCornerIndex: 468
+    - endpointACornerIndex: 306
+      endpointBCornerIndex: 36
+    - endpointACornerIndex: 5
+      endpointBCornerIndex: 317
+    - endpointACornerIndex: 477
+      endpointBCornerIndex: 47
+    - endpointACornerIndex: 37
+      endpointBCornerIndex: 478
+    - endpointACornerIndex: 475
+      endpointBCornerIndex: 239
+    - endpointACornerIndex: 228
+      endpointBCornerIndex: 476
+    - endpointACornerIndex: 479
+      endpointBCornerIndex: 311
+    - endpointACornerIndex: 301
+      endpointBCornerIndex: 474
+    - endpointACornerIndex: 300
+      endpointBCornerIndex: 234
+    - endpointACornerIndex: 235
+      endpointBCornerIndex: 484
+    - endpointACornerIndex: 483
+      endpointBCornerIndex: 214
+    - endpointACornerIndex: 324
+      endpointBCornerIndex: 480
+    - endpointACornerIndex: 485
+      endpointBCornerIndex: 305
+    - endpointACornerIndex: 481
+      endpointBCornerIndex: 346
+    - endpointACornerIndex: 337
+      endpointBCornerIndex: 482
+    - endpointACornerIndex: 329
+      endpointBCornerIndex: 347
+    - endpointACornerIndex: 336
+      endpointBCornerIndex: 215
+    - endpointACornerIndex: 489
+      endpointBCornerIndex: 118
+    - endpointACornerIndex: 108
+      endpointBCornerIndex: 490
+    - endpointACornerIndex: 491
+      endpointBCornerIndex: 221
+    - endpointACornerIndex: 210
+      endpointBCornerIndex: 486
+    - endpointACornerIndex: 487
+      endpointBCornerIndex: 341
+    - endpointACornerIndex: 330
+      endpointBCornerIndex: 488
+    - endpointACornerIndex: 335
+      endpointBCornerIndex: 119
+    - endpointACornerIndex: 495
+      endpointBCornerIndex: 77
+    - endpointACornerIndex: 67
+      endpointBCornerIndex: 496
+    - endpointACornerIndex: 114
+      endpointBCornerIndex: 492
+    - endpointACornerIndex: 497
+      endpointBCornerIndex: 95
+    - endpointACornerIndex: 355
+      endpointBCornerIndex: 494
+    - endpointACornerIndex: 493
+      endpointBCornerIndex: 334
+    - endpointACornerIndex: 354
+      endpointBCornerIndex: 72
+    - endpointACornerIndex: 66
+      endpointBCornerIndex: 90
+    - endpointACornerIndex: 501
+      endpointBCornerIndex: 83
+    - endpointACornerIndex: 73
+      endpointBCornerIndex: 502
+    - endpointACornerIndex: 499
+      endpointBCornerIndex: 173
+    - endpointACornerIndex: 163
+      endpointBCornerIndex: 500
+    - endpointACornerIndex: 503
+      endpointBCornerIndex: 359
+    - endpointACornerIndex: 348
+      endpointBCornerIndex: 498
+    - endpointACornerIndex: 353
+      endpointBCornerIndex: 168
+    - endpointACornerIndex: 162
+      endpointBCornerIndex: 78
+    - endpointACornerIndex: 507
+      endpointBCornerIndex: 178
+    - endpointACornerIndex: 169
+      endpointBCornerIndex: 508
+    - endpointACornerIndex: 505
+      endpointBCornerIndex: 328
+    - endpointACornerIndex: 318
+      endpointBCornerIndex: 506
+    - endpointACornerIndex: 509
+      endpointBCornerIndex: 352
+    - endpointACornerIndex: 342
+      endpointBCornerIndex: 504
+    - endpointACornerIndex: 323
+      endpointBCornerIndex: 179
+    - endpointACornerIndex: 24
+      endpointBCornerIndex: 514
+    - endpointACornerIndex: 513
+      endpointBCornerIndex: 4
+    - endpointACornerIndex: 174
+      endpointBCornerIndex: 510
+    - endpointACornerIndex: 515
+      endpointBCornerIndex: 154
+    - endpointACornerIndex: 511
+      endpointBCornerIndex: 322
+    - endpointACornerIndex: 312
+      endpointBCornerIndex: 512
+    - endpointACornerIndex: 29
+      endpointBCornerIndex: 155
+    - endpointACornerIndex: 519
+      endpointBCornerIndex: 28
+    - endpointACornerIndex: 19
+      endpointBCornerIndex: 520
+    - endpointACornerIndex: 521
+      endpointBCornerIndex: 131
+    - endpointACornerIndex: 121
+      endpointBCornerIndex: 516
+    - endpointACornerIndex: 517
+      endpointBCornerIndex: 161
+    - endpointACornerIndex: 150
+      endpointBCornerIndex: 518
+    - endpointACornerIndex: 120
+      endpointBCornerIndex: 156
+    - endpointACornerIndex: 525
+      endpointBCornerIndex: 88
+    - endpointACornerIndex: 79
+      endpointBCornerIndex: 526
+    - endpointACornerIndex: 144
+      endpointBCornerIndex: 524
+    - endpointACornerIndex: 523
+      endpointBCornerIndex: 125
+    - endpointACornerIndex: 527
+      endpointBCornerIndex: 167
+    - endpointACornerIndex: 157
+      endpointBCornerIndex: 522
+    - endpointACornerIndex: 149
+      endpointBCornerIndex: 89
+    - endpointACornerIndex: 84
+      endpointBCornerIndex: 532
+    - endpointACornerIndex: 531
+      endpointBCornerIndex: 64
+    - endpointACornerIndex: 533
+      endpointBCornerIndex: 148
+    - endpointACornerIndex: 138
+      endpointBCornerIndex: 528
+    - endpointACornerIndex: 529
+      endpointBCornerIndex: 281
+    - endpointACornerIndex: 270
+      endpointBCornerIndex: 530
+    - endpointACornerIndex: 275
+      endpointBCornerIndex: 65
+    - endpointACornerIndex: 537
+      endpointBCornerIndex: 71
+    - endpointACornerIndex: 60
+      endpointBCornerIndex: 538
+    - endpointACornerIndex: 535
+      endpointBCornerIndex: 101
+    - endpointACornerIndex: 91
+      endpointBCornerIndex: 536
+    - endpointACornerIndex: 295
+      endpointBCornerIndex: 534
+    - endpointACornerIndex: 539
+      endpointBCornerIndex: 274
+    corners:
+    - vertex: {x: -0.2733104, y: 0.34323645, z: -0.89860463}
+    - vertex: {x: -0.3423683, y: 0.22111279, z: -0.9140949}
+    - vertex: {x: -0.45324376, y: 0.22111279, z: -0.8700191}
+    - vertex: {x: -0.52316433, y: 0.2901707, z: -0.8023569}
+    - vertex: {x: -0.4709106, y: 0.418713, z: -0.7764809}
+    - vertex: {x: -0.3423683, y: 0.44458893, z: -0.82873464}
+    - vertex: {x: -0.06759727, y: 0, z: -0.99855256}
+    - vertex: {x: -0.13665518, y: -0.122123666, z: -0.9830622}
+    - vertex: {x: -0.27477103, y: -0.11173807, z: -0.95587236}
+    - vertex: {x: -0.31658858, y: -0.0000000021719735, z: -0.95447665}
+    - vertex: {x: -0.27477103, y: 0.11173807, z: -0.95587236}
+    - vertex: {x: -0.13665518, y: 0.122123666, z: -0.9830622}
+    - vertex: {x: -0.3423683, y: -0.44458893, z: -0.82873464}
+    - vertex: {x: -0.4709106, y: -0.418713, z: -0.7764809}
+    - vertex: {x: -0.52316433, y: -0.2901707, z: -0.8023569}
+    - vertex: {x: -0.45324376, y: -0.22111279, z: -0.8700191}
+    - vertex: {x: -0.3423683, y: -0.22111279, z: -0.9140949}
+    - vertex: {x: -0.2733104, y: -0.34323645, z: -0.89860463}
+    - vertex: {x: -0.78695726, y: -0.27477106, z: -0.5539636}
+    - vertex: {x: -0.8141471, y: -0.13665521, z: -0.56434923}
+    - vertex: {x: -0.7442771, y: -0.067597285, z: -0.6657017}
+    - vertex: {x: -0.6743566, y: -0.13665521, z: -0.7333639}
+    - vertex: {x: -0.63253903, y: -0.2483933, z: -0.73475957}
+    - vertex: {x: -0.6920234, y: -0.33425546, z: -0.6398258}
+    - vertex: {x: -0.6920234, y: 0.33425546, z: -0.6398258}
+    - vertex: {x: -0.63253903, y: 0.2483933, z: -0.73475957}
+    - vertex: {x: -0.6743566, y: 0.13665521, z: -0.7333639}
+    - vertex: {x: -0.7442771, y: 0.067597285, z: -0.6657017}
+    - vertex: {x: -0.8141471, y: 0.13665521, z: -0.56434923}
+    - vertex: {x: -0.78695726, y: 0.27477106, z: -0.5539636}
+    - vertex: {x: 0.06759727, y: 0, z: -0.99855256}
+    - vertex: {x: 0.13665518, y: 0.122123666, z: -0.9830622}
+    - vertex: {x: 0.27477103, y: 0.11173807, z: -0.95587236}
+    - vertex: {x: 0.31658858, y: 0.0000000021719735, z: -0.95447665}
+    - vertex: {x: 0.27477103, y: -0.11173807, z: -0.95587236}
+    - vertex: {x: 0.13665518, y: -0.122123666, z: -0.9830622}
+    - vertex: {x: 0.3423683, y: 0.44458893, z: -0.82873464}
+    - vertex: {x: 0.4709106, y: 0.418713, z: -0.7764809}
+    - vertex: {x: 0.52316433, y: 0.2901707, z: -0.8023569}
+    - vertex: {x: 0.45324376, y: 0.22111279, z: -0.8700191}
+    - vertex: {x: 0.3423683, y: 0.22111279, z: -0.9140949}
+    - vertex: {x: 0.2733104, y: 0.34323645, z: -0.89860463}
+    - vertex: {x: 0.78695726, y: 0.27477106, z: -0.5539636}
+    - vertex: {x: 0.8141471, y: 0.13665521, z: -0.56434923}
+    - vertex: {x: 0.7442771, y: 0.067597285, z: -0.6657017}
+    - vertex: {x: 0.6743566, y: 0.13665521, z: -0.7333639}
+    - vertex: {x: 0.63253903, y: 0.2483933, z: -0.73475957}
+    - vertex: {x: 0.6920234, y: 0.33425546, z: -0.6398258}
+    - vertex: {x: 0.6920234, y: -0.33425546, z: -0.6398258}
+    - vertex: {x: 0.63253903, y: -0.2483933, z: -0.73475957}
+    - vertex: {x: 0.6743566, y: -0.13665521, z: -0.7333639}
+    - vertex: {x: 0.7442771, y: -0.067597285, z: -0.6657017}
+    - vertex: {x: 0.8141471, y: -0.13665521, z: -0.56434923}
+    - vertex: {x: 0.78695726, y: -0.27477106, z: -0.5539636}
+    - vertex: {x: 0.2733104, y: -0.34323645, z: -0.89860463}
+    - vertex: {x: 0.3423683, y: -0.22111279, z: -0.9140949}
+    - vertex: {x: 0.45324376, y: -0.22111279, z: -0.8700191}
+    - vertex: {x: 0.52316433, y: -0.2901707, z: -0.8023569}
+    - vertex: {x: 0.4709106, y: -0.418713, z: -0.7764809}
+    - vertex: {x: 0.3423683, y: -0.44458893, z: -0.82873464}
+    - vertex: {x: -0.2733104, y: -0.34323645, z: 0.89860463}
+    - vertex: {x: -0.3423683, y: -0.22111279, z: 0.9140949}
+    - vertex: {x: -0.45324376, y: -0.22111279, z: 0.8700191}
+    - vertex: {x: -0.52316433, y: -0.2901707, z: 0.8023569}
+    - vertex: {x: -0.4709106, y: -0.418713, z: 0.7764809}
+    - vertex: {x: -0.3423683, y: -0.44458893, z: 0.82873464}
+    - vertex: {x: -0.06759727, y: 0, z: 0.99855256}
+    - vertex: {x: -0.13665518, y: 0.122123666, z: 0.9830622}
+    - vertex: {x: -0.27477103, y: 0.11173807, z: 0.95587236}
+    - vertex: {x: -0.31658858, y: 0.0000000021719735, z: 0.95447665}
+    - vertex: {x: -0.27477103, y: -0.11173807, z: 0.95587236}
+    - vertex: {x: -0.13665518, y: -0.122123666, z: 0.9830622}
+    - vertex: {x: -0.3423683, y: 0.44458893, z: 0.82873464}
+    - vertex: {x: -0.4709106, y: 0.418713, z: 0.7764809}
+    - vertex: {x: -0.52316433, y: 0.2901707, z: 0.8023569}
+    - vertex: {x: -0.45324376, y: 0.22111279, z: 0.8700191}
+    - vertex: {x: -0.3423683, y: 0.22111279, z: 0.9140949}
+    - vertex: {x: -0.2733104, y: 0.34323645, z: 0.89860463}
+    - vertex: {x: -0.78695726, y: 0.27477106, z: 0.5539636}
+    - vertex: {x: -0.8141471, y: 0.13665521, z: 0.56434923}
+    - vertex: {x: -0.7442771, y: 0.067597285, z: 0.6657017}
+    - vertex: {x: -0.6743566, y: 0.13665521, z: 0.7333639}
+    - vertex: {x: -0.63253903, y: 0.2483933, z: 0.73475957}
+    - vertex: {x: -0.6920234, y: 0.33425546, z: 0.6398258}
+    - vertex: {x: -0.6920234, y: -0.33425546, z: 0.6398258}
+    - vertex: {x: -0.63253903, y: -0.2483933, z: 0.73475957}
+    - vertex: {x: -0.6743566, y: -0.13665521, z: 0.7333639}
+    - vertex: {x: -0.7442771, y: -0.067597285, z: 0.6657017}
+    - vertex: {x: -0.8141471, y: -0.13665521, z: 0.56434923}
+    - vertex: {x: -0.78695726, y: -0.27477106, z: 0.5539636}
+    - vertex: {x: 0.06759727, y: 0, z: 0.99855256}
+    - vertex: {x: 0.13665518, y: -0.122123666, z: 0.9830622}
+    - vertex: {x: 0.27477103, y: -0.11173807, z: 0.95587236}
+    - vertex: {x: 0.31658858, y: -0.0000000021719735, z: 0.95447665}
+    - vertex: {x: 0.27477103, y: 0.11173807, z: 0.95587236}
+    - vertex: {x: 0.13665518, y: 0.122123666, z: 0.9830622}
+    - vertex: {x: 0.3423683, y: -0.44458893, z: 0.82873464}
+    - vertex: {x: 0.4709106, y: -0.418713, z: 0.7764809}
+    - vertex: {x: 0.52316433, y: -0.2901707, z: 0.8023569}
+    - vertex: {x: 0.45324376, y: -0.22111279, z: 0.8700191}
+    - vertex: {x: 0.3423683, y: -0.22111279, z: 0.9140949}
+    - vertex: {x: 0.2733104, y: -0.34323645, z: 0.89860463}
+    - vertex: {x: 0.78695726, y: -0.27477106, z: 0.5539636}
+    - vertex: {x: 0.8141471, y: -0.13665521, z: 0.56434923}
+    - vertex: {x: 0.7442771, y: -0.067597285, z: 0.6657017}
+    - vertex: {x: 0.6743566, y: -0.13665521, z: 0.7333639}
+    - vertex: {x: 0.63253903, y: -0.2483933, z: 0.73475957}
+    - vertex: {x: 0.6920234, y: -0.33425546, z: 0.6398258}
+    - vertex: {x: 0.6920234, y: 0.33425546, z: 0.6398258}
+    - vertex: {x: 0.63253903, y: 0.2483933, z: 0.73475957}
+    - vertex: {x: 0.6743566, y: 0.13665521, z: 0.7333639}
+    - vertex: {x: 0.7442771, y: 0.067597285, z: 0.6657017}
+    - vertex: {x: 0.8141471, y: 0.13665521, z: 0.56434923}
+    - vertex: {x: 0.78695726, y: 0.27477106, z: 0.5539636}
+    - vertex: {x: 0.2733104, y: 0.34323645, z: 0.89860463}
+    - vertex: {x: 0.3423683, y: 0.22111279, z: 0.9140949}
+    - vertex: {x: 0.45324376, y: 0.22111279, z: 0.8700191}
+    - vertex: {x: 0.52316433, y: 0.2901707, z: 0.8023569}
+    - vertex: {x: 0.4709106, y: 0.418713, z: 0.7764809}
+    - vertex: {x: 0.3423683, y: 0.44458893, z: 0.82873464}
+    - vertex: {x: -0.99855256, y: -0.06759727, z: 0}
+    - vertex: {x: -0.9830622, y: -0.13665518, z: -0.12212367}
+    - vertex: {x: -0.95587236, y: -0.27477103, z: -0.11173807}
+    - vertex: {x: -0.95447665, y: -0.31658858, z: -0.0000000021719735}
+    - vertex: {x: -0.95587236, y: -0.27477103, z: 0.11173807}
+    - vertex: {x: -0.9830622, y: -0.13665518, z: 0.12212367}
+    - vertex: {x: -0.82873464, y: -0.3423683, z: -0.44458893}
+    - vertex: {x: -0.7764809, y: -0.4709106, z: -0.418713}
+    - vertex: {x: -0.8023569, y: -0.52316433, z: -0.2901707}
+    - vertex: {x: -0.8700191, y: -0.45324376, z: -0.22111279}
+    - vertex: {x: -0.9140949, y: -0.3423683, z: -0.22111279}
+    - vertex: {x: -0.89860463, y: -0.2733104, z: -0.34323645}
+    - vertex: {x: -0.5539636, y: -0.78695726, z: -0.27477106}
+    - vertex: {x: -0.56434923, y: -0.8141471, z: -0.13665521}
+    - vertex: {x: -0.6657017, y: -0.7442771, z: -0.067597285}
+    - vertex: {x: -0.7333639, y: -0.6743566, z: -0.13665521}
+    - vertex: {x: -0.73475957, y: -0.63253903, z: -0.2483933}
+    - vertex: {x: -0.6398258, y: -0.6920234, z: -0.33425546}
+    - vertex: {x: -0.6398258, y: -0.6920234, z: 0.33425546}
+    - vertex: {x: -0.73475957, y: -0.63253903, z: 0.2483933}
+    - vertex: {x: -0.7333639, y: -0.6743566, z: 0.13665521}
+    - vertex: {x: -0.6657017, y: -0.7442771, z: 0.067597285}
+    - vertex: {x: -0.56434923, y: -0.8141471, z: 0.13665521}
+    - vertex: {x: -0.5539636, y: -0.78695726, z: 0.27477106}
+    - vertex: {x: -0.89860463, y: -0.2733104, z: 0.34323645}
+    - vertex: {x: -0.9140949, y: -0.3423683, z: 0.22111279}
+    - vertex: {x: -0.8700191, y: -0.45324376, z: 0.22111279}
+    - vertex: {x: -0.8023569, y: -0.52316433, z: 0.2901707}
+    - vertex: {x: -0.7764809, y: -0.4709106, z: 0.418713}
+    - vertex: {x: -0.82873464, y: -0.3423683, z: 0.44458893}
+    - vertex: {x: -0.89860463, y: 0.2733104, z: -0.34323645}
+    - vertex: {x: -0.9140949, y: 0.3423683, z: -0.22111279}
+    - vertex: {x: -0.8700191, y: 0.45324376, z: -0.22111279}
+    - vertex: {x: -0.8023569, y: 0.52316433, z: -0.2901707}
+    - vertex: {x: -0.7764809, y: 0.4709106, z: -0.418713}
+    - vertex: {x: -0.82873464, y: 0.3423683, z: -0.44458893}
+    - vertex: {x: -0.99855256, y: 0.06759727, z: 0}
+    - vertex: {x: -0.9830622, y: 0.13665518, z: 0.12212367}
+    - vertex: {x: -0.95587236, y: 0.27477103, z: 0.11173807}
+    - vertex: {x: -0.95447665, y: 0.31658858, z: 0.0000000021719735}
+    - vertex: {x: -0.95587236, y: 0.27477103, z: -0.11173807}
+    - vertex: {x: -0.9830622, y: 0.13665518, z: -0.12212367}
+    - vertex: {x: -0.82873464, y: 0.3423683, z: 0.44458893}
+    - vertex: {x: -0.7764809, y: 0.4709106, z: 0.418713}
+    - vertex: {x: -0.8023569, y: 0.52316433, z: 0.2901707}
+    - vertex: {x: -0.8700191, y: 0.45324376, z: 0.22111279}
+    - vertex: {x: -0.9140949, y: 0.3423683, z: 0.22111279}
+    - vertex: {x: -0.89860463, y: 0.2733104, z: 0.34323645}
+    - vertex: {x: -0.5539636, y: 0.78695726, z: 0.27477106}
+    - vertex: {x: -0.56434923, y: 0.8141471, z: 0.13665521}
+    - vertex: {x: -0.6657017, y: 0.7442771, z: 0.067597285}
+    - vertex: {x: -0.7333639, y: 0.6743566, z: 0.13665521}
+    - vertex: {x: -0.73475957, y: 0.63253903, z: 0.2483933}
+    - vertex: {x: -0.6398258, y: 0.6920234, z: 0.33425546}
+    - vertex: {x: -0.6398258, y: 0.6920234, z: -0.33425546}
+    - vertex: {x: -0.73475957, y: 0.63253903, z: -0.2483933}
+    - vertex: {x: -0.7333639, y: 0.6743566, z: -0.13665521}
+    - vertex: {x: -0.6657017, y: 0.7442771, z: -0.067597285}
+    - vertex: {x: -0.56434923, y: 0.8141471, z: -0.13665521}
+    - vertex: {x: -0.5539636, y: 0.78695726, z: -0.27477106}
+    - vertex: {x: 0.82873464, y: -0.3423683, z: 0.44458893}
+    - vertex: {x: 0.7764809, y: -0.4709106, z: 0.418713}
+    - vertex: {x: 0.8023569, y: -0.52316433, z: 0.2901707}
+    - vertex: {x: 0.8700191, y: -0.45324376, z: 0.22111279}
+    - vertex: {x: 0.9140949, y: -0.3423683, z: 0.22111279}
+    - vertex: {x: 0.89860463, y: -0.2733104, z: 0.34323645}
+    - vertex: {x: 0.5539636, y: -0.78695726, z: 0.27477106}
+    - vertex: {x: 0.56434923, y: -0.8141471, z: 0.13665521}
+    - vertex: {x: 0.6657017, y: -0.7442771, z: 0.067597285}
+    - vertex: {x: 0.7333639, y: -0.6743566, z: 0.13665521}
+    - vertex: {x: 0.73475957, y: -0.63253903, z: 0.2483933}
+    - vertex: {x: 0.6398258, y: -0.6920234, z: 0.33425546}
+    - vertex: {x: 0.6398258, y: -0.6920234, z: -0.33425546}
+    - vertex: {x: 0.73475957, y: -0.63253903, z: -0.2483933}
+    - vertex: {x: 0.7333639, y: -0.6743566, z: -0.13665521}
+    - vertex: {x: 0.6657017, y: -0.7442771, z: -0.067597285}
+    - vertex: {x: 0.56434923, y: -0.8141471, z: -0.13665521}
+    - vertex: {x: 0.5539636, y: -0.78695726, z: -0.27477106}
+    - vertex: {x: 0.89860463, y: -0.2733104, z: -0.34323645}
+    - vertex: {x: 0.9140949, y: -0.3423683, z: -0.22111279}
+    - vertex: {x: 0.8700191, y: -0.45324376, z: -0.22111279}
+    - vertex: {x: 0.8023569, y: -0.52316433, z: -0.2901707}
+    - vertex: {x: 0.7764809, y: -0.4709106, z: -0.418713}
+    - vertex: {x: 0.82873464, y: -0.3423683, z: -0.44458893}
+    - vertex: {x: 0.9830622, y: -0.13665518, z: 0.12212367}
+    - vertex: {x: 0.95587236, y: -0.27477103, z: 0.11173807}
+    - vertex: {x: 0.95447665, y: -0.31658858, z: 0}
+    - vertex: {x: 0.95587236, y: -0.27477103, z: -0.11173807}
+    - vertex: {x: 0.9830622, y: -0.13665518, z: -0.12212367}
+    - vertex: {x: 0.99855256, y: -0.06759727, z: 0}
+    - vertex: {x: 0.6398258, y: 0.6920234, z: 0.33425546}
+    - vertex: {x: 0.73475957, y: 0.63253903, z: 0.2483933}
+    - vertex: {x: 0.7333639, y: 0.6743566, z: 0.13665521}
+    - vertex: {x: 0.6657017, y: 0.7442771, z: 0.067597285}
+    - vertex: {x: 0.56434923, y: 0.8141471, z: 0.13665521}
+    - vertex: {x: 0.5539636, y: 0.78695726, z: 0.27477106}
+    - vertex: {x: 0.82873464, y: 0.3423683, z: 0.44458893}
+    - vertex: {x: 0.89860463, y: 0.2733104, z: 0.34323645}
+    - vertex: {x: 0.9140949, y: 0.3423683, z: 0.22111279}
+    - vertex: {x: 0.8700191, y: 0.45324376, z: 0.22111279}
+    - vertex: {x: 0.8023569, y: 0.52316433, z: 0.2901707}
+    - vertex: {x: 0.7764809, y: 0.4709106, z: 0.418713}
+    - vertex: {x: 0.9830622, y: 0.13665518, z: -0.12212367}
+    - vertex: {x: 0.95587236, y: 0.27477103, z: -0.11173807}
+    - vertex: {x: 0.95447665, y: 0.31658858, z: 0}
+    - vertex: {x: 0.95587236, y: 0.27477103, z: 0.11173807}
+    - vertex: {x: 0.9830622, y: 0.13665518, z: 0.12212367}
+    - vertex: {x: 0.99855256, y: 0.06759727, z: 0}
+    - vertex: {x: 0.7764809, y: 0.4709106, z: -0.418713}
+    - vertex: {x: 0.8023569, y: 0.52316433, z: -0.2901707}
+    - vertex: {x: 0.8700191, y: 0.45324376, z: -0.22111279}
+    - vertex: {x: 0.9140949, y: 0.3423683, z: -0.22111279}
+    - vertex: {x: 0.89860463, y: 0.2733104, z: -0.34323645}
+    - vertex: {x: 0.82873464, y: 0.3423683, z: -0.44458893}
+    - vertex: {x: 0.5539636, y: 0.78695726, z: -0.27477106}
+    - vertex: {x: 0.56434923, y: 0.8141471, z: -0.13665521}
+    - vertex: {x: 0.6657017, y: 0.7442771, z: -0.067597285}
+    - vertex: {x: 0.7333639, y: 0.6743566, z: -0.13665521}
+    - vertex: {x: 0.73475957, y: 0.63253903, z: -0.2483933}
+    - vertex: {x: 0.6398258, y: 0.6920234, z: -0.33425546}
+    - vertex: {x: 0, y: -0.99855256, z: -0.06759727}
+    - vertex: {x: -0.12212367, y: -0.9830622, z: -0.13665518}
+    - vertex: {x: -0.11173807, y: -0.95587236, z: -0.27477103}
+    - vertex: {x: -0.0000000021719735, y: -0.95447665, z: -0.31658858}
+    - vertex: {x: 0.11173807, y: -0.95587236, z: -0.27477103}
+    - vertex: {x: 0.12212367, y: -0.9830622, z: -0.13665518}
+    - vertex: {x: -0.44458893, y: -0.82873464, z: -0.3423683}
+    - vertex: {x: -0.418713, y: -0.7764809, z: -0.4709106}
+    - vertex: {x: -0.2901707, y: -0.8023569, z: -0.52316433}
+    - vertex: {x: -0.22111279, y: -0.8700191, z: -0.45324376}
+    - vertex: {x: -0.22111279, y: -0.9140949, z: -0.3423683}
+    - vertex: {x: -0.34323645, y: -0.89860463, z: -0.2733104}
+    - vertex: {x: -0.27477106, y: -0.5539636, z: -0.78695726}
+    - vertex: {x: -0.13665521, y: -0.56434923, z: -0.8141471}
+    - vertex: {x: -0.067597285, y: -0.6657017, z: -0.7442771}
+    - vertex: {x: -0.13665521, y: -0.7333639, z: -0.6743566}
+    - vertex: {x: -0.2483933, y: -0.73475957, z: -0.63253903}
+    - vertex: {x: -0.33425546, y: -0.6398258, z: -0.6920234}
+    - vertex: {x: 0.33425546, y: -0.6398258, z: -0.6920234}
+    - vertex: {x: 0.2483933, y: -0.73475957, z: -0.63253903}
+    - vertex: {x: 0.13665521, y: -0.7333639, z: -0.6743566}
+    - vertex: {x: 0.067597285, y: -0.6657017, z: -0.7442771}
+    - vertex: {x: 0.13665521, y: -0.56434923, z: -0.8141471}
+    - vertex: {x: 0.27477106, y: -0.5539636, z: -0.78695726}
+    - vertex: {x: 0.34323645, y: -0.89860463, z: -0.2733104}
+    - vertex: {x: 0.22111279, y: -0.9140949, z: -0.3423683}
+    - vertex: {x: 0.22111279, y: -0.8700191, z: -0.45324376}
+    - vertex: {x: 0.2901707, y: -0.8023569, z: -0.52316433}
+    - vertex: {x: 0.418713, y: -0.7764809, z: -0.4709106}
+    - vertex: {x: 0.44458893, y: -0.82873464, z: -0.3423683}
+    - vertex: {x: -0.33425546, y: -0.6398258, z: 0.6920234}
+    - vertex: {x: -0.2483933, y: -0.73475957, z: 0.63253903}
+    - vertex: {x: -0.13665521, y: -0.7333639, z: 0.6743566}
+    - vertex: {x: -0.067597285, y: -0.6657017, z: 0.7442771}
+    - vertex: {x: -0.13665521, y: -0.56434923, z: 0.8141471}
+    - vertex: {x: -0.27477106, y: -0.5539636, z: 0.78695726}
+    - vertex: {x: -0.44458893, y: -0.82873464, z: 0.3423683}
+    - vertex: {x: -0.34323645, y: -0.89860463, z: 0.2733104}
+    - vertex: {x: -0.22111279, y: -0.9140949, z: 0.3423683}
+    - vertex: {x: -0.22111279, y: -0.8700191, z: 0.45324376}
+    - vertex: {x: -0.2901707, y: -0.8023569, z: 0.52316433}
+    - vertex: {x: -0.418713, y: -0.7764809, z: 0.4709106}
+    - vertex: {x: 0.12212367, y: -0.9830622, z: 0.13665518}
+    - vertex: {x: 0.11173807, y: -0.95587236, z: 0.27477103}
+    - vertex: {x: 0, y: -0.95447665, z: 0.31658858}
+    - vertex: {x: -0.11173807, y: -0.95587236, z: 0.27477103}
+    - vertex: {x: -0.12212367, y: -0.9830622, z: 0.13665518}
+    - vertex: {x: 0, y: -0.99855256, z: 0.06759727}
+    - vertex: {x: 0.418713, y: -0.7764809, z: 0.4709106}
+    - vertex: {x: 0.2901707, y: -0.8023569, z: 0.52316433}
+    - vertex: {x: 0.22111279, y: -0.8700191, z: 0.45324376}
+    - vertex: {x: 0.22111279, y: -0.9140949, z: 0.3423683}
+    - vertex: {x: 0.34323645, y: -0.89860463, z: 0.2733104}
+    - vertex: {x: 0.44458893, y: -0.82873464, z: 0.3423683}
+    - vertex: {x: 0.27477106, y: -0.5539636, z: 0.78695726}
+    - vertex: {x: 0.13665521, y: -0.56434923, z: 0.8141471}
+    - vertex: {x: 0.067597285, y: -0.6657017, z: 0.7442771}
+    - vertex: {x: 0.13665521, y: -0.7333639, z: 0.6743566}
+    - vertex: {x: 0.2483933, y: -0.73475957, z: 0.63253903}
+    - vertex: {x: 0.33425546, y: -0.6398258, z: 0.6920234}
+    - vertex: {x: 0.44458893, y: 0.82873464, z: -0.3423683}
+    - vertex: {x: 0.418713, y: 0.7764809, z: -0.4709106}
+    - vertex: {x: 0.2901707, y: 0.8023569, z: -0.52316433}
+    - vertex: {x: 0.22111279, y: 0.8700191, z: -0.45324376}
+    - vertex: {x: 0.22111279, y: 0.9140949, z: -0.3423683}
+    - vertex: {x: 0.34323645, y: 0.89860463, z: -0.2733104}
+    - vertex: {x: 0.27477106, y: 0.5539636, z: -0.78695726}
+    - vertex: {x: 0.13665521, y: 0.56434923, z: -0.8141471}
+    - vertex: {x: 0.067597285, y: 0.6657017, z: -0.7442771}
+    - vertex: {x: 0.13665521, y: 0.7333639, z: -0.6743566}
+    - vertex: {x: 0.2483933, y: 0.73475957, z: -0.63253903}
+    - vertex: {x: 0.33425546, y: 0.6398258, z: -0.6920234}
+    - vertex: {x: -0.33425546, y: 0.6398258, z: -0.6920234}
+    - vertex: {x: -0.2483933, y: 0.73475957, z: -0.63253903}
+    - vertex: {x: -0.13665521, y: 0.7333639, z: -0.6743566}
+    - vertex: {x: -0.067597285, y: 0.6657017, z: -0.7442771}
+    - vertex: {x: -0.13665521, y: 0.56434923, z: -0.8141471}
+    - vertex: {x: -0.27477106, y: 0.5539636, z: -0.78695726}
+    - vertex: {x: -0.34323645, y: 0.89860463, z: -0.2733104}
+    - vertex: {x: -0.22111279, y: 0.9140949, z: -0.3423683}
+    - vertex: {x: -0.22111279, y: 0.8700191, z: -0.45324376}
+    - vertex: {x: -0.2901707, y: 0.8023569, z: -0.52316433}
+    - vertex: {x: -0.418713, y: 0.7764809, z: -0.4709106}
+    - vertex: {x: -0.44458893, y: 0.82873464, z: -0.3423683}
+    - vertex: {x: 0.122123666, y: 0.9830622, z: -0.13665518}
+    - vertex: {x: 0.11173807, y: 0.95587236, z: -0.27477103}
+    - vertex: {x: 0, y: 0.95447665, z: -0.31658858}
+    - vertex: {x: -0.11173807, y: 0.95587236, z: -0.27477103}
+    - vertex: {x: -0.12212367, y: 0.9830622, z: -0.13665518}
+    - vertex: {x: 0, y: 0.99855256, z: -0.06759727}
+    - vertex: {x: 0.33425546, y: 0.6398258, z: 0.6920234}
+    - vertex: {x: 0.2483933, y: 0.73475957, z: 0.63253903}
+    - vertex: {x: 0.13665521, y: 0.7333639, z: 0.6743566}
+    - vertex: {x: 0.067597285, y: 0.6657017, z: 0.7442771}
+    - vertex: {x: 0.13665521, y: 0.56434923, z: 0.8141471}
+    - vertex: {x: 0.27477106, y: 0.5539636, z: 0.78695726}
+    - vertex: {x: 0.44458893, y: 0.82873464, z: 0.3423683}
+    - vertex: {x: 0.34323645, y: 0.89860463, z: 0.2733104}
+    - vertex: {x: 0.22111279, y: 0.9140949, z: 0.3423683}
+    - vertex: {x: 0.22111279, y: 0.8700191, z: 0.45324376}
+    - vertex: {x: 0.2901707, y: 0.8023569, z: 0.52316433}
+    - vertex: {x: 0.418713, y: 0.7764809, z: 0.4709106}
+    - vertex: {x: -0.12212367, y: 0.9830622, z: 0.13665518}
+    - vertex: {x: -0.11173807, y: 0.95587236, z: 0.27477103}
+    - vertex: {x: 0, y: 0.95447665, z: 0.31658858}
+    - vertex: {x: 0.11173807, y: 0.95587236, z: 0.27477103}
+    - vertex: {x: 0.122123666, y: 0.9830622, z: 0.13665518}
+    - vertex: {x: 0, y: 0.99855256, z: 0.06759727}
+    - vertex: {x: -0.418713, y: 0.7764809, z: 0.4709106}
+    - vertex: {x: -0.2901707, y: 0.8023569, z: 0.52316433}
+    - vertex: {x: -0.22111279, y: 0.8700191, z: 0.45324376}
+    - vertex: {x: -0.22111279, y: 0.9140949, z: 0.3423683}
+    - vertex: {x: -0.34323645, y: 0.89860463, z: 0.2733104}
+    - vertex: {x: -0.44458893, y: 0.82873464, z: 0.3423683}
+    - vertex: {x: -0.27477106, y: 0.5539636, z: 0.78695726}
+    - vertex: {x: -0.13665521, y: 0.56434923, z: 0.8141471}
+    - vertex: {x: -0.067597285, y: 0.6657017, z: 0.7442771}
+    - vertex: {x: -0.13665521, y: 0.7333639, z: 0.6743566}
+    - vertex: {x: -0.2483933, y: 0.73475957, z: 0.63253903}
+    - vertex: {x: -0.33425546, y: 0.6398258, z: 0.6920234}
+    - vertex: {x: -0.49417683, y: 0.11173806, z: -0.8686529}
+    - vertex: {x: -0.4251189, y: -0.000000004298008, z: -0.911333}
+    - vertex: {x: -0.49417683, y: -0.11173808, z: -0.8686529}
+    - vertex: {x: -0.60591495, y: -0.069057934, z: -0.799595}
+    - vertex: {x: -0.60591495, y: 0.06905792, z: -0.799595}
+    - vertex: {x: 0.4251189, y: 0.000000004298008, z: -0.911333}
+    - vertex: {x: 0.49417683, y: 0.11173808, z: -0.8686529}
+    - vertex: {x: 0.60591495, y: 0.069057934, z: -0.799595}
+    - vertex: {x: 0.60591495, y: -0.06905792, z: -0.799595}
+    - vertex: {x: 0.49417683, y: -0.11173806, z: -0.8686529}
+    - vertex: {x: -0.49417683, y: -0.11173806, z: 0.8686529}
+    - vertex: {x: -0.4251189, y: 0.000000004298008, z: 0.911333}
+    - vertex: {x: -0.49417683, y: 0.11173808, z: 0.8686529}
+    - vertex: {x: -0.60591495, y: 0.069057934, z: 0.799595}
+    - vertex: {x: -0.60591495, y: -0.06905792, z: 0.799595}
+    - vertex: {x: 0.4251189, y: -0.000000004298008, z: 0.911333}
+    - vertex: {x: 0.49417683, y: -0.11173808, z: 0.8686529}
+    - vertex: {x: 0.60591495, y: -0.069057934, z: 0.799595}
+    - vertex: {x: 0.60591495, y: 0.06905792, z: 0.799595}
+    - vertex: {x: 0.49417683, y: 0.11173806, z: 0.8686529}
+    - vertex: {x: -0.911333, y: -0.4251189, z: -0.000000004298008}
+    - vertex: {x: -0.8686529, y: -0.49417683, z: -0.11173808}
+    - vertex: {x: -0.799595, y: -0.60591495, z: -0.069057934}
+    - vertex: {x: -0.799595, y: -0.60591495, z: 0.06905792}
+    - vertex: {x: -0.8686529, y: -0.49417683, z: 0.11173806}
+    - vertex: {x: -0.8686529, y: 0.49417683, z: -0.11173806}
+    - vertex: {x: -0.911333, y: 0.4251189, z: 0.000000004298008}
+    - vertex: {x: -0.8686529, y: 0.49417683, z: 0.11173808}
+    - vertex: {x: -0.799595, y: 0.60591495, z: 0.069057934}
+    - vertex: {x: -0.799595, y: 0.60591495, z: -0.06905792}
+    - vertex: {x: 0.8686529, y: -0.49417683, z: 0.11173807}
+    - vertex: {x: 0.799595, y: -0.60591495, z: 0.06905793}
+    - vertex: {x: 0.799595, y: -0.60591495, z: -0.06905793}
+    - vertex: {x: 0.8686529, y: -0.49417683, z: -0.11173807}
+    - vertex: {x: 0.911333, y: -0.4251189, z: 0}
+    - vertex: {x: 0.799595, y: 0.60591495, z: 0.06905793}
+    - vertex: {x: 0.86865294, y: 0.49417683, z: 0.11173807}
+    - vertex: {x: 0.9113331, y: 0.4251189, z: 0}
+    - vertex: {x: 0.86865294, y: 0.49417683, z: -0.11173807}
+    - vertex: {x: 0.799595, y: 0.60591495, z: -0.06905793}
+    - vertex: {x: -0.000000004298008, y: -0.911333, z: -0.4251189}
+    - vertex: {x: -0.11173808, y: -0.8686529, z: -0.49417683}
+    - vertex: {x: -0.069057934, y: -0.799595, z: -0.60591495}
+    - vertex: {x: 0.06905792, y: -0.799595, z: -0.60591495}
+    - vertex: {x: 0.11173806, y: -0.8686529, z: -0.49417683}
+    - vertex: {x: -0.06905793, y: -0.799595, z: 0.60591495}
+    - vertex: {x: -0.11173807, y: -0.86865294, z: 0.49417683}
+    - vertex: {x: 0, y: -0.9113331, z: 0.4251189}
+    - vertex: {x: 0.11173807, y: -0.86865294, z: 0.49417683}
+    - vertex: {x: 0.06905793, y: -0.799595, z: 0.60591495}
+    - vertex: {x: 0.11173807, y: 0.8686529, z: -0.49417683}
+    - vertex: {x: 0.06905793, y: 0.799595, z: -0.60591495}
+    - vertex: {x: -0.06905793, y: 0.799595, z: -0.60591495}
+    - vertex: {x: -0.11173807, y: 0.8686529, z: -0.49417683}
+    - vertex: {x: 0, y: 0.911333, z: -0.4251189}
+    - vertex: {x: 0.06905793, y: 0.799595, z: 0.60591495}
+    - vertex: {x: 0.11173807, y: 0.86865294, z: 0.49417683}
+    - vertex: {x: 0, y: 0.9113331, z: 0.4251189}
+    - vertex: {x: -0.11173807, y: 0.86865294, z: 0.49417683}
+    - vertex: {x: -0.06905793, y: 0.799595, z: 0.60591495}
+    - vertex: {x: -0.5027591, y: -0.6835551, z: -0.5291369}
+    - vertex: {x: -0.6144972, y: -0.640875, z: -0.46007895}
+    - vertex: {x: -0.6835551, y: -0.5291369, z: -0.5027591}
+    - vertex: {x: -0.640875, y: -0.46007895, z: -0.6144972}
+    - vertex: {x: -0.5291369, y: -0.5027591, z: -0.6835551}
+    - vertex: {x: -0.46007895, y: -0.6144972, z: -0.640875}
+    - vertex: {x: -0.24166432, y: -0.96789956, z: -0.06905791}
+    - vertex: {x: -0.24166432, y: -0.96789956, z: 0.06905791}
+    - vertex: {x: -0.3534024, y: -0.9252194, z: 0.13811584}
+    - vertex: {x: -0.46514046, y: -0.8825393, z: 0.06905793}
+    - vertex: {x: -0.46514046, y: -0.8825393, z: -0.06905793}
+    - vertex: {x: -0.3534024, y: -0.9252194, z: -0.13811584}
+    - vertex: {x: 0.24166432, y: -0.96789956, z: 0.06905791}
+    - vertex: {x: 0.24166432, y: -0.96789956, z: -0.06905791}
+    - vertex: {x: 0.3534024, y: -0.9252194, z: -0.13811584}
+    - vertex: {x: 0.46514046, y: -0.8825393, z: -0.06905793}
+    - vertex: {x: 0.46514046, y: -0.8825393, z: 0.06905793}
+    - vertex: {x: 0.3534024, y: -0.9252194, z: 0.13811584}
+    - vertex: {x: 0.5027591, y: -0.6835551, z: 0.5291369}
+    - vertex: {x: 0.6144972, y: -0.640875, z: 0.46007895}
+    - vertex: {x: 0.6835551, y: -0.5291369, z: 0.5027591}
+    - vertex: {x: 0.640875, y: -0.46007895, z: 0.6144972}
+    - vertex: {x: 0.5291369, y: -0.5027591, z: 0.6835551}
+    - vertex: {x: 0.46007895, y: -0.6144972, z: 0.640875}
+    - vertex: {x: 0.96789956, y: -0.06905791, z: 0.24166432}
+    - vertex: {x: 0.96789956, y: 0.06905791, z: 0.24166432}
+    - vertex: {x: 0.9252194, y: 0.13811584, z: 0.3534024}
+    - vertex: {x: 0.8825393, y: 0.06905793, z: 0.46514046}
+    - vertex: {x: 0.8825393, y: -0.06905793, z: 0.46514046}
+    - vertex: {x: 0.9252194, y: -0.13811584, z: 0.3534024}
+    - vertex: {x: 0.96789956, y: 0.06905791, z: -0.24166432}
+    - vertex: {x: 0.96789956, y: -0.06905791, z: -0.24166432}
+    - vertex: {x: 0.9252194, y: -0.13811584, z: -0.3534024}
+    - vertex: {x: 0.8825393, y: -0.06905793, z: -0.46514046}
+    - vertex: {x: 0.8825393, y: 0.06905793, z: -0.46514046}
+    - vertex: {x: 0.9252194, y: 0.13811584, z: -0.3534024}
+    - vertex: {x: 0.6144972, y: -0.640875, z: -0.46007895}
+    - vertex: {x: 0.5027591, y: -0.6835551, z: -0.5291369}
+    - vertex: {x: 0.46007895, y: -0.6144972, z: -0.640875}
+    - vertex: {x: 0.5291369, y: -0.5027591, z: -0.6835551}
+    - vertex: {x: 0.640875, y: -0.46007895, z: -0.6144972}
+    - vertex: {x: 0.6835551, y: -0.5291369, z: -0.5027591}
+    - vertex: {x: 0.13811584, y: -0.35340238, z: -0.9252194}
+    - vertex: {x: 0.06905793, y: -0.46514043, z: -0.8825393}
+    - vertex: {x: -0.06905793, y: -0.46514043, z: -0.8825393}
+    - vertex: {x: -0.13811584, y: -0.35340238, z: -0.9252194}
+    - vertex: {x: -0.06905791, y: -0.2416643, z: -0.96789956}
+    - vertex: {x: 0.06905791, y: -0.2416643, z: -0.96789956}
+    - vertex: {x: 0.06905793, y: 0.46514043, z: -0.8825393}
+    - vertex: {x: 0.13811584, y: 0.35340238, z: -0.9252194}
+    - vertex: {x: 0.06905791, y: 0.2416643, z: -0.96789956}
+    - vertex: {x: -0.06905791, y: 0.2416643, z: -0.96789956}
+    - vertex: {x: -0.13811584, y: 0.35340238, z: -0.9252194}
+    - vertex: {x: -0.06905793, y: 0.46514043, z: -0.8825393}
+    - vertex: {x: 0.5027591, y: 0.6835551, z: -0.5291369}
+    - vertex: {x: 0.6144972, y: 0.640875, z: -0.46007895}
+    - vertex: {x: 0.6835551, y: 0.5291369, z: -0.5027591}
+    - vertex: {x: 0.640875, y: 0.46007895, z: -0.6144972}
+    - vertex: {x: 0.5291369, y: 0.5027591, z: -0.6835551}
+    - vertex: {x: 0.46007895, y: 0.6144972, z: -0.640875}
+    - vertex: {x: 0.2416643, y: 0.96789956, z: -0.06905791}
+    - vertex: {x: 0.2416643, y: 0.96789956, z: 0.06905791}
+    - vertex: {x: 0.35340238, y: 0.9252194, z: 0.13811584}
+    - vertex: {x: 0.46514043, y: 0.8825393, z: 0.06905793}
+    - vertex: {x: 0.46514043, y: 0.8825393, z: -0.06905793}
+    - vertex: {x: 0.35340238, y: 0.9252194, z: -0.13811584}
+    - vertex: {x: 0.6144972, y: 0.640875, z: 0.46007895}
+    - vertex: {x: 0.5027591, y: 0.6835551, z: 0.5291369}
+    - vertex: {x: 0.46007895, y: 0.6144972, z: 0.640875}
+    - vertex: {x: 0.5291369, y: 0.5027591, z: 0.6835551}
+    - vertex: {x: 0.640875, y: 0.46007895, z: 0.6144972}
+    - vertex: {x: 0.6835551, y: 0.5291369, z: 0.5027591}
+    - vertex: {x: 0.13811584, y: 0.35340238, z: 0.9252194}
+    - vertex: {x: 0.06905793, y: 0.46514043, z: 0.8825393}
+    - vertex: {x: -0.06905793, y: 0.46514043, z: 0.8825393}
+    - vertex: {x: -0.13811584, y: 0.35340238, z: 0.9252194}
+    - vertex: {x: -0.06905791, y: 0.2416643, z: 0.96789956}
+    - vertex: {x: 0.06905791, y: 0.2416643, z: 0.96789956}
+    - vertex: {x: -0.5027591, y: 0.6835551, z: 0.5291369}
+    - vertex: {x: -0.6144972, y: 0.640875, z: 0.46007895}
+    - vertex: {x: -0.6835551, y: 0.5291369, z: 0.5027591}
+    - vertex: {x: -0.640875, y: 0.46007895, z: 0.6144972}
+    - vertex: {x: -0.5291369, y: 0.5027591, z: 0.6835551}
+    - vertex: {x: -0.46007895, y: 0.6144972, z: 0.640875}
+    - vertex: {x: -0.24166432, y: 0.96789956, z: 0.06905791}
+    - vertex: {x: -0.24166432, y: 0.96789956, z: -0.06905791}
+    - vertex: {x: -0.3534024, y: 0.9252194, z: -0.13811584}
+    - vertex: {x: -0.46514046, y: 0.8825393, z: -0.06905793}
+    - vertex: {x: -0.46514046, y: 0.8825393, z: 0.06905793}
+    - vertex: {x: -0.3534024, y: 0.9252194, z: 0.13811584}
+    - vertex: {x: -0.6144972, y: 0.640875, z: -0.46007895}
+    - vertex: {x: -0.5027591, y: 0.6835551, z: -0.5291369}
+    - vertex: {x: -0.46007895, y: 0.6144972, z: -0.640875}
+    - vertex: {x: -0.5291369, y: 0.5027591, z: -0.6835551}
+    - vertex: {x: -0.640875, y: 0.46007895, z: -0.6144972}
+    - vertex: {x: -0.6835551, y: 0.5291369, z: -0.5027591}
+    - vertex: {x: -0.96789956, y: -0.06905791, z: -0.24166432}
+    - vertex: {x: -0.96789956, y: 0.06905791, z: -0.24166432}
+    - vertex: {x: -0.9252194, y: 0.13811584, z: -0.3534024}
+    - vertex: {x: -0.8825393, y: 0.06905793, z: -0.46514046}
+    - vertex: {x: -0.8825393, y: -0.06905793, z: -0.46514046}
+    - vertex: {x: -0.9252194, y: -0.13811584, z: -0.3534024}
+    - vertex: {x: -0.96789956, y: 0.06905791, z: 0.24166432}
+    - vertex: {x: -0.96789956, y: -0.06905791, z: 0.24166432}
+    - vertex: {x: -0.9252194, y: -0.13811584, z: 0.3534024}
+    - vertex: {x: -0.8825393, y: -0.06905793, z: 0.46514046}
+    - vertex: {x: -0.8825393, y: 0.06905793, z: 0.46514046}
+    - vertex: {x: -0.9252194, y: 0.13811584, z: 0.3534024}
+    - vertex: {x: -0.6144972, y: -0.640875, z: 0.46007895}
+    - vertex: {x: -0.5027591, y: -0.6835551, z: 0.5291369}
+    - vertex: {x: -0.46007895, y: -0.6144972, z: 0.640875}
+    - vertex: {x: -0.5291369, y: -0.5027591, z: 0.6835551}
+    - vertex: {x: -0.640875, y: -0.46007895, z: 0.6144972}
+    - vertex: {x: -0.6835551, y: -0.5291369, z: 0.5027591}
+    - vertex: {x: 0.06905793, y: -0.46514043, z: 0.8825393}
+    - vertex: {x: 0.13811584, y: -0.35340238, z: 0.9252194}
+    - vertex: {x: 0.06905791, y: -0.2416643, z: 0.96789956}
+    - vertex: {x: -0.06905791, y: -0.2416643, z: 0.96789956}
+    - vertex: {x: -0.13811584, y: -0.35340238, z: 0.9252194}
+    - vertex: {x: -0.06905793, y: -0.46514043, z: 0.8825393}
+  facesAndNeighbors: {fileID: 11400000, guid: 4122c299efb01ac4683ab7247fed3fd0, type: 2}
+  mesh: {fileID: 4300000, guid: 248138c8746cecb46a35a13ad32ab96d, type: 2}

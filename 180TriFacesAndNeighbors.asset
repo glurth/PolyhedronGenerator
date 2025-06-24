@@ -1,0 +1,916 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4650a7e2b9c8b324ba62f6ebba736c26, type: 3}
+  m_Name: 180TriFacesAndNeighbors
+  m_EditorClassIdentifier: 
+  meshRef: {fileID: 4300000, guid: 297069cbb4d524346b91f782995ac2c3, type: 2}
+  faceDetails:
+  - index: 0
+    triangles: 00000000
+    neighborIndices: 010000000400000066000000
+    cornerVertexMeshIndices: 000000000100000002000000
+    normal: {x: -0.36648074, y: -0.1256385, z: -0.9219039}
+  - index: 1
+    triangles: 03000000
+    neighborIndices: 00000000020000003c000000
+    cornerVertexMeshIndices: 030000000400000005000000
+    normal: {x: -0.5697678, y: -0.20328727, z: -0.7962656}
+  - index: 2
+    triangles: 06000000
+    neighborIndices: 01000000030000009c000000
+    cornerVertexMeshIndices: 060000000700000008000000
+    normal: {x: -0.6954063, y: -0, z: -0.7186168}
+  - index: 3
+    triangles: 09000000
+    neighborIndices: 020000000400000096000000
+    cornerVertexMeshIndices: 090000000a0000000b000000
+    normal: {x: -0.5697678, y: 0.20328727, z: -0.7962656}
+  - index: 4
+    triangles: 0c000000
+    neighborIndices: 00000000030000006c000000
+    cornerVertexMeshIndices: 0c0000000d0000000e000000
+    normal: {x: -0.3664807, y: 0.12563851, z: -0.9219039}
+  - index: 5
+    triangles: 0f000000
+    neighborIndices: 060000000900000072000000
+    cornerVertexMeshIndices: 0f0000001000000011000000
+    normal: {x: 0.5697678, y: 0.20328727, z: -0.7962656}
+  - index: 6
+    triangles: 12000000
+    neighborIndices: 05000000070000005a000000
+    cornerVertexMeshIndices: 120000001300000014000000
+    normal: {x: 0.6954063, y: 0, z: -0.7186168}
+  - index: 7
+    triangles: 15000000
+    neighborIndices: 060000000800000060000000
+    cornerVertexMeshIndices: 150000001600000017000000
+    normal: {x: 0.5697678, y: -0.20328727, z: -0.7962656}
+  - index: 8
+    triangles: 18000000
+    neighborIndices: 070000000900000067000000
+    cornerVertexMeshIndices: 18000000190000001a000000
+    normal: {x: 0.3664807, y: -0.12563851, z: -0.9219039}
+  - index: 9
+    triangles: 1b000000
+    neighborIndices: 05000000080000006d000000
+    cornerVertexMeshIndices: 1b0000001c0000001d000000
+    normal: {x: 0.36648074, y: 0.1256385, z: -0.9219039}
+  - index: 10
+    triangles: 1e000000
+    neighborIndices: 0b0000000e00000084000000
+    cornerVertexMeshIndices: 1e0000001f00000020000000
+    normal: {x: -0.36648074, y: 0.1256385, z: 0.9219039}
+  - index: 11
+    triangles: 21000000
+    neighborIndices: 0a0000000c0000008a000000
+    cornerVertexMeshIndices: 210000002200000023000000
+    normal: {x: -0.5697678, y: 0.20328727, z: 0.7962656}
+  - index: 12
+    triangles: 24000000
+    neighborIndices: 0b0000000d000000a2000000
+    cornerVertexMeshIndices: 240000002500000026000000
+    normal: {x: -0.6954063, y: 0, z: 0.7186168}
+  - index: 13
+    triangles: 27000000
+    neighborIndices: 0c0000000e000000a8000000
+    cornerVertexMeshIndices: 270000002800000029000000
+    normal: {x: -0.5697678, y: -0.20328727, z: 0.7962656}
+  - index: 14
+    triangles: 2a000000
+    neighborIndices: 0a0000000d000000ae000000
+    cornerVertexMeshIndices: 2a0000002b0000002c000000
+    normal: {x: -0.3664807, y: -0.12563851, z: 0.9219039}
+  - index: 15
+    triangles: 2d000000
+    neighborIndices: 10000000130000004e000000
+    cornerVertexMeshIndices: 2d0000002e0000002f000000
+    normal: {x: 0.5697678, y: -0.20328727, z: 0.7962656}
+  - index: 16
+    triangles: 30000000
+    neighborIndices: 0f0000001100000054000000
+    cornerVertexMeshIndices: 300000003100000032000000
+    normal: {x: 0.6954063, y: 0, z: 0.7186168}
+  - index: 17
+    triangles: 33000000
+    neighborIndices: 10000000120000007e000000
+    cornerVertexMeshIndices: 330000003400000035000000
+    normal: {x: 0.5697678, y: 0.20328727, z: 0.7962656}
+  - index: 18
+    triangles: 36000000
+    neighborIndices: 110000001300000085000000
+    cornerVertexMeshIndices: 360000003700000038000000
+    normal: {x: 0.3664807, y: 0.12563851, z: 0.9219039}
+  - index: 19
+    triangles: 39000000
+    neighborIndices: 0f00000012000000af000000
+    cornerVertexMeshIndices: 390000003a0000003b000000
+    normal: {x: 0.36648074, y: -0.1256385, z: 0.9219039}
+  - index: 20
+    triangles: 3c000000
+    neighborIndices: 15000000180000003d000000
+    cornerVertexMeshIndices: 3c0000003d0000003e000000
+    normal: {x: -0.7962656, y: -0.5697678, z: -0.20328727}
+  - index: 21
+    triangles: 3f000000
+    neighborIndices: 140000001600000042000000
+    cornerVertexMeshIndices: 3f0000004000000041000000
+    normal: {x: -0.7186168, y: -0.6954063, z: -0}
+  - index: 22
+    triangles: 42000000
+    neighborIndices: 1500000017000000a9000000
+    cornerVertexMeshIndices: 420000004300000044000000
+    normal: {x: -0.7962656, y: -0.5697678, z: 0.20328727}
+  - index: 23
+    triangles: 45000000
+    neighborIndices: 1600000018000000a3000000
+    cornerVertexMeshIndices: 450000004600000047000000
+    normal: {x: -0.9219039, y: -0.3664807, z: 0.12563851}
+  - index: 24
+    triangles: 48000000
+    neighborIndices: 14000000170000009d000000
+    cornerVertexMeshIndices: 48000000490000004a000000
+    normal: {x: -0.9219039, y: -0.36648074, z: -0.1256385}
+  - index: 25
+    triangles: 4b000000
+    neighborIndices: 1a0000001d000000a4000000
+    cornerVertexMeshIndices: 4b0000004c0000004d000000
+    normal: {x: -0.9219039, y: 0.36648074, z: 0.1256385}
+  - index: 26
+    triangles: 4e000000
+    neighborIndices: 190000001b0000008b000000
+    cornerVertexMeshIndices: 4e0000004f00000050000000
+    normal: {x: -0.7962656, y: 0.5697678, z: 0.20328727}
+  - index: 27
+    triangles: 51000000
+    neighborIndices: 1a0000001c00000090000000
+    cornerVertexMeshIndices: 510000005200000053000000
+    normal: {x: -0.7186168, y: 0.6954063, z: 0}
+  - index: 28
+    triangles: 54000000
+    neighborIndices: 1b0000001d00000097000000
+    cornerVertexMeshIndices: 540000005500000056000000
+    normal: {x: -0.7962656, y: 0.5697678, z: -0.20328727}
+  - index: 29
+    triangles: 57000000
+    neighborIndices: 190000001c0000009e000000
+    cornerVertexMeshIndices: 570000005800000059000000
+    normal: {x: -0.9219039, y: 0.3664807, z: -0.12563851}
+  - index: 30
+    triangles: 5a000000
+    neighborIndices: 1f0000002200000048000000
+    cornerVertexMeshIndices: 5a0000005b0000005c000000
+    normal: {x: 0.7186168, y: -0.6954063, z: 0}
+  - index: 31
+    triangles: 5d000000
+    neighborIndices: 1e0000002000000061000000
+    cornerVertexMeshIndices: 5d0000005e0000005f000000
+    normal: {x: 0.7962656, y: -0.5697678, z: -0.20328727}
+  - index: 32
+    triangles: 60000000
+    neighborIndices: 1f000000210000005b000000
+    cornerVertexMeshIndices: 600000006100000062000000
+    normal: {x: 0.9219039, y: -0.3664807, z: -0.12563851}
+  - index: 33
+    triangles: 63000000
+    neighborIndices: 200000002200000055000000
+    cornerVertexMeshIndices: 630000006400000065000000
+    normal: {x: 0.9219039, y: -0.36648074, z: 0.1256385}
+  - index: 34
+    triangles: 66000000
+    neighborIndices: 1e000000210000004f000000
+    cornerVertexMeshIndices: 660000006700000068000000
+    normal: {x: 0.7962656, y: -0.5697678, z: 0.20328727}
+  - index: 35
+    triangles: 69000000
+    neighborIndices: 240000002700000056000000
+    cornerVertexMeshIndices: 690000006a0000006b000000
+    normal: {x: 0.92190397, y: 0.36648053, z: 0.12563862}
+  - index: 36
+    triangles: 6c000000
+    neighborIndices: 23000000250000005c000000
+    cornerVertexMeshIndices: 6c0000006d0000006e000000
+    normal: {x: 0.92190397, y: 0.36648056, z: -0.12563862}
+  - index: 37
+    triangles: 6f000000
+    neighborIndices: 240000002600000073000000
+    cornerVertexMeshIndices: 6f0000007000000071000000
+    normal: {x: 0.79626554, y: 0.56976783, z: -0.20328742}
+  - index: 38
+    triangles: 72000000
+    neighborIndices: 250000002700000078000000
+    cornerVertexMeshIndices: 720000007300000074000000
+    normal: {x: 0.71861666, y: 0.6954064, z: 0}
+  - index: 39
+    triangles: 75000000
+    neighborIndices: 23000000260000007f000000
+    cornerVertexMeshIndices: 750000007600000077000000
+    normal: {x: 0.79626554, y: 0.56976783, z: 0.20328742}
+  - index: 40
+    triangles: 78000000
+    neighborIndices: 290000002c0000003e000000
+    cornerVertexMeshIndices: 78000000790000007a000000
+    normal: {x: -0.20328727, y: -0.7962656, z: -0.5697678}
+  - index: 41
+    triangles: 7b000000
+    neighborIndices: 280000002a00000068000000
+    cornerVertexMeshIndices: 7b0000007c0000007d000000
+    normal: {x: -0, y: -0.7186168, z: -0.6954063}
+  - index: 42
+    triangles: 7e000000
+    neighborIndices: 290000002b00000062000000
+    cornerVertexMeshIndices: 7e0000007f00000080000000
+    normal: {x: 0.20328727, y: -0.7962656, z: -0.5697678}
+  - index: 43
+    triangles: 81000000
+    neighborIndices: 2a0000002c00000049000000
+    cornerVertexMeshIndices: 810000008200000083000000
+    normal: {x: 0.12563851, y: -0.9219039, z: -0.3664807}
+  - index: 44
+    triangles: 84000000
+    neighborIndices: 280000002b00000043000000
+    cornerVertexMeshIndices: 840000008500000086000000
+    normal: {x: -0.1256385, y: -0.9219039, z: -0.36648074}
+  - index: 45
+    triangles: 87000000
+    neighborIndices: 2e0000003100000044000000
+    cornerVertexMeshIndices: 870000008800000089000000
+    normal: {x: -0.12563862, y: -0.92190397, z: 0.36648053}
+  - index: 46
+    triangles: 8a000000
+    neighborIndices: 2d0000002f0000004a000000
+    cornerVertexMeshIndices: 8a0000008b0000008c000000
+    normal: {x: 0.12563862, y: -0.92190397, z: 0.36648056}
+  - index: 47
+    triangles: 8d000000
+    neighborIndices: 2e0000003000000050000000
+    cornerVertexMeshIndices: 8d0000008e0000008f000000
+    normal: {x: 0.20328742, y: -0.79626554, z: 0.56976783}
+  - index: 48
+    triangles: 90000000
+    neighborIndices: 2f00000031000000b0000000
+    cornerVertexMeshIndices: 900000009100000092000000
+    normal: {x: 0, y: -0.71861666, z: 0.6954064}
+  - index: 49
+    triangles: 93000000
+    neighborIndices: 2d00000030000000aa000000
+    cornerVertexMeshIndices: 930000009400000095000000
+    normal: {x: -0.20328742, y: -0.79626554, z: 0.56976783}
+  - index: 50
+    triangles: 96000000
+    neighborIndices: 33000000360000006e000000
+    cornerVertexMeshIndices: 960000009700000098000000
+    normal: {x: 0, y: 0.7186168, z: -0.6954063}
+  - index: 51
+    triangles: 99000000
+    neighborIndices: 320000003400000098000000
+    cornerVertexMeshIndices: 990000009a0000009b000000
+    normal: {x: -0.20328727, y: 0.7962656, z: -0.5697678}
+  - index: 52
+    triangles: 9c000000
+    neighborIndices: 330000003500000091000000
+    cornerVertexMeshIndices: 9c0000009d0000009e000000
+    normal: {x: -0.12563851, y: 0.9219039, z: -0.3664807}
+  - index: 53
+    triangles: 9f000000
+    neighborIndices: 340000003600000079000000
+    cornerVertexMeshIndices: 9f000000a0000000a1000000
+    normal: {x: 0.1256385, y: 0.9219039, z: -0.36648074}
+  - index: 54
+    triangles: a2000000
+    neighborIndices: 320000003500000074000000
+    cornerVertexMeshIndices: a2000000a3000000a4000000
+    normal: {x: 0.20328727, y: 0.7962656, z: -0.5697678}
+  - index: 55
+    triangles: a5000000
+    neighborIndices: 380000003b0000007a000000
+    cornerVertexMeshIndices: a5000000a6000000a7000000
+    normal: {x: 0.12563862, y: 0.92190397, z: 0.36648053}
+  - index: 56
+    triangles: a8000000
+    neighborIndices: 370000003900000092000000
+    cornerVertexMeshIndices: a8000000a9000000aa000000
+    normal: {x: -0.12563862, y: 0.92190397, z: 0.36648056}
+  - index: 57
+    triangles: ab000000
+    neighborIndices: 380000003a0000008c000000
+    cornerVertexMeshIndices: ab000000ac000000ad000000
+    normal: {x: -0.20328742, y: 0.79626554, z: 0.56976783}
+  - index: 58
+    triangles: ae000000
+    neighborIndices: 390000003b00000086000000
+    cornerVertexMeshIndices: ae000000af000000b0000000
+    normal: {x: 0, y: 0.71861666, z: 0.6954064}
+  - index: 59
+    triangles: b1000000
+    neighborIndices: 370000003a00000080000000
+    cornerVertexMeshIndices: b1000000b2000000b3000000
+    normal: {x: 0.20328742, y: 0.79626554, z: 0.56976783}
+  - index: 60
+    triangles: b4000000
+    neighborIndices: 010000004000000041000000
+    cornerVertexMeshIndices: b4000000b5000000b6000000
+    normal: {x: -0.587051, y: -0.3822914, z: -0.71359956}
+  - index: 61
+    triangles: b7000000
+    neighborIndices: 140000003f00000040000000
+    cornerVertexMeshIndices: b7000000b8000000b9000000
+    normal: {x: -0.71359956, y: -0.587051, z: -0.3822914}
+  - index: 62
+    triangles: ba000000
+    neighborIndices: 28000000410000003f000000
+    cornerVertexMeshIndices: ba000000bb000000bc000000
+    normal: {x: -0.3822914, y: -0.71359956, z: -0.587051}
+  - index: 63
+    triangles: bd000000
+    neighborIndices: 3d0000003e00000045000000
+    cornerVertexMeshIndices: bd000000be000000bf000000
+    normal: {x: -0.53491014, y: -0.73967, z: -0.40836188}
+  - index: 64
+    triangles: c0000000
+    neighborIndices: 3c0000003d0000009f000000
+    cornerVertexMeshIndices: c0000000c1000000c2000000
+    normal: {x: -0.73967, y: -0.40836188, z: -0.53491014}
+  - index: 65
+    triangles: c3000000
+    neighborIndices: 3c0000003e00000069000000
+    cornerVertexMeshIndices: c3000000c4000000c5000000
+    normal: {x: -0.40836188, y: -0.53491014, z: -0.73967}
+  - index: 66
+    triangles: c6000000
+    neighborIndices: 150000004700000045000000
+    cornerVertexMeshIndices: c6000000c7000000c8000000
+    normal: {x: -0.5675773, y: -0.8233201, z: 0}
+  - index: 67
+    triangles: c9000000
+    neighborIndices: 2c0000004500000046000000
+    cornerVertexMeshIndices: c9000000ca000000cb000000
+    normal: {x: -0.23626901, y: -0.9498686, z: -0.20475988}
+  - index: 68
+    triangles: cc000000
+    neighborIndices: 2d0000004600000047000000
+    cornerVertexMeshIndices: cc000000cd000000ce000000
+    normal: {x: -0.23626901, y: -0.9498686, z: 0.20475988}
+  - index: 69
+    triangles: cf000000
+    neighborIndices: 3f0000004200000043000000
+    cornerVertexMeshIndices: cf000000d0000000d1000000
+    normal: {x: -0.45714116, y: -0.865503, z: -0.20475991}
+  - index: 70
+    triangles: d2000000
+    neighborIndices: 43000000440000004b000000
+    cornerVertexMeshIndices: d2000000d3000000d4000000
+    normal: {x: -0.1258329, y: -0.9920514, z: -0}
+  - index: 71
+    triangles: d5000000
+    neighborIndices: 4200000044000000ab000000
+    cornerVertexMeshIndices: d5000000d6000000d7000000
+    normal: {x: -0.45714116, y: -0.865503, z: 0.20475991}
+  - index: 72
+    triangles: d8000000
+    neighborIndices: 1e0000004c0000004d000000
+    cornerVertexMeshIndices: d8000000d9000000da000000
+    normal: {x: 0.5675773, y: -0.8233201, z: 0}
+  - index: 73
+    triangles: db000000
+    neighborIndices: 2b0000004b0000004c000000
+    cornerVertexMeshIndices: db000000dc000000dd000000
+    normal: {x: 0.23626901, y: -0.9498686, z: -0.20475988}
+  - index: 74
+    triangles: de000000
+    neighborIndices: 2e0000004d0000004b000000
+    cornerVertexMeshIndices: de000000df000000e0000000
+    normal: {x: 0.23626901, y: -0.9498686, z: 0.20475988}
+  - index: 75
+    triangles: e1000000
+    neighborIndices: 46000000490000004a000000
+    cornerVertexMeshIndices: e1000000e2000000e3000000
+    normal: {x: 0.1258329, y: -0.9920514, z: 0}
+  - index: 76
+    triangles: e4000000
+    neighborIndices: 480000004900000063000000
+    cornerVertexMeshIndices: e4000000e5000000e6000000
+    normal: {x: 0.45714116, y: -0.865503, z: -0.20475991}
+  - index: 77
+    triangles: e7000000
+    neighborIndices: 480000004a00000051000000
+    cornerVertexMeshIndices: e7000000e8000000e9000000
+    normal: {x: 0.45714116, y: -0.865503, z: 0.20475991}
+  - index: 78
+    triangles: ea000000
+    neighborIndices: 0f0000005200000053000000
+    cornerVertexMeshIndices: ea000000eb000000ec000000
+    normal: {x: 0.587051, y: -0.3822914, z: 0.71359956}
+  - index: 79
+    triangles: ed000000
+    neighborIndices: 220000005100000052000000
+    cornerVertexMeshIndices: ed000000ee000000ef000000
+    normal: {x: 0.71359956, y: -0.587051, z: 0.3822914}
+  - index: 80
+    triangles: f0000000
+    neighborIndices: 2f0000005300000051000000
+    cornerVertexMeshIndices: f0000000f1000000f2000000
+    normal: {x: 0.3822914, y: -0.71359956, z: 0.587051}
+  - index: 81
+    triangles: f3000000
+    neighborIndices: 4d0000004f00000050000000
+    cornerVertexMeshIndices: f3000000f4000000f5000000
+    normal: {x: 0.53491014, y: -0.73967, z: 0.40836188}
+  - index: 82
+    triangles: f6000000
+    neighborIndices: 4e0000004f00000057000000
+    cornerVertexMeshIndices: f6000000f7000000f8000000
+    normal: {x: 0.73967, y: -0.40836188, z: 0.53491014}
+  - index: 83
+    triangles: f9000000
+    neighborIndices: 4e00000050000000b1000000
+    cornerVertexMeshIndices: f9000000fa000000fb000000
+    normal: {x: 0.40836188, y: -0.53491014, z: 0.73967}
+  - index: 84
+    triangles: fc000000
+    neighborIndices: 100000005900000057000000
+    cornerVertexMeshIndices: fc000000fd000000fe000000
+    normal: {x: 0.8233201, y: 0, z: 0.5675773}
+  - index: 85
+    triangles: ff000000
+    neighborIndices: 210000005700000058000000
+    cornerVertexMeshIndices: ff0000000001000001010000
+    normal: {x: 0.9498686, y: -0.20475988, z: 0.23626901}
+  - index: 86
+    triangles: 02010000
+    neighborIndices: 230000005800000059000000
+    cornerVertexMeshIndices: 020100000301000004010000
+    normal: {x: 0.9498686, y: 0.20475988, z: 0.23626901}
+  - index: 87
+    triangles: 05010000
+    neighborIndices: 520000005400000055000000
+    cornerVertexMeshIndices: 050100000601000007010000
+    normal: {x: 0.865503, y: -0.20475991, z: 0.45714116}
+  - index: 88
+    triangles: 08010000
+    neighborIndices: 55000000560000005d000000
+    cornerVertexMeshIndices: 08010000090100000a010000
+    normal: {x: 0.9920514, y: 0, z: 0.1258329}
+  - index: 89
+    triangles: 0b010000
+    neighborIndices: 540000005600000081000000
+    cornerVertexMeshIndices: 0b0100000c0100000d010000
+    normal: {x: 0.865503, y: 0.20475991, z: 0.45714116}
+  - index: 90
+    triangles: 0e010000
+    neighborIndices: 060000005e0000005f000000
+    cornerVertexMeshIndices: 0e0100000f01000010010000
+    normal: {x: 0.8233201, y: 0, z: -0.5675773}
+  - index: 91
+    triangles: 11010000
+    neighborIndices: 200000005d0000005e000000
+    cornerVertexMeshIndices: 110100001201000013010000
+    normal: {x: 0.9498686, y: -0.20475988, z: -0.23626901}
+  - index: 92
+    triangles: 14010000
+    neighborIndices: 240000005f0000005d000000
+    cornerVertexMeshIndices: 140100001501000016010000
+    normal: {x: 0.9498686, y: 0.20475988, z: -0.23626901}
+  - index: 93
+    triangles: 17010000
+    neighborIndices: 580000005b0000005c000000
+    cornerVertexMeshIndices: 170100001801000019010000
+    normal: {x: 0.9920514, y: 0, z: -0.1258329}
+  - index: 94
+    triangles: 1a010000
+    neighborIndices: 5a0000005b00000064000000
+    cornerVertexMeshIndices: 1a0100001b0100001c010000
+    normal: {x: 0.865503, y: -0.20475991, z: -0.45714116}
+  - index: 95
+    triangles: 1d010000
+    neighborIndices: 5a0000005c00000075000000
+    cornerVertexMeshIndices: 1d0100001e0100001f010000
+    normal: {x: 0.865503, y: 0.20475991, z: -0.45714116}
+  - index: 96
+    triangles: 20010000
+    neighborIndices: 070000006500000064000000
+    cornerVertexMeshIndices: 200100002101000022010000
+    normal: {x: 0.587051, y: -0.3822914, z: -0.71359956}
+  - index: 97
+    triangles: 23010000
+    neighborIndices: 1f0000006400000063000000
+    cornerVertexMeshIndices: 230100002401000025010000
+    normal: {x: 0.71359956, y: -0.587051, z: -0.3822914}
+  - index: 98
+    triangles: 26010000
+    neighborIndices: 2a0000006300000065000000
+    cornerVertexMeshIndices: 260100002701000028010000
+    normal: {x: 0.3822914, y: -0.71359956, z: -0.587051}
+  - index: 99
+    triangles: 29010000
+    neighborIndices: 4c0000006100000062000000
+    cornerVertexMeshIndices: 290100002a0100002b010000
+    normal: {x: 0.53491014, y: -0.73967, z: -0.40836188}
+  - index: 100
+    triangles: 2c010000
+    neighborIndices: 5e0000006000000061000000
+    cornerVertexMeshIndices: 2c0100002d0100002e010000
+    normal: {x: 0.73967, y: -0.40836188, z: -0.53491014}
+  - index: 101
+    triangles: 2f010000
+    neighborIndices: 60000000620000006a000000
+    cornerVertexMeshIndices: 2f0100003001000031010000
+    normal: {x: 0.40836188, y: -0.53491014, z: -0.73967}
+  - index: 102
+    triangles: 32010000
+    neighborIndices: 00000000690000006b000000
+    cornerVertexMeshIndices: 320100003301000034010000
+    normal: {x: -0.20475988, y: -0.23626904, z: -0.9498686}
+  - index: 103
+    triangles: 35010000
+    neighborIndices: 080000006b0000006a000000
+    cornerVertexMeshIndices: 350100003601000037010000
+    normal: {x: 0.20475988, y: -0.23626904, z: -0.9498686}
+  - index: 104
+    triangles: 38010000
+    neighborIndices: 290000006a00000069000000
+    cornerVertexMeshIndices: 38010000390100003a010000
+    normal: {x: 0, y: -0.56757724, z: -0.8233201}
+  - index: 105
+    triangles: 3b010000
+    neighborIndices: 410000006600000068000000
+    cornerVertexMeshIndices: 3b0100003c0100003d010000
+    normal: {x: -0.20475987, y: -0.45714113, z: -0.865503}
+  - index: 106
+    triangles: 3e010000
+    neighborIndices: 650000006700000068000000
+    cornerVertexMeshIndices: 3e0100003f01000040010000
+    normal: {x: 0.20475987, y: -0.45714113, z: -0.865503}
+  - index: 107
+    triangles: 41010000
+    neighborIndices: 66000000670000006f000000
+    cornerVertexMeshIndices: 410100004201000043010000
+    normal: {x: -0, y: -0.12583292, z: -0.9920514}
+  - index: 108
+    triangles: 44010000
+    neighborIndices: 040000006f00000071000000
+    cornerVertexMeshIndices: 440100004501000046010000
+    normal: {x: -0.20475988, y: 0.23626904, z: -0.9498686}
+  - index: 109
+    triangles: 47010000
+    neighborIndices: 09000000700000006f000000
+    cornerVertexMeshIndices: 470100004801000049010000
+    normal: {x: 0.20475988, y: 0.23626904, z: -0.9498686}
+  - index: 110
+    triangles: 4a010000
+    neighborIndices: 320000007100000070000000
+    cornerVertexMeshIndices: 4a0100004b0100004c010000
+    normal: {x: 0, y: 0.56757724, z: -0.8233201}
+  - index: 111
+    triangles: 4d010000
+    neighborIndices: 6b0000006c0000006d000000
+    cornerVertexMeshIndices: 4d0100004e0100004f010000
+    normal: {x: 0, y: 0.12583292, z: -0.9920514}
+  - index: 112
+    triangles: 50010000
+    neighborIndices: 6d0000006e00000076000000
+    cornerVertexMeshIndices: 500100005101000052010000
+    normal: {x: 0.20475987, y: 0.45714113, z: -0.865503}
+  - index: 113
+    triangles: 53010000
+    neighborIndices: 6c0000006e00000099000000
+    cornerVertexMeshIndices: 530100005401000055010000
+    normal: {x: -0.20475987, y: 0.45714113, z: -0.865503}
+  - index: 114
+    triangles: 56010000
+    neighborIndices: 050000007500000076000000
+    cornerVertexMeshIndices: 560100005701000058010000
+    normal: {x: 0.587051, y: 0.3822914, z: -0.71359956}
+  - index: 115
+    triangles: 59010000
+    neighborIndices: 250000007700000075000000
+    cornerVertexMeshIndices: 590100005a0100005b010000
+    normal: {x: 0.71359956, y: 0.587051, z: -0.3822914}
+  - index: 116
+    triangles: 5c010000
+    neighborIndices: 360000007600000077000000
+    cornerVertexMeshIndices: 5c0100005d0100005e010000
+    normal: {x: 0.3822914, y: 0.71359956, z: -0.587051}
+  - index: 117
+    triangles: 5f010000
+    neighborIndices: 5f0000007200000073000000
+    cornerVertexMeshIndices: 5f0100006001000061010000
+    normal: {x: 0.73967, y: 0.40836188, z: -0.53491014}
+  - index: 118
+    triangles: 62010000
+    neighborIndices: 700000007200000074000000
+    cornerVertexMeshIndices: 620100006301000064010000
+    normal: {x: 0.40836188, y: 0.53491014, z: -0.73967}
+  - index: 119
+    triangles: 65010000
+    neighborIndices: 73000000740000007b000000
+    cornerVertexMeshIndices: 650100006601000067010000
+    normal: {x: 0.53491014, y: 0.73967, z: -0.40836188}
+  - index: 120
+    triangles: 68010000
+    neighborIndices: 260000007d0000007b000000
+    cornerVertexMeshIndices: 68010000690100006a010000
+    normal: {x: 0.56757724, y: 0.8233201, z: 0}
+  - index: 121
+    triangles: 6b010000
+    neighborIndices: 350000007b0000007c000000
+    cornerVertexMeshIndices: 6b0100006c0100006d010000
+    normal: {x: 0.23626904, y: 0.9498686, z: -0.20475988}
+  - index: 122
+    triangles: 6e010000
+    neighborIndices: 370000007c0000007d000000
+    cornerVertexMeshIndices: 6e0100006f01000070010000
+    normal: {x: 0.23626904, y: 0.9498686, z: 0.20475988}
+  - index: 123
+    triangles: 71010000
+    neighborIndices: 770000007800000079000000
+    cornerVertexMeshIndices: 710100007201000073010000
+    normal: {x: 0.45714113, y: 0.865503, z: -0.20475987}
+  - index: 124
+    triangles: 74010000
+    neighborIndices: 790000007a00000093000000
+    cornerVertexMeshIndices: 740100007501000076010000
+    normal: {x: 0.12583292, y: 0.9920514, z: 0}
+  - index: 125
+    triangles: 77010000
+    neighborIndices: 780000007a00000082000000
+    cornerVertexMeshIndices: 770100007801000079010000
+    normal: {x: 0.45714113, y: 0.865503, z: 0.20475987}
+  - index: 126
+    triangles: 7a010000
+    neighborIndices: 110000008300000081000000
+    cornerVertexMeshIndices: 7a0100007b0100007c010000
+    normal: {x: 0.587051, y: 0.3822914, z: 0.71359956}
+  - index: 127
+    triangles: 7d010000
+    neighborIndices: 270000008100000082000000
+    cornerVertexMeshIndices: 7d0100007e0100007f010000
+    normal: {x: 0.71359956, y: 0.587051, z: 0.3822914}
+  - index: 128
+    triangles: 80010000
+    neighborIndices: 3b0000008200000083000000
+    cornerVertexMeshIndices: 800100008101000082010000
+    normal: {x: 0.3822914, y: 0.71359956, z: 0.587051}
+  - index: 129
+    triangles: 83010000
+    neighborIndices: 590000007e0000007f000000
+    cornerVertexMeshIndices: 830100008401000085010000
+    normal: {x: 0.73967, y: 0.40836188, z: 0.53491014}
+  - index: 130
+    triangles: 86010000
+    neighborIndices: 7d0000007f00000080000000
+    cornerVertexMeshIndices: 860100008701000088010000
+    normal: {x: 0.53491014, y: 0.73967, z: 0.40836188}
+  - index: 131
+    triangles: 89010000
+    neighborIndices: 7e0000008000000087000000
+    cornerVertexMeshIndices: 890100008a0100008b010000
+    normal: {x: 0.40836188, y: 0.53491014, z: 0.73967}
+  - index: 132
+    triangles: 8c010000
+    neighborIndices: 0a0000008800000089000000
+    cornerVertexMeshIndices: 8c0100008d0100008e010000
+    normal: {x: -0.20475988, y: 0.23626904, z: 0.9498686}
+  - index: 133
+    triangles: 8f010000
+    neighborIndices: 120000008900000087000000
+    cornerVertexMeshIndices: 8f0100009001000091010000
+    normal: {x: 0.20475988, y: 0.23626904, z: 0.9498686}
+  - index: 134
+    triangles: 92010000
+    neighborIndices: 3a0000008700000088000000
+    cornerVertexMeshIndices: 920100009301000094010000
+    normal: {x: 0, y: 0.56757724, z: 0.8233201}
+  - index: 135
+    triangles: 95010000
+    neighborIndices: 830000008500000086000000
+    cornerVertexMeshIndices: 950100009601000097010000
+    normal: {x: 0.20475987, y: 0.45714113, z: 0.865503}
+  - index: 136
+    triangles: 98010000
+    neighborIndices: 84000000860000008d000000
+    cornerVertexMeshIndices: 98010000990100009a010000
+    normal: {x: -0.20475987, y: 0.45714113, z: 0.865503}
+  - index: 137
+    triangles: 9b010000
+    neighborIndices: 8400000085000000b2000000
+    cornerVertexMeshIndices: 9b0100009c0100009d010000
+    normal: {x: 0, y: 0.12583292, z: 0.9920514}
+  - index: 138
+    triangles: 9e010000
+    neighborIndices: 0b0000008f0000008d000000
+    cornerVertexMeshIndices: 9e0100009f010000a0010000
+    normal: {x: -0.587051, y: 0.3822914, z: 0.71359956}
+  - index: 139
+    triangles: a1010000
+    neighborIndices: 1a0000008e0000008f000000
+    cornerVertexMeshIndices: a1010000a2010000a3010000
+    normal: {x: -0.71359956, y: 0.587051, z: 0.3822914}
+  - index: 140
+    triangles: a4010000
+    neighborIndices: 390000008d0000008e000000
+    cornerVertexMeshIndices: a4010000a5010000a6010000
+    normal: {x: -0.3822914, y: 0.71359956, z: 0.587051}
+  - index: 141
+    triangles: a7010000
+    neighborIndices: 880000008a0000008c000000
+    cornerVertexMeshIndices: a7010000a8010000a9010000
+    normal: {x: -0.40836188, y: 0.53491014, z: 0.73967}
+  - index: 142
+    triangles: aa010000
+    neighborIndices: 8b0000008c00000094000000
+    cornerVertexMeshIndices: aa010000ab010000ac010000
+    normal: {x: -0.53491014, y: 0.73967, z: 0.40836188}
+  - index: 143
+    triangles: ad010000
+    neighborIndices: 8a0000008b000000a5000000
+    cornerVertexMeshIndices: ad010000ae010000af010000
+    normal: {x: -0.73967, y: 0.40836188, z: 0.53491014}
+  - index: 144
+    triangles: b0010000
+    neighborIndices: 1b0000009500000094000000
+    cornerVertexMeshIndices: b0010000b1010000b2010000
+    normal: {x: -0.5675773, y: 0.8233201, z: 0}
+  - index: 145
+    triangles: b3010000
+    neighborIndices: 340000009300000095000000
+    cornerVertexMeshIndices: b3010000b4010000b5010000
+    normal: {x: -0.23626901, y: 0.9498686, z: -0.20475988}
+  - index: 146
+    triangles: b6010000
+    neighborIndices: 380000009400000093000000
+    cornerVertexMeshIndices: b6010000b7010000b8010000
+    normal: {x: -0.23626901, y: 0.9498686, z: 0.20475988}
+  - index: 147
+    triangles: b9010000
+    neighborIndices: 7c0000009100000092000000
+    cornerVertexMeshIndices: b9010000ba010000bb010000
+    normal: {x: -0.1258329, y: 0.9920514, z: 0}
+  - index: 148
+    triangles: bc010000
+    neighborIndices: 8e0000009000000092000000
+    cornerVertexMeshIndices: bc010000bd010000be010000
+    normal: {x: -0.45714116, y: 0.865503, z: 0.20475991}
+  - index: 149
+    triangles: bf010000
+    neighborIndices: 90000000910000009a000000
+    cornerVertexMeshIndices: bf010000c0010000c1010000
+    normal: {x: -0.45714116, y: 0.865503, z: -0.20475991}
+  - index: 150
+    triangles: c2010000
+    neighborIndices: 03000000990000009b000000
+    cornerVertexMeshIndices: c2010000c3010000c4010000
+    normal: {x: -0.587051, y: 0.3822914, z: -0.71359956}
+  - index: 151
+    triangles: c5010000
+    neighborIndices: 1c0000009b0000009a000000
+    cornerVertexMeshIndices: c5010000c6010000c7010000
+    normal: {x: -0.71359956, y: 0.587051, z: -0.3822914}
+  - index: 152
+    triangles: c8010000
+    neighborIndices: 330000009a00000099000000
+    cornerVertexMeshIndices: c8010000c9010000ca010000
+    normal: {x: -0.3822914, y: 0.71359956, z: -0.587051}
+  - index: 153
+    triangles: cb010000
+    neighborIndices: 710000009600000098000000
+    cornerVertexMeshIndices: cb010000cc010000cd010000
+    normal: {x: -0.40836188, y: 0.53491014, z: -0.73967}
+  - index: 154
+    triangles: ce010000
+    neighborIndices: 950000009700000098000000
+    cornerVertexMeshIndices: ce010000cf010000d0010000
+    normal: {x: -0.53491014, y: 0.73967, z: -0.40836188}
+  - index: 155
+    triangles: d1010000
+    neighborIndices: 9600000097000000a0000000
+    cornerVertexMeshIndices: d1010000d2010000d3010000
+    normal: {x: -0.73967, y: 0.40836188, z: -0.53491014}
+  - index: 156
+    triangles: d4010000
+    neighborIndices: 02000000a00000009f000000
+    cornerVertexMeshIndices: d4010000d5010000d6010000
+    normal: {x: -0.8233201, y: 0, z: -0.5675773}
+  - index: 157
+    triangles: d7010000
+    neighborIndices: 180000009f000000a1000000
+    cornerVertexMeshIndices: d7010000d8010000d9010000
+    normal: {x: -0.9498686, y: -0.20475988, z: -0.23626901}
+  - index: 158
+    triangles: da010000
+    neighborIndices: 1d000000a1000000a0000000
+    cornerVertexMeshIndices: da010000db010000dc010000
+    normal: {x: -0.9498686, y: 0.20475988, z: -0.23626901}
+  - index: 159
+    triangles: dd010000
+    neighborIndices: 400000009c0000009d000000
+    cornerVertexMeshIndices: dd010000de010000df010000
+    normal: {x: -0.865503, y: -0.20475991, z: -0.45714116}
+  - index: 160
+    triangles: e0010000
+    neighborIndices: 9b0000009c0000009e000000
+    cornerVertexMeshIndices: e0010000e1010000e2010000
+    normal: {x: -0.865503, y: 0.20475991, z: -0.45714116}
+  - index: 161
+    triangles: e3010000
+    neighborIndices: 9d0000009e000000a6000000
+    cornerVertexMeshIndices: e3010000e4010000e5010000
+    normal: {x: -0.9920514, y: -0, z: -0.1258329}
+  - index: 162
+    triangles: e6010000
+    neighborIndices: 0c000000a7000000a5000000
+    cornerVertexMeshIndices: e6010000e7010000e8010000
+    normal: {x: -0.8233201, y: 0, z: 0.5675773}
+  - index: 163
+    triangles: e9010000
+    neighborIndices: 17000000a6000000a7000000
+    cornerVertexMeshIndices: e9010000ea010000eb010000
+    normal: {x: -0.9498686, y: -0.20475988, z: 0.23626901}
+  - index: 164
+    triangles: ec010000
+    neighborIndices: 19000000a5000000a6000000
+    cornerVertexMeshIndices: ec010000ed010000ee010000
+    normal: {x: -0.9498686, y: 0.20475988, z: 0.23626901}
+  - index: 165
+    triangles: ef010000
+    neighborIndices: 8f000000a2000000a4000000
+    cornerVertexMeshIndices: ef010000f0010000f1010000
+    normal: {x: -0.865503, y: 0.20475991, z: 0.45714116}
+  - index: 166
+    triangles: f2010000
+    neighborIndices: a1000000a3000000a4000000
+    cornerVertexMeshIndices: f2010000f3010000f4010000
+    normal: {x: -0.9920514, y: 0, z: 0.1258329}
+  - index: 167
+    triangles: f5010000
+    neighborIndices: a2000000a3000000ac000000
+    cornerVertexMeshIndices: f5010000f6010000f7010000
+    normal: {x: -0.865503, y: -0.20475991, z: 0.45714116}
+  - index: 168
+    triangles: f8010000
+    neighborIndices: 0d000000ad000000ac000000
+    cornerVertexMeshIndices: f8010000f9010000fa010000
+    normal: {x: -0.587051, y: -0.3822914, z: 0.71359956}
+  - index: 169
+    triangles: fb010000
+    neighborIndices: 16000000ac000000ab000000
+    cornerVertexMeshIndices: fb010000fc010000fd010000
+    normal: {x: -0.71359956, y: -0.587051, z: 0.3822914}
+  - index: 170
+    triangles: fe010000
+    neighborIndices: 31000000ab000000ad000000
+    cornerVertexMeshIndices: fe010000ff01000000020000
+    normal: {x: -0.3822914, y: -0.71359956, z: 0.587051}
+  - index: 171
+    triangles: 01020000
+    neighborIndices: 47000000a9000000aa000000
+    cornerVertexMeshIndices: 010200000202000003020000
+    normal: {x: -0.53491014, y: -0.73967, z: 0.40836188}
+  - index: 172
+    triangles: 04020000
+    neighborIndices: a7000000a8000000a9000000
+    cornerVertexMeshIndices: 040200000502000006020000
+    normal: {x: -0.73967, y: -0.40836188, z: 0.53491014}
+  - index: 173
+    triangles: 07020000
+    neighborIndices: a8000000aa000000b3000000
+    cornerVertexMeshIndices: 070200000802000009020000
+    normal: {x: -0.40836188, y: -0.53491014, z: 0.73967}
+  - index: 174
+    triangles: 0a020000
+    neighborIndices: 0e000000b2000000b3000000
+    cornerVertexMeshIndices: 0a0200000b0200000c020000
+    normal: {x: -0.20475988, y: -0.23626904, z: 0.9498686}
+  - index: 175
+    triangles: 0d020000
+    neighborIndices: 13000000b1000000b2000000
+    cornerVertexMeshIndices: 0d0200000e0200000f020000
+    normal: {x: 0.20475988, y: -0.23626904, z: 0.9498686}
+  - index: 176
+    triangles: 10020000
+    neighborIndices: 30000000b3000000b1000000
+    cornerVertexMeshIndices: 100200001102000012020000
+    normal: {x: 0, y: -0.56757724, z: 0.8233201}
+  - index: 177
+    triangles: 13020000
+    neighborIndices: 53000000af000000b0000000
+    cornerVertexMeshIndices: 130200001402000015020000
+    normal: {x: 0.20475987, y: -0.45714113, z: 0.865503}
+  - index: 178
+    triangles: 16020000
+    neighborIndices: 89000000ae000000af000000
+    cornerVertexMeshIndices: 160200001702000018020000
+    normal: {x: 0, y: -0.12583292, z: 0.9920514}
+  - index: 179
+    triangles: 19020000
+    neighborIndices: ad000000ae000000b0000000
+    cornerVertexMeshIndices: 190200001a0200001b020000
+    normal: {x: -0.20475987, y: -0.45714113, z: 0.865503}
