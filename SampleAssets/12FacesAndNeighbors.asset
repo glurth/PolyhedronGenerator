@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4650a7e2b9c8b324ba62f6ebba736c26, type: 3}
   m_Name: 12FacesAndNeighbors
   m_EditorClassIdentifier: 
-  meshRef: {fileID: 4300000, guid: 5a979d08c6468264da38f2fcca698706, type: 2}
+  meshRef: {fileID: 4300000, guid: c43f7b3731c7a074cbf59e13e66a9c8a, type: 2}
   faceDetails:
   - index: 0
     triangles: 000000000300000006000000090000000c000000
