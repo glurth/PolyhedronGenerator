@@ -147,8 +147,8 @@ namespace EyE.Geometry
         const float radToRots = 1.0f / (2f * Mathf.PI);
         /// <summary>
         /// Converts a 3D vertex on the unit sphere to its corresponding cylindrical UV coordinates.
-        /// The longitude corresponds to the rotation around the Y-axis (north pole), and the latitude corresponds
-        /// to the Y-coordinate remapped to a [0, 1] range from the north pole to the south pole.
+        /// The longitude corresponds to the X coordinate remapped to a [0, 1] range. It represents the rotation around the Y-axis (north/south pole), 
+        /// and the latitude corresponds to the Y-coordinate remapped to a [0, 1] range. It represent the distance from the north pole to the south pole.
         /// </summary>
         /// <param name="vertex">The 3D vertex on the unit sphere to convert to cylindrical UV coordinates.</param>
         /// <returns>A Vector2 representing the cylindrical UV coordinates, with longitude [0, 1] and latitude [0, 1].</returns>
@@ -162,8 +162,8 @@ namespace EyE.Geometry
             longitude += 0.5f;
 
             // Latitude is degrees from the north pole, towards the south pole (0-1)
-            float latitude = vertex.y * 0.5f + 0.5f;
-
+            //float latitude = vertex.y * 0.5f + 0.5f;//remap from -1->+1 to 0 -> 1
+            float latitude = (Mathf.Asin(vertex.y) * radToRots *2)+0.5f;// + 0.25f) * 2f;//remap from -.25->+.25 to 0 -> 1
             return new Vector2(longitude, latitude);
         }
 
@@ -1836,7 +1836,7 @@ namespace EyE.Geometry
                 Vector2 uv2 = vertexArray[index2].CylindricalUV();
 
 
-
+                
                 bool closeToPole = false;
                 if (uv0.y.CloseEqual(1) || uv0.y.CloseEqual(0))
                 {
@@ -1853,8 +1853,8 @@ namespace EyE.Geometry
                     uv2.x = (uv1.x + uv0.x) * 0.5f; //avg
                     closeToPole = true;
                 }
-
-                if (!closeToPole)
+                
+                if (!closeToPole)//we do weird us stuff in there already
                 {
                     //account for triangles that cross the 0,1 meridian : assumes texture sample mode is "repeat"
 
