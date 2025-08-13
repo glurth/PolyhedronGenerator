@@ -430,21 +430,40 @@ namespace EyE.Geometry
             get
             {
                 List<Face> foundNeighbors = new List<Face>();
+                /* works but wrong order- I think.
+                 
                 foreach (Edge e in edges)
                     foreach (Face f in e.touchingFaces)
                         if (f != this && !foundNeighbors.Contains(f))
                             foundNeighbors.Add(f);
-
-                /*
-                foreach (Face polyFace in faceOf.faces)
-                    if (polyFace != this)
-                        foreach (Corner faceCorner in corners)
-                            if (polyFace.TouchesCorner(faceCorner))
-                            {
-                                foundNeighbors.Add(polyFace);
-                                break;// next face
-                            }
                 */
+
+                //this version to ensure matches order of corners list
+                for (int i=0;i<corners.Count;i++) //for each pair of neighboring corners on this face
+                {
+                    Corner c = corners[i];
+                    Corner nextCorner = corners[(i+1) % corners.Count];
+                    foreach (Face polyFace in faceOf.faces)//check all faces in poly
+                    {
+                        if (polyFace == this) continue;
+                        int matchCount = 0;
+                        foreach (Corner polyC in polyFace.corners)
+                        {
+                            if (polyC == c)
+                                matchCount++;
+                            if (polyC == nextCorner)
+                                matchCount++;
+                            if (matchCount > 1) 
+                                break;
+                        }
+                        if (matchCount > 1)
+                        {
+                            foundNeighbors.Add(polyFace);
+                            break;
+                        }
+                    }
+                }
+
                 return foundNeighbors;
             }
         }

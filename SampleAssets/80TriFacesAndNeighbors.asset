@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4650a7e2b9c8b324ba62f6ebba736c26, type: 3}
   m_Name: 80TriFacesAndNeighbors
   m_EditorClassIdentifier: 
-  meshRef: {fileID: 4300000, guid: 92a916dd580e21f4cbf86b60e6e4b987, type: 2}
+  meshRef: {fileID: 4300000, guid: 96928fe40dabddb4d980f44e6fa0a7af, type: 2}
   faceDetails:
   - index: 0
     triangles: 00000000
@@ -36,7 +36,7 @@ MonoBehaviour:
     normal: {x: -0.57735026, y: -0.57735026, z: -0.57735026}
   - index: 4
     triangles: 0c000000
-    neighborIndices: 020000004800000007000000
+    neighborIndices: 480000000200000007000000
     cornerVertexMeshIndices: 0c0000000d0000000e000000
     normal: {x: -0.62842834, y: -0.7778675, z: -0}
   - index: 5
@@ -66,7 +66,7 @@ MonoBehaviour:
     normal: {x: 0.62842834, y: -0.7778675, z: -0.00000003030355}
   - index: 10
     triangles: 1e000000
-    neighborIndices: 060000000c0000000b000000
+    neighborIndices: 0c000000060000000b000000
     cornerVertexMeshIndices: 1e0000001f00000020000000
     normal: {x: 0.19473872, y: -0.9435222, z: 0.2680349}
   - index: 11
@@ -76,7 +76,7 @@ MonoBehaviour:
     normal: {x: 0.3568221, y: -0.93417233, z: -0.000000017206379}
   - index: 12
     triangles: 24000000
-    neighborIndices: 0a0000004d0000000f000000
+    neighborIndices: 4d0000000a0000000f000000
     cornerVertexMeshIndices: 240000002500000026000000
     normal: {x: 0.31509387, y: -0.74878347, z: 0.58312875}
   - index: 13
@@ -106,7 +106,7 @@ MonoBehaviour:
     normal: {x: 0.9435222, y: 0.2680349, z: 0.19473869}
   - index: 18
     triangles: 36000000
-    neighborIndices: 0e0000002e00000013000000
+    neighborIndices: 2e0000000e00000013000000
     cornerVertexMeshIndices: 360000003700000038000000
     normal: {x: 0.7778675, y: 0, z: 0.62842834}
   - index: 19
@@ -121,7 +121,7 @@ MonoBehaviour:
     normal: {x: 0.7778675, y: -0.00000003030355, z: -0.62842834}
   - index: 21
     triangles: 3f000000
-    neighborIndices: 110000002600000017000000
+    neighborIndices: 260000001100000017000000
     cornerVertexMeshIndices: 3f0000004000000041000000
     normal: {x: 0.9435222, y: 0.2680349, z: -0.19473872}
   - index: 22
@@ -141,12 +141,12 @@ MonoBehaviour:
     normal: {x: 0.31509385, y: -0.74878347, z: -0.5831288}
   - index: 25
     triangles: 4b000000
-    neighborIndices: 140000001d0000001b000000
+    neighborIndices: 1d000000140000001b000000
     cornerVertexMeshIndices: 4b0000004c0000004d000000
     normal: {x: 0.58312875, y: -0.31509387, z: -0.74878347}
   - index: 26
     triangles: 4e000000
-    neighborIndices: 09000000160000001b000000
+    neighborIndices: 16000000090000001b000000
     cornerVertexMeshIndices: 4e0000004f00000050000000
     normal: {x: 0.74878347, y: -0.5831288, z: -0.31509382}
   - index: 27
@@ -161,12 +161,12 @@ MonoBehaviour:
     normal: {x: -0.26803496, y: -0.1947387, z: -0.94352216}
   - index: 29
     triangles: 57000000
-    neighborIndices: 19000000220000001f000000
+    neighborIndices: 22000000190000001f000000
     cornerVertexMeshIndices: 570000005800000059000000
     normal: {x: 0.2680349, y: -0.19473872, z: -0.9435222}
   - index: 30
     triangles: 5a000000
-    neighborIndices: 01000000180000001f000000
+    neighborIndices: 18000000010000001f000000
     cornerVertexMeshIndices: 5a0000005b0000005c000000
     normal: {x: -0.00000003030355, y: -0.62842834, z: -0.7778675}
   - index: 31
@@ -186,7 +186,7 @@ MonoBehaviour:
     normal: {x: -0.00000003030355, y: 0.62842834, z: -0.7778675}
   - index: 34
     triangles: 66000000
-    neighborIndices: 1d0000002400000023000000
+    neighborIndices: 240000001d00000023000000
     cornerVertexMeshIndices: 660000006700000068000000
     normal: {x: 0.2680349, y: 0.19473872, z: -0.9435222}
   - index: 35
@@ -206,7 +206,7 @@ MonoBehaviour:
     normal: {x: 0.31509385, y: 0.74878347, z: -0.5831288}
   - index: 38
     triangles: 72000000
-    neighborIndices: 150000002a00000027000000
+    neighborIndices: 2a0000001500000027000000
     cornerVertexMeshIndices: 720000007300000074000000
     normal: {x: 0.74878347, y: 0.58312875, z: -0.31509387}
   - index: 39
@@ -226,7 +226,7 @@ MonoBehaviour:
     normal: {x: 0.19473869, y: 0.9435222, z: 0.2680349}
   - index: 42
     triangles: 7e000000
-    neighborIndices: 260000002c0000002b000000
+    neighborIndices: 2c000000260000002b000000
     cornerVertexMeshIndices: 7e0000007f00000080000000
     normal: {x: 0.62842834, y: 0.7778675, z: 0}
   - index: 43
@@ -246,7 +246,7 @@ MonoBehaviour:
     normal: {x: 0.31509385, y: 0.74878347, z: 0.5831288}
   - index: 46
     triangles: 8a000000
-    neighborIndices: 12000000320000002f000000
+    neighborIndices: 32000000120000002f000000
     cornerVertexMeshIndices: 8a0000008b0000008c000000
     normal: {x: 0.58312875, y: 0.31509387, z: 0.74878347}
   - index: 47
@@ -266,7 +266,7 @@ MonoBehaviour:
     normal: {x: -0.26803496, y: 0.19473873, z: 0.9435222}
   - index: 50
     triangles: 96000000
-    neighborIndices: 2e0000004e00000033000000
+    neighborIndices: 4e0000002e00000033000000
     cornerVertexMeshIndices: 960000009700000098000000
     normal: {x: 0.2680349, y: 0.19473872, z: 0.9435222}
   - index: 51
@@ -281,7 +281,7 @@ MonoBehaviour:
     normal: {x: -0.74878347, y: 0.5831288, z: 0.31509382}
   - index: 53
     triangles: 9f000000
-    neighborIndices: 310000004600000037000000
+    neighborIndices: 460000003100000037000000
     cornerVertexMeshIndices: 9f000000a0000000a1000000
     normal: {x: -0.58312875, y: 0.31509387, z: 0.74878347}
   - index: 54
@@ -301,12 +301,12 @@ MonoBehaviour:
     normal: {x: -0.1947387, y: 0.94352216, z: -0.26803496}
   - index: 57
     triangles: ab000000
-    neighborIndices: 340000003d0000003b000000
+    neighborIndices: 3d000000340000003b000000
     cornerVertexMeshIndices: ab000000ac000000ad000000
     normal: {x: -0.62842834, y: 0.7778675, z: 0}
   - index: 58
     triangles: ae000000
-    neighborIndices: 29000000360000003b000000
+    neighborIndices: 36000000290000003b000000
     cornerVertexMeshIndices: ae000000af000000b0000000
     normal: {x: -0.19473869, y: 0.9435222, z: 0.2680349}
   - index: 59
@@ -321,12 +321,12 @@ MonoBehaviour:
     normal: {x: -0.5831288, y: 0.31509385, z: -0.74878347}
   - index: 61
     triangles: b7000000
-    neighborIndices: 39000000420000003f000000
+    neighborIndices: 42000000390000003f000000
     cornerVertexMeshIndices: b7000000b8000000b9000000
     normal: {x: -0.74878347, y: 0.58312875, z: -0.31509387}
   - index: 62
     triangles: ba000000
-    neighborIndices: 21000000380000003f000000
+    neighborIndices: 38000000210000003f000000
     cornerVertexMeshIndices: ba000000bb000000bc000000
     normal: {x: -0.31509382, y: 0.74878347, z: -0.5831288}
   - index: 63
@@ -336,7 +336,7 @@ MonoBehaviour:
     normal: {x: -0.5773503, y: 0.5773502, z: -0.57735026}
   - index: 64
     triangles: c0000000
-    neighborIndices: 000000003c00000043000000
+    neighborIndices: 3c0000000000000043000000
     cornerVertexMeshIndices: c0000000c1000000c2000000
     normal: {x: -0.7778675, y: -0.00000003030355, z: -0.62842834}
   - index: 65
@@ -346,7 +346,7 @@ MonoBehaviour:
     normal: {x: -0.94352216, y: -0.26803496, z: -0.1947387}
   - index: 66
     triangles: c6000000
-    neighborIndices: 3d0000004400000043000000
+    neighborIndices: 440000003d00000043000000
     cornerVertexMeshIndices: c6000000c7000000c8000000
     normal: {x: -0.9435222, y: 0.2680349, z: -0.19473872}
   - index: 67
@@ -366,7 +366,7 @@ MonoBehaviour:
     normal: {x: -0.94352216, y: -0.26803496, z: 0.1947387}
   - index: 70
     triangles: d2000000
-    neighborIndices: 350000004a00000047000000
+    neighborIndices: 4a0000003500000047000000
     cornerVertexMeshIndices: d2000000d3000000d4000000
     normal: {x: -0.7778675, y: 0, z: 0.62842834}
   - index: 71
@@ -376,7 +376,7 @@ MonoBehaviour:
     normal: {x: -0.93417233, y: 0, z: 0.3568221}
   - index: 72
     triangles: d8000000
-    neighborIndices: 04000000450000004b000000
+    neighborIndices: 45000000040000004b000000
     cornerVertexMeshIndices: d8000000d9000000da000000
     normal: {x: -0.74878347, y: -0.5831288, z: 0.31509382}
   - index: 73
@@ -386,7 +386,7 @@ MonoBehaviour:
     normal: {x: -0.31509385, y: -0.74878347, z: 0.5831288}
   - index: 74
     triangles: de000000
-    neighborIndices: 460000004c0000004b000000
+    neighborIndices: 4c000000460000004b000000
     cornerVertexMeshIndices: de000000df000000e0000000
     normal: {x: -0.58312875, y: -0.31509387, z: 0.74878347}
   - index: 75
@@ -401,7 +401,7 @@ MonoBehaviour:
     normal: {x: -0.26803496, y: -0.19473873, z: 0.9435222}
   - index: 77
     triangles: e7000000
-    neighborIndices: 0c000000490000004f000000
+    neighborIndices: 490000000c0000004f000000
     cornerVertexMeshIndices: e7000000e8000000e9000000
     normal: {x: 0.00000003030355, y: -0.62842834, z: 0.7778675}
   - index: 78

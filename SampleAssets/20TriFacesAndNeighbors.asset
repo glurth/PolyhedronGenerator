@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4650a7e2b9c8b324ba62f6ebba736c26, type: 3}
+  m_Name: 20TriFacesAndNeighbors
+  m_EditorClassIdentifier: 
+  meshRef: {fileID: 4300000, guid: 3cab8336e30780341b2b0f0ca655eee4, type: 2}
+  faceDetails:
+  - index: 0
+    triangles: 00000000
+    neighborIndices: 070000000100000010000000
+    cornerVertexMeshIndices: 000000000100000002000000
+    normal: {x: -0.57735026, y: -0.57735026, z: -0.57735026}
+  - index: 1
+    triangles: 03000000
+    neighborIndices: 000000000200000012000000
+    cornerVertexMeshIndices: 030000000400000005000000
+    normal: {x: -0.3568221, y: -0.93417233, z: 0}
+  - index: 2
+    triangles: 06000000
+    neighborIndices: 060000000300000001000000
+    cornerVertexMeshIndices: 060000000700000008000000
+    normal: {x: 0.3568221, y: -0.93417233, z: 0}
+  - index: 3
+    triangles: 09000000
+    neighborIndices: 020000000400000013000000
+    cornerVertexMeshIndices: 090000000a0000000b000000
+    normal: {x: 0.57735026, y: -0.57735026, z: 0.57735026}
+  - index: 4
+    triangles: 0c000000
+    neighborIndices: 050000000b00000003000000
+    cornerVertexMeshIndices: 0c0000000d0000000e000000
+    normal: {x: 0.93417233, y: -0, z: 0.3568221}
+  - index: 5
+    triangles: 0f000000
+    neighborIndices: 090000000400000006000000
+    cornerVertexMeshIndices: 0f0000001000000011000000
+    normal: {x: 0.93417233, y: 0, z: -0.3568221}
+  - index: 6
+    triangles: 12000000
+    neighborIndices: 070000000500000002000000
+    cornerVertexMeshIndices: 120000001300000014000000
+    normal: {x: 0.57735026, y: -0.57735026, z: -0.57735026}
+  - index: 7
+    triangles: 15000000
+    neighborIndices: 080000000600000000000000
+    cornerVertexMeshIndices: 150000001600000017000000
+    normal: {x: 0, y: -0.3568221, z: -0.93417233}
+  - index: 8
+    triangles: 18000000
+    neighborIndices: 0f0000000900000007000000
+    cornerVertexMeshIndices: 18000000190000001a000000
+    normal: {x: 0, y: 0.3568221, z: -0.93417233}
+  - index: 9
+    triangles: 1b000000
+    neighborIndices: 080000000a00000005000000
+    cornerVertexMeshIndices: 1b0000001c0000001d000000
+    normal: {x: 0.57735026, y: 0.57735026, z: -0.57735026}
+  - index: 10
+    triangles: 1e000000
+    neighborIndices: 0e0000000b00000009000000
+    cornerVertexMeshIndices: 1e0000001f00000020000000
+    normal: {x: 0.3568221, y: 0.93417233, z: -0}
+  - index: 11
+    triangles: 21000000
+    neighborIndices: 0a0000000c00000004000000
+    cornerVertexMeshIndices: 210000002200000023000000
+    normal: {x: 0.57735026, y: 0.57735026, z: 0.57735026}
+  - index: 12
+    triangles: 24000000
+    neighborIndices: 0d000000130000000b000000
+    cornerVertexMeshIndices: 240000002500000026000000
+    normal: {x: 0, y: 0.3568221, z: 0.93417233}
+  - index: 13
+    triangles: 27000000
+    neighborIndices: 110000000c0000000e000000
+    cornerVertexMeshIndices: 270000002800000029000000
+    normal: {x: -0.57735026, y: 0.57735026, z: 0.57735026}
+  - index: 14
+    triangles: 2a000000
+    neighborIndices: 0f0000000d0000000a000000
+    cornerVertexMeshIndices: 2a0000002b0000002c000000
+    normal: {x: -0.3568221, y: 0.93417233, z: 0}
+  - index: 15
+    triangles: 2d000000
+    neighborIndices: 100000000e00000008000000
+    cornerVertexMeshIndices: 2d0000002e0000002f000000
+    normal: {x: -0.57735026, y: 0.57735026, z: -0.57735026}
+  - index: 16
+    triangles: 30000000
+    neighborIndices: 00000000110000000f000000
+    cornerVertexMeshIndices: 300000003100000032000000
+    normal: {x: -0.93417233, y: 0, z: -0.3568221}
+  - index: 17
+    triangles: 33000000
+    neighborIndices: 10000000120000000d000000
+    cornerVertexMeshIndices: 330000003400000035000000
+    normal: {x: -0.93417233, y: 0, z: 0.3568221}
+  - index: 18
+    triangles: 36000000
+    neighborIndices: 010000001300000011000000
+    cornerVertexMeshIndices: 360000003700000038000000
+    normal: {x: -0.57735026, y: -0.57735026, z: 0.57735026}
+  - index: 19
+    triangles: 39000000
+    neighborIndices: 12000000030000000c000000
+    cornerVertexMeshIndices: 390000003a0000003b000000
+    normal: {x: 0, y: -0.3568221, z: 0.93417233}
