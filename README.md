@@ -1,5 +1,7 @@
 # Polyhedron Generation Tool for unity
 
+![Screenshot](ScreenShot.png)
+
 Provides function to generate simple, and procedurally modify existing polhedron shapes.
 Can store these shapes as both Unity Meshobjects and as custom face and neighbor based scriptable Object.
 Operations include geometic trucation, dual, spherize, and for triangluar faces- tesselation.
