@@ -5,6 +5,7 @@ using EyE.UnityAssetTypes;
 using EyE.Threading;
 namespace EyE.Geometry
 {
+    /*
     class GeometryException : System.Exception
     {
         public GeometryException(string message) : base(message)
@@ -245,7 +246,7 @@ namespace EyE.Geometry
         }
 
     }
-
+    */
     /// <summary>
     /// Class used by the Polyhedron class to store the corners. Contains the actual vector3 position of the corner, and a reference to the polyhedron is is part of.
     /// </summary>
