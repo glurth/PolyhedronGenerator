@@ -108,5 +108,5 @@ MonoBehaviour:
     - vertex: {x: 0, y: -0.8506508, z: 0.5257311}
     - vertex: {x: 0, y: 0.8506508, z: -0.5257311}
     - vertex: {x: 0, y: 0.8506508, z: 0.5257311}
-  facesAndNeighbors: {fileID: 11400000, guid: e9e9bc124aa1f4f468dda09abafa879e, type: 2}
-  mesh: {fileID: 4300000, guid: 3cab8336e30780341b2b0f0ca655eee4, type: 2}
+  facesAndNeighbors: {fileID: 11400000, guid: 2ce5d4e1c190453429da9b380536f5b4, type: 2}
+  mesh: {fileID: 4300000, guid: fc2ed30b973f64749945f71c6eab8b85, type: 2}

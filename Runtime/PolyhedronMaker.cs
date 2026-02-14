@@ -32,10 +32,12 @@ namespace EyE.Geometry
                 {
                     {"truncate", () => StartProcessingNow(() => poly.TruncAsync(truncateEdgeLengthFraction, cancelRef))},
                     {"dual", () => StartProcessingNow(() =>poly.DualAsync(cancelRef))},
-                    {"tesselate", () => StartProcessingNow(() =>poly.TesselateTriangleByEdgeMiddlesAsync(cancelRef))},
+                    {"tessellate", () => StartProcessingNow(() =>poly.TesselateTriangleByEdgeMiddlesAsync(cancelRef))},
                     {"pyramidFace", () => StartProcessingNow(() =>poly.PyramidFacesAsync(cancelRef))},
                     {"spherize", () => StartProcessingNow(() =>poly.SpherizeAsync(1f, cancelRef))},
-                    {"smooth", () => StartProcessingNow(() =>poly.SmoothAsync(cancelRef))}
+                    {"smooth", () => StartProcessingNow(() =>poly.SmoothAsync(cancelRef)) },
+                    {"mesh", () => StartProcessingNow(() =>poly.ToMeshAsync(facesAndNeighborsOnMesh)) },
+                    {"save", () => {SaveSOs(); return UniTask.CompletedTask; }}
                 };
 
             commandLine = new CommandLineProcessor(commandLineOperations, cancelRef);

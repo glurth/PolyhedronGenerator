@@ -21,20 +21,23 @@ public class CommandLineProcessor
     public async UniTask ExecuteSequence(string commandInput)
     {
         List<(string, int)> operationsToRun = ParseCommands(commandInput);
+        int opCount = 0;
         foreach ((string cmd, int count) in operationsToRun)
         {
             if (operations.TryGetValue(cmd, out Func<UniTask> op))
             {
                 for (int i = 0; i < count; i++)
                 {
-                    Debug.Log("Executing Command: "+cmd);
+                    Debug.Log("["+opCount+"] Executing Command: "+cmd);
                     await op();
                 }
+                opCount++;
             }
             else
             {
                 Debug.LogWarning($"Unknown command: {cmd}");
             }
+
         }
     }
 
@@ -47,7 +50,8 @@ public class CommandLineProcessor
         {
             string cmd = match.Groups[1].Value.ToLower();
             int count = 1;
-            if (!string.IsNullOrEmpty(match.Groups[2].Value)) count = int.Parse(match.Groups[2].Value);
+            if (!string.IsNullOrEmpty(match.Groups[2].Value)) 
+                count = int.Parse(match.Groups[2].Value);
             string key = ResolveCommandKey(cmd);
             result.Add((key, count));
         }

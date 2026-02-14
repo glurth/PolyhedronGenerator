@@ -1734,7 +1734,7 @@ namespace EyE.Geometry
                     faceIndex.neighborIndices = new List<int>();
                     foreach (Face neighbor in currentFace.neighbors)
                         faceIndex.neighborIndices.Add(faces.IndexOf(neighbor));
-                    faceIndex.normal = currentFace.normal;
+                    faceIndex.faceCenterPosition = currentFace.center;//.normal;
                     faceIndex.triangles = new List<int>(); // filled lower down
                     faceIndex.cornerVertexMeshIndices = new List<int>();
                     facesAndNeighbors.faceDetails.Add(faceIndex);
